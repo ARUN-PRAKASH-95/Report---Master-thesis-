@@ -1,0 +1,2077 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.31)  8 AUG 2021 19:46
+entering extended mode
+**./Master_thesis.tex
+(Master_thesis.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/base\exscale.sty
+Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen138
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen139
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen140
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count187
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count188
+\leftroot@=\count189
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count190
+\DOTSCASE@=\count191
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
+\dotsspace@=\muskip16
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
+\tag@help=\toks16
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
+\andhelp@=\toks17
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks18
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/ncctools\nccmath.sty
+Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
+\NCC@fracrulewidth=\dimen149
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))) (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/titlepic\titlepic.sty
+Package: titlepic 2017/03/14 1.2 Package to display a picture on the title page
+
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/stackengine\stackengine
+.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count199
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/listofitems\listofitems
+.sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/listofitems\listofite
+ms.tex
+\loi_cnt_foreach_nest=\count266
+\loi_nestcnt=\count267
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count268
+\calc@Bcount=\count269
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count270
+\calc@Cskip=\skip54
+)
+\c@@stackindex=\count271
+\@boxshift=\skip55
+\stack@tmplength=\skip56
+\temp@stkl=\skip57
+\@stackedboxwidth=\skip58
+\@addedbox=\box49
+\@anchorbox=\box50
+\stackedbox=\box51
+\@centerbox=\box52
+\c@ROWcellindex@=\count272
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count273
+\l__pdf_internal_box=\box53
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e-2020-10-01.sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e-generic.tex)))
+Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex
+File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
+)) (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count274
+\@cmidlb=\count275
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count276
+\@lastruleclass=\count277
+\@thisrulewidth=\dimen166
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count278
+\float@exts=\toks23
+\float@box=\box54
+\@float@everytoks=\toks24
+\@floatcapt=\box55
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count279
+\c@continuedfloat=\count280
+Package caption Info: float package is loaded.
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count281
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box56
+)
+\tc@llx=\dimen174
+\tc@lly=\dimen175
+\tc@urx=\dimen176
+\tc@ury=\dimen177
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen178
+\adjbox@Height=\dimen179
+\adjbox@Depth=\dimen180
+\adjbox@Totalheight=\dimen181
+\adjbox@pwidth=\dimen182
+\adjbox@pheight=\dimen183
+\adjbox@pdepth=\dimen184
+\adjbox@ptotalheight=\dimen185
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count282
+) (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box57
+\sift@deathcycles=\count283
+\@vwid@loff=\dimen186
+\@vwid@roff=\dimen187
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count284
+\c@subtable=\count285
+) (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip59
+\multirow@cntb=\count286
+\multirow@dima=\skip60
+\bigstrutjot=\dimen188
+) (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count287
+\Gm@cntv=\count288
+\c@Gm@tempcnt=\count289
+\Gm@bindingoffset=\dimen189
+\Gm@wd@mp=\dimen190
+\Gm@odd@mp=\dimen191
+\Gm@even@mp=\dimen192
+\Gm@layoutwidth=\dimen193
+\Gm@layoutheight=\dimen194
+\Gm@layouthoffset=\dimen195
+\Gm@layoutvoffset=\dimen196
+\Gm@dimlist=\toks27
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip61
+\f@nch@O@elh=\skip62
+\f@nch@O@erh=\skip63
+\f@nch@O@olh=\skip64
+\f@nch@O@orh=\skip65
+\f@nch@O@elf=\skip66
+\f@nch@O@erf=\skip67
+\f@nch@O@olf=\skip68
+\f@nch@O@orf=\skip69
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen197
+\pgfutil@tempdimb=\dimen198
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common-lists.tex))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box58
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+filtered.code.tex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen199
+\pgf@y=\dimen256
+\pgf@xa=\dimen257
+\pgf@ya=\dimen258
+\pgf@xb=\dimen259
+\pgf@yb=\dimen260
+\pgf@xc=\dimen261
+\pgf@yc=\dimen262
+\pgf@xd=\dimen263
+\pgf@yd=\dimen264
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count294
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count295
+\pgfsyssoftpath@bigbuffer@items=\count296
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen265
+\pgfmath@count=\count297
+\pgfmath@box=\box59
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count298
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen266
+\pgf@picmaxx=\dimen267
+\pgf@picminy=\dimen268
+\pgf@picmaxy=\dimen269
+\pgf@pathminx=\dimen270
+\pgf@pathmaxx=\dimen271
+\pgf@pathminy=\dimen272
+\pgf@pathmaxy=\dimen273
+\pgf@xx=\dimen274
+\pgf@xy=\dimen275
+\pgf@yx=\dimen276
+\pgf@yy=\dimen277
+\pgf@zx=\dimen278
+\pgf@zy=\dimen279
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen280
+\pgf@path@lasty=\dimen281
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen282
+\pgf@shorten@start@additional=\dimen283
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count299
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen284
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen285
+\pgf@pt@y=\dimen286
+\pgf@pt@temp=\dimen287
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen288
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen289
+\pgf@sys@shading@range@num=\count300
+\pgf@shadingcount=\count301
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box63
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box64
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen290
+\pgf@nodesepend=\dimen291
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex)
+\pgffor@iter=\dimen292
+\pgffor@skip=\dimen293
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count302
+\pgfplotmarksize=\dimen294
+)
+\tikz@lastx=\dimen295
+\tikz@lasty=\dimen296
+\tikz@lastxsaved=\dimen297
+\tikz@lastysaved=\dimen298
+\tikz@lastmovetox=\dimen299
+\tikz@lastmovetoy=\dimen300
+\tikzleveldistance=\dimen301
+\tikzsiblingdistance=\dimen302
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count303
+\tikznumberofchildren=\count304
+\tikznumberofcurrentchild=\count305
+\tikz@fig@count=\count306
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count307
+\pgfmatrixcurrentcolumn=\count308
+\pgf@matrix@numberofcolumns=\count309
+)
+\tikz@expandcount=\count310
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryarrows.code.tex
+File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\arrowsize=\dimen303
+))
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip70
+\thanksmargin=\skip71
+\droptitle=\skip72
+)
+(Master_thesis.aux
+
+LaTeX Warning: Label `fig:1mm' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:1mm' multiply defined.
+
+
+LaTeX Warning: Label `fig:0.5mm' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:0.5mm' multiply defined.
+
+
+LaTeX Warning: Label `fig:0.25mm' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:0.25mm' multiply defined.
+
+
+LaTeX Warning: Label `fig:d2-1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:d2-1' multiply defined.
+
+
+LaTeX Warning: Label `fig:d2-0.5' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:d2-0.5' multiply defined.
+
+
+LaTeX Warning: Label `fig:d2-0.25' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:d2-0.25' multiply defined.
+
+)
+\openout1 = `Master_thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count311
+\scratchdimen=\dimen304
+\scratchbox=\box69
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen305
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks41
+)
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(79.49744pt, 438.513pt, 79.49744pt)
+* v-part:(T,H,B)=(72.26999pt, 693.27942pt, 79.49744pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=438.513pt
+* \textheight=693.27942pt
+* \oddsidemargin=7.22745pt
+* \evensidemargin=7.22745pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.06749> not available
+(Font)              size <17.28> substituted on input line 56.
+
+<logo.png, id=4, 1204.5pt x 1187.43625pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 56.
+(pdftex.def)             Requested size: 170.71652pt x 168.28737pt.
+[1
+
+{C:/Users/aruns/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./logo.png>]
+<composite plane.jpg, id=13, 2710.125pt x 1212.53pt>
+File: composite plane.jpg Graphic file (type jpg)
+<use composite plane.jpg>
+Package pdftex.def Info: composite plane.jpg  used on input line 63.
+(pdftex.def)             Requested size: 350.81174pt x 156.94986pt.
+
+Overfull \hbox (4.19629pt too wide) in paragraph at lines 60--69
+\OT1/cmr/m/n/12 Composite ma-te-rial are at-trac-tive be-cause of their high st
+rength, stiff-ness, high stiffness-
+ []
+
+[2 <./composite plane.jpg>] [3]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+
+
+(C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<1. Damage.png, id=20, 366.77025pt x 365.56575pt>
+File: 1. Damage.png Graphic file (type png)
+<use 1. Damage.png>
+Package pdftex.def Info: 1. Damage.png  used on input line 79.
+(pdftex.def)             Requested size: 219.2565pt x 218.53789pt.
+
+[4] [5 <./1. Damage.png>]
+<Damage2.png, id=30, 449.88075pt x 287.27325pt>
+File: Damage2.png Graphic file (type png)
+<use Damage2.png>
+Package pdftex.def Info: Damage2.png  used on input line 127.
+(pdftex.def)             Requested size: 350.81174pt x 224.01086pt.
+ [6]
+<3. Damage_cylinder.png, id=37, 471.56175pt x 292.09125pt>
+File: 3. Damage_cylinder.png Graphic file (type png)
+<use 3. Damage_cylinder.png>
+Package pdftex.def Info: 3. Damage_cylinder.png  used on input line 146.
+(pdftex.def)             Requested size: 350.81174pt x 217.30739pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+[7 <./Damage2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+[8 <./3. Damage_cylinder.png>]
+<4. Damage.png, id=47, 387.24675pt x 250.536pt>
+File: 4. Damage.png Graphic file (type png)
+<use 4. Damage.png>
+Package pdftex.def Info: 4. Damage.png  used on input line 190.
+(pdftex.def)             Requested size: 219.2565pt x 141.85509pt.
+ [9]
+Overfull \hbox (8.50041pt too wide) in paragraph at lines 210--211
+[][]\OT1/cmr/m/n/12 If the dam-age state is isotropic then the ef-fec-tive stre
+ss ten-sor of three-dimensional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+
+Overfull \hbox (4.52267pt too wide) in paragraph at lines 216--217
+[][]\OT1/cmr/m/n/12 The in-crease in stress ef-fect caused by the net area re-d
+uc-tion in case of anisotropic
+ []
+
+[10 <./4. Damage.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Overfull \hbox (14.06482pt too wide) in paragraph at lines 228--228
+[]\OT1/cmr/bx/n/12 Symmetrized Ef-fec-tive Stress Ten-sor for Anisotropic Dam-a
+ge 2 (Corde-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 249--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--282
+
+ []
+
+[12]
+<6. Strain_eq.png, id=65, 481.8pt x 233.07076pt>
+File: 6. Strain_eq.png Graphic file (type png)
+<use 6. Strain_eq.png>
+Package pdftex.def Info: 6. Strain_eq.png  used on input line 318.
+(pdftex.def)             Requested size: 350.81174pt x 169.7099pt.
+ [13 <./6. Strain_eq.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 362--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--368
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 376--378
+
+ []
+
+[14]
+<7.Strain_energy_eq.png, id=74, 570.33075pt x 260.77425pt>
+File: 7.Strain_energy_eq.png Graphic file (type png)
+<use 7.Strain_energy_eq.png>
+Package pdftex.def Info: 7.Strain_energy_eq.png  used on input line 385.
+(pdftex.def)             Requested size: 350.81174pt x 160.40504pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--424
+
+ []
+
+[15 <./7.Strain_energy_eq.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 426--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
+
+ []
+
+[16] [17]
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
+
+ []
+
+[18]
+<9.Usermat_input.png, id=89, 747.9945pt x 581.17125pt>
+File: 9.Usermat_input.png Graphic file (type png)
+<use 9.Usermat_input.png>
+Package pdftex.def Info: 9.Usermat_input.png  used on input line 514.
+(pdftex.def)             Requested size: 394.65901pt x 306.64476pt.
+ [19]
+Overfull \hbox (57.11244pt too wide) in paragraph at lines 526--527
+[]\OT1/cmr/m/n/12 Go to "Con-trol Panel$\OML/cmm/m/it/12 >$\OT1/cmr/m/n/12 Sear
+ch System$\OML/cmm/m/it/12 >$\OT1/cmr/m/n/12 Edit the sys-tem en-vi-ron-ment va
+riables$\OML/cmm/m/it/12 >$\OT1/cmr/m/n/12 Environment
+ []
+
+[20 <./9.Usermat_input.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+528.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 528.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 528.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
+
+ []
+
+[21]
+<12.Tb.png, id=101, 209.583pt x 175.857pt>
+File: 12.Tb.png Graphic file (type png)
+<use 12.Tb.png>
+Package pdftex.def Info: 12.Tb.png  used on input line 568.
+(pdftex.def)             Requested size: 131.55524pt x 110.3853pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--573
+
+ []
+
+[22 <./12.Tb.png>]
+<13.Timehist.png, id=106, 895.54575pt x 422.7795pt>
+File: 13.Timehist.png Graphic file (type png)
+<use 13.Timehist.png>
+Package pdftex.def Info: 13.Timehist.png  used on input line 581.
+(pdftex.def)             Requested size: 350.81174pt x 165.6123pt.
+ [23 <./13.Timehist.png>]
+Overfull \hbox (1.3249pt too wide) in paragraph at lines 597--597
+[]\OT1/cmr/bx/n/14.4 Mechanisms of dam-age and fail-ure in fi-bre re-in-forced 
+com-
+ []
+
+[24
+
+]
+<5. FRP failure.png, id=114, 635.37375pt x 303.534pt>
+File: 5. FRP failure.png Graphic file (type png)
+<use 5. FRP failure.png>
+Package pdftex.def Info: 5. FRP failure.png  used on input line 607.
+(pdftex.def)             Requested size: 306.95775pt x 146.64412pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 604--612
+
+ []
+
+[25 <./5. FRP failure.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 620--645
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 646--671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--677
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 678.
+
+[27]
+LaTeX Font Info:    Calculating math sizes for size <> on input line 687.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.7> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <0.5> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.7> not available
+(Font)              size <5> substituted on input line 687.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <0.5> not available
+(Font)              size <5> substituted on input line 687.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--692
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 693.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--710
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--710
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 711.
+
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 725.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--726
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--732
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 733.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--745
+
+ []
+
+[28]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 746.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--757
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 758.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 764--769
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 764--769
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--775
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--775
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 776.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 784--789
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 784--789
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 790.
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 798--802
+
+ []
+
+<8.Types_of_damage_evolution.png, id=136, 468.5505pt x 287.8755pt>
+File: 8.Types_of_damage_evolution.png Graphic file (type png)
+<use 8.Types_of_damage_evolution.png>
+Package pdftex.def Info: 8.Types_of_damage_evolution.png  used on input line 80
+8.
+(pdftex.def)             Requested size: 306.95775pt x 188.59715pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--818
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 816--818
+
+ []
+
+[30 <./8.Types_of_damage_evolution.png>]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 819.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--824
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 825.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--828
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 829.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 830--833
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 834.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 838.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 842.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 847--848
+
+ []
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 858--861
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
+
+ []
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 882.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 886.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 896--901
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
+
+ []
+
+[33]
+
+LaTeX Warning: Reference `eqn:d1' on page 34 undefined on input line 938.
+
+
+LaTeX Warning: Reference `eqn:d3' on page 34 undefined on input line 938.
+
+[34]
+
+LaTeX Warning: Reference `eqn:d1' on page 35 undefined on input line 958.
+
+
+LaTeX Warning: Reference `eqn:d3' on page 35 undefined on input line 958.
+
+[35]
+Overfull \hbox (1.77272pt too wide) in paragraph at lines 970--971
+[][]\OT1/cmr/m/n/12 The flowchart be-low shows the schematic of the user ma-te-
+rial sub-rou-tine (USER-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 970--971
+
+ []
+
+[36]
+<14.Linear_SvsE.png, id=160, 1240.635pt x 902.37125pt>
+File: 14.Linear_SvsE.png Graphic file (type png)
+<use 14.Linear_SvsE.png>
+Package pdftex.def Info: 14.Linear_SvsE.png  used on input line 1014.
+(pdftex.def)             Requested size: 263.11047pt x 191.36238pt.
+ [37 <./14.Linear_SvsE.png (PNG copy)>]
+<15.Ansys_SX.png, id=165, 576.9555pt x 425.1885pt>
+File: 15.Ansys_SX.png Graphic file (type png)
+<use 15.Ansys_SX.png>
+Package pdftex.def Info: 15.Ansys_SX.png  used on input line 1064.
+(pdftex.def)             Requested size: 192.94383pt x 142.18762pt.
+
+Overfull \hbox (17.54132pt too wide) in paragraph at lines 1064--1065
+ [][] 
+ []
+
+<18.User_SX.png, id=166, 581.7735pt x 425.79076pt>
+File: 18.User_SX.png Graphic file (type png)
+<use 18.User_SX.png>
+Package pdftex.def Info: 18.User_SX.png  used on input line 1071.
+(pdftex.def)             Requested size: 192.94383pt x 141.21306pt.
+
+Overfull \hbox (17.54132pt too wide) in paragraph at lines 1071--1072
+ [][] 
+ []
+
+<16.Ansys_SY.png, id=167, 559.49025pt x 422.7795pt>
+File: 16.Ansys_SY.png Graphic file (type png)
+<use 16.Ansys_SY.png>
+Package pdftex.def Info: 16.Ansys_SY.png  used on input line 1080.
+(pdftex.def)             Requested size: 192.94383pt x 145.79457pt.
+
+Overfull \hbox (17.54132pt too wide) in paragraph at lines 1080--1081
+ [][] 
+ []
+
+<19.User_SY.png, id=168, 576.9555pt x 425.1885pt>
+File: 19.User_SY.png Graphic file (type png)
+<use 19.User_SY.png>
+Package pdftex.def Info: 19.User_SY.png  used on input line 1087.
+(pdftex.def)             Requested size: 192.94383pt x 142.18762pt.
+
+Overfull \hbox (17.54132pt too wide) in paragraph at lines 1087--1088
+ [][] 
+ []
+
+[38 <./15.Ansys_SX.png> <./18.User_SX.png>]
+<17.Ansys_SZ.png, id=174, 571.53525pt x 424.58624pt>
+File: 17.Ansys_SZ.png Graphic file (type png)
+<use 17.Ansys_SZ.png>
+Package pdftex.def Info: 17.Ansys_SZ.png  used on input line 1096.
+(pdftex.def)             Requested size: 192.94383pt x 143.33379pt.
+
+Overfull \hbox (17.54132pt too wide) in paragraph at lines 1096--1097
+ [][] 
+ []
+
+<20.User_SZ.png, id=175, 572.1375pt x 423.984pt>
+File: 20.User_SZ.png Graphic file (type png)
+<use 20.User_SZ.png>
+Package pdftex.def Info: 20.User_SZ.png  used on input line 1103.
+(pdftex.def)             Requested size: 192.94383pt x 142.98166pt.
+
+Overfull \hbox (17.54132pt too wide) in paragraph at lines 1103--1104
+ [][] 
+ []
+
+[39 <./16.Ansys_SY.png> <./19.User_SY.png> <./17.Ansys_SZ.png> <./20.User_SZ.pn
+g>]
+<21.StressvsStrain_Ansys.png, id=183, 1240.635pt x 906.38625pt>
+File: 21.StressvsStrain_Ansys.png Graphic file (type png)
+<use 21.StressvsStrain_Ansys.png>
+Package pdftex.def Info: 21.StressvsStrain_Ansys.png  used on input line 1129.
+(pdftex.def)             Requested size: 219.25313pt x 160.18279pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1129--1130
+ [][] 
+ []
+
+<21.StressvsStrain_Octave.png, id=184, 1240.635pt x 902.37125pt>
+File: 21.StressvsStrain_Octave.png Graphic file (type png)
+<use 21.StressvsStrain_Octave.png>
+Package pdftex.def Info: 21.StressvsStrain_Octave.png  used on input line 1136.
+
+(pdftex.def)             Requested size: 219.25313pt x 159.47324pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1136--1137
+ [][] 
+ []
+
+<21.d1,d2,d3.png, id=185, 1240.635pt x 902.37125pt>
+File: 21.d1,d2,d3.png Graphic file (type png)
+<use 21.d1,d2,d3.png>
+Package pdftex.def Info: 21.d1,d2,d3.png  used on input line 1146.
+(pdftex.def)             Requested size: 219.2565pt x 159.47324pt.
+[40 <./21.StressvsStrain_Ansys.png (PNG copy)> <./21.StressvsStrain_Octave.png 
+(PNG copy)>]
+<21.P_damage.png, id=189, 1240.635pt x 902.37125pt>
+File: 21.P_damage.png Graphic file (type png)
+<use 21.P_damage.png>
+Package pdftex.def Info: 21.P_damage.png  used on input line 1155.
+(pdftex.def)             Requested size: 263.11047pt x 191.36238pt.
+<22.Convergence_error.png, id=190, 442.0515pt x 290.2845pt>
+File: 22.Convergence_error.png Graphic file (type png)
+<use 22.Convergence_error.png>
+Package pdftex.def Info: 22.Convergence_error.png  used on input line 1167.
+(pdftex.def)             Requested size: 175.40251pt x 115.18156pt.
+ [41 <./21.d1,d2,d3.png (PNG copy)> <./21.P_damage.png (PNG copy)>]
+<22.StressvsStrain_Ansys.png, id=194, 1240.635pt x 906.38625pt>
+File: 22.StressvsStrain_Ansys.png Graphic file (type png)
+<use 22.StressvsStrain_Ansys.png>
+Package pdftex.def Info: 22.StressvsStrain_Ansys.png  used on input line 1182.
+(pdftex.def)             Requested size: 219.25313pt x 160.18279pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1182--1183
+ [][] 
+ []
+
+<22.StressvsStrain_Octave.png, id=195, 1240.635pt x 902.37125pt>
+File: 22.StressvsStrain_Octave.png Graphic file (type png)
+<use 22.StressvsStrain_Octave.png>
+Package pdftex.def Info: 22.StressvsStrain_Octave.png  used on input line 1189.
+
+(pdftex.def)             Requested size: 219.25313pt x 159.47324pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1189--1190
+ [][] 
+ []
+
+<22.d1,d2,d3.png, id=196, 1240.635pt x 902.37125pt>
+File: 22.d1,d2,d3.png Graphic file (type png)
+<use 22.d1,d2,d3.png>
+Package pdftex.def Info: 22.d1,d2,d3.png  used on input line 1199.
+(pdftex.def)             Requested size: 219.25313pt x 159.47324pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1199--1200
+ [][] 
+ []
+
+[42 <./22.Convergence_error.png> <./22.StressvsStrain_Ansys.png (PNG copy)> <./
+22.StressvsStrain_Octave.png (PNG copy)>]
+<22.V_damage.png, id=201, 1240.635pt x 902.37125pt>
+File: 22.V_damage.png Graphic file (type png)
+<use 22.V_damage.png>
+Package pdftex.def Info: 22.V_damage.png  used on input line 1210.
+(pdftex.def)             Requested size: 263.11047pt x 191.36238pt.
+ [43 <./22.d1,d2,d3.png (PNG copy)> <./22.V_damage.png (PNG copy)>]
+<22.e11vse22e33_ATS.png, id=206, 1240.635pt x 902.37125pt>
+File: 22.e11vse22e33_ATS.png Graphic file (type png)
+<use 22.e11vse22e33_ATS.png>
+Package pdftex.def Info: 22.e11vse22e33_ATS.png  used on input line 1232.
+(pdftex.def)             Requested size: 219.25313pt x 159.47324pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1232--1233
+ [][] 
+ []
+
+<22.e11vse22e33_NT.png, id=207, 1240.635pt x 902.37125pt>
+File: 22.e11vse22e33_NT.png Graphic file (type png)
+<use 22.e11vse22e33_NT.png>
+Package pdftex.def Info: 22.e11vse22e33_NT.png  used on input line 1239.
+(pdftex.def)             Requested size: 219.25313pt x 159.47324pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1239--1240
+ [][] 
+ []
+
+<23.S11vsE11.png, id=208, 953.5625pt x 711.65875pt>
+File: 23.S11vsE11.png Graphic file (type png)
+<use 23.S11vsE11.png>
+Package pdftex.def Info: 23.S11vsE11.png  used on input line 1255.
+(pdftex.def)             Requested size: 219.25313pt x 163.62376pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1255--1256
+ [][] 
+ []
+
+<23.d1.png, id=209, 953.5625pt x 711.65875pt>
+File: 23.d1.png Graphic file (type png)
+<use 23.d1.png>
+Package pdftex.def Info: 23.d1.png  used on input line 1263.
+(pdftex.def)             Requested size: 219.25313pt x 163.62376pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1263--1264
+ [][] 
+ []
+
+[44 <./22.e11vse22e33_ATS.png (PNG copy)> <./22.e11vse22e33_NT.png (PNG copy)>]
+<23.S22vsE22.png, id=213, 953.5625pt x 711.65875pt>
+File: 23.S22vsE22.png Graphic file (type png)
+<use 23.S22vsE22.png>
+Package pdftex.def Info: 23.S22vsE22.png  used on input line 1272.
+(pdftex.def)             Requested size: 219.25313pt x 163.62376pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1272--1273
+ [][] 
+ []
+
+<23.d2.png, id=214, 953.5625pt x 711.65875pt>
+File: 23.d2.png Graphic file (type png)
+<use 23.d2.png>
+Package pdftex.def Info: 23.d2.png  used on input line 1279.
+(pdftex.def)             Requested size: 219.25313pt x 163.62376pt.
+
+Overfull \hbox (43.85062pt too wide) in paragraph at lines 1279--1280
+ [][] 
+ []
+
+<24.S11vsE11.png, id=215, 1240.635pt x 902.37125pt>
+File: 24.S11vsE11.png Graphic file (type png)
+<use 24.S11vsE11.png>
+Package pdftex.def Info: 24.S11vsE11.png  used on input line 1297.
+(pdftex.def)             Requested size: 210.48247pt x 153.0844pt.
+
+Overfull \hbox (35.07996pt too wide) in paragraph at lines 1297--1299
+ [][] 
+ []
+
+<24.d1.png, id=216, 1240.635pt x 902.37125pt>
+File: 24.d1.png Graphic file (type png)
+<use 24.d1.png>
+Package pdftex.def Info: 24.d1.png  used on input line 1306.
+(pdftex.def)             Requested size: 210.48247pt x 153.0844pt.
+
+Overfull \hbox (35.07996pt too wide) in paragraph at lines 1306--1308
+ [][] 
+ []
+
+[45 <./23.S11vsE11.png (PNG copy)> <./23.d1.png (PNG copy)> <./23.S22vsE22.png 
+(PNG copy)> <./23.d2.png (PNG copy)>]
+<24.S22vsE22.png, id=220, 1240.635pt x 902.37125pt>
+File: 24.S22vsE22.png Graphic file (type png)
+<use 24.S22vsE22.png>
+Package pdftex.def Info: 24.S22vsE22.png  used on input line 1316.
+(pdftex.def)             Requested size: 210.48247pt x 153.0844pt.
+
+Overfull \hbox (35.07996pt too wide) in paragraph at lines 1316--1317
+ [][] 
+ []
+
+<24.d2.png, id=221, 1240.635pt x 902.37125pt>
+File: 24.d2.png Graphic file (type png)
+<use 24.d2.png>
+Package pdftex.def Info: 24.d2.png  used on input line 1323.
+(pdftex.def)             Requested size: 210.48247pt x 153.0844pt.
+
+Overfull \hbox (35.07996pt too wide) in paragraph at lines 1323--1324
+ [][] 
+ []
+
+<24.S33vsE33.png, id=222, 1240.635pt x 902.37125pt>
+File: 24.S33vsE33.png Graphic file (type png)
+<use 24.S33vsE33.png>
+Package pdftex.def Info: 24.S33vsE33.png  used on input line 1332.
+(pdftex.def)             Requested size: 210.48247pt x 153.0844pt.
+
+Overfull \hbox (35.07996pt too wide) in paragraph at lines 1332--1333
+ [][] 
+ []
+
+File: 24.d2.png Graphic file (type png)
+<use 24.d2.png>
+Package pdftex.def Info: 24.d2.png  used on input line 1339.
+(pdftex.def)             Requested size: 210.48247pt x 153.0844pt.
+
+Overfull \hbox (35.07996pt too wide) in paragraph at lines 1339--1340
+ [][] 
+ []
+
+[46 <./24.S11vsE11.png (PNG copy)> <./24.d1.png (PNG copy)> <./24.S22vsE22.png 
+(PNG copy)> <./24.d2.png (PNG copy)> <./24.S33vsE33.png (PNG copy)>]
+<25.Geometry.jpg, id=226, 502.87875pt x 541.27219pt>
+File: 25.Geometry.jpg Graphic file (type jpg)
+<use 25.Geometry.jpg>
+Package pdftex.def Info: 25.Geometry.jpg  used on input line 1405.
+(pdftex.def)             Requested size: 263.11047pt x 283.19757pt.
+ [47]
+<25.1mm2.png, id=230, 406.51875pt x 598.48593pt>
+File: 25.1mm2.png Graphic file (type png)
+<use 25.1mm2.png>
+Package pdftex.def Info: 25.1mm2.png  used on input line 1417.
+(pdftex.def)             Requested size: 133.793pt x 196.9713pt.
+
+Overfull \hbox (15.39262pt too wide) in paragraph at lines 1417--1418
+ [][] 
+ []
+
+<25.0.5mm2.png, id=231, 450.9347pt x 608.2725pt>
+File: 25.0.5mm2.png Graphic file (type png)
+<use 25.0.5mm2.png>
+Package pdftex.def Info: 25.0.5mm2.png  used on input line 1424.
+(pdftex.def)             Requested size: 148.00046pt x 199.6446pt.
+
+Overfull \hbox (29.60008pt too wide) in paragraph at lines 1424--1425
+ [][] 
+ []
+
+<25.0.25mm2.png, id=232, 453.19313pt x 604.50844pt>
+File: 25.0.25mm2.png Graphic file (type png)
+<use 25.0.25mm2.png>
+Package pdftex.def Info: 25.0.25mm2.png  used on input line 1431.
+(pdftex.def)             Requested size: 148.00046pt x 197.41298pt.
+
+Overfull \hbox (29.60008pt too wide) in paragraph at lines 1431--1432
+ [][] 
+ []
+
+[48 <./25.Geometry.jpg>]
+<25.FvsD.png, id=236, 1240.635pt x 902.37125pt>
+File: 25.FvsD.png Graphic file (type png)
+<use 25.FvsD.png>
+Package pdftex.def Info: 25.FvsD.png  used on input line 1444.
+(pdftex.def)             Requested size: 252.58151pt x 183.70677pt.
+
+Overfull \hbox (55.25201pt too wide) in paragraph at lines 1444--1445
+ [][] 
+ []
+
+<25.FvsD2.png, id=237, 1240.635pt x 902.37125pt>
+File: 25.FvsD2.png Graphic file (type png)
+<use 25.FvsD2.png>
+Package pdftex.def Info: 25.FvsD2.png  used on input line 1451.
+(pdftex.def)             Requested size: 256.52895pt x 186.5845pt.
+
+Overfull \hbox (59.19945pt too wide) in paragraph at lines 1451--1452
+ [][] 
+ []
+
+<25.d1-1-r.png, id=238, 616.10175pt x 500.46976pt>
+File: 25.d1-1-r.png Graphic file (type png)
+<use 25.d1-1-r.png>
+Package pdftex.def Info: 25.d1-1-r.png  used on input line 1465.
+(pdftex.def)             Requested size: 234.73216pt x 190.67685pt.
+
+Overfull \hbox (59.32965pt too wide) in paragraph at lines 1465--1467
+ [][] 
+ []
+
+<25.d1-1-nr.png, id=239, 581.17125pt x 470.35725pt>
+File: 25.d1-1-nr.png Graphic file (type png)
+<use 25.d1-1-nr.png>
+Package pdftex.def Info: 25.d1-1-nr.png  used on input line 1474.
+(pdftex.def)             Requested size: 233.3157pt x 188.82855pt.
+
+Overfull \hbox (57.9132pt too wide) in paragraph at lines 1474--1476
+ [][] 
+ []
+
+[49 <./25.1mm2.png> <./25.0.5mm2.png> <./25.0.25mm2.png> <./25.FvsD.png (PNG co
+py)> <./25.FvsD2.png (PNG copy)>]
+<25.d1-0.5-r.png, id=244, 596.2275pt x 488.42474pt>
+File: 25.d1-0.5-r.png Graphic file (type png)
+<use 25.d1-0.5-r.png>
+Package pdftex.def Info: 25.d1-0.5-r.png  used on input line 1484.
+(pdftex.def)             Requested size: 234.72943pt x 192.28844pt.
+
+Overfull \hbox (59.32692pt too wide) in paragraph at lines 1484--1485
+ [][] 
+ []
+
+<25.d1-0.5-nr.png, id=245, 620.3175pt x 504.6855pt>
+File: 25.d1-0.5-nr.png Graphic file (type png)
+<use 25.d1-0.5-nr.png>
+Package pdftex.def Info: 25.d1-0.5-nr.png  used on input line 1491.
+(pdftex.def)             Requested size: 233.30945pt x 189.81876pt.
+
+Overfull \hbox (57.90694pt too wide) in paragraph at lines 1491--1492
+ [][] 
+ []
+
+<25.d1-0.25-r.png, id=246, 590.205pt x 487.22025pt>
+File: 25.d1-0.25-r.png Graphic file (type png)
+<use 25.d1-0.25-r.png>
+Package pdftex.def Info: 25.d1-0.25-r.png  used on input line 1500.
+(pdftex.def)             Requested size: 236.14986pt x 194.94412pt.
+
+Overfull \hbox (60.74734pt too wide) in paragraph at lines 1500--1501
+ [][] 
+ []
+
+<25.d1-0.25-nr.png, id=247, 635.976pt x 513.117pt>
+File: 25.d1-0.25-nr.png Graphic file (type png)
+<use 25.d1-0.25-nr.png>
+Package pdftex.def Info: 25.d1-0.25-nr.png  used on input line 1507.
+(pdftex.def)             Requested size: 233.30836pt x 188.23743pt.
+
+Overfull \hbox (57.90585pt too wide) in paragraph at lines 1507--1508
+ [][] 
+ []
+
+[50 <./25.d1-1-r.png> <./25.d1-1-nr.png> <./25.d1-0.5-r.png> <./25.d1-0.5-nr.pn
+g>]
+<25.d2-1.png, id=255, 612.48825pt x 492.6405pt>
+File: 25.d2-1.png Graphic file (type png)
+<use 25.d2-1.png>
+Package pdftex.def Info: 25.d2-1.png  used on input line 1521.
+(pdftex.def)             Requested size: 159.3273pt x 128.15115pt.
+
+Overfull \hbox (27.77206pt too wide) in paragraph at lines 1521--1522
+ [][] 
+ []
+
+<25.d2-0.5.png, id=256, 605.8635pt x 497.4585pt>
+File: 25.d2-0.5.png Graphic file (type png)
+<use 25.d2-0.5.png>
+Package pdftex.def Info: 25.d2-0.5.png  used on input line 1528.
+(pdftex.def)             Requested size: 159.33275pt x 130.82391pt.
+
+Overfull \hbox (27.77751pt too wide) in paragraph at lines 1528--1529
+ [][] 
+ []
+
+<25.d2-0.25.png, id=257, 626.94225pt x 504.6855pt>
+File: 25.d2-0.25.png Graphic file (type png)
+<use 25.d2-0.25.png>
+Package pdftex.def Info: 25.d2-0.25.png  used on input line 1535.
+(pdftex.def)             Requested size: 165.01964pt x 132.84001pt.
+
+Overfull \hbox (33.4644pt too wide) in paragraph at lines 1535--1536
+ [][] 
+ []
+
+<25.Strength.png, id=258, 1240.635pt x 902.37125pt>
+File: 25.Strength.png Graphic file (type png)
+<use 25.Strength.png>
+Package pdftex.def Info: 25.Strength.png  used on input line 1546.
+(pdftex.def)             Requested size: 306.95775pt x 223.26529pt.
+[51 <./25.d1-0.25-r.png> <./25.d1-0.25-nr.png> <./25.d2-1.png> <./25.d2-0.5.png
+> <./25.d2-0.25.png>] [52 <./25.Strength.png (PNG copy)>]
+<26.Geometry.jpg, id=270, 740.0147pt x 436.63126pt>
+File: 26.Geometry.jpg Graphic file (type jpg)
+<use 26.Geometry.jpg>
+Package pdftex.def Info: 26.Geometry.jpg  used on input line 1559.
+(pdftex.def)             Requested size: 350.81174pt x 206.98892pt.
+<26.FvsD.png, id=271, 1240.635pt x 902.37125pt>
+File: 26.FvsD.png Graphic file (type png)
+<use 26.FvsD.png>
+Package pdftex.def Info: 26.FvsD.png  used on input line 1569.
+(pdftex.def)             Requested size: 350.81174pt x 255.15442pt.
+ [53 <./26.Geometry.jpg>]
+<26.h=1mm.png, id=275, 779.91376pt x 402.75468pt>
+File: 26.h=1mm.png Graphic file (type png)
+<use 26.h=1mm.png>
+Package pdftex.def Info: 26.h=1mm.png  used on input line 1581.
+(pdftex.def)             Requested size: 213.38805pt x 110.19556pt.
+
+Overfull \hbox (59.90582pt too wide) in paragraph at lines 1581--1582
+ [][] 
+ []
+
+<26.h=0.5mm.png, id=276, 783.67781pt x 378.66469pt>
+File: 26.h=0.5mm.png Graphic file (type png)
+<use 26.h=0.5mm.png>
+Package pdftex.def Info: 26.h=0.5mm.png  used on input line 1588.
+(pdftex.def)             Requested size: 213.38953pt x 103.10751pt.
+
+Overfull \hbox (59.9073pt too wide) in paragraph at lines 1588--1589
+ [][] 
+ []
+
+<26.h=0.25mm.png, id=277, 788.19469pt x 389.95688pt>
+File: 26.h=0.25mm.png Graphic file (type png)
+<use 26.h=0.25mm.png>
+Package pdftex.def Info: 26.h=0.25mm.png  used on input line 1595.
+(pdftex.def)             Requested size: 213.3927pt x 105.57536pt.
+
+Overfull \hbox (59.91048pt too wide) in paragraph at lines 1595--1596
+ [][] 
+ []
+
+<26.d1-1.png, id=278, 749.80125pt x 469.755pt>
+File: 26.d1-1.png Graphic file (type png)
+<use 26.d1-1.png>
+Package pdftex.def Info: 26.d1-1.png  used on input line 1611.
+(pdftex.def)             Requested size: 234.73563pt x 147.06328pt.
+
+Overfull \hbox (59.33311pt too wide) in paragraph at lines 1611--1613
+ [][] 
+ []
+
+<26.d2-1.png, id=279, 747.54282pt x 478.78876pt>
+File: 26.d2-1.png Graphic file (type png)
+<use 26.d2-1.png>
+Package pdftex.def Info: 26.d2-1.png  used on input line 1620.
+(pdftex.def)             Requested size: 233.30998pt x 149.43117pt.
+
+Overfull \hbox (57.90747pt too wide) in paragraph at lines 1620--1622
+ [][] 
+ []
+
+[54 <./26.FvsD.png (PNG copy)> <./26.h=1mm.png> <./26.h=0.5mm.png> <./26.h=0.25
+mm.png>]
+<26.d1-0.5.png, id=283, 755.82375pt x 488.57532pt>
+File: 26.d1-0.5.png Graphic file (type png)
+<use 26.d1-0.5.png>
+Package pdftex.def Info: 26.d1-0.5.png  used on input line 1630.
+(pdftex.def)             Requested size: 234.72966pt x 151.73262pt.
+
+Overfull \hbox (59.32715pt too wide) in paragraph at lines 1630--1631
+ [][] 
+ []
+
+<26.d2-0.5.png, id=284, 758.08218pt x 469.755pt>
+File: 26.d2-0.5.png Graphic file (type png)
+<use 26.d2-0.5.png>
+Package pdftex.def Info: 26.d2-0.5.png  used on input line 1637.
+(pdftex.def)             Requested size: 233.30264pt x 144.56886pt.
+
+Overfull \hbox (57.90013pt too wide) in paragraph at lines 1637--1638
+ [][] 
+ []
+
+<26.d1-0.25.png, id=285, 760.34062pt x 488.57532pt>
+File: 26.d1-0.25.png Graphic file (type png)
+<use 26.d1-0.25.png>
+Package pdftex.def Info: 26.d1-0.25.png  used on input line 1646.
+(pdftex.def)             Requested size: 236.15562pt x 151.74753pt.
+
+Overfull \hbox (60.75311pt too wide) in paragraph at lines 1646--1647
+ [][] 
+ []
+
+<26.d2-0.25.png, id=286, 753.5653pt x 492.33937pt>
+File: 26.d2-0.25.png Graphic file (type png)
+<use 26.d2-0.25.png>
+Package pdftex.def Info: 26.d2-0.25.png  used on input line 1653.
+(pdftex.def)             Requested size: 233.30386pt x 152.4283pt.
+
+Overfull \hbox (57.90135pt too wide) in paragraph at lines 1653--1654
+ [][] 
+ []
+
+<26.Strength.png, id=287, 1240.635pt x 906.38625pt>
+File: 26.Strength.png Graphic file (type png)
+<use 26.Strength.png>
+Package pdftex.def Info: 26.Strength.png  used on input line 1665.
+(pdftex.def)             Requested size: 306.95775pt x 224.25868pt.
+<26.FvsD_alphas.png, id=288, 1240.635pt x 906.38625pt>
+File: 26.FvsD_alphas.png Graphic file (type png)
+<use 26.FvsD_alphas.png>
+Package pdftex.def Info: 26.FvsD_alphas.png  used on input line 1676.
+(pdftex.def)             Requested size: 306.95775pt x 224.25868pt.
+File: 26.d2-1.png Graphic file (type png)
+<use 26.d2-1.png>
+Package pdftex.def Info: 26.d2-1.png  used on input line 1688.
+(pdftex.def)             Requested size: 234.73581pt x 150.34438pt.
+
+Overfull \hbox (59.3333pt too wide) in paragraph at lines 1688--1690
+ [][] 
+ []
+
+<26.d2_a_0.1.png, id=289, 752.0597pt x 507.39563pt>
+File: 26.d2_a_0.1.png Graphic file (type png)
+<use 26.d2_a_0.1.png>
+Package pdftex.def Info: 26.d2_a_0.1.png  used on input line 1697.
+(pdftex.def)             Requested size: 233.30823pt x 157.40715pt.
+
+Overfull \hbox (57.90572pt too wide) in paragraph at lines 1697--1699
+ [][] 
+ []
+
+[55 <./26.d1-1.png> <./26.d2-1.png> <./26.d1-0.5.png> <./26.d2-0.5.png> <./26.d
+1-0.25.png> <./26.d2-0.25.png>] [56 <./26.Strength.png (PNG copy)> <./26.FvsD_a
+lphas.png (PNG copy)>]
+<26.d2_a_0.2.png, id=297, 752.0597pt x 478.78876pt>
+File: 26.d2_a_0.2.png Graphic file (type png)
+<use 26.d2_a_0.2.png>
+Package pdftex.def Info: 26.d2_a_0.2.png  used on input line 1708.
+(pdftex.def)             Requested size: 234.73119pt x 149.43846pt.
+
+Overfull \hbox (59.32867pt too wide) in paragraph at lines 1708--1710
+ [][] 
+ []
+
+<26.d2_a_0.3.png, id=298, 755.82375pt x 479.54156pt>
+File: 26.d2_a_0.3.png Graphic file (type png)
+<use 26.d2_a_0.3.png>
+Package pdftex.def Info: 26.d2_a_0.3.png  used on input line 1717.
+(pdftex.def)             Requested size: 233.31111pt x 148.02707pt.
+
+Overfull \hbox (57.9086pt too wide) in paragraph at lines 1717--1719
+ [][] 
+ []
+
+<26.d2_a_0.5.png, id=299, 734.745pt x 475.02469pt>
+File: 26.d2_a_0.5.png Graphic file (type png)
+<use 26.d2_a_0.5.png>
+Package pdftex.def Info: 26.d2_a_0.5.png  used on input line 1728.
+(pdftex.def)             Requested size: 234.7308pt x 151.75731pt.
+
+Overfull \hbox (59.3283pt too wide) in paragraph at lines 1728--1730
+ [][] 
+ []
+
+[57 <./26.d2_a_0.1.png> <./26.d2_a_0.2.png> <./26.d2_a_0.3.png> <./26.d2_a_0.5.
+png>] (Master_thesis.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 4.5pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 18654 strings out of 479321
+ 373773 string characters out of 2856583
+ 738807 words of memory out of 3000000
+ 35671 multiletter control sequences out of 15000+600000
+ 417736 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 87i,13n,89p,1610b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\aruns\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/aruns/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/aruns/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/aruns/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/a
+runs/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/aruns/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/aruns/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Master_thesis.pdf (57 pages, 4206364 bytes).
+PDF statistics:
+ 357 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 378 words of extra memory for PDF output out of 10000 (max. 10000000)
+
