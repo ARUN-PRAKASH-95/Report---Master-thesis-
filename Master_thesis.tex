@@ -1459,19 +1459,20 @@ Each model is chosen to represent specific features of the damage model. These f
  
 \indent\indent\indent The damage distributions at the end of the process have been plotted for the three different meshes in the Figure (\ref{fig:Convergence study for model with and without regularization}). For numerical reasons the maximum damage is limited to a value of $d_{max}$ = 0.9999. The improvement in the global response by using regularization schemes has been illustrated by the damage distributions at the end of the loading process. A relatively large portion of the fracture zone takes part in damage process, instead of very few elements (one or two elements) in case of no regularization. Damage initiates at the tip of the blunt notch and propagates in the direction perpendicular to the loading direction. The width of the damage zone is approximately same in the three discretizations but the number of elements which reaches a critical damage value (red) increases with increase in number of elements along the fracture zone.
 \begin{figure}[htbp!]
+	\centering
        \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
         \centering
-         \includegraphics[width=8.25cm,height=8cm,keepaspectratio]{25.d1-1-r.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d1-1-r.png}
          \centering
          \caption{h = 1mm}
          \label{fig:d1-1-r}
      \end{subfigure}
-     \hfill
+    \hspace{1.8cm}
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{25.d1-1-nr.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d1-1-nr.png}
          \centering
          \caption{h = 1mm}
          \label{fig:d1-1-nr}
@@ -1479,32 +1480,34 @@ Each model is chosen to represent specific features of the damage model. These f
 \end{figure}
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat 
+\centering
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.25cm,height=8cm,keepaspectratio]{25.d1-0.5-r.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d1-0.5-r.png}
          \caption{h = 0.5mm}
          \label{fig:d1-0.5-r}
      \end{subfigure}   
-     \hfill
+     \hspace{1.8cm}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{25.d1-0.5-nr.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d1-0.5-nr.png}
          \caption{h = 0.5mm}
          \label{fig:d1-0.5-nr}
      \end{subfigure}
 \end{figure}
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat
+\centering
      \begin{subfigure}{0.4\textwidth}
          \centering
          \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d1-0.25-r.png}
          \caption{h = 0.25mm}
          \label{fig:d1-0.25-r}
      \end{subfigure}
-     \hfill
+     \hspace{1.8cm}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{25.d1-0.25-nr.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d1-0.25-nr.png}
          \caption{h = 0.25mm}
          \label{fig:d1-0.25-nr}
      \end{subfigure}     
@@ -1516,23 +1519,25 @@ Now the transverse direction is kept parallel to the loading direction and the b
 \begin{figure}[htbp!]
      \centering
      \captionsetup[subfigure]{justification=centering}
-     \begin{subfigure}{0.3\textwidth}
+     \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=5.6cm,height=5.8cm,keepaspectratio]{25.d2-1.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d2-1.png}
          \caption{h=1mm}
          \label{fig:d2-1}
      \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.3\textwidth}
+     \hspace{1.8cm}
+     \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=5.6cm,height=5.8cm,keepaspectratio]{25.d2-0.5.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d2-0.5.png}
          \caption{h=0.5mm}
          \label{fig:d2-0.5}
      \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.3\textwidth}
+\end{figure}
+\begin{figure}[htbp!]\ContinuedFloat
+     \centering
+     \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=5.8cm,height=6cm,keepaspectratio]{25.d2-0.25.png}
+         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{25.d2-0.25.png}
          \caption{h=0.25mm}
          \label{fig:d2-0.25}
      \end{subfigure}
@@ -1551,9 +1556,7 @@ Now the transverse direction is kept parallel to the loading direction and the b
 \FloatBarrier 
  
 \subsubsection{Compact Tension (CT) Specimen}
-\indent\indent\indent  This second example will demonstrate the model's ability to calculate multiple damage variables simultaneously i.e., to show the anisotropic damage development when a load is applied. In Plane stress(2D) setting the material is considered to be transversely isotropic therefore two damage variables are used to show the anisotropic damage development. The Compact Tension test is a standard test for plane fracture of materials and for the measurement of fatigue crack growths. Because of the symmetry only one half of the specimen is modelled and the geometry and appropriate boundary conditions are given in the Figure (\ref{fig:CT Specimen}). The mesh consists of plane stress(PLANE 182) elements with bilinear interpolations for displacements and 2*2 Gauss integration has been utilized. Just like the previous test, three different finite element meshes have been used in the fracture zone with the elements of h=1mm, 0.5mm and 0.25mm and a total of 509, 1409, 4811 elements respectively for the convergence studies (Figure \ref{fig:Considered meshes 2}).  A node is created at the center of the pinhole and the innermost nodes of the pinhole contour are connected to this node by coupling option in ANSYS. Now the displacement controlled load ($U_{x}$) is applied at the central and the global force-displacement response can be obtained from this central node.  At first the longitudinal direction is kept parallel to the loading direction and the behaviour of the model is analysed.\\
-\indent\indent\indent  The global force-displacement response has been plotted for the three different meshes in the Figure(\ref{fig:CT Specimen FvsD}). As expected the maximum load capacity decreases with decrease in mesh size(or increase in number of elements) because of the mesh dependence of the damage evolution law. The damage distributions of the damage variables $d_{1}$ and $d_{2}$ at the end of the end of the loading process for the three different meshes has been plotted in the Figure(\ref{fig: Damage contour plots d1 and d2}). The damage $d_{1}$ is caused by tension in longitudinal direction and $d_{2}$ by tension in transverse direction.   
-
+\indent\indent\indent  This second example will demonstrate the model's ability to calculate multiple damage variables simultaneously i.e., to show the anisotropic damage development when a load is applied. In Plane stress(2D) setting the material is considered to be transversely isotropic therefore two damage variables($d_{1}$ and $d_{2}$) are used to show the anisotropic damage development. The Compact Tension test is a standard test for plane fracture of materials and for the measurement of fatigue crack growths. Because of the symmetry only one half of the specimen is modelled and the geometry and appropriate boundary conditions are given in the Figure (\ref{fig:CT Specimen}). The mesh consists of plane stress(PLANE 182) elements with bilinear interpolations for displacements and 2*2 Gauss integration has been utilized. Just like the previous test, three different finite element meshes have been used in the fracture zone with the elements of h=1mm, 0.5mm and 0.25mm and a total of 509, 1409, 4811 elements respectively for the convergence studies (Figure \ref{fig:Considered meshes 2}).  A node is created at the center of the pinhole and the innermost nodes of the pinhole contour are connected to this node by coupling option in ANSYS. Now the displacement controlled load ($U_{x}$) is applied at the central node and the global force-displacement response can be obtained from this central node.  At first the longitudinal direction is kept parallel to the loading direction and the behaviour of the model is analysed.
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{{26.Geometry.jpg}}
@@ -1562,35 +1565,27 @@ Now the transverse direction is kept parallel to the loading direction and the b
  \end{center}
 \end{figure}
 \FloatBarrier  
-
-
-\begin{figure}[htbp!]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{{26.FvsD.png}}
- \caption{Convergence study: Global force-displacement response for three different meshes}
- \label{fig:CT Specimen FvsD}
- \end{center}
-\end{figure}
-\FloatBarrier
-
+\indent\indent\indent  The global force-displacement response has been plotted for the three different meshes in the Figure(\ref{fig:CT Specimen FvsD}). As expected the maximum load capacity decreases with decrease in mesh size(or increase in number of elements) because of the mesh dependence of the damage evolution law. The distributions of the damage variables $d_{1}$ and $d_{2}$ at the end of the end of the loading process for the three different meshes has been plotted in the Figure(\ref{fig: Damage contour plots d1 and d2}). The damage $d_{1}$ is caused by tension in longitudinal direction and $d_{2}$ by tension in transverse direction.  A large portion of the fracture zone takes part in the damage process and the width of the damage zone is approximately same in the three discretizations. When damage $d_{1}$ reaches the maximum threshold in almost all the damaged elements the simulations comes to a stop therefore the maximum value and distribution of the damage variable $d_{2}$ is dependant on the size of the element. From Figures (\ref{fig:d2-1}), (\ref{fig:d2-0.5}) and (\ref{fig:d2-0.25}) it is clearly evident that the maximum value and the distribution of damage $d_{2}$ increases with decrease in mesh size.\\  
 \begin{figure}[htbp!]
      \centering
-     \captionsetup[subfigure]{justification=centering}
-     \begin{subfigure}{0.35\textwidth}
+      \begin{subfigure}{0.4\textwidth}
          \centering
          \includegraphics[width=7.5cm,height=7cm,keepaspectratio]{26.h=1mm.png}
          \caption{h=1mm, n= 509 elements}
          \label{fig:1mm}
      \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.35\textwidth}
+    \hspace{1.8cm}
+     \begin{subfigure}{0.4\textwidth}
          \centering
          \includegraphics[width=7.5cm,height=7cm,keepaspectratio]{26.h=0.5mm.png}
          \caption{h=0.5mm, n= 1409 elements}
          \label{fig:0.5mm}
      \end{subfigure}
-     \hfill
-     \begin{subfigure}{0.35\textwidth}
+\end{figure}
+\FloatBarrier
+\begin{figure}[htbp!]\ContinuedFloat
+     \centering
+     \begin{subfigure}{0.4\textwidth}
          \centering
          \includegraphics[width=7.5cm,height=7cm,keepaspectratio]{26.h=0.25mm.png}
          \caption{h=0.25mm, n= 4811 elements}
@@ -1600,7 +1595,14 @@ Now the transverse direction is kept parallel to the loading direction and the b
     \label{fig:Considered meshes 2}
 \end{figure}
 \FloatBarrier
-
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{{26.FvsD.png}}
+ \caption{Convergence study: Global force-displacement response for three different meshes}
+ \label{fig:CT Specimen FvsD}
+ \end{center}
+\end{figure}
+\FloatBarrier
 
 
 
@@ -1613,11 +1615,11 @@ Now the transverse direction is kept parallel to the loading direction and the b
          \caption{d1, h = 1mm}
          \label{fig:d1-1}
      \end{subfigure}
-     \hfill
+    \hspace{1.8cm}
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{26.d2-1.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2-1.png}
          \centering
          \caption{d2, h = 1mm}
          \label{fig:d2-1}
@@ -1631,10 +1633,10 @@ Now the transverse direction is kept parallel to the loading direction and the b
          \caption{d1, h = 0.5mm}
          \label{fig:d1-0.5}
      \end{subfigure}   
-     \hfill
+     \hspace{1.8cm}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{26.d2-0.5.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2-0.5.png}
          \caption{d2, h = 0.5mm}
          \label{fig:d2-0.5}
      \end{subfigure}
@@ -1647,19 +1649,39 @@ Now the transverse direction is kept parallel to the loading direction and the b
          \caption{d1, h = 0.25mm}
          \label{fig:d1-0.25}
      \end{subfigure}
-     \hfill
+     \hspace{1.8cm}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{26.d2-0.25.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2-0.25.png}
          \caption{d2, h = 0.25mm}
          \label{fig:d2-0.25}
      \end{subfigure}     
-        \caption{Damage distributions at the end of loading: Damage contour plots $d_{1}$ and $d_{2}$ }
+        \caption{Damage distributions at the end of loading in longitudinal direction: Damage contour plots $d_{1}$ and $d_{2}$ }
         \label{fig: Damage contour plots d1 and d2}     
 \end{figure}
 \FloatBarrier 
 
+\indent\indent\indent Now the transverse direction is kept parallel to the loading direction and the behaviour of the damage model i.e., the anisotropic development of damage $d_{1}$ and $d_{2}$ is analysed. In this case damage $d_{2}$ is the primary damage variable and damage $d_{1}$ is dependent on the mesh size.  The damage distributions($d_{1}$ and $d_{2}$) for loading in transverse direction and force-displacement comparison of loading in longitudinal and transverse direction for h=0.5mm discretization are shown in the figure (\ref{fig: Damage contour plots d1 and d2 transverse direction}) and (\ref{fig:Strength2}) respectively.
 
+\begin{figure}[htbp!]
+     \centering
+      \begin{subfigure}{0.4\textwidth}
+         \centering
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d1_tran_0.5.png}
+         \caption{$d_{1}$}
+         \label{fig:d1_tran_0.5}
+     \end{subfigure}
+     \hspace{1.85cm}
+     \begin{subfigure}{0.4\textwidth}
+         \centering
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2_tran_0.5.png}
+         \caption{$d_{2}$}
+         \label{fig:d2_tran_0.5}
+     \end{subfigure}
+        \caption{Damage distributions at the end of loading in transverse direction: Damage contour plots $d_{1}$ and $d_{2}$ (h = 0.5mm discretization) }
+        \label{fig: Damage contour plots d1 and d2 transverse direction}  
+\end{figure}
+\FloatBarrier
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{{26.Strength.png}}
@@ -1667,34 +1689,42 @@ Now the transverse direction is kept parallel to the loading direction and the b
  \label{fig:Strength2}
  \end{center}
 \end{figure}
+\FloatBarrier
 
 \subsubsection*{Effect of shear in damage}
-
-
+\indent\indent\indent To deeply understand the failure of composite materials, the effect of shear on damage initiation and propagation is studied. The effect of shear stress into each failure mechanism is introduced by the modified hashin's failure criterion (Section (\ref{Modified Hashin's failure criterion})) where $\alpha$ is the shear contribution factor which ranges from 0 to 1. The effect of shear can be studied by varying the shear contribution factor. The value of $\alpha$ is chosen between 0 to 0.5 to avoid the damage development only due to shear because the shear strength is very low compared to other strengths. The global force-displacement response for different $\alpha$ by loading the CT-Specimen in the longitudinal direction is shown in the Figure(\ref{fig:FvsD_alphas}) below. It is evident that by increasing  $\alpha$, the failure index increase which reduces maximum load capacity of the CT specimen.\\  
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=0.7\textwidth]{{26.FvsD_alphas.png}}
+\includegraphics[width=0.6\textwidth]{{26.FvsD_alphas.png}}
  \caption{Comparison of force-displacement response for different shear co-efficient ($\alpha$) (h=1mm discretization)}
  \label{fig:FvsD_alphas}
  \end{center}
 \end{figure}
-
-
-
+\FloatBarrier
+\indent\indent\indent From the Figure (\ref{fig:Stress_Comp}), it is clear that the increase in shear contribution has little to no effect in the initiation and distribution of the damage $d_{1}$ because the shear stress($\sigma_{12}$) is very low compared to the stress in longitudinal direction ($\sigma_{11}$). But the shear stress ($\sigma_{12}$) affects the damage initiation and propagation of damage $d_{2}$ because its magnitude is almost similar to the stress component ($\sigma_{22}$) which was the only component responsible for damage $d_{2}$ in case of the Maximum stress criterion. 
+\begin{figure}[htbp!]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{{26.Stress_Comp.png}}
+ \caption{Evolution of stress components during loading (h=1mm discretization)}
+ \label{fig:Stress_Comp}
+ \end{center}
+\end{figure}
+\FloatBarrier
+The contour plots of damage $d_{2}$ for increasing shear contribution is plotted in the Figure (\ref{fig: Damage contour plots alpha}). Compared to no shear effect ($\alpha$ = 0), the model with the presence of shear effect has more realistic damage propagation($d_{2}$) and the width of the damage zone is significantly larger. For the model with shear effect, the width of the damage zone is almost similar in all the cases but the maximum damage value and the number of elements reaching critical damage value increase with increase in $\alpha$. 
 \begin{figure}[htbp!]
        \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
         \centering
-         \includegraphics[width=8.25cm,height=8cm,keepaspectratio]{26.d2-1.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2-1.png}
          \centering
          \caption{$\alpha$ = 0}
          \label{fig:d1-a_0}
      \end{subfigure}
-     \hfill
+     \hspace{1.8cm}
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{26.d2_a_0.1.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2_a_0.1.png}
          \centering
          \caption{$\alpha$ = 0.1}
          \label{fig:d2-a_0.1}
@@ -1705,16 +1735,16 @@ Now the transverse direction is kept parallel to the loading direction and the b
        \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
         \centering
-         \includegraphics[width=8.25cm,height=8cm,keepaspectratio]{26.d2_a_0.2.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2_a_0.2.png}
          \centering
          \caption{$\alpha$ = 0.2}
          \label{fig:d1-a_0.2}
      \end{subfigure}
-     \hfill
+    \hspace{1.8cm}
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.2cm,height=8cm,keepaspectratio]{26.d2_a_0.3.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2_a_0.3.png}
          \centering
          \caption{$\alpha$ = 0.3}
          \label{fig:d2-a_0.3}
@@ -1725,7 +1755,7 @@ Now the transverse direction is kept parallel to the loading direction and the b
        \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
         \centering
-         \includegraphics[width=8.25cm,height=8cm,keepaspectratio]{26.d2_a_0.5.png}
+         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{26.d2_a_0.5.png}
          \centering
          \caption{$\alpha$ = 0.5}
          \label{fig:d1-a_0.5}
