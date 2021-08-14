@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt,twoside]{report}
+\documentclass[12pt]{report}
     \usepackage{amsmath}
     \usepackage{nccmath}
     \usepackage{amsfonts}
@@ -7,7 +7,9 @@
     \usepackage{titlepic}
     \usepackage{stackengine}
     \usepackage{lipsum}
-    \linespread{1.15} 
+    \usepackage{enumitem}
+    \usepackage[toc,title,page]{appendix}
+    \linespread{1.18} 
     \usepackage[]{graphicx}
     \usepackage[section]{placeins}
     \usepackage{booktabs}
@@ -17,7 +19,7 @@
 	\usepackage{adjustbox}
     \usepackage{subcaption}
     \usepackage{multirow}
-    \usepackage[a4paper,top=1in, bottom=1.1in, left=1.1in, right=1.1in]{geometry}
+    \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
     \usepackage{fancyhdr}
     \usepackage{relsize}
     \usepackage{titlesec}
@@ -56,17 +58,22 @@
 \\[0.4cm]
 \large{E-mail: arun-prakash.ganapathy@student.tu-freiberg.de}}
 \date{}
+
+\newcounter{savepage}
 \begin{document}
+\pagenumbering{Roman}
 \maketitle
 \newpage
 \tableofcontents
  \listoffigures
  \listoftables
+ 
 \newpage
-
+\setcounter{savepage}{\arabic{page}}
+\pagenumbering{arabic}
 \chapter{Introduction}
 \section{Background and motivation}
-\indent\indent Composite materials are made of two or more dissimilar materials of different physical or chemical properties when combined, create a material with properties unlike the individual constituent materials. The earliest use of composite materials date back to 3400 B.C when Mesopotamians glued wood strips at different angles to create plywood. Another notable example is the bow made by Mongols during 1200 A.D, which is made from a combination of bamboo, wood, cattle tendons and silk bonded with natural resin. In the early, 1900s bakelite based composites were developed for its non-conductivity and heat resistant properties and widely used in industrial and consumer applications. Now a days advanced composite materials are widely used in structural design in various industries such as aerospace, automobile, marine, petrochemical etc., due to their superior properties over traditional engineering materials.\\
+\indent\indent\indent Composite materials are made of two or more dissimilar materials of different physical or chemical properties when combined, create a material with properties unlike the individual constituent materials. The earliest use of composite materials date back to 3400 B.C when Mesopotamians glued wood strips at different angles to create plywood. Now a days advanced composite materials are widely used in structural design in various industries such as aerospace, automobile, marine, petrochemical etc., due to their superior properties over traditional engineering materials.
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{{composite plane.jpg}}
@@ -74,12 +81,21 @@
  \label{fig:Composite plane}
 \end{center}
 \end{figure}
-\FloatBarrier
- Composite material are attractive because of their high strength, stiffness, high stiffness-to-density ratio, light weight properties etc., Another important reason for using composite materials is the ability to tailor the stiffness and strength to specific design load flexibly. Despite their superior physical properties, composite materials are fragile and can be easily damaged from number of sources, both during initial processing and in operation. Since composite materials possess elastic brittle properties with negligible margin of safety through ductility as offered by metals and accumulate damage before structural collapse, the development of damage must be understood for predicting failure of such materials. For example fibre-reinforced plastics exhibit local damage such as fibre breakage, matrix cracks, fibre matrix debonds etc., under normal operating conditions which may contribute to the failure. Therefore the ability to predict the initiation and growth of damage is important for predicting the performance of the composite materials for safe and reliable use of such materials. Continuum damage mechanics (CDM) has been considered as a reliable candidate for creating numerical models which predict the onset and evolution of the damage in the composite materials.
+Composite materials are attractive because of their high strength, stiffness, high stiffness-to-density ratio, light weight properties etc., Another important reason for using composite materials is the ability to tailor the stiffness and strength to specific design load flexibly. Despite their superior physical properties, composite materials are fragile and can be easily damaged from number of sources, both during initial processing and in operation. Since composite materials possess elastic brittle properties with negligible margin of safety through ductility as offered by metals and accumulate damage before structural collapse, the development of damage must be understood for predicting failure of such materials. For example fibre-reinforced plastics exhibit local damage such as fibre breakage, matrix cracks, fibre matrix debonds etc., under normal operating conditions which may contribute to the failure. Therefore the ability to predict the initiation and growth of damage is important for predicting the performance, safety and reliability of the composite materials for commercial use.\\
+\indent\indent\indent Several methods have been proposed to analyze the failure of composite materials. The simplest of them is to degrade the stiffness of the material instantaneously using a degradation factor once the failure criteria is met. While easy to implement, the sudden complete failure of the material does not agree well with the real-life behaviour. Progressive failure analysis of composite materials is required to predict the real-life mechanical behaviour under various loading conditions.  Over the last few decades continuum damage mechanics (CDM) first proposed by Kachanov (1987), has been employed to analyse the progressive degradation of the materials. The CDM approach provides a methodology which can determine the full range of deterioration of the material starting from no damage to the fully disintegrated material. In CDM the damage is  represented by a set of damage variables which describes the current state of the material, and their development using set of evolution laws. Once the failure criteria is met, the damage variables are calculated using these evolution laws and the stiffness of the material is degraded with the help of the damage variables i.e., Strain-softening.  The very fact that the damage can be represented as  a set of variables, makes them suitable for numerical simulations. Damage formulations can be easily fitted into non-linear finite element (FE) algorithms with the help of constitutive relations and implemented in simulation codes without the need to rely on special discretization techniques.\\
+
+\section{Scope and Outline}
+\indent\indent\indent  The objective of the thesis is to develop progressive damage models for predicting the initiation and propagation of damage in an orthotropic material when subjected to various loading conditions. Continuum damage mechanics (CDM) provides the framework for developing these damage models. Since the orthotropic materials exhibit different material properties in mutually perpendicular direction the model essentially consists of linear elasticity extended with an anisotropic damage mechanism. Therefore one damage variable is assigned to each principal material direction to represent the development of damage i.e., 2 damage variables are required when the problem is in 2D (transversely isotropic) and 3 variables when the problem is in 3D (orthotropic). The numerical modelling of the strain-softening behaviour results in strong mesh dependency which results in convergence issues when the mesh is refined. To reduce the mesh sensitivity, the fracture energy approach is used which includes fracture energy in the damage evolution laws. This ensures the objectivity of the model by adjusting the energy dissipated by each failure mechanism using a characteristic element length.\\
+The stages of the thesis work are briefly described as follows\\\\
+\textbf{Chapter 2} introduces the theoretical framework of continuum damage mechanics (CDM), constitutive relations and constitutive equations necessary for developing orthotropic material model. \\\\
+\textbf{Chapter 3} gives reader a brief introduction into software used and the instructions to develop, compile and implement a material model in an FE environment. \\\\
+\textbf{Chapter 4} gives a brief introduction to the mechanisms of damage and the different types of failure criteria and evolution equations necessary for developing damage models. In the end, the chapter deals with regularization method used to reduce mesh sensitivity problems and a brief description of how to implement the damage models step by step in a programming software. \\\\
+\textbf{Chapter 5} The results of the finite element simulations are discussed in this chapter. Starting with the implementation of linear elastic behaviour of the orthotropic material the chapter represents the behaviour of the damage models at integration point level and using representative structural examples.  
+
 \newpage
 \vspace*{15cm}
 \chapter{Continuum damage mechanics}
-\indent\indent\indent Continuum damage mechanics (CDM) is a theory for analyzing damage and fracture processes in materials from a continuum mechanics point of view. Continuum damage mechanics (CDM) provides a continuum perspective for microflaws initiation, propagation, and their coalescence that eventually results in macroscopic faults and fractures. CDM uses state variables to represent the damage effect on the stiffness and remaining life of the material that is damaging as a result of load and ageing. A Damage activation function is required to predict the initiation of damage. Damage evolution does not progress spontaneously after initiation therefore, a mathematical model is required.  
+\indent\indent\indent Continuum damage mechanics (CDM) is a theory for analyzing damage and fracture processes in materials from a continuum mechanics point of view. (CDM) provides a continuum perspective for microflaws initiation, propagation, and their coalescence that eventually results in macroscopic faults and fractures. CDM uses state variables to represent the damage effect on the stiffness and remaining life of the material that is deteriorating as a result of load and ageing. A Damage activation function is required to predict the initiation of damage. Damage evolution does not progress spontaneously after initiation therefore, a mathematical model is required.  
 
 \section{Damage}
 \indent\indent\indent  Consider a body B of Fig. \ref{fig:Damage}  where a crack of length $a$ has developed due to an external load F.  If we take an arbitrary point P($x$) near the crack tip, a number of microscopic cavities or microcracks would be observed around the region.
@@ -119,8 +135,8 @@ The size of RVE depends on the microstructure of the relevant material and their
 \end{itemize}
 
 \section{Concept of Continuum damage mechanics (CDM)}
-\indent\indent\indent The basic concept of CDM is that a set of damage variables can represent the microstructural defects in a material. Continuum damage mechanics first represent the damage state of a material in terms of damage variables and then describe the mechanical behaviour of the damaged material and then development of damage by use of these damage variables. The mechanical behaviour of a damaged material can be described using the notion of effective stress, together with the hypothesis of mechanical equivalence between damaged and undamaged material. The concept of effective stress and mechanical equivalence will be discussed in the following sections.
-\subsection{Modelling by Effective Area Reduction}
+\indent\indent\indent The basic concept of CDM is that a set of damage variables can represent the microstructural defects in a material. Continuum damage mechanics first represent the damage state of a material in terms of a set of internal state variables and then describe the mechanical behaviour of the damaged material and then development of damage by use of these state variables. The mechanical behaviour of a damaged material can be described using the notion of effective stress, together with the hypothesis of mechanical equivalence between damaged and undamaged material. The concept of effective stress and mechanical equivalence will be discussed in the following sections.
+\subsection{Modelling by Effective area reduction}
 Let us consider body B of Fig. (\ref{fig:Damage2}) and take an RVE at an arbitrary point $P(x)$ in B. If the total void area in $dA$ is  $ dA_{D} $, the mechanical effect of $dA$ will be decreased by $dA_{D}$. Then the area,
 \begin{equation}
   d\tilde{A} = dA  - dA_{D}
@@ -188,7 +204,7 @@ D  = 1 - \frac{E(D)}{E_{0}}
 Therefore, the damage variable $D$ is characterized by the variation in Young's modulus $E(D)$. The modelling of damage by means of reduction in stiffness can be applied also the anisotropic damage of brittle materials like composite materials, concrete, rocks etc.,
 \section{Mechanical representation of the damage state}
 \indent\indent\indent The deformation of material depends on the direction of applied stress or strain, and hence it is an anisotropic phenomena. Therefore different theories have been developed for modelling 3-D anisotropic damage phenomenon. Some fundamental theories that describe 3-D damage state are given below 
-\subsection{Scalar Damage Variable}
+\subsection{Scalar damage variable}
 \indent\indent\indent In the case of random or isotropic distribution of microcracks or voids, and when void density is small, the global mechanical properties can be approximated as nearly isotropic. The damage state, in this case, may be represented using scalar damage variable D. Thus isotropic damage theory based on isotropic damage variable has been often applied to 3-D problems of creep, elastic-plastic, ductile and fatigue damage
 \subsection{Vector damage variable}
 \indent\indent\indent The damage state can be specified by the decrease in load carrying effective area due to void development. Hence it is easy to postulate a vector damage variable. Kachanov (1974, 1986) tried to extend the definition of damage to anisotropic damage by noting a surface element in an arbitrary direction $n$, he proposed vector damage variable $ \omega = \omega_{n}n$, where $\omega_{n}$ is the effective area fraction. 
@@ -215,20 +231,20 @@ where $D_{i}$ and $n_{i}$ are the principal value and principal direction of $D$
 
 \section{Effective Stress Tensors}
 \indent\indent\indent The effective stresses are used to describe the mechanical behaviour of the damaged material. Some of the effective stresses postulated in damage mechanics are given below
-\subsection{Effective stress tensor for Isotropic damage}
+\subsection{Effective stress tensor for isotropic damage}
 \indent\indent\indent If the damage state is isotropic then the effective stress tensor of three-dimensional state is given by
 \begin{equation}
 \tilde{\sigma} = (1 - D)^{-1} \; \sigma
 \end{equation}
 where D is the scalar damage variable, and $\sigma$ is the Cauchy stress tensor. This effective stress simplifies damage theory and can be applied to a number of damage problems like ductile damage. But this cannot be applied to damage of significant anisotropy, such as brittle damage due to microcrack distribution.\\
-\subsection{Asymmetric effective stress tensor for Anisotropic damage}
+\subsection{Asymmetric effective stress tensor for anisotropic damage}
 \indent\indent\indent The increase in stress effect caused by the net area reduction in case of anisotropic damage is given by
 \begin{equation}
 \tilde{\sigma} = (I - D)^{-1} \; \sigma
 \end{equation}
 where I and D are second-order identity tensor and the second-order damage tensor, respectively. In the actual development of anisotropic damage, the stress-induced in RVE of damage material is asymmetric. But asymmetric stress tensor makes the numerical analysis complicated, and thus different methods of symmetrization have been proposed. Few of them are described as follows
 
-\subsection{Symmetrized effective stress tensor for Anisotropic damage (Murakami and Ohno 1981)} 
+\subsection{Symmetrized effective stress tensor for anisotropic damage (Murakami and Ohno 1981)} 
 \indent\indent\indent A simple symmetrization procedure of Eq.(\ref{eqn: Murakami and Ohno}), the symmetric part of the Cartesian decomposition of Eq.(\ref{eqn: Murakami and Ohno}) gives,
 \begin{equation}
 \label{eqn: Murakami and Ohno}
@@ -281,7 +297,7 @@ $$
 where
 $$\omega_{11} \; = \; (1 - d_{1}) \;\;  \omega_{22} \; = \; (1 - d_{2}) \;\; \omega_{33} \; = \; (1 - d_{3})$$ \vspace*{0.1cm} $$\omega_{12} \; = \; \sqrt{(1 - d_{1})(1 - d_{2})}  \;\;\omega_{23} \; = \; \sqrt{(1 - d_{2})(1 - d_{3})} \;\; \omega_{13} \; = \; \sqrt{(1 - d_{1})(1 - d_{3})}$$
 
-\section{Hypothesis of Strain Equivalence}\label{Hypothesis of Strain Equivalence}
+\section{Hypothesis of strain Equivalence}\label{Hypothesis of Strain Equivalence}
 
 \indent\indent\indent The inelastic constitutive equation of a damaged material is given by the corresponding constitutive equation for an undamaged material by replacing the stress tensor $\sigma$ in the equation with the corresponding effective stress tensor $\tilde{\sigma}$. In Fig. the effect of stress $\sigma$ acting on RVE in the current damaged configuration $B_{t}$ is equivalent to that of the stress $\tilde{\sigma}$ in the fictitious undamaged configuration. Therefore the deformation of the damaged material subject to stress $\sigma$ should be equal to that of the fictitious undamaged material subject to stress $\tilde{\sigma}$. Suppose the constitutive equation of an undamaged inelastic material is given by
 \begin{equation}
@@ -393,7 +409,7 @@ From Eq.(\ref{M_eqn}), the elastic compliance tensor of the damaged material is 
 \end{equation}
 \indent\indent\indent If the damage effect tensor $\mathbb{M}(D)$ can be expressed as a fourth-order symmetric tensor, then the elastic compliance tensor $\mathbb{S}(D)$ becomes fourth-order symmetric tensor which satisfies the thermodynamic requirement. 
 
-\section{Elastic Constitutive equation and Elastic modulus tensor of orthotropic material}\label{Constitutive matrix}
+\section{Elastic constitutive equation and elastic modulus tensor of orthotropic material}\label{Constitutive matrix}
 \indent\indent\indent Orthotropic materials are materials that exhibit different material properties along three mutually orthogonal axis. They are a special form of anisotropic materials because their properties change when measured from different directions. Some examples of orthotropic materials are wood, composite materials etc., Orthotropic materials require 9 independent variables to express their constitutive matrix. The 9 elastic constants are three Young's moduli $E_{x},E_{y},E_{z}$, the three Poisson's ratios $\nu_{xy},\nu_{yz},\nu_{zx}$, and three shear moduli $G_{xy},G_{yz},G_{zx}$. The elastic stiffness matrix of orthotropic material has the form,
 
 \begin{equation}
@@ -1828,4 +1844,16 @@ Now the transverse direction is kept parallel to the loading direction, and the 
         \caption{Contour plots of the damage distribution $d_{2}$ and $d_{3}$ at the end of transverse compressive loading }
         \label{fig:Contour plots of the damage d2,d3 transverse compression}     
 \end{figure}
+
+
+
+\newpage
+\pagenumbering{Roman}
+\appendix
+\renewcommand{\thesection}{\Alph{section}.\arabic{section}}
+\setcounter{page}{\thesavepage}
+\begin{appendices}
+\section{sdlkjsl}
+\end{appendices}
+
 \end{document}
