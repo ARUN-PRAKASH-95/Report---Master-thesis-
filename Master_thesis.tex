@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[12pt,twoside]{report}
     \usepackage{amsmath}
     \usepackage{nccmath}
     \usepackage{amsfonts}
@@ -940,14 +940,13 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 
 
 \newpage
-\vspace*{4.5cm}
+
 \chapter{Results and Discussion}
-\vspace*{1cm}
 \section{Modelling linear elastic behaviour of orthotropic materials}
-\indent\indent\indent Before implementing the damage behaviour in orthotropic materials, their linear elastic behaviour must implemented which describes what happens before the damage initiation. As mentioned before orthtoropic materials are a special class of material whose properties differ in mutually perpendicular directions. Therefore 9 independent material constants are required to model their elastic behaviour. Table (\ref{tab:Material parameters(Integration point studies}) summarises the utilised material parameters. The constitutive matrix given in the section (\ref{Constitutive matrix}) and Hooke's law help us model the elastic behaviour of the orthotropic materials.\\ 
+\indent\indent\indent Before implementing the damage behaviour in orthotropic materials, their linear elastic behaviour must implemented which describes what happens before the damage initiation. As mentioned before orthtoropic materials are a special class of material whose properties differ in mutually perpendicular directions. Therefore 9 independent material constants are required to model their elastic behaviour. Table (\ref{tab:Material parameters(Integration point studies}) summarises the utilised material parameters. The material parameters presented here belongs to an unidirectional glass fiber-reinforced epoxy material. In this material, the strength in the longitudinal direction ($X_{t}$ and $X_{c}$) is very high compared to the transverse directions ($Y_{t}$ and $Y_{c}$) because the fibers are aligned parallel to the longitudinal direction. The constitutive matrix given in the section (\ref{Constitutive matrix}) and Hooke's law help us model the elastic behaviour of the orthotropic materials.\\ 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=10cm,height=10cm,keepaspectratio]{{14.Linear_SvsE.png}}
+\includegraphics[width=9cm,height=9cm,keepaspectratio]{{14.Linear_SvsE.png}}
  \caption{Stress-Strain relation (Standard vs user-defined material routine)}
  \label{fig:Stress-Strain Linear elastic}
  \end{center}
@@ -1676,7 +1675,7 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 
 \clearpage
 \subsection{Plate with hole (3D)}
-\indent\indent\indent   This third example will demonstrate the model's ability to show the anisotropic damage development for three dimensional (3D) problems. In 3D three damage variables ($d_{1}$, $d_{2}$ and $d_{3}$) are employed to represent the anisotropic damage development, i.e., one damage variable for each principal material direction. Because of symmetry, only one-eighth of the specimen has been modelled. The geometry and the appropriate boundary conditions are given in Figure (\ref{fig:plate with hole}). Eight node solid elements (SOLID 185) with trilinear interpolations of the displacements and full integration has been used to perform the FE modelling. The thickness was divided into four elements, and a very fine mesh has been in the region closer to the fracture zone compared to other regions as shown in the Figure (\ref{fig:plate with hole mesh}). At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analysed by applying displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The strength in transverse directions (2 and 3) are large enough for the damage variables $d_{2}$ and $d_{3}$ not to initiate when a longitudinal tensile load is applied. So to demonstrate the model's capability to show anisotropic damage development the transverse strength has been reduced to $300$ MPa (For both tension and compression).  The maximum stress criterion (\ref{Maximum stress criteria}) has been used to predict the damage initiation in the three principal material directions. 
+\indent\indent\indent   This third example demonstrates the model's ability to show the anisotropic damage development for three dimensional (3D) problems. In 3D, three damage variables ($d_{1}$, $d_{2}$ and $d_{3}$) are employed to represent the anisotropic damage development, i.e., one damage variable for each principal material direction. Because of symmetry, only one-eighth of the specimen has been modelled. The geometry and the appropriate boundary conditions are given in Figure (\ref{fig:plate with hole}). Eight node solid elements (SOLID 185) with trilinear interpolations of the displacements and full integration has been used to perform the FE modelling. The thickness was divided into four elements, and a fine mesh has been used in the region closer to the fracture zone shown in the Figure (\ref{fig:plate with hole mesh}). At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analysed by applying displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The strength in transverse directions (2 and 3) are large enough for the damage variables $d_{2}$ and $d_{3}$ not to initiate when a longitudinal tensile load is applied. So to demonstrate the model's capability to show anisotropic damage development the transverse strength has been reduced to $300$ MPa (For both tension and compression). The material properties considered for 3D damage model are given in the Table. (\ref{tab:Material parameters (3D Damage model)}). The maximum stress criterion (See Section(\ref{Maximum stress criteria})) has been used to predict the damage initiation in the three principal material directions. \\
  
 
 
@@ -1695,21 +1694,71 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
        \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.5\textwidth}
      	\centering
-         \includegraphics[width=10cm,height=10cm,keepaspectratio]{27.Mesh.png}
+         \includegraphics[width=9cm,height=10cm,keepaspectratio]{27.Mesh.png}
          \label{fig:plate with hole mesh 1}
      \end{subfigure}
-    \hspace{2.5cm}
+    \hspace{1cm}
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.3\textwidth}
      \centering
-         \includegraphics[width=9cm,height=9.5cm,keepaspectratio]{27.Mesh2.png}
+         \includegraphics[width=8cm,height=8.5cm,keepaspectratio]{27.Mesh2.png}
          \label{fig:plate with hole mesh 2}
          \end{subfigure}
           \caption{Finite element discretization used for 3D damage study}
         \label{fig:plate with hole mesh} 
 \end{figure}
 \FloatBarrier 
-\indent\indent\indent The global force-displacement response has been plotted for this longitudinal tensile loading in Figure (\ref{fig:plate with hole FvsD1}). The response is similar to the longitudinal loading in the notched tensile specimen, being characterized by a linear regime followed by a gradual drop of the load because of the softening.
+
+
+\begin{table}[!htbp]
+  \begin{center}
+     \resizebox{\columnwidth}{6.5cm}{
+     \begin{tabular}{l l l} 
+     \hline
+     \\
+      \textbf{Symbol} \;\;& \textbf{Material Parameter} \;& \textbf{Value}\\
+      \\
+      \hline
+      \\
+      \vspace*{0.1cm}
+      $E_{11}$ & Modulus in longitudinal (1) direction &  55.8 GPa\\
+      \vspace*{0.1cm}
+      $E_{22}$ = $E_{33}$  & Modulus in transverse (2 and 3) directions   & 54.9 GPa \\
+      \vspace*{0.1cm}
+      $\nu_{12}$ =  $\nu_{13}$ & Poisson's ratio   & 0.043 \\
+      \vspace*{0.1cm}
+      $G_{12}$ =  $G_{23}$ = $G_{13}$   &  Shear modulus  & 4.2 GPa \\
+      \vspace*{0.1cm}
+      $X_{t}$ &  Tensile strength in longitudinal (1) direction & 910.1 MPa\\
+      \vspace*{0.1cm}
+      $X_{c}$ & Compressive strength in longitudinal (1) direction & -710.2 MPa\\
+      \vspace*{0.1cm}
+      $Y_{t}$ & Tensile strength in (2 and 3) directions  & 300 MPa\\
+      \vspace*{0.1cm}
+      $Y_{c}$ & Compressive strength in (2 and 3) directions &  -300 MPa\\
+      \vspace*{0.1cm}
+      $S_{12}$ & In-plane strength &  131 MPa\\
+      \vspace*{0.1cm}
+      $G_{f}^{lt}$ & Tensile fracture energy along longitudinal (1) direction  &  125 KJ/$m^{2}$\\
+      \vspace*{0.1cm}
+      $G_{f}^{lc}$ & Compressive fracture energy along longitudinal (1) direction  &  250 KJ/$m^{2}$\\
+      \vspace*{0.1cm}
+      $G_{f}^{tt}$ & Tensile fracture energy along (2 and 3) directions   &  95 KJ/$m^{2}$\\
+      \vspace*{0.1cm}
+      $G_{f}^{tc}$ & Compressive fracture energy along (2 and 3) directions  & 254 KJ/$m^{2}$\\
+      \\
+       \hline
+    \end{tabular}
+    }
+    \\
+    \caption{Material parameters (3D Damage model)}
+    \label{tab:Material parameters (3D Damage model)}
+  \end{center}
+\end{table}
+\FloatBarrier
+
+
+\indent\indent\indent The global force-displacement response has been plotted for this longitudinal tensile loading in Figure (\ref{fig:plate with hole FvsD1}). The response is similar to the longitudinal loading in the notched tensile specimen, being characterized by a linear regime followed by a gradual drop of the load because of the softening. The softening is observed to initiate when the damage happens in critical number of elements in the fracture zone.
  
 \begin{figure}[htbp!]
 \begin{center}
@@ -1719,7 +1768,10 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
  \end{center}
 \end{figure}
 \FloatBarrier 
-\indent\indent\indent The damage distribution ($d_{1}$, $d_{2}$ and $d_{3}$) at the end of the tensile loading is shown in the Figure (\ref{fig:Contour plots of the damage d1,d2,d3}). In order to get a good visualization and understanding both elemental and nodal solution values of the damage are plotted. The initiation and evolution of damage $d_{1}$ is caused by the normal stress component $\sigma_{11}$ in the longitudinal direction.  The damage $d_{1}$ initiates at the tip of the blunt notch and then propagates perpendicular to the loading direction. The evolution of damage $d_{2}$ is caused by the normal stress component $\sigma_{22}$ in the transverse direction. From Figures (\ref{fig:d2-lt-e}) and (\ref{fig:d2-lt-n}) it is evident that the damage happens at two separate regions, i)\; perpendicular to the loading direction where damage $d_{1}$ evolution already happened ii)\; right at the blunt notch at the bottom edge of the plate. It is observed that the damage $d_{2}$ in the region (i)\;happens because of tension in the transverse direction, and in the region (ii)\;it is caused by the compression in the transverse direction.  The propagation of damage $d_{3}$ is caused by the normal stress component $\sigma_{33}$ in the thickness direction.
+\indent\indent\indent The damage distribution ($d_{1}$, $d_{2}$ and $d_{3}$) at the end of the tensile loading is shown in the Figure (\ref{fig:Contour plots of the damage d1,d2,d3}). In order to get a good visualization and understanding both element and nodal solution values of the damage are plotted. The initiation and evolution of damage $d_{1}$ is caused by the normal stress component $\sigma_{11}$ in the longitudinal direction.  The damage $d_{1}$ initiates at the tip of the blunt notch and then propagates perpendicular to the loading direction.\\
+
+\indent\indent\indent From Figures (\ref{fig:d2-lt-e}) and (\ref{fig:d2-lt-n}) it is evident that the damage happens at two separate regions, i)\; perpendicular to the loading direction where damage $d_{1}$ already propagated ii)\; right at the blunt notch at the bottom edge of the plate. It has been observed that the damage $d_{2}$ in the region (i)\;happens because of tension in the transverse direction, and in the region (ii)\;the damage is caused by the compression in the transverse direction.  The propagation of damage $d_{3}$ is caused by the normal stress component $\sigma_{33}$ in the thickness direction. The damage $d_{2}$ and $d_{3}$ has much lesser influence on the strength of the specimen compared to the damage $d_{1}$ during longitudinal tensile loading.
+
 
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
@@ -1833,7 +1885,7 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 
 \newpage
 \pagenumbering{Roman}
-\appendix
+\chapter*{Appendix}
 \renewcommand{\thesection}{\Alph{section}.\arabic{section}}
 \setcounter{page}{\thesavepage}
 \section{Elastic stiffness matrix of the damaged material}
