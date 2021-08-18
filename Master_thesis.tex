@@ -566,7 +566,7 @@ $Variable\;List$ window.
 
 
 \clearpage
-\vspace*{7cm}
+\vspace*{6cm}
 \chapter{Progressive failure analysis of orthotropic composite materials }
 \vspace*{1.5cm}
 \section{Fibre-reinforced Composites}
@@ -577,51 +577,80 @@ $Variable\;List$ window.
 \indent\indent\indent The failure in fibre reinforced composites happens mainly due to matrix cracking or fibre failure. Therefore the failure can be divided mainly two types, namely 1) Longitudinal failure and 2) Transverse failure. The mechanism of both failure mechanisms, their causes and their effects on material behaviour are discussed in detail below
 
 \subsection{Longitudinal failure}
-\indent\indent\indent  In fibre-reinforced plastics, the most significant portion of the load is carried by fibres. When the fibres fail, the load must redistribute to other areas of the structure and may cause structural collapse. In composites where strain to failure for the resin matrix is higher than the one of the reinforcing fibre, longitudinal failures start by isolated fibre fractures in weak zones. This kind of localized fracture increases the normal and interfacial shear stress in fibres and promotes matrix cracking, fibre matrix debonding, conical shear failures, etc. When the load is further increased, it may lead to the final collapse. Longitudinal tensile failure occurs in both constituents, and a fracture occurs along a plane whose normal is parallel to the fibre direction. Simple maximum stress or maximum strain can usually provide an accurate measure of longitudinal tensile failure. Longitudinal compressive failure occurs from the collapse of the fibres due to shear kinking and damage of the supporting matrix. Fibre misalignment causes shear stress between fibres that rotate fibres, which increases shear stress further and leads to instability. 
+\indent\indent\indent  In fibre-reinforced plastics, the most significant portion of the load is carried by fibres. When the fibres fail, the load must redistribute to other areas of the structure and may cause structural collapse.  Longitudinal tensile failure occurs in both constituents, and a fracture occurs along a plane whose normal is parallel to the fibre direction. Simple maximum stress or maximum strain can usually provide an accurate measure of longitudinal tensile failure. Longitudinal compressive failure occurs from the collapse of the fibres due to shear kinking and damage of the supporting matrix. Fibre misalignment causes shear stress between fibres that rotate fibres, which increases shear stress further and leads to instability. 
  
 
 \subsection{Transverse failure}
-\indent\indent\indent   Transverse failure happens due to matrix cracking and fibre-matrix debonding. Under the presence of in-plane shear stress and transverse tensile stress, the combined effects of defects such as resin-rich regions, fibre-resin debonds, and resin voids trigger a transverse crack that extends through the thickness. The transverse cracks are formed at the fibre-resin interface without affecting the fibres. When a unidirectional fibre composite is loaded in shear, a non-linear shear stress-strain behaviour is observed before the material fails by through-thickness matrix cracking. This non-linear behaviour is due to the visco-plastic behaviour of the matrix and from the nucleation of microvoids.\\
+\indent\indent\indent   Transverse failure happens due to matrix cracking and fibre-matrix debonding. Under the presence of in-plane shear stress and transverse tensile stress, the combined effects of defects such as resin-rich regions, fibre-resin debonds, and resin voids trigger a transverse crack that extends through the thickness. The transverse cracks are formed at the fibre-resin interface without affecting the fibres. When a unidirectional fibre composite is loaded in shear, a non-linear shear stress-strain behaviour is observed before the material fails by through-thickness matrix cracking. This non-linear behaviour is due to the visco-plastic behaviour of the matrix and from the nucleation of microvoids.
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=0.9\textwidth]{{5. FRP failure.png}}
+\includegraphics[width=0.7\textwidth]{{5. FRP failure.png}}
  \caption{Fracture planes in FRP material}
  \label{fig:FRP failure}
  \end{center}
 \end{figure}
-\indent\indent\indent Experimental results have shown that moderate compression has beneficial effects on the strength of the material (Soden et al., 1998); when the transverse compressive stress value is smaller than the in-plane shear stress, the fracture plane is perpendicular to the mid-plane of the ply. Increasing the compressive stress changes the angle of the fracture plane. For glass-epoxy and carbon-epoxy composites, when loaded in pure transverse compression, the fracture plane is at an angle of 53° $\pm$ 3° with respect to the thickness direction. Therefore, the matrix cracking does not occur in the plane of maximum transverse shear stress (45°).\\
+\FloatBarrier
+\indent\indent\indent Experimental results have shown that moderate compression has beneficial effects on the strength of the material (Soden et al., 1998); when the transverse compressive stress value is smaller than the in-plane shear stress, the fracture plane is perpendicular to the mid-plane of the ply. Increasing the compressive stress changes the angle of the fracture plane. For glass-epoxy and carbon-epoxy composites, when loaded in pure transverse compression, the fracture plane is at an angle of 53° $\pm$ 3° with respect to the thickness direction. Therefore, the matrix cracking does not occur in the plane of maximum transverse shear stress (45°).
 
 \section{Damage initiation criteria}
-\indent\indent\indent   Damage initiation criteria refer to the onset of damage at a material point. Since the properties of  orthotropic materials are different in the mutually perpendicular directions, three failure mode indices, $F_{f}, F_{m}, F_{z}$, are used for failure modes in three principal material directions. Since the failure due to tension and compression in each direction cannot happen at the same integration point and at the same time, the failure mode index must be calculated based on whether the material direction is under tension or compression. Both strain and stress-based damage initiation criteria can be employed based on the application. Some of the damage initiation criteria are given as follows
-\subsection{Maximum strain criteria}\label{Maximum strain criteria}
-\indent\indent\indent The maximum strain criterion is a simple criterion which checks whether the strain in the given material direction exceeds the failure strain or not. The maximum strain criterion for each material direction is given below\\
-\begin{table}[htbp]
-  \begin{center}
-     \begin{tabular}{l  c  c} 
-     \hline
-     \\
-      \textbf{Damage direction} \;\;& \textbf{Tension} \;& \textbf{Compression}\\
-      \\
-      \hline
-      \\
-      Longitudinal direction 1 ($F_{f}$) & \Large{$\frac{\epsilon_{1}}{\epsilon_{t1}} $}\small{ $\leq 1$} &  \Large{$\frac{\epsilon_{1}}{\epsilon_{c1}} $}\small{ $\leq 1$}\\
-      \\
-      Transverse direction 2 ($F_{m}$)  &  \Large{$\frac{\epsilon_{2}}{\epsilon_{t2}} $}\small{$\leq 1$}  & \Large{$\frac{\epsilon_{2}}{\epsilon_{c2}} $}\small{$\leq 1$}\\
-      \\
-      Thickness direction 3 ($F_{z}$) &  \Large{$\frac{\epsilon_{3}}{\epsilon_{t3}} $}\small{$\leq 1$}  &   \Large{$\frac{\epsilon_{2}}{\epsilon_{c3}} $}\small{$\leq 1$}\\
-       \\
-       \hline
-    \end{tabular}
-    \\
-    \caption{Maximum strain criterion}
-    \label{tab:Maximum strain criterion}
-  \end{center}
-\end{table}
-\FloatBarrier
-where $\epsilon_{ti}$ and $\epsilon_{ci}$ are failure strains in tension and compression respectively, in each material direction. 
+\indent\indent\indent   Damage initiation criteria refer to the onset of damage at a material point. Since the properties of  orthotropic materials are different in the mutually perpendicular directions, three failure mode indices, $F_{f}, F_{m}, F_{z}$, are used for failure modes in three principal material directions. Since the failure due to tension and compression in each direction cannot happen at the same integration point and at the same time, the failure mode index must be calculated based on whether the material direction is under tension or compression. Some of the damage initiation criteria are given as follows
+
+\subsection{3D Hashin's quadratic strain criteria}\label{3D Hashin's quadratic strain criteria}
+\indent\indent\indent Hashin's quadratic strain criteria includes shear strain components in addition to the normal strain components. The criteria for each material direction is given below
+
+i) Longitudinal direction 1 ,
+\begin{equation}
+\large{F_{f}^{2} =  
+	\begin{cases}
+	
+		\Big(\frac{\epsilon_{11}}{\epsilon_{11}^{f,t}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; \geq  \; 1  \; \; \; \; \;  (\epsilon_{11}  >  0)  \\
+	\\
+	\Big(\frac{\epsilon_{11}}{\epsilon_{11}^{f,c}}\Big)^{2}  \; \geq  \; 1 \; \; \; \; \; \; \;  \; \; \; \;  (\epsilon_{11}  <  0) 
+
+	
+	\end{cases}}
+\end{equation}
 \\
+ii) Transverse direction 2,
+\\
+\begin{equation}
+\large{F_{m}^{2} =  
+	\begin{cases}
+	
+	\frac{(\epsilon_{22} + \epsilon_{33} )^{2}}{\epsilon_{22}^{f,t} \epsilon_{33}^{f,t}}   -  \frac{\epsilon_{22}\epsilon_{33}}{(\epsilon_{23}^{f})^{2}}  +  \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2}  + \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2}  +  \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \;\geq  \; 1 \; \; \; \; \;  (\epsilon_{22}  >  0) \\
+	\\
+	
+	\frac{(\epsilon_{22} + \epsilon_{33} )^{2}}{\epsilon_{22}^{f,c} \epsilon_{33}^{f,c}}  +  \frac{\epsilon_{22} + \epsilon_{33}}{\epsilon_{22}^{f,c}}\Big(\frac{\epsilon_{22}^{f,c}}{2\epsilon_{12}^{f}}  -  1\Big)   -  \frac{\epsilon_{22}\epsilon_{33}}{(\epsilon_{23}^{f})^{2}}  +  \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2}\; \; \; \; \; \; \; \; \; \; \; \;  (\epsilon_{22}  >  0) \\ 
+\\	
+	\; \; \; \; \; \; \; \;\; \; \; \; \; \; \; \;\; \; \; \; \; \; \; \;  \; \;\; \; \; \; \; \; \; \;\; \; \; \; \;  + \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2}   +  \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \;\geq \; 1 
+	
+	
+	\end{cases}}
+\end{equation}
+\\
+
+iii) Transverse direction 3,
+\\
+\begin{equation}
+\large{F_{z}^{2} =  
+	\begin{cases}
+
+	\Big(\frac{\epsilon_{33}}{\epsilon_{33}^{f,t}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \; \geq  \; 1 \; \; \; \; \;  (\epsilon_{33}  >  0) \\
+
+\\
+	\Big(\frac{\epsilon_{33}}{\epsilon_{33}^{f,c}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \; \geq  \; 1 \; \; \; \; \;  (\epsilon_{33}  >  0) \\
+
+
+
+	\end{cases}}
+\end{equation}
+\\
+\\
+in which  $\mathlarger{\epsilon_{ii}^{f,t}=\frac{\sigma_{i}^{f,t}}{C_{ii}}}$,  $\mathlarger{\epsilon_{ii}^{f,c}  =   \frac{\sigma_{i}^{f,c}}{C_{ii}} \; (i = 1,2,3)}$,  $\mathlarger{\epsilon_{12}^{f}  =   \frac{\sigma_{12}^{f}}{C_{44}}}$,   $\mathlarger{\epsilon_{13}^{f}  =  \frac{\sigma_{13}^{f}}{C_{55}}}$,  $\mathlarger{\epsilon_{23}^{f}  =   \frac{\sigma_{23}^{f}}{C_{66}}}$
+
+
 \subsection{Maximum stress criteria}\label{Maximum stress criteria}
-\indent\indent\indent  Since the load-carrying area decreases due to an increase in damage, the effect of stress gets magnified in the damaged material. Therefore, in the case of maximum stress criteria, normal stress components of the effective stress($\tilde{\sigma}$) are checked against the failure strength in each principal material direction. The effective stress can be computed using the eqn.(\ref{eqn:effective_stress_tensor}). The maximum stress criteria for each material direction are given in the table below\\
+\indent\indent\indent  Since the load-carrying area decreases due to an increase in damage, the effect of stress gets magnified in the damaged material. Therefore, in the case of maximum stress criteria, normal stress components of the effective stress ($\tilde{\sigma}$) are checked against the failure strength in each principal material direction. The effective stress can be computed using the eqn.(\ref{eqn:effective_stress_tensor}). The maximum stress criteria for each material direction are given in the table below
 \begin{table}[htbp]
   \begin{center}
      \begin{tabular}{l  c  c} 
@@ -648,60 +677,7 @@ where $\epsilon_{ti}$ and $\epsilon_{ci}$ are failure strains in tension and com
 where $X_{T}$,$ Y_{T} $ and $Z_{T}$ are failure strength in tension and $X_{C}$,$ Y_{C} $ and $Z_{C}$ are failure strength in compression in each principal material direction respectively.\\
 \\
 
-\subsection{3D Hashin's quadratic strain criteria}\label{3D Hashin's quadratic strain criteria}
-\indent\indent\indent Hashin's quadratic strain criteria includes shear strain components in addition to the normal strain components. The criteria for each material direction is given below\\
 
-i) Longitudinal direction 1 ,
-\\
-\begin{equation}
-\large{F_{f}^{2} =  
-	\begin{cases}
-	
-		\Big(\frac{\epsilon_{11}}{\epsilon_{11}^{f,t}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; \geq  \; 1  \; \; \; \; \;  (\epsilon_{11}  >  0)  \\
-	\\
-	\Big(\frac{\epsilon_{11}}{\epsilon_{11}^{f,c}}\Big)^{2}  \; \geq  \; 1 \; \; \; \; \; \; \;  \; \; \; \;  (\epsilon_{11}  <  0) 
-
-	
-	\end{cases}}
-\end{equation}
-\\
-\\
-ii) Transverse direction 2,
-\\
-\begin{equation}
-\large{F_{m}^{2} =  
-	\begin{cases}
-	
-	\frac{(\epsilon_{22} + \epsilon_{33} )^{2}}{\epsilon_{22}^{f,t} \epsilon_{33}^{f,t}}   -  \frac{\epsilon_{22}\epsilon_{33}}{(\epsilon_{23}^{f})^{2}}  +  \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2}  + \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2}  +  \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \;\geq  \; 1 \; \; \; \; \;  (\epsilon_{22}  >  0) \\
-	\\
-	
-	\frac{(\epsilon_{22} + \epsilon_{33} )^{2}}{\epsilon_{22}^{f,c} \epsilon_{33}^{f,c}}  +  \frac{\epsilon_{22} + \epsilon_{33}}{\epsilon_{22}^{f,c}}\Big(\frac{\epsilon_{22}^{f,c}}{2\epsilon_{12}^{f}}  -  1\Big)   -  \frac{\epsilon_{22}\epsilon_{33}}{(\epsilon_{23}^{f})^{2}}  +  \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2}\; \; \; \; \; \; \; \; \; \; \; \;  (\epsilon_{22}  >  0) \\ 
-\\	
-	\; \; \; \; \; \; \; \;\; \; \; \; \; \; \; \;\; \; \; \; \; \; \; \;  \; \;\; \; \; \; \; \; \; \;\; \; \; \; \;  + \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2}   +  \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \;\geq \; 1 
-	
-	
-	\end{cases}}
-\end{equation}
-\\
-\\
-iii) Transverse direction 3,
-\\
-\begin{equation}
-\large{F_{z}^{2} =  
-	\begin{cases}
-
-	\Big(\frac{\epsilon_{33}}{\epsilon_{33}^{f,t}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \; \geq  \; 1 \; \; \; \; \;  (\epsilon_{33}  >  0) \\
-
-\\
-	\Big(\frac{\epsilon_{33}}{\epsilon_{33}^{f,c}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \; \geq  \; 1 \; \; \; \; \;  (\epsilon_{33}  >  0) \\
-
-
-
-	\end{cases}}
-\end{equation}
-\\
-\\
-in which  $\LARGE{\epsilon_{ii}^{f,t}=\frac{\sigma_{i}^{f,t}}{C_{ii}}}$,  $\epsilon_{ii}^{f,c}  =   \frac{\sigma_{i}^{f,c}}{C_{ii}} \; (i = 1,2,3)$,  $\epsilon_{12}^{f}  =   \frac{\sigma_{12}^{f}}{C_{44}}$,   $\epsilon_{13}^{f}  =  \frac{\sigma_{13}^{f}}{C_{55}}$,  $\epsilon_{23}^{f}  =   \frac{\sigma_{23}^{f}}{C_{66}}$
 
 \subsection{Modified Hashin's failure criterion}\label{Modified Hashin's failure criterion}
 \indent\indent\indent Modified Hashin's failure criterion for plane stress condition is given below
@@ -781,7 +757,7 @@ The finite element equations obtained for the strain-softening model are non-lin
 \large{\mathbb{C}_{T}  \; = \; \mathbb{C}(D) + \epsilon : \Big(\frac{\partial \sigma }{\partial D} \otimes \frac{\partial D}{\partial \epsilon}  \Big)    }
 \end{equation}
 \\
-In the above equation, the first term $\mathbb{C}(D)$ is the damaged elasticity matrix and second term is due increased damage. In the absence of damage propagation in an increment(For eg., during unloading), the material tangent tensor is equal to the damaged elasticity matrix, so the response is linearly elastic.
+In the above equation, the first term $\mathbb{C}(D)$ is the damaged elasticity matrix and second term is due increased damage. In the absence of damage propagation in an increment (For eg., during unloading), the material tangent tensor is equal to the damaged elasticity matrix, so the response is linearly elastic.
 \subsection{Anisotropic damage}
 \indent\indent\indent In the case of orthotropic materials, the material property differs in the mutually perpendicular directions. Therefore it is more appropriate to choose a second-order damage tensor. In this work, a symmetric second-order tensor $\underline{D}$ is chosen, whose principal directions are assumed to coincide with the principal material directions. The eigenvalues of the damage tensor $\underline{D}$ have a simple physical interpretation, i.e., the $i^{th}$ eigenvalue $d_{i}$ represents the effective fractional reduction in load carrying area on planes that are perpendicular to $i^{th}$ principal material direction. The damage tensor $\underline{D}$ can be represented as,
 \\
@@ -797,14 +773,7 @@ $$
  \end{bmatrix}
  $$  
 \\
-The relationship between damaged and undamaged material must be established so that it helps us derive the constitutive equation (i.e., damaged elastic stiffness matrix) for the damaged material. In this work, the hypothesis of strain energy equivalence (Section.\ref{Hypothesis of strain energy equivalence}) is used to derive the elastic stiffness matrix of the damaged material. According to the hypothesis of strain energy equivalence, from Eqn. (\ref{eqn: S_HSEeq}) the elastic stiffness matrix of the damaged material can be derived as,\\
-\begin{equation}
-\mathbb{C}(D) \; = \; \mathbb{M}^{-1} : \mathbb{C}_{0} :  \mathbb{M}^{T,-1}  
-\label{Damaged_elasticity_matrix_1}
-\end{equation}
-where $\mathbb{M}$ is the damage effect tensor from Section.(\ref{Matrix Representation of Damage effect tensors}). Refer to sections  and  for the matrix representation of the damaged elastic stiffness matrix for both transversely isotropic (2D/Plane-stress) and orhtotropic materials (3D) 
-
-A simple damage evolution law for each principal material direction in case of anisotropic damage is given as follows,
+A simple exponential damage evolution law for each principal material direction in case of anisotropic damage is given as follows,
 \begin{equation}
 d_{i} = 1 - \frac{e^{-P(F_{I} - 1)} }{F_{I}}  
 \label{exponential damage equation}
@@ -823,7 +792,7 @@ The material tangent stiffness tensor for anisotropic damage can also be derived
 \mathbb{C}_{T}  \; = \; \mathbb{C}(D) + \epsilon : \sum_{i = 1}^{3}  \Big( \frac{\partial \sigma }{\partial d_{i}} \otimes \frac{\partial d_{i}}{\partial \epsilon }\Big)
 \label{Anisotropic tangent stiffness} 
 \end{equation}
-In the above equation, the second term(i.e., due to increased damage) must be computed only if the corresponding failure mode is active. Since the damage evolution equation $d_{i}$ depends on the failure index, the term $\frac{\partial d_{i}}{\partial \epsilon }$ must be computed based on whether the corresponding damage happened during tension or compression.
+In the above equation, the first term $\mathbb{C}(D)$ is the degraded stiffness matrix and their matrix representation for 2D/Plane-stress and 3D are given in the section () and ().  In the above equation, the second term (i.e., due to increased damage) must be computed only if the corresponding failure mode is active. Since the damage evolution equation $d_{i}$ depends on the failure index, the term $\frac{\partial d_{i}}{\partial \epsilon }$ must be computed based on whether the corresponding damage happened during tension or compression.
 
 \section{Localisation and Mesh Regularisation}\label{Mesh Regularisation}
 \indent\indent\indent Finite element simulations which use continuum damage models are susceptible to mesh dependency. When the finite element discretization is refined, the numerical problems do not converge to a physically meaningful solution. Because of the strain-softening behaviour of the material, the strain tends to localize, resulting in a strong mesh dependency, i.e., the solution is non-objective with respect to mesh refinement, and the energy dissipated decreases with the decrease in finite element size. Merely improving the numerical solution schemes cannot alleviate the problem associated with mesh dependency and localization. Even if the convergence to the actual solution is improved, the solution may not even make sense from a physical point of view. Therefore the so-called fracture energy regularization is used to reduce the mesh sensitivity. In this technique, the softening law (damage evolution law) is modified so that the amount of energy dissipated over a fully degraded finite element depends on the fracture energy of the material and the finite element size. Therefore the fracture energy ($G_f$) of the material and characteristic length ($L_{c}$) of the finite element must be included in the damage evolution equations. The damage evolution equations based on fracture energy regularization technique for each principal direction is shown below, \\
@@ -1330,19 +1299,19 @@ Each example is chosen to demonstrate specific features of the damage model. The
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.27\textwidth}
-         \includegraphics[width=1.15\textwidth]{25.1mm2.png}
+         \includegraphics[width=1.28\textwidth]{25.1mm2.png}
          \caption{h=1 mm, n=500 elements}
          \label{fig:1mm}
      \end{subfigure}
      \hfill
      \begin{subfigure}{0.27\textwidth}
-         \includegraphics[width=1.27\textwidth]{25.0.5mm2.png}
+         \includegraphics[width=1.25\textwidth]{25.0.5mm2.png}
          \caption{h=0.5 mm, n=840 elements}
          \label{fig:0.5mm}
      \end{subfigure}
      \hfill
      \begin{subfigure}{0.27\textwidth}
-         \includegraphics[width=1.27\textwidth]{25.0.25mm2.png}
+         \includegraphics[width=1.23\textwidth]{25.0.25mm2.png}
          \caption{h=0.25 mm, n=1460 elements}
          \label{fig:0.25mm}
      \end{subfigure}
@@ -1352,14 +1321,14 @@ Each example is chosen to demonstrate specific features of the damage model. The
 \FloatBarrier
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
-     \begin{subfigure}{0.4\textwidth}
-         \includegraphics[width=8.2cm,height=7.2cm,keepaspectratio]{25.FvsD.png}
+     \begin{subfigure}{0.45\textwidth}
+         \includegraphics[width=8.9cm,height=7cm]{25.FvsD.png}
          \caption{model with regularization}
          \label{fig:with regularization}
      \end{subfigure}
-     \hspace{1.8cm}
-     \begin{subfigure}{0.4\textwidth}
-         \includegraphics[width=8.2cm,height=7.2cm,keepaspectratio]{25.FvsD2.png}
+     \hspace{1.5cm}
+     \begin{subfigure}{0.45\textwidth}
+         \includegraphics[width=8.9cm,height=7cm]{25.FvsD2.png}
          \caption{model without regularization}
          \label{fig:without regularization}
      \end{subfigure}
@@ -1457,7 +1426,7 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 \end{figure}
 \FloatBarrier 
  
-\subsection{Compact Tension (CT) Specimen}
+\subsection{Compact Tension (CT) Specimen}\label{CT specimen}
 \indent\indent\indent   This second example demonstrates the model's ability to compute multiple damage variables simultaneously, i.e., show the anisotropic damage development when a load is applied. In the plane stress (2D) setting, two damage variables ($d_{1}$ and $d_{2}$), one in each principal direction, are employed to represent the anisotropic damage development. The Compact Tension test is a standard test for plane fracture of materials and the measurement of fatigue crack growths. Because of the symmetry, only one half of the specimen is modelled, and the geometry and appropriate boundary conditions are given in Figure (\ref{fig:CT Specimen}). The mesh consists of plane stress (PLANE 182) elements with bilinear interpolations for displacements, and 2*2 Gauss integration has been utilized. Just like the notched tensile specimen, three different finite element meshes have been used in the fracture zone with the elements of size h = 1 mm, 0.5 mm and 0.25 mm and a total of 509, 1409, 4811 elements, respectively for the convergence studies (Figure \ref{fig:Considered meshes 2}).  A node is created at the centre of the pinhole, and the innermost nodes of the pinhole contour are connected to this node by rigid coupling option in ANSYS. A displacement controlled load ($U_{x}$) is applied at the central node, and the global force-displacement response can be obtained from this central node.  At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed.
 
 \begin{figure}[htbp!]
@@ -1469,33 +1438,44 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 \end{figure}
 \FloatBarrier  
 \indent\indent\indent  The global force-displacement response has been plotted for the three different meshes in Figure (\ref{fig:CT Specimen FvsD}). As expected, the maximum load capacity decreases slightly with the decrease in mesh size (i.e., increase in the number of elements) because of the mesh sensitivity. The distributions of the damage variables $d_{1}$ and $d_{2}$ at the end of the loading process for the three different meshes have been plotted in Figure (\ref{fig: Damage contour plots d1 and d2}). The damage $d_{1}$ is caused by tension in the longitudinal direction and $d_{2}$ by tension in the transverse direction. The width of the damage zone for $d_{1}$ is approximately the same in all three discretizations. When the damage $d_{1}$ reaches the maximum threshold value in almost all the distorted elements, the simulations terminates; therefore, the maximum value and distribution of the damage variable $d_{2}$ depends on the size of the elements. From Figures (\ref{fig:d2-1}), (\ref{fig:d2-0.5}) and (\ref{fig:d2-0.25}) it is clearly evident that the maximum value and the width of the damage zone for $d_{2}$ increases with decrease in mesh size.
-\vspace{2.5cm}
-
 \begin{figure}[htbp!]
-      \begin{subfigure}{0.35\textwidth}
-          \includegraphics[width=7.25cm,height=7cm,keepaspectratio]{26.h=1mm.png}
-         \caption{h=1 mm}
-         \label{fig:1mm}
-     \end{subfigure}
-    \hspace{3cm}
-     \begin{subfigure}{0.35\textwidth}
-         \includegraphics[width=7.3cm,height=7cm,keepaspectratio]{26.h=0.5mm.png}
-         \caption{h=0.5 mm}
-         \label{fig:0.5mm}
-     \end{subfigure}
+\hspace*{2cm}
+  \captionsetup[subfigure]{justification=centering}
+\begin{subfigure}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=10cm,height=4.5cm]{26.h=1mm.png}
+ \caption{h=1 mm}
+ \label{fig:1mm}
+  \end{center}
+ \end{subfigure}
+\end{figure}
+
+\begin{figure}[htbp!]\ContinuedFloat
+\hspace*{2cm}
+\begin{subfigure}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=10cm,height=4.5cm]{26.h=0.5mm.png}
+ \caption{h=0.5 mm}
+ \label{fig:0.5mm}
+  \end{center}
+ \end{subfigure}
 \end{figure}
 \FloatBarrier
+
 \begin{figure}[htbp!]\ContinuedFloat
-     \centering
-     \begin{subfigure}{0.35\textwidth}
-         \includegraphics[width=7.3cm,height=7cm,keepaspectratio]{26.h=0.25mm.png}
-         \caption{h=0.25 mm}
-         \label{fig:0.25mm}
-     \end{subfigure}
-    \caption{Considered meshes (h is the length of the element along fracture zone and n the total number of elements) }
+\hspace*{2cm}
+\begin{subfigure}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=10cm,height=4.5cm]{26.h=0.25mm.png}
+ \caption{h=0.25 mm}
+ \label{fig:0.25mm}
+  \end{center}
+ \end{subfigure}
+     \caption{Considered meshes (h is the length of the element along fracture zone and n the total number of elements) }
     \label{fig:Considered meshes 2}
 \end{figure}
 \FloatBarrier
+
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -1572,28 +1552,32 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 \FloatBarrier
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{{26.Strength.png}}
+\includegraphics[width=0.7\textwidth]{{26.Strength.png}}
  \caption{Comparison of force-displacement response in longitudinal and transverse direction for h = 1 mm discretization}
  \label{fig:Strength2}
  \end{center}
 \end{figure}
 \FloatBarrier
 \subsubsection{Effect of shear in damage development}
-\indent\indent\indent To deeply understand the failure of composite materials, the effect of shear on damage initiation and propagation is studied. The effect of shear stress in each failure mechanism is introduced by the modified Hashin's failure criterion (Section (\ref{Modified Hashin's failure criterion})) where $\alpha$ is the shear contribution factor which ranges from 0 to 1. The effect of shear can be studied by varying this shear contribution factor $\alpha$. The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage development only due to shear because the shear strength is low compared to other strengths. The global force-displacement response for different $\alpha$ by loading the CT-Specimen in the longitudinal direction is shown in Figure (\ref{fig:FvsD_alphas}) below. It is evident that by increasing  $\alpha$, the failure index increases, which reduces the maximum load capacity of the CT specimen. 
- 
+\indent\indent\indent To deeply understand the failure of composite materials, the effect of shear on damage initiation and propagation is studied. The effect of shear stress in each failure mechanism is introduced by the modified Hashin's failure criterion (Section (\ref{Modified Hashin's failure criterion})) where $\alpha$ is the shear contribution factor which ranges from 0 to 1. The effect of shear can be studied by varying this shear contribution factor $\alpha$. 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=0.7\textwidth]{{26.FvsD_alphas.png}}
+\includegraphics[width=0.73\textwidth]{{26.FvsD_alphas.png}}
  \caption{Comparison of force-displacement response for different shear co-efficient ($\alpha$) (h= 1mm discretization)}
  \label{fig:FvsD_alphas}
  \end{center}
 \end{figure}
 \FloatBarrier
+
+
+The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage development only due to shear because the shear strength is low compared to other strengths. The global force-displacement response for different $\alpha$ by loading the CT-Specimen in the longitudinal direction is shown in Figure (\ref{fig:FvsD_alphas}). It is evident that by increasing  $\alpha$, the failure index increases, which reduces the maximum load capacity of the CT specimen. 
+ 
+
 \indent\indent\indent From Figure (\ref{fig:Stress_Comp}), it is clear that the increase in shear contribution has little to no effect in the initiation and distribution of the damage $d_{1}$ because the shear stress component ($\sigma_{12}$) is very low compared to the stress component ($\sigma_{11}$) which is responsible for damage $d_{1}$. However, the shear stress ($\sigma_{12}$) affects the damage $d_{2}$ because its magnitude is significant compared to the stress component ($\sigma_{22}$) which is the only component responsible for damage $d_{2}$ in the case of the maximum stress criterion previously employed.
 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{{26.Stress_Comp.png}}
+\includegraphics[width=0.75\textwidth]{{26.Stress_Comp.png}}
  \caption{Evolution of stress components during longitudinal tensile loading (h= 1mm discretization)}
  \label{fig:Stress_Comp}
  \end{center}
@@ -1648,7 +1632,7 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{{26.Stress_Comp2.png}}
+\includegraphics[width=0.75\textwidth]{{26.Stress_Comp2.png}}
  \caption{Evolution of stress components during transverse tensile loading (h= 1mm discretization)}
  \label{fig:Stress_Comp2}
  \end{center}
@@ -1675,9 +1659,8 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 
 \clearpage
 \subsection{Plate with hole (3D)}
-\indent\indent\indent   This third example demonstrates the model's ability to show the anisotropic damage development for three dimensional (3D) problems. In 3D, three damage variables ($d_{1}$, $d_{2}$ and $d_{3}$) are employed to represent the anisotropic damage development, i.e., one damage variable for each principal material direction. Because of symmetry, only one-eighth of the specimen has been modelled. The geometry and the appropriate boundary conditions are given in Figure (\ref{fig:plate with hole}). Eight node solid elements (SOLID 185) with trilinear interpolations of the displacements and full integration has been used to perform the FE modelling. The thickness was divided into four elements, and a fine mesh has been used in the region closer to the fracture zone shown in the Figure (\ref{fig:plate with hole mesh}). At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analysed by applying displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The strength in transverse directions (2 and 3) are large enough for the damage variables $d_{2}$ and $d_{3}$ not to initiate when a longitudinal tensile load is applied. So to demonstrate the model's capability to show anisotropic damage development the transverse strength has been reduced to $300$ MPa (For both tension and compression). The material properties considered for 3D damage model are given in the Table. (\ref{tab:Material parameters (3D Damage model)}). The maximum stress criterion (See Section(\ref{Maximum stress criteria})) has been used to predict the damage initiation in the three principal material directions. \\
+\indent\indent\indent   This third example demonstrates the model's ability to show the anisotropic damage development for three dimensional (3D) problems. In 3D, three damage variables ($d_{1}$, $d_{2}$ and $d_{3}$) are employed to represent the anisotropic damage development, i.e., one damage variable for each principal material direction. Because of symmetry, only one-eighth of the specimen has been modelled. The geometry and the appropriate boundary conditions are given in Figure (\ref{fig:plate with hole}). Eight node solid elements (SOLID 185) with trilinear interpolations of the displacements and full integration has been used to perform the FE modelling. The thickness was divided into four elements, and a fine mesh has been used in the region closer to the fracture zone shown in the Figure (\ref{fig:plate with hole mesh}).\\
  
-
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -1687,6 +1670,10 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
  \end{center}
 \end{figure}
 \FloatBarrier 
+
+
+\indent\indent\indent The longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analysed by applying displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The strength in transverse directions (2 and 3) are large enough for the damage variables $d_{2}$ and $d_{3}$ not to initiate when a longitudinal tensile load is applied. So to demonstrate the model's capability to show anisotropic damage development the transverse strength has been reduced to $300$ MPa (For both tension and compression). The material properties considered for 3D damage model are given in the Table. (\ref{tab:Material parameters (3D Damage model)}). The maximum stress criterion (See Section(\ref{Maximum stress criteria})) has been used to predict the damage initiation in the three principal material directions. 
+
 
 
 \begin{figure}[htbp!]
@@ -1775,14 +1762,16 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
-     \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d1-lt-e.png}
+     \begin{subfigure}[htbp!]{0.4\textwidth}
+     \begin{center}
+         \includegraphics[width=8.2cm,height=8.2cm]{27.d1-lt-e.png}
          \caption{Damage $d_{1}$ - Element solution}
          \label{fig:d1-lt-e}
+     \end{center}
      \end{subfigure}
-     \hspace{1.8cm}
-     \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d1-lt-n.png}
+     \hspace{1.9cm}
+     \begin{subfigure}[htbp!]{0.4\textwidth}
+         \includegraphics[width=8.2cm,height=8.2cm]{27.d1-lt-n.png}
          \caption{Damage $d_{1}$ - Nodal solution}
          \label{fig:d1-lt-n}
      \end{subfigure}
@@ -1790,13 +1779,13 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat     
      \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d2-lt-e.png}
+        \includegraphics[width=8.2cm,height=8.2cm]{27.d2-lt-e.png}
          \caption{Damage $d_{2}$ - Element solution}
          \label{fig:d2-lt-e}
      \end{subfigure}
-    \hspace{1.8cm}
+    \hspace{1.9cm}
       \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d2-lt-n.png}
+         \includegraphics[width=8.2cm,height=8.2cm]{27.d2-lt-n.png}
          \caption{Damage $d_{2}$ - Nodal solution}
          \label{fig:d2-lt-n}
      \end{subfigure}
@@ -1804,13 +1793,13 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat     
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d3-lt-e.png}
+         \includegraphics[width=8.2cm,height=8.2cm]{27.d3-lt-e.png}
          \caption{Damage $d_{3}$ - Element solution}
          \label{fig:d3-lt-e}
      \end{subfigure}
-     \hspace{1.8cm}
+     \hspace{1.9cm}
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d3-lt-n.png}
+         \includegraphics[width=8.2cm,height=8.2cm]{27.d3-lt-n.png}
          \caption{Damage $d_{3}$ - Nodal solution}
          \label{fig:d3-lt-n}
      \end{subfigure}
@@ -1818,72 +1807,30 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
         \label{fig:Contour plots of the damage d1,d2,d3}     
 \end{figure}
 \FloatBarrier
-\indent\indent\indent Now the transverse direction is kept parallel to the loading direction, and the behaviour of the damage model, i.e., the anisotropic development of damage  $d_{1}$, $d_{2}$ and $d_{3}$ is analysed. Both tension and compression test have been carried out to see the difference in material behaviour. In both the cases, i.e., transverse tension and compression, only damages $d_{2}$ and $d_{3}$ evolve, because the stress component $\sigma_{11}$ is not high enough for the damage $d_{1}$ to initiate. The damage $d_{2}$ initiates at the tip of the notch and evolves perpendicular to the loading direction 
-\begin{figure}[htbp!]\ContinuedFloat     
-     \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d2-tt-e.png}
-         \caption{Damage $d_{2}$ - Element solution}
-         \label{fig:d2-tt-e}
-     \end{subfigure}
-    \hspace{1.8cm}
-      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d2-tt-n.png}
-         \caption{Damage $d_{2}$ - Nodal solution}
-         \label{fig:d2-tt-n}
-     \end{subfigure}
-\end{figure}
-\FloatBarrier
-\begin{figure}[htbp!]\ContinuedFloat     
-     \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d3-tt-e.png}
-         \caption{Damage $d_{3}$ - Element solution}
-         \label{fig:d3-tt-e}
-     \end{subfigure}
-     \hspace{1.8cm}
-     \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d3-tt-n.png}
-         \caption{Damage $d_{3}$ - Nodal solution}
-         \label{fig:d3-tt-n}
-     \end{subfigure}
-        \caption{Contour plots of the damage distribution $d_{2}$ and $d_{3}$ at the end of transverse tensile loading }
-        \label{fig:Contour plots of the damage d2,d3 transverse tension}     
-\end{figure}
 
-
-
-\begin{figure}[htbp!]\ContinuedFloat     
-     \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d2-tc-e.png}
-         \caption{Damage $d_{2}$ - Element solution}
-         \label{fig:d2-tc-e}
-     \end{subfigure}
-    \hspace{1.8cm}
-      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d2-tc-n.png}
-         \caption{Damage $d_{2}$ - Nodal solution}
-         \label{fig:d2-tc-n}
-     \end{subfigure}
-\end{figure}
-\FloatBarrier
-\begin{figure}[htbp!]\ContinuedFloat     
-     \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d3-tc-e.png}
-         \caption{Damage $d_{3}$ - Element solution}
-         \label{fig:d3-tc-e}
-     \end{subfigure}
-     \hspace{1.8cm}
-     \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8.2cm,keepaspectratio]{27.d3-tc-n.png}
-         \caption{Damage $d_{3}$ - Nodal solution}
-         \label{fig:d3-tc-n}
-     \end{subfigure}
-        \caption{Contour plots of the damage distribution $d_{2}$ and $d_{3}$ at the end of transverse compressive loading }
-        \label{fig:Contour plots of the damage d2,d3 transverse compression}     
-\end{figure}
-
-
+\indent\indent\indent These damage contour plots clearly indicate that the developed 3D model has the ability to show not only the damage development in three principal material directions but also both tension and compression damage happening simultaneously in a specimen when a load is applied.
 
 \newpage
+\chapter{Summary and Conclusion}
+\indent\indent\indent The main objective of this work is to develop progressive damage models which can clearly describe the  damage mechanism in orthotropic composite materials when subject to various loading conditions. The models are developed using the framework of continuum damage mechanics (CDM) which uses internal state variables to describes the evolution of damage in a material using evolution laws. A second-order orthotropic damage tensor is employed to show the anisotropic damage development where the eigen values of the damage tensor represents damage in each principal material direction. A key issue in damage modelling is the convergence issue that arise due to the mesh dependant behaviour of the strain-softening models. To reduce the mesh sensitivity, fracture energy regularization technique has been employed which ensures the objectivity of the model by adjusting dissipated energy to each finite element. At first the damage models (both 2D/Plane-stress and 3D cases) are implemented in OCTAVE and tested using constitutive driver routines for simple loading cases to verify the numerical implementation i.e.,to ensure the convergence of the model with the derived algorithmic tangent stiffness, and to understand the behaviour of the material at integration point level i.e., damage-evolution and strain-softening. During the integration point studies it has been observed that the failure criteria which uses strain to predict the damage initiation causes convergence issues when damage evolves without the presence of stress in the given material direction i.e.,when transverse strength is very low and an uniaxial tension is applied in longitudinal direction. So the damage models implemented as user-defined material routines (USERMAT) in ANSYS uses stress-based damage initiation criteria\\ 
+
+\indent\indent\indent The user-defined material routines (USERMAT) are tested using a finite element of unit length in ANSYS in order to compare against the results from OCTAVE implementation. Once verified, representative structural examples (both 2D and 3D) are used to test the damage models in ANSYS to see how they predict the initiation and evolution of damage under various circumstances. Finite elements of varying sizes are used in the area prone to damage to analyse the mesh sensitivity of the damage models. It has been observed that the regularization scheme used significantly improves the global response but it does not fully alleviate the mesh dependency problems which arise due to strain-softening. Therefore a drop in maximum load is observed in the global force-displacement response when the mesh is refined. Different damage initiation criteria has been employed to see how the damage initiation and failure indices affect the model. It has been observed that the inclusion of shear effect naturally reduces the maximum load capacity because of the increase in failure index for the same load. In some cases the shear effect improves the damage propagation and distribution when the magnitude of shear stress is significant compared to the normal stresses. Finally the implemented damage models employing exponential damage evolution laws have the ability to show the anisotropic damage development with the help of a second-order damage tensor in both 2D and 3D cases and the strain-softening which results due to the stiffness degradation. This work provides a better understanding of the numerical implementation of anisotropic damage models which can predict the damage behaviour of complex composite materials.\\
+
+The following changes and developments can be made in future to make this anisotropic damage model an excellent tool to analyze the complex damage phenomena in composite-materials used in real-life applications
+
+\begin{itemize}
+\item By incorporating complex failure criteria like Linde's failure criteria, Hashins quadratic failure criteria etc., the damage initiation and propagation can be predicted more accurately because of the inclusion of shear effects and quadratic terms.
+
+\item From section (\ref{CT specimen}) (CT-Specimen) it is evident that when most of the distorted elements reaches a critical value the simulation terminates. This has been the case in most of the work done before. But in very few works an option called element deletion (Available in the FEM software Abaqus) is employed to delete a particular failed element when the damage reaches a critical threshold value. This option can be included in the future to avoid the premature termination of analysis and the whole crack propagation in the case of CT specimen can be simulated.
+
+\item Non-local gradient-enhanced damage formulations can be incorporated into the anisotropic damage models to eliminate the mesh dependency problems encountered in this work.  These non-local models uses weighted volume averages of the state variables to create spatial interactions which induces smoothing effect on the deformation and damage.  Gradient enhanced formulations uses higher-order deformation gradients of internal variables to create spatial discretization thereby eliminating the mesh dependency
+
+
+\end{itemize}
+
+
+
+\clearpage
 \pagenumbering{Roman}
 \chapter*{Appendix}
 \renewcommand{\thesection}{\Alph{section}.\arabic{section}}
