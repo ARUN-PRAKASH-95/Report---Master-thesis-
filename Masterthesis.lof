@@ -1,51 +1,51 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Composite materials used in a Boeing 787 'Dreamliner' \citep {bworld} \relax }}{1}{}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Strain-softening of composite materials after damage initiation\relax }}{2}{}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Composite materials used in a Boeing 787 'Dreamliner' \citep {cplane} \relax }}{1}{}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Strain-softening of composite materials after damage initiation \citep {rafi2007analytical}\relax }}{2}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Scales of damage observation\relax }}{8}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Effective area reduction due to microcracks\relax }}{9}{}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Damage of bar under tensile load\relax }}{10}{}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Surface element in RVE of a damaged material\relax }}{12}{}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Hypothesis of strain equivalence\relax }}{15}{}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Hypothesis of strain energy equivalence\relax }}{16}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Scales of damage observation \citep {murakami2012continuum} \relax }}{8}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Effective area reduction due to microcracks \citep {murakami2012continuum}\relax }}{9}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Damage of bar under tensile load \citep {murakami2012continuum}\relax }}{10}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Surface element in RVE of a damaged material \citep {murakami2012continuum}\relax }}{12}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Hypothesis of strain equivalence \citep {murakami2012continuum}\relax }}{15}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Hypothesis of strain energy equivalence \citep {murakami2012continuum}\relax }}{17}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces USERMAT Interface\relax }}{23}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces USERMAT Interface \citep {lin1999ansys}\relax }}{23}{}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Table (TB) commands\relax }}{25}{}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Time history post processor window\relax }}{26}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Fracture planes in FRP material\relax }}{28}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Types of degradation behaviour in damaged composite materials\relax }}{31}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fracture planes in FRP material \citep {maimi2007continuum}\relax }}{28}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Types of degradation behaviour in damaged composite materials \citep {wang2009three}\relax }}{31}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Stress-Strain relation (Standard vs user-defined material routine)\relax }}{39}{}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Contour plots of the stress components $\sigma _{11}$, $\sigma _{22}$ and $\sigma _{33}$ of the bar obtained using standard (Figures a,c,e on the left) and user-defined material routine (Figures b, d, f on the right)\relax }}{41}{}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Evolution of stress for uniaxial tension test in 11 direction\relax }}{42}{}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Evolution of damage components for uniaxial tension test in 11 direction\relax }}{43}{}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Influence of softening parameter $P$ in the damage evolution)\relax }}{43}{}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence issue: Residual norm of the stress $vs$ No of Newton-raphson iterations\relax }}{44}{}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Evolution of stress and damage components with stress-based damage initiation criteria under uniaxial tension\relax }}{45}{}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Influence of element volume ($V$) on the damage evolution\relax }}{46}{}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces The strain components $\epsilon _{22}$ and $\epsilon _{33}$ computed using algorithmic (a) and numerical tangent stiffness (b) under uniaxial tension\relax }}{47}{}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Evolution of stress (Figures a, c on the left) and corresponding damage (Figure b, d on the right) components under biaxial tension\relax }}{48}{}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Evolution of stress (Figures a, c, e on the left) and corresponding (Figures b ,d, f on the right) damage components under triaxial tension\relax }}{49}{}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied.\relax }}{51}{}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Considered meshes (h is the length of the element along fracture zone and n the total number of elements) \relax }}{52}{}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Convergence study: Global force-displacement response for model with regularization (Figure a on the left) and without regularization (Figure b the right) \relax }}{52}{}%
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Convergence study for model with(Figure a,c,e) and without(b,d,f) regularization: Damage contour plots $d_{1}$ at the end of the loading\relax }}{54}{}%
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Damage contour plots $d_{2}$ at the end of the loading (Loading in transverse direction) \relax }}{55}{}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparison of force-displacement response in longitudinal and transverse direction for h=0.5mm discretization\relax }}{55}{}%
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied\relax }}{56}{}%
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Considered meshes (h is the length of the element along fracture zone and n the total number of elements) \relax }}{57}{}%
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Convergence study: Global force-displacement response for three different meshes\relax }}{58}{}%
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Damage distributions at the end of loading in longitudinal direction: Damage contour plots $d_{1}$ and $d_{2}$ \relax }}{59}{}%
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Damage distributions at the end of loading in transverse direction: Damage contour plots $d_{1}$ and $d_{2}$ (h = 1mm discretization) \relax }}{59}{}%
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Comparison of force-displacement response in longitudinal and transverse direction for h = 1 mm discretization\relax }}{60}{}%
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Comparison of force-displacement response for different shear co-efficient ($\alpha $) (h= 1mm discretization)\relax }}{60}{}%
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Evolution of stress components during longitudinal tensile loading (h= 1mm discretization)\relax }}{61}{}%
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Damage distributions at the end of longitudinal loading: Damage contour plots $d_{2}$ for different shear co-efficients ($\alpha $)\relax }}{62}{}%
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Evolution of stress components during transverse tensile loading (h= 1mm discretization)\relax }}{63}{}%
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Damage distributions at the end of transverse loading: Damage contour plots $d_{1}$ for different shear co-efficient ($\alpha $)\relax }}{63}{}%
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied\relax }}{64}{}%
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Finite element discretization used for 3D damage study\relax }}{65}{}%
-\contentsline {figure}{\numberline {5.31}{\ignorespaces Global force-displacement response for the longitudinal tensile loading \relax }}{66}{}%
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Contour plots of the damage distribution $d_{1}$, $d_{2}$ and $d_{3}$ at the end of longitudinal tensile loading \relax }}{68}{}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Stress-Strain relation (Standard vs user-defined material routine)\relax }}{40}{}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Contour plots of the stress components $\sigma _{11}$, $\sigma _{22}$ and $\sigma _{33}$ of the bar obtained using standard (Figures a,c,e on the left) and user-defined material routine (Figures b, d, f on the right)\relax }}{42}{}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Evolution of stress for uniaxial tension test in 11 direction\relax }}{43}{}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Evolution of damage components for uniaxial tension test in 11 direction\relax }}{44}{}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Influence of softening parameter $P$ in the damage evolution)\relax }}{44}{}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence issue: Residual norm of the stress $vs$ No of Newton-raphson iterations\relax }}{45}{}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Evolution of stress and damage components with stress-based damage initiation criteria under uniaxial tension\relax }}{46}{}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Influence of element volume ($V$) on the damage evolution\relax }}{47}{}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces The strain components $\epsilon _{22}$ and $\epsilon _{33}$ computed using algorithmic (a) and numerical tangent stiffness (b) under uniaxial tension\relax }}{48}{}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Evolution of stress (Figures a, c on the left) and corresponding damage (Figure b, d on the right) components under biaxial tension\relax }}{49}{}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Evolution of stress (Figures a, c, e on the left) and corresponding (Figures b ,d, f on the right) damage components under triaxial tension\relax }}{50}{}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied.\relax }}{52}{}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Considered meshes (h is the length of the element along fracture zone and n the total number of elements) \relax }}{53}{}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Convergence study: Global force-displacement response for model with regularization (Figure a on the left) and without regularization (Figure b the right) \relax }}{53}{}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Convergence study for model with(Figure a,c,e) and without(b,d,f) regularization: Damage contour plots $d_{1}$ at the end of the loading\relax }}{55}{}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Damage contour plots $d_{2}$ at the end of the loading (Loading in transverse direction) \relax }}{56}{}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparison of force-displacement response in longitudinal and transverse direction for h=0.5mm discretization\relax }}{56}{}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied\relax }}{57}{}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Considered meshes (h is the length of the element along fracture zone and n the total number of elements) \relax }}{58}{}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Convergence study: Global force-displacement response for three different meshes\relax }}{59}{}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Damage distributions at the end of loading in longitudinal direction: Damage contour plots $d_{1}$ and $d_{2}$ \relax }}{60}{}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Damage distributions at the end of loading in transverse direction: Damage contour plots $d_{1}$ and $d_{2}$ (h = 1mm discretization) \relax }}{60}{}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Comparison of force-displacement response in longitudinal and transverse direction for h = 1 mm discretization\relax }}{61}{}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Comparison of force-displacement response for different shear co-efficient ($\alpha $) (h= 1mm discretization)\relax }}{61}{}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Evolution of stress components during longitudinal tensile loading (h= 1mm discretization)\relax }}{62}{}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Damage distributions at the end of longitudinal loading: Damage contour plots $d_{2}$ for different shear co-efficients ($\alpha $)\relax }}{63}{}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Evolution of stress components during transverse tensile loading (h= 1mm discretization)\relax }}{64}{}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Damage distributions at the end of transverse loading: Damage contour plots $d_{1}$ for different shear co-efficient ($\alpha $)\relax }}{64}{}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied\relax }}{65}{}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Finite element discretization used for 3D damage study\relax }}{66}{}%
+\contentsline {figure}{\numberline {5.31}{\ignorespaces Global force-displacement response for the longitudinal tensile loading \relax }}{67}{}%
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Contour plots of the damage distribution $d_{1}$, $d_{2}$ and $d_{3}$ at the end of longitudinal tensile loading \relax }}{69}{}%
 \addvspace {10\p@ }
