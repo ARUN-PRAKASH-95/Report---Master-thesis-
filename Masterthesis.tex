@@ -1,4 +1,4 @@
-\documentclass[12pt,openright,twoside]{report}
+\documentclass[12pt,a4paper,twoside,openright]{report}
     \usepackage{amsmath}
     \usepackage{nccmath}
     \usepackage{amsfonts}
@@ -24,20 +24,30 @@
     \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
     \usepackage{fancyhdr}
     \usepackage{relsize}
-    \usepackage{titlesec}
+	    \usepackage{titlesec}
+
     \titleformat*{\section}{\large\bfseries}
 	\titleformat*{\subsection}{\large\bfseries}
 	\titleformat*{\subsubsection}{\small\bfseries}
+
 	\usepackage[T1]{fontenc}
 	\usepackage{xcolor}
 	\usepackage{lmodern}
 	\usepackage{listings}
-	
+	\usepackage[]{tocbibind}
+    \usepackage{hyperref}
+	\let\tmp\oddsidemargin
+	\let\oddsidemargin\evensidemargin
+	\let\evensidemargin\tmp
+	\reversemarginpar
+
+
+
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \lstset{
-basicstyle=\tiny,        % the size of the fonts that are used for the code
+basicstyle=\footnotesize,        % the size of the fonts that are used for the code
   breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
   breaklines=false,                 % sets automatic line breaking
   captionpos=b,                    % sets the caption-position to bottom
@@ -69,37 +79,54 @@ basicstyle=\tiny,        % the size of the fonts that are used for the code
      \tikzstyle{arrow} = [thick,->,>=stealth]  
 
 
-\usepackage{titling}
-\pretitle{\begin{center}\fontsize{18bp}{18bp}\selectfont}
-    \posttitle{\vspace{25bp}\par\includegraphics[width=60mm]{logo.png}\par\end{center}}
-\preauthor{\begin{center}\fontsize{14bp}{14bp}\selectfont}
-    \postauthor{\par\end{center}}
-\predate{\begin{center}}
-    \postdate{\par\end{center}}  
 
-\title{\LARGE{\textbf{Development and implementation of material subroutines for fibre reinforced plastics in a commercial FEM software}}\\[0.7cm]\smaller \textbf{Master thesis \\[0.5cm] Winter semester 2018/19}\vspace*{1cm}}
-
-
-\author{
-\vspace{2cm}
-\large{Presented by: Arun prakash Ganapathy}
-\\[0.4cm]
-\large{Supervised by: Dr.-Ing Dominik Laveuve}
-\\[0.4cm]
-\large{Mat.Nr: 63876}
-\\[0.4cm]
-\large{E-mail: arun-prakash.ganapathy@student.tu-freiberg.de}}
-\date{}
 
 \newcounter{savepage}
 \begin{document}
+\input{titlepage}
+
+\clearpage
+\thispagestyle{empty}
+\hfill
+\clearpage
 \pagenumbering{Roman}
-\maketitle
-\newpage
+\vspace*{2cm}
+\section*{\LARGE{Abstract} }
+\indent\indent\indent Composite materials especially fibre-reinforced plastics are replacing conventional material like metals because of their superior strength and light-weight properties not only in advanced structural components but also in everyday life. Fraunhofer LBF specializes on safety and reliability of sustainable, light-weight structures. So numerical and experimental analysis and efficient manufacturing of fibre-reinforced plastics play an important role in the design and development of light-weight, sustainable and reliable components. Therefore the ongoing project at Fraunhofer LBF investigates the fatigue and creep behaviour of short fibre-reinforced thermoplastics. The main aim of this master thesis is to develop progressive damage models which can predict the initiation and propagation of damage once the material exceeds its failure strength. The constitutive equations necessary for simulating the behaviour of damaged materials are established in the framework of continuum damage mechanics (CDM). Because of the complex material behaviour of the composite materials, anisotropic damage mechanism is employed to represent the distribution of damage. Non-linear damage evolution law based on fracture energy regularization technique is applied to represent the damage evolution.  First the orthotropic behaviour (Linear-elastic) of the composite materials and the anisotropic damage models are implemented and tested at integration point levels. After that, representative structural examples are used to test the damage models and analyse how they behave in various loading conditions. The global force-displacement response is analysed to address the issue related to numerical implementation such as convergence, mesh sensitivity during strain-softening etc., Finally the distribution of damage at the end of loading process is plotted to visualize the damage propagation in a composite material under loading.
+
+\clearpage
+\thispagestyle{empty}
+\hfill
+\clearpage
+\vspace*{2cm}
+\section*{\LARGE{Acknowledgement} }
+\vspace*{1cm}
+\indent\indent\indent   I would like to express my sincere thanks to Dr.-Ing. Dominik Laveuve for his guidance, support and timely feedbacks throughout this master thesis work.  I would like to extend my gratitude to Prof.Dr.-Ing.Björn Kiefer for providing me the chance to pursue this thesis work under his supervision and Dr.-Ing. Andreas Seupel for his valuable insights through out the thesis work.  I would like to thank Fraunhofer LBF for this opportunity and providing me with the required resources for completion of this thesis work. Last but not least, I am thankful to my friends and family for their constant moral support.
+
+
+
+\clearpage
+\thispagestyle{empty}
+\hfill
+\clearpage
+\vspace*{2cm}
+\section*{\LARGE{Declaration} }
+\vspace*{1cm}
+\indent\indent\indent Hereby, I  formally declare that I  have developed and written the enclosed thesis 
+without illegitimate help of a third party and that no other than the indicated aids have been used for its completion; all thoughts from other sources that have been used literally or indirectly are marked as such. The thesis has not been submitted to any other examination committee in this or a similar form.\\\\\\ Arun Prakash Ganapathy  \\\\ ................................  \\\\ Freiberg, 30.08.2021
+
+
+
+
+
 \tableofcontents
- \listoffigures
- \listoftables
- 
+\listoffigures
+\listoftables
+
+
+\chapter*{List of symbols}
+\addcontentsline{toc}{chapter}{\textbf{List of symbols}}
+
 \newpage
 \setcounter{savepage}{\arabic{page}}
 \pagenumbering{arabic}
@@ -937,16 +964,16 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 \newpage
 \chapter{Results and Discussion}
 \section{Modelling linear elastic behaviour of orthotropic materials}
-\indent\indent\indent Before implementing the damage behaviour in orthotropic materials, their linear elastic behaviour must implemented which describes what happens before the damage initiation. As mentioned before orthtoropic materials are a special class of material whose properties differ in mutually perpendicular directions. Therefore 9 independent material constants are required to model their elastic behaviour. Table (\ref{tab:Material parameters(Integration point studies}) summarises the utilised material parameters. The material parameters presented in table (\ref{tab:Material parameters(Integration point studies}) belongs to an unidirectional glass fiber-reinforced epoxy material obtained from \citep{lapczyk2007progressive}. In this material, the strength in the longitudinal direction ($X_{t}$ and $X_{c}$) is very high compared to the transverse directions ($Y_{t}$ and $Y_{c}$) because the fibers are aligned parallel to the longitudinal direction. The constitutive matrix given in the section (\ref{Constitutive matrix}) and Hooke's law help us model the elastic behaviour of the orthotropic materials.
+\indent\indent\indent Before implementing the damage behaviour in orthotropic materials, their linear elastic behaviour must implemented which describes what happens before the damage initiation. As mentioned before orthtoropic materials are a special class of material whose properties differ in mutually perpendicular directions. Therefore 9 independent material constants are required to model their elastic behaviour. Table (\ref{tab:Material parameters(Integration point studies}) summarises the utilised material parameters. The material parameters presented in table (\ref{tab:Material parameters(Integration point studies}) belongs to an unidirectional glass fiber-reinforced epoxy material obtained from \citep{lapczyk2007progressive}. In this material, the strength in the longitudinal direction ($X_{t}$ and $X_{c}$) is very high compared to the transverse directions ($Y_{t}$ and $Y_{c}$) because the fibers are aligned parallel to the longitudinal direction. 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=11cm,height=7.4cm]{{14.Linear_SvsE.png}}
+\includegraphics[width=11cm,height=7cm]{{14.Linear_SvsE.png}}
  \caption{Stress-Strain relation (Standard vs user-defined material routine)}
  \label{fig:Stress-Strain Linear elastic}
  \end{center}
 \end{figure}
 \FloatBarrier
-\indent\indent\indent The linear elastic behaviour of the orthotropic material is implemented as USERMAT in ANSYS using constitutive equations, and in this section, the results obtained are compared against the standard orthotropic material routine present in ANSYS using a structural example. A bar of length 10 mm and area 1 mm$^2$ (b = 1 mm, t =1 mm) fixed at one end is chosen for the analysis. The bar is constructed using 8 node SOLID 185 elements, and full integration has been used. A displacement of 1 mm is applied at the free end, and the results obtained using the standard and the user-defined material routines are presented below. Figure (\ref{fig:Stress-Strain Linear elastic}) compares the stress-strain relation between standard material routine and the implemented USERMAT
+\indent\indent\indent The constitutive matrix given in the section (\ref{Constitutive matrix}) and Hooke's law help us model the elastic behaviour of the orthotropic materials. The linear elastic behaviour of the orthotropic material is implemented as USERMAT in ANSYS, and in this section, the results obtained are compared against the standard orthotropic material routine present in ANSYS using a structural example. A bar of length 10 mm and area 1 mm$^2$ (b = 1 mm, t =1 mm) fixed at one end is chosen for the analysis. The bar is constructed using 8 node SOLID 185 elements, and full integration has been used. A displacement of 1 mm is applied at the free end, and the results obtained using the standard and the user-defined material routines are presented below. Figure (\ref{fig:Stress-Strain Linear elastic}) compares the stress-strain relation between standard material routine and the implemented USERMAT
 \begin{table}
   \begin{center}
    \resizebox{\columnwidth}{4.5cm}{
@@ -982,7 +1009,6 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
        \hline
     \end{tabular}
     }
-    \\
     \caption{Material parameters (Integration point studies)}
     \label{tab:Material parameters(Integration point studies}
   \end{center}
@@ -1854,14 +1880,23 @@ The following changes and developments can be made in future to make this anisot
 
 
 
-\clearpage
+\newpage
 
 \bibliographystyle{plainnat}
 \bibliography{reference}
 
-\pagenumbering{Roman}
 \clearpage
+\thispagestyle{empty}
+\hfill
+\clearpage
+	\let\tmp\oddsidemargin
+	\let\oddsidemargin\evensidemargin
+	\let\evensidemargin\tmp
+	\reversemarginpar
+\pagenumbering{Roman}
 \chapter*{Appendix}
+\addcontentsline{toc}{chapter}{\textbf{Appendix}}
+
 \renewcommand{\thesection}{\Alph{section}.\arabic{section}}
 \setcounter{page}{\thesavepage}
 \section{Elastic stiffness matrix of the damaged material}

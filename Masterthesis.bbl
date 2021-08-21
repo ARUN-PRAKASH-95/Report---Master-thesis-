@@ -1,0 +1,197 @@
+\begin{thebibliography}{29}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[B.Kiefer()]{codes}
+B.Kiefer.
+\newblock {Constitutive driver routines}.
+\newblock Driver routines provided during the plasticity course (CMS) for
+  testing the implemented material models.
+\newblock [coded by: B. Kiefer 15 Nov 2011, analytical solution added: S.
+  Prueger 10 Dec 2018].
+
+\bibitem[Brainkart()]{ubt}
+Brainkart.
+\newblock {Uni, Bi and Triaxial tension}.
+\newblock
+  \url{https://www.brainkart.com/article/Triaxial-Stress,-Biaxial-Stress,-and-Uniaxial-Stress_5991/#:~:text=A%20two%2Ddimensional%20state%20of,called%20a%20uniaxial%20stress%20state.}
+\newblock [Online; accessed 20-August-2021].
+
+\bibitem[Cervera and Chiumenti(2006)]{cervera2006smeared}
+Miguel Cervera and Michele Chiumenti.
+\newblock Smeared crack approach: back to the original track.
+\newblock \emph{International journal for numerical and analytical methods in
+  geomechanics}, 30\penalty0 (12):\penalty0 1173--1199, 2006.
+
+\bibitem[Cordebois and Sidoroff(1982)]{cordebois1982damage}
+JP~Cordebois and F~Sidoroff.
+\newblock Damage induced elastic anisotropy.
+\newblock In \emph{Mechanical Behavior of Anisotropic Solids/Comportment
+  M{\'e}chanique des Solides Anisotropes}, pages 761--774. Springer, 1982.
+
+\bibitem[efunda()]{ortho}
+efunda.
+\newblock {Elastic stiffness matrix of an orthotropic material }.
+\newblock
+  \url{https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/hooke_orthotropic.cfm}.
+\newblock [Online; accessed 5-June-2021].
+
+\bibitem[El-Sisi et~al.(2015)El-Sisi, El-Emam, Salim, and
+  Sallam]{el2015efficient}
+Alaa El-Din~A El-Sisi, Hesham~M El-Emam, Hani~A Salim, and Hossam El-Din~M
+  Sallam.
+\newblock Efficient 3d modeling of damage in composite materials.
+\newblock \emph{Journal of Composite Materials}, 49\penalty0 (7):\penalty0
+  817--828, 2015.
+
+\bibitem[Falzon and Apruzzese(2011)]{falzon2011numerical}
+BG~Falzon and Paola Apruzzese.
+\newblock Numerical analysis of intralaminar failure mechanisms in composite
+  structures. part i: Fe implementation.
+\newblock \emph{Composite Structures}, 93\penalty0 (2):\penalty0 1039--1046,
+  2011.
+
+\bibitem[Fassin et~al.(2019)Fassin, Eggersmann, Wulfinghoff, and
+  Reese]{fassin2019gradient}
+Marek Fassin, Robert Eggersmann, Stephan Wulfinghoff, and Stefanie Reese.
+\newblock Gradient-extended anisotropic brittle damage modeling using a second
+  order damage tensor--theory, implementation and numerical examples.
+\newblock \emph{International Journal of Solids and Structures}, 167:\penalty0
+  93--126, 2019.
+
+\bibitem[Geers(1998)]{geers1998experimental}
+Marc Georges~Denis Geers.
+\newblock Experimental analysis and computational modelling of damage and
+  fracture.
+\newblock 1998.
+
+\bibitem[Hashin(1983)]{hashin1983analysis}
+Zvi Hashin.
+\newblock Analysis of composite materials—a survey.
+\newblock 1983.
+
+\bibitem[Hill(1963)]{hill1963elastic}
+Rodney Hill.
+\newblock Elastic properties of reinforced solids: some theoretical principles.
+\newblock \emph{Journal of the Mechanics and Physics of Solids}, 11\penalty0
+  (5):\penalty0 357--372, 1963.
+
+\bibitem[Jiang et~al.(2018)Jiang, Ren, Liu, Zhang, and
+  Wang]{jiang2018evaluations}
+Hongyong Jiang, Yiru Ren, Zhihui Liu, Songjun Zhang, and Xiaoqing Wang.
+\newblock Evaluations of failure initiation criteria for predicting damages of
+  composite structures under crushing loading.
+\newblock \emph{Journal of Reinforced Plastics and Composites}, 37\penalty0
+  (21):\penalty0 1279--1303, 2018.
+
+\bibitem[Kachanov(1986)]{kachanov1986introduction}
+Lasar Kachanov.
+\newblock \emph{Introduction to continuum damage mechanics}, volume~10.
+\newblock Springer Science \& Business Media, 1986.
+
+\bibitem[Lapczyk and Hurtado(2007)]{lapczyk2007progressive}
+Ireneusz Lapczyk and Juan~A Hurtado.
+\newblock Progressive damage modeling in fiber-reinforced materials.
+\newblock \emph{Composites Part A: Applied Science and Manufacturing},
+  38\penalty0 (11):\penalty0 2333--2341, 2007.
+
+\bibitem[Lemaitre and Chaboche(1978)]{lemaitre1978aspect}
+J~Lemaitre and Jean-Louis Chaboche.
+\newblock Aspect ph{\'e}nom{\'e}nologique de la rupture par endommagement.
+\newblock \emph{J M{\'e}c Appl}, 2\penalty0 (3), 1978.
+
+\bibitem[Lemaitre(2012)]{lemaitre2012course}
+Jean Lemaitre.
+\newblock \emph{A course on damage mechanics}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem[Lempriere(1968)]{lempriere1968poisson}
+BM~Lempriere.
+\newblock Poisson's ratio in orthotropic materials.
+\newblock \emph{Aiaa Journal}, 6\penalty0 (11):\penalty0 2226--2227, 1968.
+
+\bibitem[Lin(1999)]{lin1999ansys}
+G~Lin.
+\newblock Ansys user material subroutine usermat.
+\newblock \emph{ANSYS, Canonsburg, PA}, 1999.
+
+\bibitem[Maim{\'\i} et~al.(2007)Maim{\'\i}, Camanho, Mayugo, and
+  D{\'a}vila]{maimi2007continuum}
+P~Maim{\'\i}, Pedro~Ponces Camanho, JA~Mayugo, and CG~D{\'a}vila.
+\newblock A continuum damage model for composite laminates: Part
+  i--constitutive model.
+\newblock \emph{Mechanics of materials}, 39\penalty0 (10):\penalty0 897--908,
+  2007.
+
+\bibitem[Murakami(2012)]{murakami2012continuum}
+Sumio Murakami.
+\newblock \emph{Continuum damage mechanics: a continuum mechanics approach to
+  the analysis of damage and fracture}, volume 185.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem[Peerlings(1999)]{peerlings1999enhanced}
+Ronnie Henricus~Johannes Peerlings.
+\newblock Enhanced damage modelling for fracture and fatigue.
+\newblock 1999.
+
+\bibitem[P.Nikethan(2016)]{cplane}
+P.Nikethan.
+\newblock {Composite materials in a Boeing 787 'Dreamliner' }.
+\newblock
+  \url{https://www.slideshare.net/nagababutallam/composite-materials-in-aerospace-industry},
+  2016.
+\newblock [Online; accessed 5-August-2021].
+
+\bibitem[Rafi et~al.(2007)Rafi, Nadjai, and Ali]{rafi2007analytical}
+Muhammad~Masood Rafi, Ali Nadjai, and Faris Ali.
+\newblock Analytical modeling of concrete beams reinforced with carbon frp
+  bars.
+\newblock \emph{Journal of Composite Materials}, 41\penalty0 (22):\penalty0
+  2675--2690, 2007.
+
+\bibitem[Seupel et~al.(2018)Seupel, H{\"u}tter, and Kuna]{seupel2018efficient}
+Andreas Seupel, Geralf H{\"u}tter, and Meinhard Kuna.
+\newblock An efficient fe-implementation of implicit gradient-enhanced damage
+  models to simulate ductile failure.
+\newblock \emph{Engineering Fracture Mechanics}, 199:\penalty0 41--60, 2018.
+
+\bibitem[Sleight(1999)]{sleight1999progressive}
+David~W Sleight.
+\newblock \emph{Progressive failure analysis methodology for laminated
+  composite structures}.
+\newblock Citeseer, 1999.
+
+\bibitem[Sokolinsky et~al.(2011)Sokolinsky, Indermuehle, and
+  Hurtado]{sokolinsky2011numerical}
+Vladimir~S Sokolinsky, Kyle~C Indermuehle, and Juan~A Hurtado.
+\newblock Numerical simulation of the crushing process of a corrugated
+  composite plate.
+\newblock \emph{Composites Part A: Applied Science and Manufacturing},
+  42\penalty0 (9):\penalty0 1119--1126, 2011.
+
+\bibitem[TWI(2016)]{cp}
+TWI.
+\newblock {Composite materials}.
+\newblock
+  \url{https://www.twi-global.com/technical-knowledge/faqs/what-is-a-composite-material#:~:text=A%20composite%20material%20is%20a,also%20improve%20strength%20and%20stiffness.},
+  2016.
+\newblock [Online; accessed 15-July-2021].
+
+\bibitem[Wang et~al.(2009)Wang, Tong, and Zhu]{wang2009three}
+Yuequan Wang, Mingbo Tong, and Shuhua Zhu.
+\newblock Three dimensional continuum damage mechanics model of progressive
+  failure analysis in fibre-reinforced composite laminates.
+\newblock In \emph{50th AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics,
+  and Materials Conference 17th AIAA/ASME/AHS Adaptive Structures Conference
+  11th AIAA No}, page 2629, 2009.
+
+\bibitem[Wikipedia()]{frp}
+Wikipedia.
+\newblock {Fibre-reinforced composite}.
+\newblock \url{https://en.wikipedia.org/wiki/Fiber-reinforced_composite}.
+\newblock [Online; accessed 10-June-2021].
+
+\end{thebibliography}

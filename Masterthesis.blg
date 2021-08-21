@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Masterthesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Database file #1: reference.bib
+Repeated entry---line 22 of file reference.bib
+ : @article{maimi2007continuum
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 127 of file reference.bib
+ : @article{falzon2011numerical
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--empty year in codes
+Warning--empty year in ubt
+Warning--empty year in ortho
+Warning--empty journal in geers1998experimental
+Warning--empty journal in hashin1983analysis
+Warning--empty journal in peerlings1999enhanced
+Warning--empty year in frp
+You've used 29 entries,
+            2773 wiz_defined-function locations,
+            763 strings with 10026 characters,
+and the built_in function-call counts, 11759 in all, are:
+= -- 1052
+> -- 550
+< -- 25
++ -- 194
+- -- 165
+* -- 847
+:= -- 1803
+add.period$ -- 94
+call.type$ -- 29
+change.case$ -- 138
+chr.to.int$ -- 29
+cite$ -- 65
+duplicate$ -- 578
+empty$ -- 1067
+format.name$ -- 204
+if$ -- 2471
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 27
+newline$ -- 159
+num.names$ -- 116
+pop$ -- 331
+preamble$ -- 1
+purify$ -- 113
+quote$ -- 0
+skip$ -- 418
+stack$ -- 0
+substring$ -- 431
+swap$ -- 47
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 299
+warning$ -- 7
+while$ -- 115
+width$ -- 0
+write$ -- 378
+(There were 2 error messages)
