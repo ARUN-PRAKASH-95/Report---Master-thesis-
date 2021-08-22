@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{30}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -91,6 +91,11 @@ Hongyong Jiang, Yiru Ren, Zhihui Liu, Songjun Zhang, and Xiaoqing Wang.
 Lasar Kachanov.
 \newblock \emph{Introduction to continuum damage mechanics}, volume~10.
 \newblock Springer Science \& Business Media, 1986.
+
+\bibitem[Kachanov(1958)]{kachanov1958rupture}
+LM~Kachanov.
+\newblock On the rupture time under the condition of creep.
+\newblock \emph{Izv. Akad. Nauk SSSR, Otd. Tekh. Nauk}, 8:\penalty0 26, 1958.
 
 \bibitem[Lapczyk and Hurtado(2007)]{lapczyk2007progressive}
 Ireneusz Lapczyk and Juan~A Hurtado.

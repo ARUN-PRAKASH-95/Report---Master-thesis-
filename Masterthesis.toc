@@ -2,6 +2,7 @@
 \contentsline {chapter}{List of Figures}{XI}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{XV}{chapter*.3}%
 \contentsline {chapter}{\textbf {List of symbols}}{XVII}{chapter*.4}%
+\contentsline {chapter}{\textbf {List of abbreviations}}{XIX}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background and motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Scope and Outline}{3}{section.1.2}%
@@ -27,14 +28,14 @@
 \contentsline {section}{\numberline {3.1}Software tools required}{21}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Programming the USERMAT}{22}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Compiling the USERMAT}{23}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Creating FE model}{24}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Creating the FE model}{24}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Testing the USERMAT}{25}{section.3.5}%
 \contentsline {section}{\numberline {3.6}PostProcessing}{26}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Progressive failure analysis of orthotropic composite materials }{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Fibre-reinforced Composites}{27}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Longitudinal failure}{27}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Transverse failure}{28}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Damage initiation criteria}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Failure criteria}{28}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}3D Hashin's quadratic strain criteria}{28}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Maximum stress criteria}{29}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Modified Hashin's failure criterion}{30}{subsection.4.2.3}%
@@ -50,19 +51,20 @@
 \contentsline {section}{\numberline {5.1}Modelling linear elastic behaviour of orthotropic materials}{39}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Damage behaviour at integration point level}{42}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Uniaxial tension}{42}{subsection.5.2.1}%
-\contentsline {subsubsection}{Drawbacks of strain based damage initiation criteria}{44}{subsubsection*.27}%
-\contentsline {subsubsection}{Stress based damage initiation and mesh regularisation}{45}{subsubsection*.29}%
-\contentsline {subsubsection}{Discussion of tangent stiffness}{47}{subsubsection*.33}%
-\contentsline {subsection}{\numberline {5.2.2}Biaxial tension}{48}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Triaxial tension}{49}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Representative structural examples}{51}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Notched tensile specimen}{53}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Compact Tension (CT) Specimen}{58}{subsection.5.3.2}%
-\contentsline {subsubsection}{Effect of shear in damage development}{62}{subsubsection*.60}%
-\contentsline {subsection}{\numberline {5.3.3}Plate with hole (3D)}{66}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {6}Summary and Conclusion}{71}{chapter.6}%
-\contentsline {chapter}{Bibliography}{73}{chapter*.75}%
-\contentsline {chapter}{\textbf {Appendix}}{XVIII}{chapter*.76}%
-\contentsline {section}{\numberline {A.1}Elastic stiffness matrix of the damaged material}{XVIII}{section.6.1}%
-\contentsline {subsection}{\numberline {A.1.1}Plane stress (2D)}{XVIII}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}3D}{XVIII}{subsection.6.1.2}%
+\contentsline {subsubsection}{Drawbacks of strain based failure criteria}{43}{subsubsection*.28}%
+\contentsline {subsubsection}{Stress based damage models and mesh regularisation}{44}{subsubsection*.30}%
+\contentsline {subsubsection}{Discussion of tangent stiffness}{46}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {5.2.2}Biaxial tension}{47}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Triaxial tension}{48}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Representative structural examples}{49}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Notched tensile specimen}{51}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Compact Tension (CT) Specimen}{56}{subsection.5.3.2}%
+\contentsline {subsubsection}{Effect of shear in damage development}{60}{subsubsection*.61}%
+\contentsline {subsection}{\numberline {5.3.3}Plate with hole (3D)}{64}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Summary and Conclusion}{69}{chapter.6}%
+\contentsline {chapter}{Bibliography}{71}{chapter*.76}%
+\contentsline {chapter}{\textbf {Appendix}}{XX}{chapter*.77}%
+\contentsline {section}{\numberline {A.1}Elastic stiffness matrix of the damaged material}{XX}{section.6.1}%
+\contentsline {subsection}{\numberline {A.1.1}Plane stress (2D)}{XX}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}3D}{XX}{subsection.6.1.2}%
+\contentsline {section}{\numberline {B.2}APDL Script}{XXI}{section.6.2}%

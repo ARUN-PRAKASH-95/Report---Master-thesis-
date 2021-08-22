@@ -23,6 +23,7 @@
     \usepackage{multirow}
     \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
     \usepackage{fancyhdr}
+    \usepackage{longtable}
     \usepackage{relsize}
 	    \usepackage{titlesec}
 
@@ -43,31 +44,6 @@
 
 
 
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-\lstset{
-basicstyle=\footnotesize,        % the size of the fonts that are used for the code
-  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-  breaklines=false,                 % sets automatic line breaking
-  captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
-  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\color{blue},       % keyword style
-  language=[95]Fortran,                 % the language of the code
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=3pt,                   % how far the line-numbers are from the code
-  numberstyle=\tiny\color{gray}, % the style that is used for the line-numbers
-  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-  showstringspaces=false,          % underline spaces within strings only
-  showtabs=false,                  % show tabs within strings adding particular underscores
-  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
-  stringstyle=\color{mymauve},     % string literal style
-  tabsize=2,                       % sets default tabsize to 2 spaces
-  title=\lstname                   % show the filename of files
-}
     \usepackage{tikz}
     \usetikzlibrary{shapes.geometric,arrows}
 	\makeatletter
@@ -92,7 +68,9 @@ basicstyle=\footnotesize,        % the size of the fonts that are used for the c
 \pagenumbering{Roman}
 \vspace*{2cm}
 \section*{\LARGE{Abstract} }
-\indent\indent\indent Composite materials especially fibre-reinforced plastics are replacing conventional material like metals because of their superior strength and light-weight properties not only in advanced structural components but also in everyday life. Fraunhofer LBF specializes on safety and reliability of sustainable, light-weight structures. So numerical and experimental analysis and efficient manufacturing of fibre-reinforced plastics play an important role in the design and development of light-weight, sustainable and reliable components. Therefore the ongoing project at Fraunhofer LBF investigates the fatigue and creep behaviour of short fibre-reinforced thermoplastics. The main aim of this master thesis is to develop progressive damage models which can predict the initiation and propagation of damage once the material exceeds its failure strength. The constitutive equations necessary for simulating the behaviour of damaged materials are established in the framework of continuum damage mechanics (CDM). Because of the complex material behaviour of the composite materials, anisotropic damage mechanism is employed to represent the distribution of damage. Non-linear damage evolution law based on fracture energy regularization technique is applied to represent the damage evolution.  First the orthotropic behaviour (Linear-elastic) of the composite materials and the anisotropic damage models are implemented and tested at integration point levels. After that, representative structural examples are used to test the damage models and analyse how they behave in various loading conditions. The global force-displacement response is analysed to address the issue related to numerical implementation such as convergence, mesh sensitivity during strain-softening etc., Finally the distribution of damage at the end of loading process is plotted to visualize the damage propagation in a composite material under loading.
+\indent\indent\indent Composite materials, especially fibre-reinforced plastics, are replacing conventional materials like metals because of their superior strength and lightweight properties not only in advanced structural components but also in everyday applications. Fraunhofer LBF specializes in the safety and reliability of sustainable, lightweight structures. So numerical and experimental analysis and efficient manufacturing of fibre-reinforced plastics are essential in designing and developing lightweight, sustainable, and reliable components. The ongoing project at Fraunhofer LBF investigates the fatigue and creep behaviour of short fibre-reinforced thermoplastics. Therefore, the damage behaviour in composite materials must be understood in order to analyze complex phenomena such as fatigue, creep, etc. The main aim of this master thesis is to develop progressive damage models that can predict the initiation and propagation of damage when the composite material exceeds its failure strength. The constitutive equations necessary for simulating the behaviour of damaged materials are established in the framework of continuum damage mechanics (CDM). Because of the complex material behaviour, an anisotropic damage mechanism is employed to represent the damage distribution. Non-linear damage evolution law based on fracture energy regularization technique is utilized to calculate the damage evolution.  First, the composite materials' orthotropic behaviour (linear-elastic) and the damage models are implemented and tested at integration point levels. After that, representative structural examples are used to test the damage models and analyze how they behave under various loading conditions. The global force-displacement response is analyzed to address the issue related to numerical implementation such as convergence, mesh sensitivity during strain-softening etc. Finally, the damage distribution at the end of the loading process is plotted to visualize the damage propagation in a composite material subjected to loading.
+
+
 
 \clearpage
 \thispagestyle{empty}
@@ -101,7 +79,7 @@ basicstyle=\footnotesize,        % the size of the fonts that are used for the c
 \vspace*{2cm}
 \section*{\LARGE{Acknowledgement} }
 \vspace*{1cm}
-\indent\indent\indent   I would like to express my sincere thanks to Dr.-Ing. Dominik Laveuve for his guidance, support and timely feedbacks throughout this master thesis work.  I would like to extend my gratitude to Prof.Dr.-Ing.Björn Kiefer for providing me the chance to pursue this thesis work under his supervision and Dr.-Ing. Andreas Seupel for his valuable insights through out the thesis work.  I would like to thank Fraunhofer LBF for this opportunity and providing me with the required resources for completion of this thesis work. Last but not least, I am thankful to my friends and family for their constant moral support.
+\indent\indent\indent   I would like to express my sincere thanks to Dr.-Ing. Dominik Laveuve for his guidance, support and for his valuable insights throughout this master thesis work.  I would like to extend my gratitude to Prof.Dr.-Ing.Björn Kiefer for providing me the chance to pursue this thesis work under his supervision and Dr.-Ing. Andreas Seupel for his feedback during the thesis work.  I would like to thank Fraunhofer LBF for this opportunity and providing me with the required resources for completion of this thesis work. Last but not least, I am thankful to my friends and family for their constant moral support.
 
 
 
@@ -113,7 +91,7 @@ basicstyle=\footnotesize,        % the size of the fonts that are used for the c
 \section*{\LARGE{Declaration} }
 \vspace*{1cm}
 \indent\indent\indent Hereby, I  formally declare that I  have developed and written the enclosed thesis 
-without illegitimate help of a third party and that no other than the indicated aids have been used for its completion; all thoughts from other sources that have been used literally or indirectly are marked as such. The thesis has not been submitted to any other examination committee in this or a similar form.\\\\\\ Arun Prakash Ganapathy  \\\\ ................................  \\\\ Freiberg, 30.08.2021
+without illegitimate help of a third party and that no other than the indicated aids have been used for its completion; all thoughts from other sources that have been used literally or indirectly are marked as such. The thesis has not been submitted to any other examination committee in this or a similar form.\\\\\\ Arun Prakash Ganapathy  \\\\\\ .........................................  \\\\ Freiberg, 30.08.2021
 
 
 
@@ -127,12 +105,79 @@ without illegitimate help of a third party and that no other than the indicated 
 \chapter*{List of symbols}
 \addcontentsline{toc}{chapter}{\textbf{List of symbols}}
 
+\section*{Symbols for tensors}
+\begin{tabular}{l l l}
+Scalar  &  Light-face letters  &  a, b,...., A, B,...., $\sigma$, $\epsilon$....,\\
+Vectors &  Bold letters        &  \textbf{a}, \textbf{b}...., \textbf{A}, \textbf{B},...., $\mathbf{\Omega}$....,\\
+Second-order tensors  &  Underlined letters  &  \underline{a}, \underline{b},...., \underline{A}, \underline{B},....., $\underline{\sigma}$, $\underline{\epsilon}$....,\\  
+Fourth-order tensors   &  Uppercase blackboard letters  &   $\mathbb{A}$, $\mathbb{B}$, $\mathbb{C}$.....,\\
+\end{tabular}
+
+\section*{Symbols used}
+\begin{longtable}{l l}
+D &  Damage \\
+$\sigma$ & Stress \\
+$\tilde{\sigma}$ & Effective stress \\
+$\epsilon$ & Strain \\
+E  &  Young's modulus \\
+$\nu$  &  Poisson's ratio \\
+G &  Shear modulus \\
+$\mathbf{\Omega}$  &  Damage (vector) \\
+$\underline{D}$ &  Damage tensor \\
+$\underline{I}$ &  Identity tensor  \\
+$\underline{\sigma}$  &  Stress tensor \\
+$\underline{\tilde{\sigma}}$  &  Effective stress tensor \\
+$\underline{\epsilon}$  &  Strain tensor \\
+$\mathbb{M}$  & Damage effect tensor  \\
+$\alpha$  &  Internal state variable \\
+$\mathbb{S}_{0}$  &  Compliance tensor of an undamaged material \\ 
+$\mathbb{S}(D)$  &  Compliance tensor of a damaged material \\ 
+$\mathbb{C}_{0}$  &  Elastic stiffness tensor of an undamaged material \\
+$\mathbb{C}(D)$  &  Elastic stiffness tensor of a damaged material \\
+$F_{I}$ & Failure indices in each principal material direction (I = l, t, z)\\
+$X_{t}, Y_{t}, Z{t}$ & Tensile strength in each principal material direction \\ 
+$X_{c}, Y_{c}, Z{c}$ & Compressive strength in each principal material direction \\ 
+$S$ & Shear strength \\
+$\otimes$ & dyadic product \\
+$:$ & Double-contraction \\
+$.$ & Dot product \\
+$\; ^{T}$ & Transpose \\ 
+$L_{c}$ & Characteristic element length \\
+$G_{f, i}$ & Fracture energy in each principal material direction (i= 1,2,3)\\
+$d_{i}$  &  Damage variable in each principal material direction (i= 1,2,3)\\
+$P_{i}$  & Softening parameter (i= 1,2,3)\\
+\end{longtable}
+
+
+\chapter*{List of abbreviations}
+\addcontentsline{toc}{chapter}{\textbf{List of abbreviations}}
+\resizebox{14cm}{5cm}{ 
+\begin{tabular}{l l}
+ CDM  &  Continuum Damage Mechanics \\
+
+RVE  &  Representative Volume Element \\
+
+FEM  &  Finite Element Methods \\
+FE   &  Finite Element \\
+IDE  &  Integrated Development Environment \\
+USERMAT & User Material routine \\
+APDL  &  ANSYS Parametric Design Language \\
+TB & Table \\
+NTEMPS & Number of Temperature points \\
+NPTS & Number of material constants at a given temperature \\
+BCs & Boundary Conditions \\
+GUI & Graphical User Interface \\
+ATS & Alogrithmic Tangent Stiffness \\
+CT & Compact Tension\\
+
+\end{tabular}}
+
 \newpage
 \setcounter{savepage}{\arabic{page}}
 \pagenumbering{arabic}
 \chapter{Introduction}
 \section{Background and motivation}
-\indent\indent\indent Composite materials are made of two or more dissimilar materials of different physical, chemical or mechanical properties, which, when combined, create a material with properties unlike the individual constituent materials. One of the earliest use of composite materials date back to 3400 B.C when Mesopotamians glued wood strips at different angles to create plywood \citep{cp}. Now a days advanced composite materials are widely used in structural design in various industries such as aerospace, automobile, marine, petrochemical etc., due to their superior properties over traditional engineering materials. \\
+\indent\indent\indent Composite materials are made of two or more dissimilar materials of different physical, chemical or mechanical properties, which, when combined, create a material with properties, unlike the individual constituent materials. One of the earliest use of composite materials dates back to 3400 B.C when Mesopotamians glued wood strips at different angles to create plywood \citep{cp}. Nowadays, advanced composite materials are widely used in structural design in various industries such as aerospace, automobile, marine, petrochemical etc., due to their superior properties over traditional engineering materials. \\
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=1\textwidth]{{composite plane.jpg}}
@@ -141,26 +186,30 @@ without illegitimate help of a third party and that no other than the indicated 
 \end{center}
 \end{figure}
 \FloatBarrier
-\indent\indent\indent Composite materials are attractive because of their high strength, high stiffness-to-density ratio, light weight properties etc. \citep{lapczyk2007progressive}, Another important reason for using composite materials is the possibility to tailor the stiffness and strength to specific load applications flexibly \citep{wang2009three}. Despite their superior physical properties, composite materials can be damaged from a number of sources, both during initial processing and in operation. Since composite materials have complex material response and a low margin of safety through ductility as offered by metals, the development of damage must be understood for predicting failure of such materials \citep{lapczyk2007progressive}. For example fibre-reinforced plastics exhibit local damage such as fibre breakage, matrix cracking, fibre matrix debonds etc., under normal operating conditions which may contribute to the failure \citep{maimi2007continuum}. Therefore the ability to predict the initiation and growth of damage is important for predicting the performance, safety and reliability of the composite materials for commercial use.\\
+\indent\indent\indent Composite materials are attractive because of their high strength, high stiffness-to-density ratio, lightweight properties etc. \citep{lapczyk2007progressive}, Another important reason for using composite materials is the possibility to tailor the stiffness and strength to specific load applications flexibly \citep{wang2009three}. Despite their superior physical properties, composite materials can be damaged from several sources, both during initial processing and in operation. Since composite materials have a complex material response and a low margin of safety through ductility as offered by metals, the development of damage must be understood for predicting failure of such materials \citep{lapczyk2007progressive}. For example, fibre-reinforced plastics exhibit local damage such as fibre breakage, matrix cracking, fibre matrix debonds etc., under normal operating conditions, which may contribute to the failure \citep{maimi2007continuum}. Therefore the ability to predict the initiation and growth of damage is important for predicting the performance, safety and reliability of the composite materials for commercial use.\\
 
-\indent\indent\indent Several methods have been proposed to analyze the failure of composite materials. The simplest of them is to degrade the stiffness of the material instantaneously using a degradation factor once the failure criteria is met \citep{el2015efficient}. While easy to implement, the sudden complete failure of the material does not agree well with the real-life behaviour. Progressive failure analysis of composite materials is required to predict the real-life mechanical behaviour under various loading conditions.  Over the last few decades continuum damage mechanics (CDM) first proposed by \citep{kachanov1986introduction}, has been employed to analyse the progressive degradation of the materials. The CDM approach provides a methodology which can determine the full range of deterioration of the material starting from no damage to the fully disintegrated material. 
+\indent\indent\indent Several methods have been proposed to analyze the failure of composite materials. The simplest of them is to degrade the stiffness of the material instantaneously using a degradation factor once the failure criteria are met \citep{el2015efficient}. While easy to implement, the sudden complete failure of the material does not agree well with the real-life behaviour. Progressive failure analysis of composite materials is required to predict the real-life mechanical behaviour under various loading conditions.  Over the last few decades, the continuum mechanics approach to the damage model based on the works of \citep{kachanov1958rupture} has been employed to analyze the progressive degradation of the materials. The CDM approach provides a methodology that can determine the full range of material deterioration, starting from no damage to the fully disintegrated material. \citep{falzon2011numerical}
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=0.65\textwidth]{{strain-softening.png}}
+\includegraphics[width=0.6\textwidth]{{strain-softening.png}}
  \caption{Strain-softening of composite materials after damage initiation \citep{rafi2007analytical}}
  \label{fig:Strain-softening}
 \end{center}
 \end{figure}
 \FloatBarrier
-In CDM the damage is represented as a set of damage variables which describes the current state of the material, and their development using set of evolution laws. Once the failure criteria is met, the damage variables are calculated using these evolution laws and the stiffness of the material is degraded with the help of the damage variables \citep{murakami2012continuum} i.e., the material experiences strain-softening rather than strain-hardening observed in metals Figure (\ref{fig:Strain-softening}).  The very fact that the damage can be represented as  a set of variables, makes them suitable for numerical simulations. Damage formulations can be easily fitted into non-linear finite element (FE) algorithms with the help of constitutive relations and implemented in simulation codes without the need to rely on special discretization techniques \citep{peerlings1999enhanced}.
+In CDM, the damage is represented as a set of damage variables that describe the material's current state and their development using a set of evolution laws. Once the failure criteria are met, the damage variables are calculated using these evolution laws and the stiffness of the material is degraded with the help of the damage variables \citep{murakami2012continuum} i.e., the material experiences strain-softening rather than strain-hardening observed in metals Figure (\ref{fig:Strain-softening}).  The very fact that the damage can be represented as a set of variables makes them suitable for numerical simulations. Damage formulations can be easily fitted into non-linear finite element (FE) algorithms with the help of constitutive relations and implemented in simulation codes without the need to rely on special discretization techniques \citep{peerlings1999enhanced}.
 
 \section{Scope and Outline}
-\indent\indent\indent  The objective of the thesis is to develop progressive damage models for predicting the initiation and propagation of damage in an orthotropic material when subjected to various loading conditions. Continuum damage mechanics (CDM) provides the framework for developing these damage models. Since the composite materials are orthotropic in nature i.e., they exhibit different material properties in mutually perpendicular directions, the model essentially consists of linear elasticity extended with an anisotropic damage mechanism. Therefore one damage variable is assigned to each principal material direction to represent the development of damage i.e., 2 damage variables are required when the problem is in 2D/Plane-stress  and 3 variables when the problem is in 3D. The numerical modelling of the strain-softening behaviour results in strong mesh dependency which results in convergence issues when the mesh is refined \citep{wang2009three}. To reduce the mesh sensitivity, the fracture energy approach is used which includes fracture energy in the damage evolution laws. This ensures the objectivity of the model by adjusting the energy dissipated by each failure mechanism using a characteristic element length \citep{falzon2011numerical}.\\
+\indent\indent\indent  The objective of the thesis is to develop progressive damage models for predicting the initiation and propagation of the damage in an orthotropic material when subjected to various loading conditions. Continuum damage mechanics (CDM) provides the framework for developing these damage models. Since the composite materials are orthotropic, the model essentially consists of linear elasticity extended with an anisotropic damage mechanism. A second-order orthotropic damage tensor is employed to show the anisotropic damage development. Therefore one damage variable is assigned to each principal material direction to represent the development of damage, i.e., two damage variables are required when the problem is in 2D/Plane-stress and three variables when the problem is in 3D. The numerical modelling of the strain-softening behaviour results in strong mesh dependency, which results in convergence issues when the mesh is refined \citep{wang2009three}. The fracture energy approach is used to reduce the mesh sensitivity, which includes fracture energy in the damage evolution laws. This ensures the objectivity of the model by adjusting the energy dissipated by each failure mechanism using a characteristic element length
+ \citep{falzon2011numerical}.\\
 The stages of the thesis work are briefly described as follows\\\\
-\textbf{Chapter 2} introduces the theoretical framework of continuum damage mechanics (CDM), constitutive relations and constitutive equations necessary for developing orthotropic material model. \\\\
-\textbf{Chapter 3} gives reader a brief introduction into software used and the instructions to develop, compile and implement a material model in an FE environment. \\\\
-\textbf{Chapter 4} gives a brief introduction to the mechanisms of damage and the different types of failure criteria and evolution equations necessary for developing damage models. In the end, the chapter deals with regularization technique used to reduce mesh sensitivity problems and a brief description of how to implement the damage models numerically in a programming software. \\\\
-\textbf{Chapter 5} The results of the finite element simulations are discussed in this chapter. Starting with the implementation of linear elastic behaviour of the orthotropic material the chapter discusses the behaviour of the damage models at integration point level and also using representative structural examples.  
+\textbf{Chapter 2} introduces the theoretical framework of continuum damage mechanics (CDM), constitutive relations and constitutive equations necessary for developing the orthotropic material model. \\\\
+\textbf{Chapter 3} gives the reader a brief introduction to software used and the instructions to develop, compile and implement a material model in an FE environment. \\\\
+\textbf{Chapter 4} gives a brief introduction to the mechanisms of damage, different types of failure criteria and evolution equations necessary for developing damage models. In the end, the chapter deals with the regularization technique used to reduce mesh sensitivity problems and a brief description of how to implement the damage models numerically. \\\\
+\textbf{Chapter 5} The results of the finite element simulations are discussed in this chapter. Starting with the implementation of linear elastic behaviour of the orthotropic material, the chapter discusses the behaviour of the damage models at the integration point level and also using representative structural examples. The issues related to numerical implementation, such as convergence, mesh sensitivity
+during strain-softening etc., are also discussed in this chapter
+
+
 
 \newpage
 \vspace*{15cm}
@@ -270,7 +319,7 @@ Therefore, the damage variable $D$ is characterized by the variation in Young's 
 \subsection{Scalar damage variable}
 \indent\indent\indent In the case of random or isotropic distribution of microcracks or voids, and when void density is small, the global mechanical properties can be approximated as nearly isotropic. The damage state, in this case, may be represented using scalar damage variable D. Thus isotropic damage theory based on isotropic damage variable has been often applied to 3-D problems of creep, elastic-plastic, ductile and fatigue damage \citep{lemaitre2012course}
 \subsection{Vector damage variable}
-\indent\indent\indent The damage state can be specified by the decrease in load carrying effective area due to void development. Hence it is easy to postulate a vector damage variable.  \citep{kachanov1986introduction} tried to extend the definition of damage to anisotropic damage by noting a surface element in an arbitrary direction $n$, he proposed vector damage variable $ \omega = \omega_{n}n$, where $\omega_{n}$ is the effective area fraction. 
+\indent\indent\indent The damage state can be specified by the decrease in load carrying effective area due to void development. Hence it is easy to postulate a vector damage variable.  \citep{kachanov1986introduction} tried to extend the definition of damage to anisotropic damage by noting a surface element in an arbitrary direction $n$, he proposed vector damage variable $ \mathbf{\Omega} = \Omega_{n} \mathbf{n} $, where $\Omega_{n}$ is the effective area fraction. 
 \subsection{Damage tensor of second order}
 \indent\indent\indent To describe an anisotropic damage state, a damage variable of second or higher order tensor is required. Eqn.(\ref{eqn:da_t}) suggests that the damage state (1 - D) is specified by the transformation of the surface element $dA$ of Fig. (\ref{fig:Damage3}b) of the damage state into the corresponding surface element $d\tilde{A}$ in the fictitious undamaged state of Fig.(\ref{fig:Damage3}c) \citep{murakami2012continuum}. 
 \begin{figure}[htbp]
@@ -284,12 +333,12 @@ Therefore, the damage variable $D$ is characterized by the variation in Young's 
 To express damage as a second order tensor, we first consider an arbitrary surface element $PQR$ in RVE in the current damaged configuration $B_{t}$ of Fig.(\ref{fig:Damage4}a). The unit normal vector and area of $PQR$ are denoted by $\nu$ and $dA$. We further postulate the fictitious undamaged configuration $B_{f}$ of Fig.(\ref{fig:Damage4}b) mechanically equivalent to $B_{t}$, and the surface element and its area vector are denoted by $\tilde{P}\tilde{Q}\tilde{R}$ and $\tilde{\nu}d\tilde{A}$ respectively. According to Eqn.(\ref{eqn:da_t}) the damage variable of second-order tensor $D$ should be defined by linear transformation from area vector $\nu dA$ in $B_{t}$ into $\tilde{\nu}d\tilde{A}$ in $B_{f}$, i.e.,
 \begin{equation}
 \label{eqn:second_order_tensor}
-\tilde{\nu}d\tilde{A} = (I - D)\nu dA
+\underline{\tilde{\nu}} d\tilde{A} = (\underline{I} - \underline{D})\underline{\nu} dA
 \end{equation}
 where $I$ is the second order identity tensor. Since the damage tensor $D$ is symmetric, it can be expressed by its spectral decomposition
 \begin{equation}
 \label{eqn:damage_2nd_order}
-D = \sum_{i = 1}^{3} D_{i}n_{i}  \otimes D_{i}n_{i}
+\underline{D} = \sum_{i = 1}^{3} D_{i}\mathbf{n_{i}}  \otimes D_{i}\mathbf{n_{i}}
 \end{equation}
 where $D_{i}$ and $n_{i}$ are the principal values and principal directions of $D$. (Note - The concept and equations in this section are derived from \citep{murakami2012continuum})
 
@@ -298,13 +347,13 @@ where $D_{i}$ and $n_{i}$ are the principal values and principal directions of $
 \subsection{Effective stress tensor for isotropic damage \citep{lemaitre1978aspect}}
 \indent\indent\indent If the damage state is isotropic then the effective stress tensor of three-dimensional state is given by
 \begin{equation}
-\tilde{\sigma} = (1 - D)^{-1} \; \sigma
+ \underline{\tilde{\sigma}} = (1 - D)^{-1} \; \underline{\sigma}
 \end{equation}
 where D is the scalar damage variable, and $\sigma$ is the Cauchy stress tensor. This effective stress simplifies damage theory and can be applied to a number of damage problems like ductile damage. But this cannot be applied to damage of significant anisotropy, such as brittle damage due to microcrack distribution.\\
 \subsection{Asymmetric effective stress tensor for anisotropic damage \citep{murakami2012continuum}}
 \indent\indent\indent The increase in stress caused by the net area reduction in case of anisotropic damage is given by
 \begin{equation}
-\tilde{\sigma} = (I - D)^{-1} \; \sigma
+\underline{\tilde{\sigma}} = (\underline{I} - \underline{D})^{-1} \; \underline{\sigma}
 \label{eqn:assymetric}
 \end{equation}
 where I and D are second-order identity tensor and the second-order damage tensor, respectively. In the actual development of anisotropic damage, the stress-induced in the RVE of damage material is asymmetric. But asymmetric stress tensors make the numerical analysis complicated, and thus different methods of symmetrization have been proposed. A few of them are described as follows
@@ -313,16 +362,16 @@ where I and D are second-order identity tensor and the second-order damage tenso
 \indent\indent\indent A simple symmetrization procedure of Eq.(\ref{eqn:assymetric}) gives,
 \begin{equation}
 \label{eqn: Murakami and Ohno}
-\tilde{\sigma} = \frac{1}{2} [(I - D)^{-1}\;\sigma + \sigma(I - D)^{-1}]
+\underline{\tilde{\sigma}} = \frac{1}{2} [(\underline{I} - \underline{D})^{-1}\;\underline{\sigma} + \underline{\sigma}(\underline{I} - \underline{D})^{-1}]
 \end{equation}
 
 \section{Damage effect tensors}\label{Matrix Representation of Damage effect tensors}
-\indent\indent\indent The general form of an effective stress tensor $\tilde{\sigma}$ is given by the damage effect tensor $\mathbb{M}$ and the corresponding Cauchy stress tensor $\sigma$, i.e.,
+\indent\indent\indent The general form of an effective stress tensor $\underline{\tilde{\sigma}}$ is given by the damage effect tensor $\mathbb{M}$ and the corresponding Cauchy stress tensor $\underline{\sigma}$, i.e.,
 \begin{equation}
-\tilde{\sigma}  = \mathbb{M} \; :  \sigma 
+\underline{\tilde{\sigma}}  = \mathbb{M} \; :  \underline{\sigma}
 \label{eqn:effective_stress_tensor} 
 \end{equation}
-It is convenient to express the tensors in the form of matrices and then execute the tensor operations as a matrix calculus.. To simplify this procedure, we take an orthonormal basis ${n_{i}}$ with principal directions $n_{i}$ of the second-order symmetric damage tensor $D$, and represent the tensor in terms of its component to this basis \citep{murakami2012continuum}. According to Voigt notation, the second-order symmetric tensor $\sigma$ and the related effective stress $\tilde{\sigma}$ are expressed by the column vector of six dimensions:
+It is convenient to express the tensors in the form of matrices and then execute the tensor operations as a matrix calculus.. To simplify this procedure, we take an orthonormal basis ${n_{i}}$ with principal directions $n_{i}$ of the second-order symmetric damage tensor $D$, and represent the tensor in terms of its component to this basis \citep{murakami2012continuum}. According to Voigt notation, the second-order symmetric tensor $\underline{\sigma}$ and the related effective stress $\underline{\tilde{\sigma}}$ are expressed by the column vector of six dimensions:
 \begin{equation}
    [\sigma_{P}]  \equiv  [\sigma_{11} \;\; \sigma_{22} \;\;\sigma_{33} \;\;\sigma_{12} \;\;\sigma_{13} \;\;\sigma_{23} ]^{T}
 \end{equation}
@@ -363,16 +412,16 @@ $$\omega_{11} \; = \; (1 - d_{1}); \;\;  \omega_{22} \; = \; (1 - d_{2}); \;\; \
 
 \section{Hypothesis of strain Equivalence}\label{Hypothesis of Strain Equivalence}
 
-\indent\indent\indent The inelastic constitutive equation of a damaged material is given by the constitutive equation for an undamaged material by replacing the stress tensor $\sigma$ in the equation with the effective stress tensor $\tilde{\sigma}$ \citep{lemaitre1978aspect}. In Figure (\ref{fig:Strain_eq}). the effect of stress $\sigma$ acting on RVE in the current damaged configuration $B_{t}$ is equivalent to that of the stress $\tilde{\sigma}$ in the fictitious undamaged configuration. Therefore the deformation of the damaged material subject to stress $\sigma$ should be equal to that of the fictitious undamaged material subject to stress $\tilde{\sigma}$. Suppose the constitutive equation of an undamaged inelastic material is given by
+\indent\indent\indent The inelastic constitutive equation of a damaged material is given by the constitutive equation for an undamaged material by replacing the stress tensor $\underline{\sigma}$ in the equation with the effective stress tensor $\tilde{\sigma}$ \citep{lemaitre1978aspect}. In Figure (\ref{fig:Strain_eq}). the effect of stress $\underline{\sigma}$ acting on RVE in the current damaged configuration $B_{t}$ is equivalent to that of the stress $\underline{\tilde{\sigma}}$ in the fictitious undamaged configuration. Therefore the deformation of the damaged material subject to stress $\underline{\sigma}$ should be equal to that of the fictitious undamaged material subject to stress $\underline{\tilde{\sigma}}$. Suppose the constitutive equation of an undamaged inelastic material is given by
 \begin{equation}
-  \epsilon = F_{0}(\sigma, \alpha)
+  \epsilon = F_{0}(\underline{\sigma}, \alpha)
 \end{equation} 
 or
 \begin{equation}
-  \dot{\epsilon} = F_{0}(\sigma, \alpha)
+  \dot{\epsilon} = F_{0}(\underline{\sigma}, \alpha)
 \end{equation}
 
-where $\alpha$ is an internal variable representing the internal change other than damage. and ($\dot{}$) denotes the material time derivative
+where $\alpha$ is an internal variable representing the internal change other than damage. and ($\dot{}$) denotes the material time derivative.
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{{6. Strain_eq.png}}
@@ -380,27 +429,27 @@ where $\alpha$ is an internal variable representing the internal change other th
  \label{fig:Strain_eq}
  \end{center}
 \end{figure}
-Then according to hypothesis of strain equivalence, the inelastic constitutive equation of the damaged material represented by a damage variable $D$ should be given by replacing $\sigma$ of Eq.(25) with the effective stress $\tilde{\sigma}$ i.e.,
+Then according to hypothesis of strain equivalence, the inelastic constitutive equation of the damaged material represented by a damage variable $D$ should be given by replacing $\underline{\sigma}$ of Eq.(25) with the effective stress $\underline{\tilde{\sigma}}$ i.e.,
 
 \begin{equation}
-    	\epsilon = F(\sigma, D, \alpha)  = F_{0}(\tilde{\sigma}, \alpha)
+    	\underline{\epsilon} = F(\underline{\sigma}, D, \alpha)  = F_{0}(\underline{\tilde{\sigma}}, \alpha)
 \end{equation}
 
 or 
 \begin{equation}
-    	\dot{\epsilon} = F(\sigma, D, \alpha)  = F_{0}(\tilde{\sigma}, \alpha)
+    	\dot{\underline{\epsilon}} = F(\underline{\sigma}, D, \alpha)  = F_{0}(\underline{\tilde{\sigma}}, \alpha)
 \end{equation}
 
 In case of elastic deformation, constitutive equations for an undamaged and damaged material are given by
 \begin{equation}
-\epsilon = \mathbb{S}_{0}\; : \sigma,
+\underline{\epsilon} = \mathbb{S}_{0}\; : \underline{\sigma},
 \end{equation}\\
 \begin{equation}
-\epsilon = \mathbb{S}(D)\; : \sigma,
+\underline{\epsilon} = \mathbb{S}(D)\; : \underline{\sigma},
 \end{equation}
 where $\mathbb{S}_{0}$ and $\mathbb{S}(D)$  are fourth-order elastic compliance tensors of the materials. Therefore, according to the hypothesis of strain equivalence the elastic constitutive equation of the damaged material and the compliance tensor are given by 
 \begin{equation}
-\epsilon = \mathbb{S}_{0}\; : \tilde{\sigma}  =  [\mathbb{S}_{0}\;: \mathbb{M} (D)]\;: \sigma = \mathbb{S}(D)\; : \sigma
+\underline{\epsilon} = \mathbb{S}_{0}\; : \underline{\tilde{\sigma}}  =  [\mathbb{S}_{0}\;: \mathbb{M} (D)]\;: \underline{\sigma} = \mathbb{S}(D)\; : \underline{\sigma}
 \end{equation}
 \begin{equation}
 \mathbb{S}(D) = \mathbb{S}_{0}\; : \mathbb{M} (D)
@@ -416,21 +465,21 @@ where $\mathbb{M} (D)$ is the damage effect tensor which is given by
 \indent\indent\indent The existence of a strain energy function necessitates the symmetry of the compliance and elastic modulus tensor. But the compliance tensor resulting from the hypothesis of strain equivalence is asymmetric which does not satisfy the requirement. Therefore the hypothesis of strain energy equivalence is used to satisfy the symmetry requirements \citep{cordebois1982damage}. Let us consider an elastic-plastic material and represent the plastic deformation by an internal state variable $\alpha$. The complementary strain energy functions of the material at undamaged and damaged state are given, respectively as follows
 \\
 \begin{equation}
-V_{0}(\sigma,\alpha) = \frac{1}{2}\sigma : \mathbb{S}_{0} : \sigma \; - \; \phi(\alpha)
+V_{0}(\underline{\sigma},\alpha) = \frac{1}{2}\underline{\sigma} : \mathbb{S}_{0} : \underline{\sigma} \; - \; \phi(\alpha)
 \end{equation}
 \\
 \begin{equation}
-V(\sigma,D,\alpha) = \frac{1}{2}\sigma : \mathbb{S}(D) : \sigma \; - \; \phi(\alpha)
+V(\underline{\sigma},D,\alpha) = \frac{1}{2}\underline{\sigma}: \mathbb{S}(D) : \underline{\sigma} \; - \; \phi(\alpha)
 \end{equation}
 \\
 Thus the constitutive equation for the undamaged and damaged material is 
 \\
 \begin{equation}
-\epsilon = \frac{\partial V_{0} }{\partial \sigma} = \mathbb{S}_{0} : \sigma
+\epsilon = \frac{\partial V_{0} }{\partial \underline{\sigma}} = \mathbb{S}_{0} : \underline{\sigma}
 \end{equation}
 \\
 \begin{equation}
-\epsilon = \frac{\partial V }{\partial \sigma} = \mathbb{S}(D) : \sigma
+\epsilon = \frac{\partial V }{\partial \underline{\sigma}} = \mathbb{S}(D) : \underline{\sigma}
 \label{eqn:Strain_energy_eq}
 \end{equation}
 
@@ -441,24 +490,24 @@ Thus the constitutive equation for the undamaged and damaged material is
  \label{fig:Strain_energy_eq}
  \end{center}
 \end{figure}
-Suppose a damaged material of Figure.(\ref{fig:Strain_energy_eq})a subject to stress $\sigma$, and represent the damage and internal state due to inelastic deformation by $D$ and $\alpha$, respectively. Then the strain energy function $V(\sigma,D,\alpha)$ of the damaged material is given by replacing $\sigma$ in the corresponding function $V_{0}(\sigma,\alpha)$ of the undamaged material of Fig.(\ref{fig:Strain_energy_eq})b with the effective stress $\tilde{\sigma}$
+Suppose a damaged material of Figure.(\ref{fig:Strain_energy_eq})a subject to stress $\underline{\sigma}$, and represent the damage and internal state due to inelastic deformation by $D$ and $\alpha$, respectively. Then the strain energy function $V(\underline{\sigma},D,\alpha)$ of the damaged material is given by replacing $\underline{\sigma}$ in the corresponding function $V_{0}(\underline{\sigma},\alpha)$ of the undamaged material of Fig.(\ref{fig:Strain_energy_eq})b with the effective stress $\tilde{\sigma}$
 \\
 \begin{equation*}
-V(\sigma,D,\alpha) \; = \; V_{0}(\tilde{\sigma},\alpha)
+V(\underline{\sigma},D,\alpha) \; = \; V_{0}(\underline{\tilde{\sigma}},\alpha)
 \end{equation*}
 \\
 By the use of this hypothesis, the elastic strain of Eq.(\ref{eqn:Strain_energy_eq}) leads to
 \\
 \begin{equation*}
-\epsilon \; = \; \frac{\partial V(\sigma,D,\alpha)}{\partial \sigma} = \mathbb{S}(D) : \sigma 
+\underline{\epsilon} \; = \; \frac{\partial V(\underline{\sigma},D,\alpha)}{\partial \underline{\sigma}} = \mathbb{S}(D) : \underline{\sigma}
 \end{equation*}
 \\
 \begin{equation*}
-\;\;\;\;\;\;\;\;\;\; = \; \frac{\partial V_{0}(\tilde{\sigma},\alpha)}{\partial \sigma} = \frac{\partial}{\partial \sigma}(\frac{1}{2}\tilde{\sigma} : \mathbb{S}_{0} : \tilde{\sigma} )
+\;\;\;\;\;\;\;\;\;\; = \; \frac{\partial V_{0}(\underline{\tilde{\sigma}},\alpha)}{\partial \underline{\sigma}} = \frac{\partial}{\partial \underline{\sigma}}(\frac{1}{2}\underline{\tilde{\sigma}} : \mathbb{S}_{0} : \underline{\tilde{\sigma}} )
 \end{equation*}
 \\
 \begin{equation*}
-\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; = \; \frac{1}{2}\frac{\partial}{\partial \sigma} [(\mathbb{M}(D):\sigma) : \mathbb{S}_{0} : (\mathbb{M}(D):\sigma)]
+\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; = \; \frac{1}{2}\frac{\partial}{\partial \underline{\sigma}} [(\mathbb{M}(D):\underline{\sigma}) : \mathbb{S}_{0} : (\mathbb{M}(D):\underline{\sigma})]
 \end{equation*}
 \\
 \begin{equation}
@@ -478,7 +527,7 @@ From Eq.(\ref{M_eqn}), the elastic compliance tensor of the damaged material is 
 \indent\indent\indent Orthotropic materials are materials that exhibit different material properties in the mutually perpendicular directions. They are a special form of anisotropic materials because their properties change when measured from different directions. Some examples of orthotropic materials are wood, composite materials etc., Orthotropic materials require 9 independent variables to express their constitutive matrix \citep{ortho}. The 9 elastic constants are three Young's moduli $E_{x},E_{y},E_{z}$, the three Poisson's ratios $\nu_{xy},\nu_{yz},\nu_{zx}$, and three shear moduli $G_{xy},G_{yz},G_{zx}$. The constitutive equation and elastic stiffness matrix of orthotropic material \citep{lempriere1968poisson} has the form,
 
 \begin{equation}
-  \sigma = \mathbb{C}_{0} : \epsilon \;\;\;   or \;\;\;  \sigma_{ij}  =  C^{0}_{ijkl}\epsilon_{kl},
+  \underline{\sigma} = \mathbb{C}_{0} : \underline{\epsilon} \;\;\;   or \;\;\;  \sigma_{ij}  =  C^{0}_{ijkl}\epsilon_{kl},
 \end{equation}
 
 $$
@@ -576,7 +625,7 @@ For every Newton raphson iteration, the USERMAT is called at every material inte
 \item By clicking run, one should see the message "Note - This ANSYS version was linked by Licensee" in the Mechanical APDL output window. This indicates that ANSYS is using the shared library with the USERMAT and the developed models can now be tested\\
 \end{itemize} 
 
-\section{Creating FE model}
+\section{Creating the FE model}
 \indent\indent\indent  The preprocessor section of ANSYS mechanical APDL is used to create and mesh the FE model. The ANSYS user-programmable feature can be used with 18x family elements, which include LINK180, PLANE 182, PLANE 183, SOLID 185, SOLID 186 \citep{lin1999ansys}. The type of element required for creating FE models can be chosen from the element type menu in the preprocessor section. Once the element type is chosen, the material model, and the material properties can be entered in the $Material\; props$ section.  The $Modelling$ section can be utilised to create the geometry and then can be meshed using the $Meshing$ option.\\ \indent\indent\indent To use the same FE model repetitively, to test different material models with different material properties the FE model can be saved in the form of an APDL script.  An APDL script is a simple text file containing the commands required to create and solve the FE model. A simple way to create an APDL script for an FE model is to copy the log of commands automatically created in the log file during the construction of the model and pasting it to a new text file. This log file can be accessed by going to $List>Files>Logfile$. The created APDL script can then be accessed via $File>Read \;input\; from$.
 
 \section{Testing the USERMAT}
@@ -647,15 +696,15 @@ The time history results of each variable at a node or an element can also be sa
 \FloatBarrier
 
 
-\section{Damage initiation criteria}
-\indent\indent\indent   Damage initiation criteria refer to the onset of damage at a material point. Since the properties of the orthotropic composite materials are different in the mutually perpendicular directions, three failure mode indices, $F_{f}, F_{m}, F_{z}$, are used for failure modes in three principal material directions. Since the failure due to tension and compression in each direction cannot happen at the same integration point and at the same time, the failure mode index must be calculated based on whether the material direction is under tension or compression \citep{wang2009three}. Some of the damage initiation criteria are given as follows
+\section{Failure criteria}
+\indent\indent\indent   Failure criteria refer to the onset of damage at a material point. Since the properties of the orthotropic composite materials are different in the mutually perpendicular directions, three failure mode indices, $F_{l}, F_{t}, F_{z}$, are used for failure modes in three principal material directions. Since the failure due to tension and compression in each direction cannot happen at the same integration point and at the same time, the failure mode index must be calculated based on whether the material direction is under tension or compression \citep{wang2009three}. Some of the damage initiation criteria are given as follows
 
 \subsection{3D Hashin's quadratic strain criteria}\label{3D Hashin's quadratic strain criteria }
 \indent\indent\indent Hashin's quadratic strain criteria \citep{wang2009three} includes shear strain components in addition to the normal strain components. The criteria for each material direction is given below 
 
 i) Longitudinal direction 1 ,
 \begin{equation}
-\large{F_{f}^{2} =  
+\large{F_{l}^{2} =  
 	\begin{cases}
 	
 		\Big(\frac{\epsilon_{11}}{\epsilon_{11}^{f,t}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2} \; + \; \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2} \; \geq  \; 1  \; \; \; \; \;  (\epsilon_{11}  >  0)  \\
@@ -669,7 +718,7 @@ i) Longitudinal direction 1 ,
 ii) Transverse direction 2,
 \\
 \begin{equation}
-\large{F_{m}^{2} =  
+\large{F_{t}^{2} =  
 	\begin{cases}
 	
 	\frac{(\epsilon_{22} + \epsilon_{33} )^{2}}{\epsilon_{22}^{f,t} \epsilon_{33}^{f,t}}   -  \frac{\epsilon_{22}\epsilon_{33}}{(\epsilon_{23}^{f})^{2}}  +  \Big(\frac{\epsilon_{12}}{\epsilon_{12}^{f}}\Big)^{2}  + \Big(\frac{\epsilon_{13}}{\epsilon_{13}^{f}}\Big)^{2}  +  \Big(\frac{\epsilon_{23}}{\epsilon_{23}^{f}}\Big)^{2} \;\geq  \; 1 \; \; \; \; \;  (\epsilon_{22}  >  0) \\
@@ -715,11 +764,11 @@ in which  $\mathlarger{\epsilon_{ii}^{f,t}=\frac{\sigma_{i}^{f,t}}{C_{ii}}}$,  $
       \\
       \hline
       \\
-      Longitudinal direction 1 ($F_{f}$) & \Large{$\frac{\tilde{\sigma}_{11}}{X_{T}} $}\small{ $\leq 1$} & \Large{$\frac{\tilde{\sigma}_{11}}{-X_{C}} $}\small{ $\leq 1$} \\
+      Longitudinal direction 1 ($F_{l}$) & \Large{$\frac{\tilde{\sigma}_{11}}{X_{t}} $}\small{ $\leq 1$} & \Large{$\frac{\tilde{\sigma}_{11}}{-X_{c}} $}\small{ $\leq 1$} \\
       \\
-      Transverse direction 2 ($F_{m}$)  &  \Large{$\frac{\tilde{\sigma}_{22}}{Y_{T}} $}\small{ $\leq 1$}  & \Large{$\frac{\tilde{\sigma}_{22}}{-Y_{C}} $}\small{ $\leq 1$}\\
+      Transverse direction 2 ($F_{t}$)  &  \Large{$\frac{\tilde{\sigma}_{22}}{Y_{t}} $}\small{ $\leq 1$}  & \Large{$\frac{\tilde{\sigma}_{22}}{-Y_{c}} $}\small{ $\leq 1$}\\
       \\
-      Transverse direction 3 ($F_{z}$) &  \Large{$\frac{\tilde{\sigma}_{33}}{Z_{T}} $}\small{ $\leq 1$}  &   \Large{$\frac{\tilde{\sigma}_{33}}{-Z_{C}} $}\small{ $\leq 1$}\\
+      Transverse direction 3 ($F_{z}$) &  \Large{$\frac{\tilde{\sigma}_{33}}{Z_{t}} $}\small{ $\leq 1$}  &   \Large{$\frac{\tilde{\sigma}_{33}}{-Z_{c}} $}\small{ $\leq 1$}\\
        \\
        \hline
     \end{tabular}
@@ -729,7 +778,7 @@ in which  $\mathlarger{\epsilon_{ii}^{f,t}=\frac{\sigma_{i}^{f,t}}{C_{ii}}}$,  $
   \end{center}
 \end{table}
 \FloatBarrier
-where $X_{T}$,$ Y_{T} $ and $Z_{T}$ are failure strength in tension and $X_{C}$,$ Y_{C} $ and $Z_{C}$ are failure strength in compression in each principal material direction respectively.
+where $X_{t}$,$ Y_{t} $ and $Z_{t}$ are failure strength in tension and $X_{c}$,$ Y_{c} $ and $Z_{c}$ are failure strength in compression in each principal material direction respectively.
 
 
 \subsection{Modified Hashin's failure criterion}\label{Modified Hashin's failure criterion}
@@ -739,12 +788,12 @@ where $X_{T}$,$ Y_{T} $ and $Z_{T}$ are failure strength in tension and $X_{C}$,
 i) Longitudinal direction 1,
 \\
 \begin{equation}
-\large{F_{f} =  
+\large{F_{l} =  
 	\begin{cases}
 	
-		\left[ \Big(\frac{\tilde{\sigma_{11}}} {X_{T}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2}\right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{11}}  >  0)  \\
+		\left[ \Big(\frac{\tilde{\sigma_{11}}} {X_{t}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2}\right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{11}}  >  0)  \\
 	\\
-\left[ \Big(\frac{\tilde{\sigma_{11}}} {X_{C}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2}\right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{11}}  <  0)
+\left[ \Big(\frac{\tilde{\sigma_{11}}} {X_{c}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2}\right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{11}}  <  0)
 	
 	\end{cases}}
 \end{equation}
@@ -753,12 +802,12 @@ i) Longitudinal direction 1,
 i) Transverse direction 2,
 \\
 \begin{equation}
-\large{F_{f} =  
+\large{F_{t} =  
 	\begin{cases}
 	
-	\left[ 	\Big(\frac{\tilde{\sigma_{22}}} {Y_{T}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2} \right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{22}}  >  0)  \\
+	\left[ 	\Big(\frac{\tilde{\sigma_{22}}} {Y_{t}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2} \right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{22}}  >  0)  \\
 	\\
-\left[ \Big(\frac{\tilde{\sigma_{22}}} {Y_{C}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2}\right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{22}}  <  0)
+\left[ \Big(\frac{\tilde{\sigma_{22}}} {Y_{c}}\Big)^{2} \; + \;\alpha . \Big(\frac{\tilde{\sigma_{12}}}{S}\Big)^{2}\right]^{\frac{1}{2}} \;  \geq  \; 1  \; \; \; \; \;  (\tilde{\sigma_{22}}  <  0)
 	
 	\end{cases}}
 \end{equation}
@@ -767,7 +816,7 @@ i) Transverse direction 2,
 where the shear contribution factor $\alpha$ ranges from 0 to 1.
 
 \section{Types of damage evolution}
-\indent\indent\indent Once the damage is initiated in a material point of the composite material, the stiffness must be degraded. This results in strain-softening of the composite materials rather than strain hardening, which is observed in metals. Several post-damage models have been proposed for progressive failure analysis, and most of them belong to one of the following categories \citep{sleight1999progressive}: instantaneous unloading, gradual loading, or constant stress at failure material point, as shown in Figure .(\ref{fig:Types_of_damage_evolution}) \\  
+\indent\indent\indent Once the damage has initiated in a material point of the composite material, the stiffness must be degraded. This results in strain-softening of the composite materials rather than strain hardening, which is observed in metals. Several post-damage models have been proposed for progressive failure analysis, and most of them belong to one of the following categories \citep{sleight1999progressive}: instantaneous unloading, gradual loading, or constant stress at failure material point, as shown in Figure .(\ref{fig:Types_of_damage_evolution}) \\  
 \indent\indent\indent Since continuum damage mechanics is a methodology to predict the progressive failure behaviour of composites \citep{wang2009three}, non-linear gradual unloading of the composite material is adopted and simulated in this work.  Therefore non-linear material properties degradation model is implemented in this work. Based on the type of damage variable chosen, i.e., scalar, vector or second-order tensor, the damage modelling can be classified into isotropic or anisotropic damage modelling \citep{murakami2012continuum}. A brief description of the types of damage modelling, damage evolution equation used and material tangent stiffness etc. is given below
 
 \begin{figure}[htbp]
@@ -794,20 +843,20 @@ where $P$ is the softening parameter which determines the slope of the damage ev
 \end{equation} 
 where $\mathbb{C}_{0}$ is the material stiffness matrix of the undamaged material. Therefore the stress-strain relation for a strain softening model is given by,\\
 \begin{equation}
-\large{\sigma \; = \; \mathbb{C}(D) : \epsilon }  
+\large{\underline{\sigma}  \; = \; \mathbb{C}(D) : \underline{ \epsilon} }  
 \end{equation}
 \\
 The finite element equations obtained for the strain-softening model are non-linear. Therefore Newton-Raphson technique is used to solve the resulting system of non-linear equations. To ensure the robustness of the Newton-Raphson method, it is important to compute the material tangent constitutive tensor $\mathbb{C}_{T}$ \citep{lapczyk2007progressive}. It can be derived as follows,\\
 \begin{equation*}
-\large{ \mathbb{C}_{T}  \; = \;\frac{\partial \sigma}{\partial \epsilon}  }
+\large{ \mathbb{C}_{T}  \; = \;\frac{\partial \underline{\sigma}}{\partial \underline{ \epsilon} }  }
 \end{equation*}
 
 \begin{equation*}
-\large{\sigma  \; = \; f(\epsilon, D) }
+\large{\underline{\sigma}  \; = \; f(\underline{ \epsilon}, D) }
 \end{equation*}
 
 \begin{equation}
-\large{\mathbb{C}_{T}  \; = \; \mathbb{C}(D) + \epsilon : \Big(\frac{\partial \sigma }{\partial D} \otimes \frac{\partial D}{\partial \epsilon}  \Big)    }
+\large{\mathbb{C}_{T}  \; = \; \mathbb{C}(D) + \underline{ \epsilon}  : \Big(\frac{\partial \underline{\sigma} }{\partial D} \otimes \frac{\partial D}{\partial \underline{ \epsilon}} \Big)    }
 \end{equation}
 \\
 In the above equation, the first term $\mathbb{C}(D)$ is the damaged elasticity matrix and second term is due increased damage. In the absence of damage propagation in an increment (For eg., during unloading), the material tangent tensor is equal to the damaged elasticity matrix, so the response is linearly elastic.
@@ -831,21 +880,21 @@ A simple exponential damage evolution law \citep{wang2009three} for each princip
 \mathlarger{d_{i} = 1 - \frac{e^{-P(F_{I} - 1)} }{F_{I}} } 
 \label{exponential damage equation}
 \end{equation}
-where $d_{i}$ (i = 1,2,3) and $F_{I}$ (I = f,m,z) are damage evolution and failure index in each principal material direction respectively.
+where $d_{i}$ (i = 1,2,3) and $F_{I}$ (I = l,t,z) are damage evolution and failure index in each principal material direction respectively.
 The material tangent stiffness tensor for anisotropic damage \citep{lapczyk2007progressive} can also be derived in the same way as isotropic damage and it is given as follows
 \begin{equation*}
-\large{ \mathbb{C}_{T}  \; = \;\frac{\partial \sigma}{\partial \epsilon}  }
+\large{ \mathbb{C}_{T}  \; = \;\frac{\partial \underline{\sigma} }{\partial \underline{ \epsilon} }  }
 \end{equation*}
 
 \begin{equation*}
-\large{\sigma  \; = \; f(\epsilon, \underline{D}) }
+\large{\sigma  \; = \; f(\underline{ \epsilon}, \underline{D} ) }
 \end{equation*}
 
 \begin{equation}
-\mathbb{C}_{T}  \; = \; \mathbb{C}(D) + \epsilon : \sum_{i = 1}^{3}  \Big( \frac{\partial \sigma }{\partial d_{i}} \otimes \frac{\partial d_{i}}{\partial \epsilon }\Big)
+\mathbb{C}_{T}  \; = \; \mathbb{C}(\underline{D}) + \underline{ \epsilon}  : \sum_{i = 1}^{3}  \Big( \frac{\partial \underline{\sigma} }{\partial d_{i}} \otimes \frac{\partial d_{i}}{\partial \underline{ \epsilon} }\Big)
 \label{Anisotropic tangent stiffness} 
 \end{equation}
-In the above equation, the first term $\mathbb{C}(D)$ is the degraded stiffness matrix and their matrix representation for 2D/Plane-stress and 3D are given in the section () and ().  In the above equation, the second term (i.e., due to increased damage) must be computed only if the corresponding failure mode is active. Since the damage evolution equation $d_{i}$ depends on the failure index, the term $\frac{\partial d_{i}}{\partial \epsilon }$ must be computed based on whether the corresponding damage happened during tension or compression.
+In the above equation, the first term $\mathbb{C}(D)$ is the degraded stiffness matrix and their matrix representation for 2D/Plane-stress and 3D are given in the section (\ref{2d}) and (\ref{3d}).  In the above equation, the second term (i.e., due to increased damage) must be computed only if the corresponding failure mode is active. Since the damage evolution equation $d_{i}$ depends on the failure index, the term $\frac{\partial d_{i}}{\partial \underline{ \epsilon} }$ must be computed based on whether the corresponding damage happened during tension or compression.
 
 \section{Localisation and Mesh Regularisation}\label{Mesh Regularisation}
 \indent\indent\indent Finite element simulations which use continuum damage models are susceptible to mesh dependency.  Because of the strain-softening behaviour of the material, the strain tends to localize, resulting in a strong mesh dependency, i.e., the solution is non-objective with respect to mesh refinement, and the energy dissipated decreases with the decrease in finite element size \citep{lapczyk2007progressive}. Merely improving the numerical solution schemes cannot alleviate the problem associated with mesh dependency and localization. Even if the convergence to the actual solution is improved, the solution may not even make sense from a physical point of view \citep{peerlings1999enhanced}. Therefore the so-called fracture energy regularization is used to reduce the mesh sensitivity. In this technique, the softening law (damage evolution law) is modified so that the amount of energy dissipated over a fully degraded finite element depends on the fracture energy of the material and the finite element size \citep{cervera2006smeared}. Therefore the fracture energy ($G_f$) of the material and characteristic length ($L_{c}$) of the finite element must be included in the damage evolution equations. The damage evolution equations based on fracture energy regularization technique for each principal direction is given below \citep{wang2009three}, \\
@@ -853,13 +902,13 @@ In the above equation, the first term $\mathbb{C}(D)$ is the degraded stiffness 
 In longitudinal direction 1,
 \begin{equation}
 \label{d1}
-\mathlarger{d_{1} = 1 - \frac{e^{P_{1}(F_{f} - 1)}}{F_{f}}}
+\mathlarger{d_{1} = 1 - \frac{e^{P_{1}(F_{l} - 1)}}{F_{f}}}
 \end{equation}
 \\
 In transverse direction 2,
 \begin{equation}
 \label{d2}  
-\mathlarger{d_{2} = 1 - \frac{e^{P_{2}(F_{m} - 1)}}{F_{m}}}
+\mathlarger{d_{2} = 1 - \frac{e^{P_{2}(F_{t} - 1)}}{F_{m}}}
 \end{equation}
 \\
 In transverse direction 3,
@@ -877,28 +926,28 @@ where $\mathlarger{P_{1} = \frac{-\sigma_{11}^{f}\epsilon_{11}^{f}L_{c}}{G_{f,1}
 $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction (i = 1,2,3)  \\ $\mathlarger{\sigma_{ii}^{f}}$ \;\;\; -  \;  failure strength in each principal direction (i = 1,2,3) \\ $\mathlarger{\epsilon_{ii}^{f}}$\;\;\;\;\; - \; failure strain in each principal direction (i = 1,2,3) \\ $\mathlarger{L_{c}}$\;\;\;\;\; - \; Characteristic length
 
 \section{Numerical implementation of the damage model in ANSYS}
-\indent\indent\indent  As discussed before, the material models necessary for simulating progressive damage failure are implemented using the ANSYS user-programmable feature called USERMAT. The damage model implemented using USERMAT computes and updates the current stress and consistent tangent stiffness. The following sections deal with the numerical implementation of the damage model based on two different methods or criteria used to predict the damage initiation.
+\indent\indent\indent  As discussed before, the material models necessary for simulating progressive damage failure are implemented using the ANSYS user-programmable feature called USERMAT. The damage model implemented using USERMAT computes and updates the current stress and consistent tangent stiffness. The following sections deal with the numerical implementation of the damage model based on two different methods or types of failure criteria used to predict the damage initiation.
 \\
 \begin{itemize}
 \item Strain based damage model 
 \item Stress based damage model 
 \end{itemize}
 \subsection{Strain based damage model}
-\indent\indent\indent  In the case of the strain-based damage model, the damage initiation is predicted using current strain ($\epsilon_{n+1}$) \citep{wang2009three}.   The USERMAT receives strains, stresses and state variables at the beginning of the time increment and the current strain increment. The following steps describe the process of implementing the damage model
+\indent\indent\indent  In the case of the strain-based damage model, the damage initiation is predicted using current strain ($\underline{\epsilon}_{n+1}$) \citep{wang2009three}.   The USERMAT receives strains, stresses and state variables at the beginning of the time increment and the current strain increment. The following steps describe the process of implementing the damage model
 
 
 \begin{itemize}
 \item Calculate current strain \textbf{$$ \underline{\epsilon}_{n+1} = \underline{\epsilon}_{n} + \underline{\Delta \epsilon} $$}
 \item Calculate the current degraded material stiffness matrix  \textbf{$\mathbb{C}(\underline{D}_{n})$}
-\item Calculate the failure indices \textbf{$F_{I}(\underline{\epsilon})$} \;\; ( Refer to Sections (\ref{Maximum strain criteria}) and (\ref{3D Hashin's quadratic strain criteria}) )
+\item Calculate the failure indices \textbf{$F_{I}(\underline{\epsilon})$} \;\; ( Refer to Section (\ref{3D Hashin's quadratic strain criteria } ) )
 \item[] Check if $F_{I} \geq F_{I}$max
 \item if \textbf{$F_{I}(\underline{\epsilon})<1$} \textbf{$$\underline{\sigma}_{n+1} \; = \; \mathbb{C}(\underline{D}_{n}) :  \underline{\epsilon}_{n+1} $$} \textbf{$$\mathbb{C}_{T} \; = \; \mathbb{C}(\underline{D}_{n})$$}
 \item else
-\item[]  Calculate the damage variables using damage evolution law, \;\; ( Refer to eqn (\ref{d1}) to (\ref{d3}) ) \textbf{$$d_{1}(F_{f}),\;d_{2}(F_{m}),\;d_{3}(F_{z})$$}
+\item[]  Calculate the damage variables using damage evolution law, \;\; ( Refer to Eqn. (\ref{d1}) to (\ref{d3}) ) \textbf{$$d_{1}(F_{l}),\;d_{2}(F_{t}),\;d_{3}(F_{z})$$}
 \item[]  Check if $d_{i} \geq 0 $ 
 \item[]  Calculate the updated degraded stiffness based on damage variables \textbf{$$\mathbb{C}(\underline{D}_{n+1})$$}
 \item[]  Calculate current stress  \textbf{$$\underline{\sigma}_{n+1} \; = \; \mathbb{C}(\underline{D}_{n+1}) :  \underline{\epsilon}_{n+1} $$}
-\item[] Calculate tangent stiffness \textbf{$$\mathbb{C}_{T}  \; = \;\mathbb{C}(D) + \sum_{i = 1}^{3} \Big( \frac{\partial \mathbb{C}(D) }{\partial d_{i}} : \epsilon \otimes \frac{\partial d_{i}}{\partial \epsilon }\Big)$$}
+\item[] Calculate tangent stiffness \textbf{$$\mathbb{C}_{T}  \; = \;\mathbb{C}(\underline{D}_{n+1}) + \sum_{i = 1}^{3} \Big( \frac{\partial \mathbb{C}(\underline{D}_{n+1}) }{\partial d_{i}} : \underline{\epsilon}_{n+1} \otimes \frac{\partial d_{i}}{\partial \underline{\epsilon}_{n+1} }\Big)$$}
 	
 \end{itemize} 
 
@@ -914,11 +963,11 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 \item if \textbf{$F_{I}(\underline{\sigma})<1$} \textbf{$$\underline{\sigma}_{n+1} \; = \; \underline{\tilde{\sigma}}_{n+1} $$} \textbf{$$\mathbb{C}_{T} \; = \; \mathbb{C}$$}
 \item else
    	
-\item[]  Calculate the damage variables using damage evolution law, \;\; ( Refer eqn (\ref{d1}) to (\ref{d3}) )  \textbf{$$d_{1}(F_{f}),\;d_{2}(F_{m}),\;d_{3}(F_{z})$$}  	
+\item[]  Calculate the damage variables using damage evolution law, \;\; ( Refer eqn (\ref{d1}) to (\ref{d3}) )  \textbf{$$d_{1}(F_{l}),\;d_{2}(F_{t}),\;d_{3}(F_{z})$$}  	
 \item[]  Check if $d_{i} \geq 0 $ 
 \item[]  Calculate the updated degraded stiffness based on damage variables \textbf{$$\mathbb{C}(\underline{D}_{n+1})$$}
-\item[]  Calculate current stress  \textbf{$$\underline{\sigma}_{n+1} \; = \;  M(D)^{-1}:\underline{\tilde{\sigma}}_{n+1} $$}
-\item[] Calculate tangent stiffness \textbf{$$\mathbb{C}_{T}  \; = \;\mathbb{C}(D) + \sum_{i = 1}^{3} \Big( \frac{\partial \mathbb{C}(D) }{\partial d_{i}} : \epsilon \otimes \frac{\partial d_{i}}{\partial \epsilon }\Big)$$}
+\item[]  Calculate current stress  \textbf{$$\underline{\sigma}_{n+1} \; = \;  \mathbb{M}(\underline{D}_{n+1})^{-1}:\underline{\tilde{\sigma}}_{n+1} $$}
+\item[] Calculate tangent stiffness \textbf{$$\mathbb{C}_{T}  \; = \;\mathbb{C}(\underline{D}_{n+1}) + \sum_{i = 1}^{3} \Big( \frac{\partial \mathbb{C}(\underline{D}_{n+1}) }{\partial d_{i}} : \underline{\epsilon}_{n+1} \otimes \frac{\partial d_{i}}{\partial \underline{\epsilon}_{n+1} }\Big)$$}
 	
 \end{itemize} 
 
@@ -936,7 +985,7 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 \node(Damageon)  [decision, below of = Failure, yshift=-1.5cm] {Damage onset?};
 \node(Damagecalc) [process, below of = Damageon, yshift=-1.8cm] {Calculate damage variables};
 \node(Materialeqn)[process, below of = Damagecalc, yshift=-0.3cm] {Material constitutive equations};
-\node(Tangent)[process, below of = Materialeqn, yshift=-0.5cm] { $\underline{\sigma}_{n+1} = \mathbb{C}(D):\underline{\epsilon}_{n + 1}$ \\ (or) \\$\underline{\sigma}_{n+1} = M(D)^{-1}:\underline{\tilde{\sigma}}_{n+1}$ \\ $C_{T}=\frac{\partial \Delta \sigma}{\partial \Delta \epsilon}$};
+\node(Tangent)[process, below of = Materialeqn, yshift=-0.5cm] { $\underline{\sigma}_{n+1} = \mathbb{C}(D):\underline{\epsilon}_{n + 1}$ \\ (or) \\$\underline{\sigma}_{n+1} = \mathbb{M}(\underline{D}_{n+1})^{-1}:\underline{\tilde{\sigma}}_{n+1}$ \\ $ \mathbb{C_{T}} =\frac{\partial \underline{\Delta \sigma}}{\partial \underline{\Delta \epsilon}}$};
 \node(abaqus)[startstop, below of = Tangent, yshift=-0.5cm] {ANSYS solver};
 \node(Converge)[decision, below of = abaqus, yshift=-1cm] {Converged?};
 
@@ -973,10 +1022,10 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
  \end{center}
 \end{figure}
 \FloatBarrier
-\indent\indent\indent The constitutive matrix given in the section (\ref{Constitutive matrix}) and Hooke's law help us model the elastic behaviour of the orthotropic materials. The linear elastic behaviour of the orthotropic material is implemented as USERMAT in ANSYS, and in this section, the results obtained are compared against the standard orthotropic material routine present in ANSYS using a structural example. A bar of length 10 mm and area 1 mm$^2$ (b = 1 mm, t =1 mm) fixed at one end is chosen for the analysis. The bar is constructed using 8 node SOLID 185 elements, and full integration has been used. A displacement of 1 mm is applied at the free end, and the results obtained using the standard and the user-defined material routines are presented below. Figure (\ref{fig:Stress-Strain Linear elastic}) compares the stress-strain relation between standard material routine and the implemented USERMAT
+\indent\indent\indent The constitutive matrix given in the section (\ref{Constitutive matrix}) and Hooke's law help us model the elastic behaviour of the orthotropic materials. The linear elastic behaviour of the orthotropic material is implemented as USERMAT in ANSYS, and in this section, the results obtained are compared against the standard orthotropic material routine present in ANSYS using a structural example. A bar of length 10 mm and area 1 mm$^2$ (b = 1 mm, t =1 mm) fixed at one end is chosen for the analysis. The bar is constructed using 8 node SOLID 185 elements, and full integration has been used Figure.\ref{fig:Mesh and BCs} . A displacement of 1 mm is applied at the free end, and the results obtained using the standard and the user-defined material routines are presented below. Figure (\ref{fig:Stress-Strain Linear elastic}) compares the stress-strain relation between standard material routine and the implemented USERMAT
 \begin{table}
   \begin{center}
-   \resizebox{\columnwidth}{4.5cm}{
+   \resizebox{\columnwidth}{4.6cm}{
      \begin{tabular}{l l l} 
      \hline
      \\
@@ -1016,29 +1065,40 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 \FloatBarrier
 
 \begin{figure}[htbp!]
+\begin{center}
+\includegraphics[width=8cm,height=5cm]{{Mesh and BCs.png}}
+ \caption{Bar used for analysis: Mesh and BCs}
+ \label{fig:Mesh and BCs}
+ \end{center}
+\end{figure}
+\FloatBarrier
+
+
+\begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8cm,height=6cm]{15.Ansys_SX.png}
+         \includegraphics[width=8cm,height=5cm]{15.Ansys_SX.png}
          \caption{$\sigma_{11}$ Component of Stress}
          \label{fig:X Component of Stress}
      \end{subfigure}
      \hspace{1.85cm}
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8cm,height=6cm]{18.User_SX.png}
+         \includegraphics[width=8cm,height=5cm]{18.User_SX.png}
          \caption{$\sigma_{11}$ Component of Stress}
          \label{fig:X Component of Stress2}
      \end{subfigure}
 \end{figure}
 \FloatBarrier
+
 \begin{figure}[htbp!]\ContinuedFloat     
      \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=8cm,height=6cm]{16.Ansys_SY.png}
+        \includegraphics[width=8cm,height=5cm]{16.Ansys_SY.png}
          \caption{ $\sigma_{22}$ Component of Stress}
          \label{fig:Y Component of Stress}
      \end{subfigure}
     \hspace{1.8cm}
       \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8cm,height=6cm]{19.User_SY.png}
+         \includegraphics[width=8cm,height=5cm]{19.User_SY.png}
          \caption{ $\sigma_{22}$ Component of Stress}
          \label{fig:Y Component of Stress2}
      \end{subfigure}
@@ -1046,13 +1106,13 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat     
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8cm,height=6cm]{17.Ansys_SZ.png}
+         \includegraphics[width=8cm,height=5cm]{17.Ansys_SZ.png}
          \caption{$\sigma_{33}$ Component of Stress}
          \label{fig:Z Component of Stress}
      \end{subfigure}
      \hspace{1.8cm}
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8cm,height=6cm]{20.User_SZ.png}
+         \includegraphics[width=8cm,height=5cm]{20.User_SZ.png}
          \caption{$\sigma_{33}$ Component of Stress}
          \label{fig:Z Component of Stress2}
      \end{subfigure}
@@ -1072,7 +1132,7 @@ Figure (\ref{fig:USERMAT}) shows the contour plots of the normal stresses ($\sig
 After that, the material subroutines are implemented in USERMAT and tested in the ANSYS environment using a 3D finite element of unit length. The finite element is subjected to the above loading cases, and the results are compared against the octave implementation
 \FloatBarrier
 \subsection{Uniaxial tension}
-\indent\indent\indent In the case of uniaxial tension, the normal stress is present only in one direction, and two other normal stresses and all the shear stresses are zero, i.e., only one non-zero component is located on the main diagonal of the stress tensor \citep{ubt}.  In the ANSYS environment, uniaxial tension is achieved by applying a displacement on the finite element in a normal direction ($1$), which increases the strain $\epsilon_{11}$ linearly, and the lateral (transverse) contraction is not constrained. 3D Hashin's quadratic strain criteria (Section(\ref{3D Hashin's quadratic strain criteria })) are used to predict the damage initiation, and the exponential damage evolution law (Eqn.\ref{exponential damage equation}) is used to calculate the damage evolution. The results obtained from ANSYS and USERMAT are presented in Figure (\ref{fig:Stress-Strain relation in Ansys}) and (\ref{fig:Stress-Strain relation Octave}) respectively. Figure (\ref{fig:Evolution of damage in 11 direction}) shows the evolution of damage variables.\\ 
+\indent\indent\indent In the case of uniaxial tension, the normal stress is present only in one direction, all the shear stresses are zero, i.e., only one non-zero component is located on the main diagonal of the stress tensor \citep{ubt}.  In the ANSYS environment, uniaxial tension is achieved by applying a displacement on the finite element in a normal direction ($1$), which increases the strain $\epsilon_{11}$ linearly, and the lateral (transverse) contraction is not constrained. 3D Hashin's quadratic strain criteria (Section(\ref{3D Hashin's quadratic strain criteria })) are used to predict the damage initiation, and the exponential damage evolution law (Eqn.\ref{exponential damage equation}) is used to calculate the damage evolution. 
 \begin{figure}[hbt!]
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
@@ -1098,20 +1158,13 @@ After that, the material subroutines are implemented in USERMAT and tested in th
  \end{center}    
 \end{figure}
 \FloatBarrier
-\indent\indent\indent The system is linearly elastic until the damage initiation strain, and the damage is zero. Once the strain $\epsilon_{11}$ exceeds the damage initiation strain, the damage $d_{1}$ starts to evolve exponentially, and the stress starts to drop due to the reduction in stiffness in $1$ direction.  The damage variables $d_{2}$ and $d_{3}$ are zero. The comparison between the figures (\ref{fig:Stress-Strain relation in Ansys}) and (\ref{fig:Stress-Strain relation Octave}) suggests that the material routine implemented in octave and USERMAT are numerically similar to each other.
-The scalar softening parameter ($P$) in the damage evolution equation(\ref{exponential damage equation}) determines the slope of the damage curve. The following figure demonstrates the influence of the softening parameter (P) on the damage evolution
-\begin{figure}[hbt!]
-\begin{center}
-\includegraphics[width=0.7\textwidth]{{21.P_damage.png}}
- \caption{Influence of softening parameter $P$ in the damage evolution)}
- \label{fig:Influence of softening parameter P}
- \end{center}
-\end{figure}
-\FloatBarrier
+\indent\indent\indent The results obtained from ANSYS and USERMAT are presented in Figure (\ref{fig:Stress-Strain relation in Ansys}) and (\ref{fig:Stress-Strain relation Octave}) respectively.  Figure (\ref{fig:Evolution of damage in 11 direction}) shows the evolution of damage variables. The system is linearly elastic until the damage initiation strain, and the damage is zero. Once the strain $\epsilon_{11}$ exceeds the damage initiation strain, the damage $d_{1}$ starts to evolve exponentially, and the stress starts to drop due to the reduction in stiffness in $1$ direction.  The damage variables $d_{2}$ and $d_{3}$ are zero. The comparison between the figures (\ref{fig:Stress-Strain relation in Ansys}) and (\ref{fig:Stress-Strain relation Octave}) suggests that the material routine implemented in octave and USERMAT are numerically similar to each other.
 
-\subsubsection{Drawbacks of strain based damage initiation criteria}
-\indent\indent\indent Since the lateral contraction is not constrained during uniaxial tension, the transverse directions experience negative strain due to Poisson's effect, i.e., $\epsilon_{22}$ and $\epsilon_{33}$ will be negative. If the compressive strength in the transverse directions 2 and 3 are sufficiently low, the strains  $\epsilon_{22}$ and $\epsilon_{33}$ will exceed the damage initiation strain. This leads to damage evolution without the presence of stress in transverse directions 2 and 3. 
-This phenomenon cause convergence issues and the computation stops when the damage evolves without the presence of stress. Figure (\ref{fig:Convergence error}) shows the norm of the residual stress, which does not reach zero (or a below a tolerance ) after 100 iterations of the Newton-raphson, which indicates the failure of the model to converge to a solution when using low compressive strength in the transverse direction ($Y_{c}$ = -180MPa)
+
+\subsubsection{Drawbacks of strain based failure criteria}
+ Since the lateral contraction is not constrained during uniaxial tension, the transverse directions experience negative strain due to Poisson's effect, i.e., $\epsilon_{22}$ and $\epsilon_{33}$ will be negative. If the compressive strength in the transverse directions 2 and 3 are sufficiently low, the strains  $\epsilon_{22}$ and $\epsilon_{33}$ will exceed the damage initiation strain. This leads to damage evolution without the presence of stress in transverse directions 2 and 3. 
+This phenomenon cause convergence issues and the computation stops when the damage evolves without the presence of stress. Figure (\ref{fig:Convergence error}) shows the norm of the residual stress, which does not reach zero (or a below a tolerance ) after 100 iterations of the Newton-raphson, which indicates the failure of the model to converge to a solution when using low compressive strength in the transverse direction ($Y_{c}$ = -180MPa).\\
+\indent\indent\indent This problem can be rectified by using stress-based failure criteria. Since damage evolution depends on failure index $F$, the transverse failure indices $F_{t}$ and $F_{z}$ will be zero during uniaxial tension if the stress-based damage initiation criteria are used. This results in zero damage in the transverse direction. The following section presents the results obtained using stress-based damage model and the use of mesh regularisation in the damage evolution law.
 \begin{figure}[htbp!]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{{22.Convergence_error.png}}
@@ -1120,9 +1173,9 @@ This phenomenon cause convergence issues and the computation stops when the dama
  \end{center}
 \end{figure}
 \FloatBarrier
-This problem can be rectified by using stress-based damage initiation criteria. Since damage evolution depends on failure index $F$, the transverse failure indices $F_{m}$ and $F_{z}$ will be zero during uniaxial tension if the stress-based damage initiation criteria are used. This results in zero damage in the transverse direction. The following section presents the results obtained using stress-based damage initiation and the use of mesh regularisation in the damage evolution law.
 
-\subsubsection{Stress based damage initiation and mesh regularisation}
+
+\subsubsection{Stress based damage models and mesh regularisation}
 \indent\indent\indent As mentioned in section (\ref{Mesh Regularisation}), the strain localisation problems result in strong mesh dependency, so fracture energy and characteristic length ($L_{c}$) of the element have been included in the damage evolution law in order to alleviate the problem. So the material routine is modified by changing the damage initiation criteria to maximum stress criteria (\ref{tab:Maximum stress criterion}) and including the damage evolution equations from (\ref{d1}) to (\ref{d3}). The uniaxial tension is conducted again with the changes mentioned above and with very low transverse compression strength, and the results are presented below.
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
@@ -1150,10 +1203,10 @@ This problem can be rectified by using stress-based damage initiation criteria. 
         \label{fig:Evolution of stress and damage components 2}     
 \end{figure}
 \FloatBarrier
-From figure (\ref{fig:Evolution of damage in 11 direction2}) it is evident that the damage  $d_{2}$ and $d_{3}$ are zero as a result of stress-based damage initiation because the stress components $\sigma_{22}$ and $\sigma_{33}$ are zero under uniaxial tension. While using mesh regularisation, the slope of the damage curve is determined by the characteristic length ($L_{c}$), which depends on the volume of the element. The following figure (\ref{fig:Influence of softening parameter P}) shows how the damage evolution is affected by the volume of the element,
+From figure (\ref{fig:Evolution of damage in 11 direction2}) it is evident that the damage  $d_{2}$ and $d_{3}$ are zero as a result of stress-based damage initiation because the stress components $\sigma_{22}$ and $\sigma_{33}$ are zero under uniaxial tension. While using mesh regularisation, the slope of the damage curve is determined by the characteristic length ($L_{c}$), which depends on the volume of the element. The following figure (\ref{fig:Influence of element volume}) shows how the damage evolution is affected by the volume of the element,
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width=0.65\textwidth]{{22.V_damage.png}}
+\includegraphics[width=0.7\textwidth]{{22.V_damage.png}}
  \caption{Influence of element volume ($V$) on the damage evolution}
  \label{fig:Influence of element volume}
  \end{center}
@@ -1194,14 +1247,14 @@ These comparison between above plots clearly indicates that the tangent stiffnes
 \begin{figure}[hbt!]
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{23.S11vsE11.png}
+         \includegraphics[width=8cm,height=8cm,keepaspectratio]{23.S11vsE11.png}
          \caption{$\sigma_{11}$ vs $\epsilon_{11}$}
          \label{fig:S11vsE11}
      \end{subfigure}
 	\hspace{1.8cm}
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{23.d1.png}
+         \includegraphics[width=8cm,height=8cm,keepaspectratio]{23.d1.png}
          \caption{Evolution of damage $d_{1}$}
          \label{fig:Evolution of damage d1}
      \end{subfigure}
@@ -1209,14 +1262,14 @@ These comparison between above plots clearly indicates that the tangent stiffnes
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat 
      \begin{subfigure}{0.4\textwidth}
-         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{23.S22vsE22.png}
+         \includegraphics[width=8cm,height=8cm,keepaspectratio]{23.S22vsE22.png}
          \caption{$\sigma_{22}$ vs $\epsilon_{22}$}
          \label{fig:S22vsE22}
      \end{subfigure}
      \hspace{1.8cm}
      \begin{subfigure}{0.4\textwidth}
          \centering
-         \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{23.d2.png}
+         \includegraphics[width=8cm,height=8cm,keepaspectratio]{23.d2.png}
          \caption{Evolution of damage $d_{2}$}
          \label{fig:Evolution of damage d2}
      \end{subfigure}
@@ -1247,6 +1300,7 @@ Since the tensile strength in transverse direction is very low compared to the l
      \end{subfigure}
 \end{figure}
 \FloatBarrier
+\vspace*{1.5cm}
 \begin{figure}[htbp!]\ContinuedFloat 
      \begin{subfigure}{0.4\textwidth}
          \includegraphics[width=8.3cm,height=8cm,keepaspectratio]{24.S22vsE22.png}
@@ -1289,7 +1343,8 @@ Since the material properties are the same in transverse $2$ and $3$ direction a
 Each example is chosen to demonstrate specific features of the damage model. These features include, at first, the capability of the model to represent damage initiation and propagation and secondly, the calculation of multiple damage variables, i.e., the ability to show anisotropic damage development in the composite material when a load is applied, both in 2D and 3D setting. Furthermore, mesh convergence studies are performed to show that the regularization scheme employed gives better results than the model with no regularization. For all the finite element simulations of the above models, linear quadrilateral elements are used (both 2D and 3D) with full Gauss integration. The line search option has been enabled during all the simulations to get good convergence behaviour. The material used for the finite element simulations is T700/2510 carbon fiber/epoxy fabric. The material has fibers in parallel in the longitudinal direction and fibers woven in the cross-section that provide additional strength in transverse directions. The material has a high modulus and strength in the longitudinal direction compared to the transverse direction. The material properties are obtained from \citep{jiang2018evaluations} and a summary of the material properties are given in the Table (\ref{tab:Material parameters(Representative structural examples)}). \\
 \begin{table}[!htbp]
   \begin{center}
-     \resizebox{\columnwidth}{5.8cm}{
+    
+\resizebox{16cm}{7.5cm}{ 
      \begin{tabular}{l l l} 
      \hline
      \\
@@ -1327,12 +1382,13 @@ Each example is chosen to demonstrate specific features of the damage model. The
        \hline
     \end{tabular}
     }
-    \\
+     \\
     \caption{Material parameters (Representative structural examples)}
     \label{tab:Material parameters(Representative structural examples)}
   \end{center}
 \end{table}
 \FloatBarrier
+\clearpage
 \subsection{Notched tensile specimen}
 \indent\indent\indent  The first example demonstrates the model's capability to represent damage initiation and propagation. A notched tensile specimen is widely used for analysis of stress concentration, fatigue etc., Because of the symmetry, only one-quarter of the specimen is modelled in the finite element analysis and the geometry and boundary conditions are shown in the Figure (\ref{fig:NT Specimen}). The meshes consist of plane-stress elements (PLANE 182) with bilinear interpolations for displacements, and 2*2 Gauss integration has been utilized. Three different finite element meshes have been used in the fracture zone with the elements of h=1 mm, 0.5 mm, 0.25 mm and a total of 500, 840, 1460 elements respectively for the convergence studies (Figure \ref{fig:Considered meshes}).  At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed by applying a displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The maximum stress criterion (Section \ref{Maximum stress criteria}) has been used to predict the damage initiation.
 
@@ -1349,19 +1405,19 @@ Each example is chosen to demonstrate specific features of the damage model. The
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}{0.27\textwidth}
-         \includegraphics[width=1.28\textwidth]{25.1mm2.png}
+         \includegraphics[width=1.25\textwidth]{25.1mm2.png}
          \caption{h=1 mm, n=500 elements}
          \label{fig:1mm}
      \end{subfigure}
      \hfill
      \begin{subfigure}{0.27\textwidth}
-         \includegraphics[width=1.25\textwidth]{25.0.5mm2.png}
+         \includegraphics[width=1.23\textwidth]{25.0.5mm2.png}
          \caption{h=0.5 mm, n=840 elements}
          \label{fig:0.5mm}
      \end{subfigure}
      \hfill
      \begin{subfigure}{0.27\textwidth}
-         \includegraphics[width=1.23\textwidth]{25.0.25mm2.png}
+         \includegraphics[width=1.20\textwidth]{25.0.25mm2.png}
          \caption{h=0.25 mm, n=1460 elements}
          \label{fig:0.25mm}
      \end{subfigure}
@@ -1749,7 +1805,7 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
 
 \begin{table}[!htbp]
   \begin{center}
-     \resizebox{\columnwidth}{6.5cm}{
+     \resizebox{\columnwidth}{6.7cm}{
      \begin{tabular}{l l l} 
      \hline
      \\
@@ -1814,28 +1870,29 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
      \captionsetup[subfigure]{justification=centering}
      \begin{subfigure}[htbp!]{0.4\textwidth}
      \begin{center}
-         \includegraphics[width=8.2cm,height=8.2cm]{27.d1-lt-e.png}
+         \includegraphics[width=8.2cm,height=9cm]{27.d1-lt-e.png}
          \caption{Damage $d_{1}$ - Element solution}
          \label{fig:d1-lt-e}
      \end{center}
      \end{subfigure}
      \hspace{1.9cm}
      \begin{subfigure}[htbp!]{0.4\textwidth}
-         \includegraphics[width=8.2cm,height=8.2cm]{27.d1-lt-n.png}
+         \includegraphics[width=8.2cm,height=9cm]{27.d1-lt-n.png}
          \caption{Damage $d_{1}$ - Nodal solution}
          \label{fig:d1-lt-n}
      \end{subfigure}
 \end{figure}
 \FloatBarrier
+\vspace*{1.5cm}
 \begin{figure}[htbp!]\ContinuedFloat     
      \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=8.2cm,height=8.2cm]{27.d2-lt-e.png}
+        \includegraphics[width=8.2cm,height=9cm]{27.d2-lt-e.png}
          \caption{Damage $d_{2}$ - Element solution}
          \label{fig:d2-lt-e}
      \end{subfigure}
     \hspace{1.9cm}
       \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.2cm,height=8.2cm]{27.d2-lt-n.png}
+         \includegraphics[width=8.2cm,height=9cm]{27.d2-lt-n.png}
          \caption{Damage $d_{2}$ - Nodal solution}
          \label{fig:d2-lt-n}
      \end{subfigure}
@@ -1843,13 +1900,13 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
 \FloatBarrier
 \begin{figure}[htbp!]\ContinuedFloat     
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.2cm,height=8.2cm]{27.d3-lt-e.png}
+         \includegraphics[width=8.2cm,height=9cm]{27.d3-lt-e.png}
          \caption{Damage $d_{3}$ - Element solution}
          \label{fig:d3-lt-e}
      \end{subfigure}
      \hspace{1.9cm}
      \begin{subfigure}[b]{0.4\textwidth}
-         \includegraphics[width=8.2cm,height=8.2cm]{27.d3-lt-n.png}
+         \includegraphics[width=8.2cm,height=9cm]{27.d3-lt-n.png}
          \caption{Damage $d_{3}$ - Nodal solution}
          \label{fig:d3-lt-n}
      \end{subfigure}
@@ -1862,17 +1919,18 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
 
 \newpage
 \chapter{Summary and Conclusion}
-\indent\indent\indent The main objective of this work is to develop progressive damage models which can clearly describe the damage mechanism in orthotropic composite materials when subject to various loading conditions. The models are developed using the framework of continuum damage mechanics (CDM). A second-order orthotropic damage tensor is employed to show the anisotropic damage development. A key issue in damage modelling is the convergence issue that arise due to the mesh dependant behaviour of the strain-softening models. To reduce the mesh sensitivity, fracture energy regularization technique has been employed which ensures the objectivity of the model by adjusting dissipated energy to each finite element. At first the damage models (both 2D/Plane-stress and 3D cases) are implemented in octave and tested using constitutive driver routines for simple loading cases to verify the numerical implementation, and to understand the behaviour of the material at integration point level i.e., damage-evolution and strain-softening. During the integration point studies it has been observed that the failure criteria which uses strain to predict the damage initiation causes convergence issues when damage evolves without the presence of stress in the given material direction i.e., when transverse strength is very low and an uniaxial tension is applied in longitudinal direction. So the damage models implemented as user-defined material routines (USERMAT) in ANSYS employs stress-based damage initiation criteria\\ 
+\indent\indent\indent The main aim of this thesis was to develop progressive damage models which can clearly describe the damage mechanism in composite materials when subject to various loading conditions. The models are developed using the framework of continuum damage mechanics (CDM). A second-order orthotropic damage tensor is employed to show the anisotropic damage development. A key issue in damage modelling is the convergence issue that arises due to the mesh dependant behaviour of the strain-softening models. The fracture energy regularization technique has been employed to reduce the mesh sensitivity, which ensures the objectivity of the model by adjusting dissipated energy to each finite element. At first, the damage models are implemented in octave and tested using constitutive driver routines for simple loading cases to verify the numerical implementation and understand the damage behaviour at integration point level, i.e., damage-evolution and strain-softening. During the integration point studies, it has been observed that the failure criteria, which uses strain to predict the damage initiation, cause convergence issues when damage evolves without the presence of stress in the given material direction, i.e. when transverse strength is very low, and a uniaxial tension is applied in the longitudinal direction. So the damage models implemented as user-defined material routines (USERMAT) in ANSYS employs stress-based failure criteria\\ 
 
-\indent\indent\indent The user-defined material routines (USERMAT) are tested using a finite element of unit length in ANSYS in order to compare against the results from octave implementation. Once verified, representative structural examples (both 2D and 3D) are used to test the damage models in ANSYS to see how they predict the initiation and evolution of damage under various circumstances. Finite elements of varying sizes are used in the area prone to damage to analyse the mesh sensitivity of the damage models. It has been observed that the employed regularization scheme  significantly improves the global response but it does not fully alleviate the mesh dependency problems which arise due to strain-softening. Therefore a drop in maximum load capacity i.e., reduction in energy dissipation, is observed in the global force-displacement response when the mesh is refined. Different failure criteria has been employed to see how the damage initiation and failure indices affect the model. It has been observed that the inclusion of shear effect naturally reduces the maximum load capacity because of the increase in failure index for the same load. In some cases the shear effect improves the damage propagation and distribution when the magnitude of shear stress is significant compared to the normal stresses in the given material direction. Finally the implemented damage models employing exponential damage evolution laws have the ability to represent the anisotropic damage development with the help of a second-order damage tensor and the strain-softening which results due to the stiffness degradation in both 2D and 3D cases. This work provides a better understanding of the numerical implementation of the anisotropic damage models which can predict the damage behaviour of complex composite materials.\\
+\indent\indent\indent The user-defined material routines (USERMAT) are tested using a finite element of unit length in ANSYS to compare against the results from octave implementation. Once verified, representative structural examples (2D and 3D) are used to test the damage models in ANSYS to see how they predict the initiation and evolution of damage under various circumstances. Finite elements of varying sizes are used in the area prone to damage to analyze the mesh sensitivity of the damage models. It has been observed that the employed regularization scheme significantly improves the global response, but it does not fully alleviate the mesh dependency problems which arise due to strain-softening. Therefore a drop in maximum load capacity, i.e., reduction in energy dissipation, is observed in the global force-displacement response when the mesh is refined. Different failure criteria have been employed to see how the damage initiation and failure indices affect the model. It has been observed that the inclusion of the shear effect naturally reduces the maximum load capacity because of the increase in failure index for the same load. In some cases, the shear effect improves the damage behaviour when the magnitude of shear stress is significant compared to the normal stresses in the given material direction. Finally, the implemented damage models employing exponential damage evolution laws have the ability to represent the anisotropic damage development with the help of a second-order damage tensor and the strain-softening, which results from the stiffness degradation in 2D and 3D cases. This work provides a better understanding of the numerical implementation of the anisotropic damage models, which can predict the damage behaviour of complex composite materials.\\
 
-The following changes and developments can be made in future to make this anisotropic damage model an excellent tool to analyze the complex damage phenomena in composite-materials used in real-life applications
-
+The following changes and developments can be made in future to make this anisotropic damage model an excellent tool to analyze the complex damage phenomena in composite materials used in real-life applications
 \begin{itemize}
-\item By incorporating complex failure criteria like Linde's failure criteria, Hashins quadratic failure criteria \citep{jiang2018evaluations} etc., the damage initiation and propagation can be predicted more accurately because of the inclusion of shear effects and quadratic terms.
+\item By incorporating complex failure criteria like Linde's failure criteria, Hashin's quadratic failure criteria \citep{jiang2018evaluations} etc., the damage initiation and propagation can be predicted more accurately because of the inclusion of shear effects and quadratic terms.
 
-\item From section (\ref{CT specimen}) (CT-Specimen) it is evident that when most of the distorted elements reaches a critical value the simulation terminates. This has been the case in most of the work done before. But in very few works \citep{jiang2018evaluations}, \citep{sokolinsky2011numerical} an option called element deletion (Available in the FEM software Abaqus) is employed to delete a particular failed element when the damage reaches a critical threshold value. This option can be included in the future to avoid the premature termination of analysis and the whole crack propagation in the case of CT specimen can be simulated. 
-\item Non-local gradient-enhanced damage formulations can be incorporated into the anisotropic damage models to eliminate the mesh dependency problems encountered in this work.  These non-local models uses weighted volume averages of the state variables to create spatial interactions which induces smoothing effect on the deformation and damage.  Gradient enhanced formulations uses higher-order deformation gradients of internal variables to create spatial discretization thereby eliminating the mesh dependency. Some of the works beased on non-local damage models are \citep{peerlings1999enhanced}, \citep{fassin2019gradient}, \citep{geers1998experimental}, \citep{seupel2018efficient}
+\item From section (\ref{CT specimen}) (CT-Specimen), it is evident that when most of the distorted elements reach a critical value, the simulation terminates. This has been the case in most of the work done before. But in very few works \citep{jiang2018evaluations}, \citep{sokolinsky2011numerical} an option called element deletion (Available in the FEM software Abaqus) is employed to delete a particular failed element when the damage reaches a critical threshold value. This option can be included in the future to avoid the premature termination of analysis, and the whole crack propagation in the case of CT specimen can be simulated. 
+
+\item Non-local gradient-enhanced damage formulations can be incorporated into the anisotropic damage models to eliminate the mesh dependency problems encountered in this work.  These non-local models use weighted volume averages of the state variables to create spatial interactions, which induces a smoothening effect on the deformation and damage.  Gradient enhanced formulations use higher-order deformation gradients of internal variables to create spatial discretization, eliminating the mesh dependency. Some of the works based on non-local damage models are \citep{peerlings1999enhanced}, \citep{fassin2019gradient}, \citep{geers1998experimental}, \citep{seupel2018efficient}
+
 
 \end{itemize}
 
@@ -1900,7 +1958,7 @@ The following changes and developments can be made in future to make this anisot
 \renewcommand{\thesection}{\Alph{section}.\arabic{section}}
 \setcounter{page}{\thesavepage}
 \section{Elastic stiffness matrix of the damaged material}
-\subsection{Plane stress (2D)}
+\subsection{Plane stress (2D)}\label{2d}
 \indent\indent\indent The elastic stiffness matrix of the damage material for transversely isotropic material has the form \\
 
 \begin{equation*}
@@ -1919,7 +1977,7 @@ where $\mathlarger{D \; = \; 1 - (1 - d_{1})(1 - d_{2}) \nu_{12}\nu_{21}}$ and $
 
 
 
-\subsection{3D}
+\subsection{3D}\label{3d}
 \indent\indent\indent The elastic stiffness matrix of the damage material for orthotropic material has the form \\
 
 
@@ -1946,8 +2004,133 @@ where \; $C_{ij}^{d}\; = \; (1 - d_{i})(1 - d_{j}), \; i,j \; = \; 1,2,3 $ \\
  $C_{44}^{d}\; = \; (1 - d_{1})(1 - d_{2}), $ \\
  $C_{55}^{d}\; = \; (1 - d_{1})(1 - d_{3}),  $ \\
  $C_{66}^{d}\; = \; (1 - d_{2})(1 - d_{3}) $ \\
+ 
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=false,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{black},    % comment style
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{black},       % keyword style
+  language=[95]Fortran,                 % the language of the code
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=3pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{gray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files
+}
+ 
+\section{APDL Script}
+\indent\indent\indent   The APDL script for simulating uniaxial tension in a unit cube is presented below
+\begin{lstlisting}
+/CLEAR
+
+L = 1
+
+STRETCH =0.2
+
+/PREP7
+!*  
+
+ERESX,NO
+ET,1,SOLID185
+!*  
+KEYOPT,1,2,0
+KEYOPT,1,3,0
+KEYOPT,1,6,0
+KEYOPT,1,8,0
+!*  
+
+T1 = 1
+TB,USER,1,1,9,9  
+TBTEMP,T1
+TBDATA,,55000e6,9500e6,9500e6,0.33,0.27,0.33,5500e6,3000e6,5500e6
+TB,STATE,1,,7
+
+MAT,1
+TYPE,1
+
+BLC4,0,0,L,L,L
+ESIZE,,L
+VMESH,1
+
+NSEL,S,LOC,X,0
+D,ALL,UX
+NSEL,ALL
+
+NSEL,S,LOC,Y,0
+D,ALL,UY
+NSEL,ALL
+
+NSEL,S,LOC,Z,0
+D,ALL,UZ
+NSEL,ALL
+
+/SOL
+!*  
+ANTYPE,0
+NSUBST,100,10000,100
+OUTRES,ERASE
+OUTRES,ALL,ALL  
+OUTRES,SVAR,ALL,,NSVAR
+TIME,1
+
+NSEL,S,LOC,X,L
+D,ALL,UX,STRETCH
+NSEL,ALL
+
+/SOL
+/STATUS,SOLU
+SOLVE   
+
+
+FINISH
+
+
+\end{lstlisting}
+
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=false,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=[95]Fortran,                 % the language of the code
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=3pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{gray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files
+}
 
 \newpage
+\section{Source code for USERMAT}
+\indent\indent\indent  The source code for the damage model (Plane-stress) implemented as user material routine in ANSYS is given below
 \begin{lstlisting}
 
   subroutine usermat(
