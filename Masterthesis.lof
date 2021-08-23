@@ -18,10 +18,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Stress-Strain relation (Standard vs user-defined material routine)\relax }}{39}{figure.caption.20}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Bar used for analysis: Mesh and BCs\relax }}{40}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Contour plots of the stress components $\sigma _{11}$, $\sigma _{22}$ and $\sigma _{33}$ of the bar obtained using standard (Figures a,c,e on the left) and user-defined material routine (Figures b, d, f on the right)\relax }}{41}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Contour plots of the stress components $\sigma _{11}$, $\sigma _{22}$ and $\sigma _{33}$ of the bar obtained using standard material routine (Figures a,c,e on the left) and (Figures b, d, f on the right)\relax }}{41}{figure.caption.25}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Evolution of stress for uniaxial tension test in 11 direction\relax }}{42}{figure.caption.26}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Evolution of damage components for uniaxial tension test in 11 direction\relax }}{43}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence issue: Residual norm of the stress $vs$ No of Newton-raphson iterations\relax }}{44}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence issue: Residual norm of the stress\tmspace +\thickmuskip {.2777em} $vs$ \tmspace +\thickmuskip {.2777em}No of Newton-raphson iterations\relax }}{44}{figure.caption.29}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Evolution of stress and damage components with stress-based damage initiation criteria under uniaxial tension\relax }}{45}{figure.caption.32}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Influence of element volume ($V$) on the damage evolution\relax }}{45}{figure.caption.33}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces The strain components $\epsilon _{22}$ and $\epsilon _{33}$ computed using algorithmic (a) and numerical tangent stiffness (b) under uniaxial tension\relax }}{46}{figure.caption.35}%
@@ -32,7 +32,7 @@
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Convergence study: Global force-displacement response for model with regularization (Figure a on the left) and without regularization (Figure b the right) \relax }}{52}{figure.caption.44}%
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Convergence study for model with(Figure a,c,e) and without(b,d,f) regularization: Damage contour plots $d_{1}$ at the end of the loading\relax }}{54}{figure.caption.47}%
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Damage contour plots $d_{2}$ at the end of the loading (Loading in transverse direction) \relax }}{55}{figure.caption.49}%
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparison of force-displacement response in longitudinal and transverse direction for h=0.5mm discretization\relax }}{55}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparison of force-displacement response in longitudinal and transverse direction for h = 0.5mm discretization\relax }}{55}{figure.caption.50}%
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied\relax }}{56}{figure.caption.51}%
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Considered meshes (h is the length of the element along fracture zone and n the total number of elements) \relax }}{57}{figure.caption.54}%
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Convergence study: Global force-displacement response for three different meshes\relax }}{58}{figure.caption.55}%

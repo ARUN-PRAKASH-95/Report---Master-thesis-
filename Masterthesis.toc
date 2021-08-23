@@ -52,7 +52,7 @@
 \contentsline {section}{\numberline {5.2}Damage behaviour at integration point level}{42}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Uniaxial tension}{42}{subsection.5.2.1}%
 \contentsline {subsubsection}{Drawbacks of strain based failure criteria}{43}{subsubsection*.28}%
-\contentsline {subsubsection}{Stress based damage models and mesh regularisation}{44}{subsubsection*.30}%
+\contentsline {subsubsection}{Stress-based damage models and mesh regularization}{44}{subsubsection*.30}%
 \contentsline {subsubsection}{Discussion of tangent stiffness}{46}{subsubsection*.34}%
 \contentsline {subsection}{\numberline {5.2.2}Biaxial tension}{47}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Triaxial tension}{48}{subsection.5.2.3}%
@@ -64,7 +64,6 @@
 \contentsline {chapter}{\numberline {6}Summary and Conclusion}{69}{chapter.6}%
 \contentsline {chapter}{Bibliography}{71}{chapter*.76}%
 \contentsline {chapter}{\textbf {Appendix}}{XX}{chapter*.77}%
-\contentsline {section}{\numberline {A.1}Elastic stiffness matrix of the damaged material}{XX}{section.6.1}%
-\contentsline {subsection}{\numberline {A.1.1}Plane stress (2D)}{XX}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}3D}{XX}{subsection.6.1.2}%
-\contentsline {section}{\numberline {B.2}APDL Script}{XXI}{section.6.2}%
+\contentsline {section}{\numberline {A}Stiffness matrix of the damaged material}{XX}{section.6.1}%
+\contentsline {section}{\numberline {B}APDL Script}{XXI}{section.6.2}%
+\contentsline {section}{\numberline {C}Source code for USERMAT}{XXIII}{section.6.3}%
