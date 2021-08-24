@@ -10,6 +10,7 @@
     \usepackage{lipsum}
     \usepackage{enumitem}
     \usepackage[round]{natbib}
+    \usepackage{emptypage}
     \usepackage[toc,title,page]{appendix}
     \linespread{1.18} 
     \usepackage[]{graphicx}
@@ -21,8 +22,13 @@
 	\usepackage{adjustbox}
     \usepackage{subcaption}
     \usepackage{multirow}
-    \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+    \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=-1mm]{geometry}
     \usepackage{fancyhdr}
+	\pagestyle{fancy}
+	\fancyhead[LE,LO]{Chapter \thechapter}    
+     
+    \renewcommand{\headrulewidth}{0.05pt}
+ 
     \usepackage{longtable}
     \usepackage{relsize}
     \usepackage{titlesec}
@@ -68,7 +74,8 @@
 \pagenumbering{Roman}
 \vspace*{2cm}
 \section*{\LARGE{Abstract} }
-\indent\indent\indent Composite materials, especially fibre-reinforced plastics, are replacing conventional materials like metals because of their superior strength and lightweight properties not only in advanced structural components but also in everyday applications. Fraunhofer LBF specializes in the safety and reliability of sustainable, lightweight structures. So numerical and experimental analysis and efficient manufacturing of fibre-reinforced plastics are essential in designing and developing lightweight, sustainable, and reliable components. The ongoing project at Fraunhofer LBF investigates the fatigue and creep behaviour of short fibre-reinforced thermoplastics. Therefore, the damage behaviour in composite materials must be understood in order to analyze complex phenomena such as fatigue, creep, etc. The main aim of this master thesis is to develop progressive damage models that can predict the initiation and propagation of damage when the composite material exceeds its failure strength. The constitutive equations necessary for simulating the behaviour of damaged materials are established in the framework of continuum damage mechanics (CDM). Because of the complex material behaviour, an anisotropic damage mechanism is employed to represent the damage distribution. Non-linear damage evolution law based on fracture energy regularization technique is utilized to calculate the damage evolution.  First, the composite materials' orthotropic behaviour (linear-elastic) and the damage models are implemented and tested at integration point levels. After that, representative structural examples are used to test the damage models and analyze how they behave under various loading conditions. The global force-displacement response is analyzed to address the issue related to numerical implementation such as convergence, mesh sensitivity during strain-softening etc. Finally, the damage distribution at the end of the loading process is plotted to visualize the damage propagation in a composite material subjected to loading.
+\pagestyle{empty}
+\indent\indent\indent Composite materials, especially fibre-reinforced plastics, are replacing conventional materials like metals because of their superior strength and lightweight properties not only in advanced structural components but also in everyday applications. Fraunhofer LBF specializes in the safety and reliability of sustainable, lightweight structures. So numerical and experimental analysis and efficient manufacturing of fibre-reinforced plastics are essential in designing and developing lightweight, sustainable, and reliable components. The ongoing project at Fraunhofer LBF investigates the fatigue and creep behaviour of short fibre-reinforced thermoplastics. Therefore, the damage behaviour in composite materials must be understood in order to analyze complex phenomena such as fatigue, creep, etc. The main aim of this master thesis is to develop progressive damage models that can predict the initiation and propagation of damage when the composite material exceeds its failure strength. The constitutive equations necessary for simulating the behaviour of damaged materials are established in the framework of continuum damage mechanics (CDM). Because of the complex material behaviour, anisotropic damage mechanism is employed to represent the damage distribution. Non-linear damage evolution law based on fracture energy regularization technique is utilized to calculate the damage evolution.  First, the damage models are implemented and tested at integration point levels. After that, representative structural examples are used to analyze how the damage models behave under various loading conditions. The global force-displacement response is examined to address the issue related to numerical implementation such as convergence, mesh sensitivity during strain-softening etc. Finally, the damage distribution at the end of the loading process is plotted to visualize the damage propagation in a composite material subjected to loading.
 
 
 
@@ -79,7 +86,7 @@
 \vspace*{2cm}
 \section*{\LARGE{Acknowledgement} }
 \vspace*{1cm}
-\indent\indent\indent   I would like to express my sincere thanks to Dr.-Ing. Dominik Laveuve for his guidance, support and for his valuable insights throughout this master thesis work.  I would like to extend my gratitude to Prof.Dr.-Ing.Björn Kiefer for providing me the chance to pursue this thesis work under his supervision and Dr.-Ing. Andreas Seupel for his feedback during the thesis work.  I would like to thank Fraunhofer LBF for this opportunity and providing me with the required resources for completion of this thesis work. Last but not least, I am thankful to my friends and family for their constant moral support.
+\indent\indent\indent   I would like to express my sincere thanks to Dr.-Ing. Dominik Laveuve for his guidance, support and valuable insights throughout this master thesis work.  I would like to extend my gratitude to Prof.Dr.-Ing.Björn Kiefer for providing me the chance to pursue this thesis work under his supervision and Dr.-Ing. Andreas Seupel for his valuable feedback during the thesis work.  I would like to thank Fraunhofer LBF for this opportunity and providing me with the required resources for completion of this thesis work. Last but not least, I am thankful to my friends and family for their constant moral support.
 
 
 
@@ -175,6 +182,8 @@ CT & Compact Tension\\
 \newpage
 \setcounter{savepage}{\arabic{page}}
 \pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhead[RE,RO]{Introduction} 
 \chapter{Introduction}
 \section{Background and motivation}
 \indent\indent\indent Composite materials are made of two or more dissimilar materials of different physical, chemical or mechanical properties, which, when combined, create a material with properties, unlike the individual constituent materials. One of the earliest use of composite materials dates back to 3400 B.C when Mesopotamians glued wood strips at different angles to create plywood \citep{cp}. Nowadays, advanced composite materials are widely used in structural design in various industries such as aerospace, automobile, marine, petrochemical etc., due to their superior properties over traditional engineering materials. \\
@@ -200,21 +209,20 @@ CT & Compact Tension\\
 In CDM, the damage is represented as a set of damage variables that describe the material's current state and their development using a set of evolution laws. Once the failure criteria are met, the damage variables are calculated using these evolution laws and the stiffness of the material is degraded with the help of the damage variables \citep{murakami2012continuum} i.e., the material experiences strain-softening rather than strain-hardening observed in metals Figure (\ref{fig:Strain-softening}).  The very fact that the damage can be represented as a set of variables makes them suitable for numerical simulations. Damage formulations can be easily fitted into non-linear finite element (FE) algorithms with the help of constitutive relations and implemented in simulation codes without the need to rely on special discretization technique \citep{peerlings1999enhanced}.
 
 \section{Scope and Outline}
-\indent\indent\indent  The objective of the thesis is to develop progressive damage models for predicting the initiation and propagation of the damage in an orthotropic material when subjected to various loading conditions. Continuum damage mechanics (CDM) provides the framework for developing these damage models. Since the composite materials are orthotropic, the model essentially consists of linear elasticity extended with an anisotropic damage mechanism. A second-order orthotropic damage tensor is employed to show the anisotropic damage development. Therefore one damage variable is assigned to each principal material direction to represent the development of damage, i.e., two damage variables are required when the problem is in 2D/Plane-stress and three variables when the problem is in 3D. The numerical modelling of the strain-softening behaviour results in strong mesh dependency, which results in convergence issues when the mesh is refined \citep{wang2009three}. The fracture energy approach is used to reduce the mesh sensitivity, which includes fracture energy in the damage evolution laws. This ensures the objectivity of the model by adjusting the energy dissipated by each failure mechanism using a characteristic element length
- \citep{falzon2011numerical}.\\
+\indent\indent\indent  The objective of the thesis is to develop progressive damage models for predicting the initiation and propagation of the damage in an orthotropic material when subjected to various loading conditions. Continuum damage mechanics (CDM) provides the framework for developing these damage models. Since the composite materials are orthotropic, the model essentially consists of linear elasticity extended with an anisotropic damage mechanism. A second-order orthotropic damage tensor is employed to show the anisotropic damage development. Therefore one damage variable is assigned to each principal material direction to represent the development of damage, i.e., two damage variables are required when the problem is in 2D/Plane-stress and three variables when the problem is in 3D. The numerical modelling of the strain-softening behaviour results in strong mesh dependency, which results in convergence issues when the mesh is refined \citep{wang2009three}. The fracture energy approach is used to reduce the mesh sensitivity, which includes fracture energy in the damage evolution laws. This ensures the objectivity of the model by adjusting the energy dissipated by each failure mechanism using a characteristic element length ($L_{c}$) \citep{falzon2011numerical}.\\
 The stages of the thesis work are briefly described as follows\\\\
 \textbf{Chapter 2} introduces the theoretical framework of continuum damage mechanics (CDM), constitutive relations and constitutive equations necessary for developing the orthotropic material model. \\\\
 \textbf{Chapter 3} gives the reader a brief introduction to software used and the instructions to develop, compile and implement a material model in an FE environment. \\\\
-\textbf{Chapter 4} gives a brief introduction to the mechanisms of damage, different types of failure criteria and evolution equations necessary for developing damage models. In the end, the chapter deals with the regularization technique used to reduce mesh sensitivity problems and a brief description of how to implement the damage models numerically. \\\\
-\textbf{Chapter 5} The results of the finite element simulations are discussed in this chapter. Starting with the implementation of linear elastic behaviour of the orthotropic material, the chapter discusses the behaviour of the damage models at the integration point level and also using representative structural examples. The issues related to numerical implementation, such as convergence, mesh sensitivity
+\textbf{Chapter 4} gives a brief introduction to the damage mechanisms, different types of failure criteria and evolution equations necessary for developing damage models. Finally, the chapter deals with the regularization technique used to reduce mesh sensitivity and a brief description of how to implement the damage models numerically. \\\\
+\textbf{Chapter 5} The results of the finite element simulations are discussed in this chapter. Starting with the implementation of linear elastic behaviour of the orthotropic material, the chapter discusses the behaviour of the damage models at the integration point level and then using representative structural examples. The issues related to numerical implementation, such as convergence, mesh sensitivity
 during strain-softening etc., are also discussed in this chapter
 
 
 
 \newpage
-\vspace*{15cm}
+\fancyhead[RE,RO]{Continuum damage mechanics} 
 \chapter{Continuum damage mechanics}
-\indent\indent\indent Continuum damage mechanics (CDM) is a theory for analyzing fracture  and  damage processes in materials from a continuum mechanics point of view. (CDM) provides a continuum perspective for microflaws initiation, propagation, and their coalescence that results in macroscopic damage and fractures. CDM uses state variables to represent the damage effect on the stiffness and remaining life of the material that is deteriorating as a result of load and ageing. A damage activation function is required to predict the initiation of damage and evolution laws are required to represent the propagation of damage in material subjected to load \citep{murakami2012continuum}.
+\indent\indent\indent Continuum damage mechanics (CDM) is a theory for analyzing fracture  and  damage processes in materials from a continuum mechanics point of view. (CDM) provides a continuum perspective for microcracks initiation, propagation, and their coalescence that results in macroscopic damage. CDM uses state variables to represent the damage effect on the stiffness and remaining life of the material that is deteriorating as a result of load and ageing. A failure criteria is required to predict the initiation of damage and evolution laws are required to represent the propagation of damage in material subjected to load \citep{murakami2012continuum}.
 
 \section{Damage}
 \indent\indent\indent  Consider a body B of where a crack of length $a$ has developed when subjected to an external load F as shown in Figure. \ref{fig:Damage} . A number of microcracks would be observed around the region arbitrary point P($x$) near the crack tip.
@@ -230,7 +238,7 @@ These microcracks are usually developed due to breakage of atomic bonds, or defe
 \FloatBarrier
 
 \section{Representative Volume Element(RVE)}
-\indent\indent\indent  To discuss the effects of microcracks in a material using CDM one must homogenize the mechanical effects of microstructure and represent them as a macroscopic continuous field in the material. For this purpose, we take a small region of a mesoscale around the material point P($x$) in body B, as shown in Figure. \ref{fig:Damage}. We assume that the material with discontinuities in this region as homogeneous, and the state of the material in this region can be represented by the statistical average of the mechanical variables in that region. This region is said to be the Representative Volume Element (RVE) \citep{hill1963elastic} and \citep{hashin1983analysis}. For such RVE, the following two conditions must be satisfied \citep{murakami2012continuum}:
+\indent\indent\indent  To discuss the effects of microcracks in a material using CDM one must homogenize the mechanical effects of microstructure and represent them as a macroscopic continuous field in the material. For this purpose, we take a small region of a mesoscale around the material point P($x$) in body B, as shown in Figure. (\ref{fig:Damage}). We assume that the material with discontinuities in this region as homogeneous, and the state of the material in this region can be represented by the statistical average of the mechanical variables in that region. This region is said to be the Representative Volume Element (RVE) \citep{hill1963elastic} and \citep{hashin1983analysis}. For such RVE, the following two conditions must be satisfied \citep{murakami2012continuum}:
 \begin{itemize}
 \item  For the material in the RVE to be homogeneous, the RVE should be sufficiently large enough to contain a number of discontinuities
 \item To represent a non-uniform macroscopic field by means of a continuum, the size of RVE should be small enough so that the variation of the macroscopic variable in it may be insignificantly small 
@@ -244,7 +252,7 @@ The size of RVE depends on the microstructure of the relevant material and their
 \end{itemize}
 
 \section{Concept of continuum damage mechanics (CDM)}
-\indent\indent\indent The basic concept of CDM is that a set of damage variables can represent the microstructural defects in a material. Continuum damage mechanics first represent the damage state of a material in terms of a set of internal state variables and then describe the mechanical behaviour of the damaged material and then development of damage by use of these state variables. The mechanical behaviour of a damaged material can be described using the notion of effective stress, together with the hypothesis of mechanical equivalence between damaged and undamaged material \citep{murakami2012continuum}. The concept of effective stress and mechanical equivalence will be discussed in the following sections.
+\indent\indent\indent The basic concept of CDM is that a set of damage variables can represent the microstructural defects in a material. Continuum damage mechanics first represent the state of damage in a material using a set of internal state variables and then describe the mechanical behaviour of the damaged material and then development of damage by use of these state variables. The mechanical behaviour of a damaged material can be described using the notion of effective stress, together with the hypothesis of mechanical equivalence between damaged and undamaged material \citep{murakami2012continuum}. The concept of effective stress and mechanical equivalence will be discussed in the following sections.
 \subsection{Modelling by Effective area reduction}
 Let us consider body B of Fig. (\ref{fig:Damage2}) and take an RVE at a point $P(x)$ in B. If the total void area in $dA$ is  $ dA_{D} $, the mechanical effect of $dA$ will be decreased by $dA_{D}$. Then the area,
 \begin{equation}
@@ -557,10 +565,10 @@ $$
 
 
 \newpage
-\vspace*{3cm}
+\fancyhead[RE,RO]{Working environment} 
 \chapter{Working environment}
 \vspace*{1cm}
-\indent\indent\indent  The material models necessary for simulating progressive damage must be programmed first using a programming language, compiled, and then tested in a commercial FEM software. The programming language of choice for most commercial FEM software is FORTRAN because it is fast and straightforward. To program the material model, an integrated development environment (IDE) and a compiler compatible with the version of the FEM software are required. This chapter describes the tools required for creating damage models and instructions on how to use them in order to test the models in detail.   
+\indent\indent\indent  The material models necessary for simulating damage must be programmed first using a programming language, compiled, and then tested in a commercial FEM software. The programming language of choice for most commercial FEM software is FORTRAN because it is fast and efficient. To program the material model, an integrated development environment (IDE) and a compiler compatible with the version of the FEM software are required. This chapter describes the tools required for creating damage models and instructions on how to use them in order to test the models in detail.   
 \vspace*{1cm}
 \section{Software tools required}
 \begin{itemize}
@@ -676,6 +684,7 @@ The time history results of each variable at a node or an element can also be sa
 
 
 \clearpage
+\fancyhead[RE,RO]{Progressive failure analysis of orthotropic composite materials} 
 \chapter{Progressive failure analysis of orthotropic composite materials }
 \section{Fibre-reinforced Composites}
 \indent\indent\indent  Fibre-reinforced composites is a term for a large family of materials ranging from short fibre reinforced polyamides to unidirectional graphite fibre epoxies. They are usually orthotropic in nature i.e., their material properties differ in mutually perpendicular directions. Fibre-reinforced composites consist of three components 1) the fibres as the discontinuous or dispersed phase, 2) the matrix as the continuous phase, and 3) the fine interphase region, also known as the interface \citep{frp}. The failure in fibre reinforced composites happens mainly due to matrix cracking or fibre failure. Therefore the failure can be divided mainly into two types, namely 1) Longitudinal failure and 2) Transverse failure \citep{maimi2007continuum}. The mechanism of both failure in a unidirectional fibre-reinforced composite material, their causes and their effects on material behaviour are discussed in detail below
@@ -973,7 +982,7 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 
 \newpage
 \section{Schematic of UMAT implementation}
-\indent\indent\indent The flowchart below shows the schematic of the user material subroutine (USERMAT) implementation for both and strain and stress based damage model and how the subroutine interacts with the ANSYS environment.
+\indent\indent\indent The flowchart below shows the schematic of the user material subroutine (USERMAT) implementation for both and strain and stress based damage model and how the subroutine interacts with the ANSYS environment.\\
 
 \begin{center}
 \begin{adjustbox}{max height=1.35\textwidth,center}
@@ -981,7 +990,7 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 
 \node(straininc) [startstop] {Apply increment $\Delta\epsilon$};
 \node(strainadd) [process, below of = straininc] {$\underline{\epsilon}_{n+1} = \underline{\epsilon}_{n} + \underline{\Delta\epsilon} $ \\ $\underline{\tilde{\sigma}}_{n+1} = \mathbb{C}_{0} : \underline{\epsilon}_{n+1} $};
-\node(Failure)   [process, below of = strainadd] {Failure Criteria ($F_{I}(\underline{\epsilon}))$ or $F_{I}(\underline{\sigma}))$ };
+\node(Failure)   [process, below of = strainadd] {Failure Criteria\\	 $(F_{I}(\underline{\epsilon})$ or $F_{I}(\underline{\sigma})$ };
 \node(Damageon)  [decision, below of = Failure, yshift=-1.5cm] {Damage onset?};
 \node(Damagecalc) [process, below of = Damageon, yshift=-1.8cm] {Calculate damage variables};
 \node(Materialeqn)[process, below of = Damagecalc, yshift=-0.3cm] {Material constitutive equations};
@@ -997,13 +1006,13 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 \draw [arrow] (Materialeqn) -- (Tangent);
 \draw [arrow] (Tangent) -- (abaqus);
 \draw [arrow] (abaqus) -- (Converge);
-\draw [arrow] (Damageon.east) node[xshift=0.6cm,anchor = south]{no} -| ++(1,-5.8) -- ++(-0.5,0)  (Materialeqn);
+\draw [arrow] (Damageon.east) node[xshift=0.6cm,anchor = south]{no} -| ++(1,-5.8) -- ++(-0.4,0)  (Materialeqn);
 
-\draw [arrow] (Converge.west)node[xshift=-1.7cm,yshift=-0.3cm,anchor = north]{yes} -| node[xshift=10cm,sloped,above]{Next increment until failure or end of analysis}++(-4.5,19.9) -- ++ (4,0) (straininc); 
+\draw [arrow] (Converge.west)node[xshift=-1.7cm,yshift=-0.3cm,anchor = north]{yes} -| node[xshift=10cm,sloped,above]{Next increment until failure or end of analysis}++(-4.5,19.9) -- ++ (3.9,0) (straininc); 
 
-\draw [arrow] (Converge.east)node[xshift=1.7cm,yshift=-0.3cm,anchor = north]{no} -| node[xshift=10.5cm,sloped,below]{Iterate until convergence} ++(3.8,19.2)-- ++ (-5.9,0)  (straininc); 
+\draw [arrow] (Converge.east)node[xshift=1.7cm,yshift=-0.3cm,anchor = north]{no} -| node[xshift=10.5cm,sloped,below]{Iterate until convergence} ++(3.8,19.2)-- ++ (-5.85,0)  (straininc); 
 
-\draw [arrow] (0,-16.25)-|node[xshift=6.5cm,sloped,above]{Do for each integration point}++(-4.5,15.4)--(-0,-0.9);
+\draw [arrow] (0,-16.45)-|node[xshift=6.5cm,sloped,above]{Do for each integration point}++(-4.5,15.55)--(-0,-0.9);
  
 \end{tikzpicture}
 \end{adjustbox}
@@ -1011,6 +1020,7 @@ $\mathlarger{G_{f,i}}$ \; - \;is the fracture energy in each principal direction
 
 
 \newpage
+\fancyhead[RE,RO]{Results and Discussion} 
 \chapter{Results and Discussion}
 \section{Modelling linear elastic behaviour of orthotropic materials}
 \indent\indent\indent Before implementing the damage behaviour in orthotropic materials, their linear elastic behaviour must implemented which describes the phenomena before the damage initiation. As mentioned before orthtoropic materials require 9 independent material constants to model their elastic behaviour. Table (\ref{tab:Material parameters(Integration point studies}) summarises the utilised material parameters. The material parameters presented in table (\ref{tab:Material parameters(Integration point studies}) belongs to an unidirectional glass fiber-reinforced epoxy material obtained from \citep{lapczyk2007progressive}. In this material, the strength in the longitudinal direction ($X_{t}$ and $X_{c}$) is very high compared to the transverse directions ($Y_{t}$ and $Y_{c}$) because the fibers are aligned parallel to the longitudinal direction. 
@@ -1191,20 +1201,19 @@ This phenomenon cause convergence issues and the computation stops when the dama
          \caption{$\sigma$ vs $\epsilon$ (Octave)}
          \label{fig:Stress-Strain relation Octave2}
      \end{subfigure}
+     \caption{Evolution of stress components (Stress-based damage model)}
+
 \end{figure}
 \FloatBarrier
-\begin{figure}[htbp!]\ContinuedFloat 
-	\centering
-     \begin{subfigure}{0.4\textwidth}
-         \includegraphics[width=9cm,height=6.3cm]{22.d1,d2,d3.png}
-         \caption{Evolution of damage}
-         \label{fig:Evolution of damage in 11 direction2}
-     \end{subfigure}
-        \caption{Evolution of stress and damage components with stress-based damage initiation criteria under uniaxial tension}
-        \label{fig:Evolution of stress and damage components 2}     
+\begin{figure}[htbp!]\ContinuedFloat
+\begin{center} 
+\includegraphics[width=9cm,height=6.3cm]{22.d1,d2,d3.png}
+\caption{Evolution of damage components (Stress-based damage model)}
+\label{fig:Evolution of stress and damage components 2} 
+\end{center}    
 \end{figure}
 \FloatBarrier
-From figure (\ref{fig:Evolution of damage in 11 direction2}) it is evident that the damage  $d_{2}$ and $d_{3}$ are zero as a result of stress-based damage failure criteria because the stress components $\sigma_{22}$ and $\sigma_{33}$ are zero under uniaxial tension. While using mesh regularization, the slope of the damage curve is determined by the characteristic length ($L_{c}$), which depends on the volume of the element. The following figure (\ref{fig:Influence of element volume}) shows how the damage evolution is affected by the element volume ($V$),
+From figure (\ref{fig:Evolution of stress and damage components 2}) it is evident that the damage  $d_{2}$ and $d_{3}$ are zero as a result of stress-based damage failure criteria because the stress components $\sigma_{22}$ and $\sigma_{33}$ are zero under uniaxial tension. While using mesh regularization, the slope of the damage curve is determined by the characteristic length ($L_{c}$), which depends on the volume of the element. The following figure (\ref{fig:Influence of element volume}) shows how the damage evolution is affected by the element volume ($V$),
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width=12cm,height=8.5cm]{{22.V_damage.png}}
@@ -1918,6 +1927,7 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
 \indent\indent\indent These damage contour plots clearly indicate that the developed 3D model has the ability to show not only the damage development in three principal material directions but also both tension and compression damage happening simultaneously in a specimen when a load is applied.
 
 \newpage
+\fancyhead[RE,RO]{Summary and Conclusion} 
 \chapter{Summary and Conclusion}
 \indent\indent\indent The main aim of this thesis was to develop progressive damage models which can clearly describe the damage mechanism in composite materials when subject to various loading conditions. The models are developed using the framework of continuum damage mechanics (CDM). A second-order orthotropic damage tensor is employed to show the anisotropic damage development. A key issue in damage modelling is the convergence issue that arises due to the mesh dependant behaviour of the strain-softening models. The fracture energy regularization technique has been employed to reduce the mesh sensitivity, which ensures the objectivity of the model by adjusting dissipated energy to each finite element. At first, the damage models are implemented in octave and tested using constitutive driver routines for simple loading cases to verify the numerical implementation and understand the damage behaviour at integration point level, i.e., damage-evolution and strain-softening. During the integration point studies, it has been observed that the failure criteria, which uses strain to predict the damage initiation, cause convergence issues when damage evolves without the presence of stress in the given material direction, i.e. when transverse strength is very low, and a uniaxial tension is applied in the longitudinal direction. So the damage models implemented as user-defined material routines (USERMAT) in ANSYS employs stress-based failure criteria\\ 
 
@@ -1939,7 +1949,8 @@ The following changes and developments can be made in future to make this anisot
 
 
 \newpage
-
+\fancyhead[LE,LO]{Chapter 7} 
+\fancyhead[RE,RO]{Bibliography} 
 \bibliographystyle{plainnat}
 \bibliography{reference}
 
@@ -1952,6 +1963,8 @@ The following changes and developments can be made in future to make this anisot
 	\let\evensidemargin\tmp
 	\reversemarginpar
 \pagenumbering{Roman}
+\fancyhead[LE,LO]{Chapter 8} 
+\fancyhead[RE,RO]{Appendix} 
 \chapter*{Appendix}
 \addcontentsline{toc}{chapter}{\textbf{Appendix}}
 
