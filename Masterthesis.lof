@@ -9,25 +9,27 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Hypothesis of strain equivalence \citep {murakami2012continuum}\relax }}{14}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Hypothesis of strain energy equivalence \citep {murakami2012continuum}\relax }}{15}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces USERMAT Interface \citep {lin1999ansys}\relax }}{21}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Table (TB) commands\relax }}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Time history post processor window\relax }}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Steps involved in developing and testing damage models\relax }}{20}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces USERMAT interface \citep {lin1999ansys}\relax }}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Table (TB) commands\relax }}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Time history post processor window\relax }}{24}{figure.caption.16}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Fracture planes in FRP material \citep {maimi2007continuum}\relax }}{26}{figure.caption.17}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Types of degradation behaviour in damaged composite materials \citep {wang2009three}\relax }}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schematic of USERMAT implementation\relax }}{35}{figure.4.3}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Stress-Strain relation (Standard vs user-defined material routine)\relax }}{37}{figure.caption.20}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Bar used for analysis: Mesh and BCs\relax }}{38}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Contour plots of the stress components $\sigma _{11}$, $\sigma _{22}$ and $\sigma _{33}$ of the bar obtained using standard material routine (Figures a,c,e on the left) and (Figures b, d, f on the right)\relax }}{39}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Contour plots of the stress components $\sigma _{11}$, $\sigma _{22}$ and $\sigma _{33}$ of the bar obtained using standard material routine (Figures a, c, e on the left) and (Figures b, d, f on the right)\relax }}{39}{figure.caption.25}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Evolution of stress for uniaxial tension test in 11 direction\relax }}{40}{figure.caption.26}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Evolution of damage components for uniaxial tension test in 11 direction\relax }}{41}{figure.caption.27}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence issue: Residual norm of the stress\tmspace +\thickmuskip {.2777em} $vs$ \tmspace +\thickmuskip {.2777em}No of Newton-raphson iterations\relax }}{42}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Convergence issue: Residual norm of the stress\tmspace +\thickmuskip {.2777em} $vs$ \tmspace +\thickmuskip {.2777em}no of Newton-raphson iterations\relax }}{42}{figure.caption.29}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Evolution of stress components (Stress-based damage model)\relax }}{42}{figure.caption.31}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Evolution of damage components (Stress-based damage model)\relax }}{43}{figure.caption.32}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Influence of element volume ($V$) on the damage evolution\relax }}{43}{figure.caption.33}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces The strain components $\epsilon _{22}$ and $\epsilon _{33}$ computed using algorithmic (a) and numerical tangent stiffness (b) under uniaxial tension\relax }}{44}{figure.caption.35}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Evolution of stress (Figures a, c on the left) and corresponding damage (Figure b, d on the right) components under biaxial tension\relax }}{45}{figure.caption.37}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Evolution of stress (Figures a, c, e on the left) and corresponding (Figures b ,d, f on the right) damage components under triaxial tension\relax }}{47}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Evolution of stress (Figures a, c, e on the left) and corresponding (Figures b, d, f on the right) damage components under triaxial tension\relax }}{47}{figure.caption.40}%
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied.\relax }}{49}{figure.caption.42}%
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Considered meshes (h is the length of the element along fracture zone and n the total number of elements) \relax }}{50}{figure.caption.43}%
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Convergence study: Global force-displacement response for model with regularization (Figure a on the left) and without regularization (Figure b the right) \relax }}{50}{figure.caption.44}%

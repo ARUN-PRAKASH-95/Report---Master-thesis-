@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.31)  24 AUG 2021 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.31)  25 AUG 2021 19:42
 entering extended mode
 **./Masterthesis.tex
 (Masterthesis.tex
@@ -946,13 +946,16 @@ File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \arrowsize=\dimen317
 ))
 \c@savepage=\count341
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 67
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 68
 .
 
 (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (Masterthesis.aux
+
+LaTeX Warning: Label `Schematic of USERMAT implementation' multiply defined.
+
 
 LaTeX Warning: Label `fig:1mm' multiply defined.
 
@@ -992,24 +995,24 @@ LaTeX Warning: Label `sub@fig:d2-0.25' multiply defined.
 )
 \openout1 = `Masterthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
 
 (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1082,7 +1085,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count348
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 68.
 (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1095,9 +1098,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count349
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 68.
+LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 68.
  (Masterthesis.out) (Masterthesis.out)
 \@outlinefile=\write4
 \openout4 = `Masterthesis.out'.
@@ -1173,27 +1176,27 @@ lbf.png>]) [2
 ] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
@@ -1237,7 +1240,7 @@ Overfull \hbox (12.77345pt too wide) detected at line 69
  [9] [10
 
 ] (Masterthesis.lof
-Overfull \hbox (8.34595pt too wide) in paragraph at lines 17--17
+Overfull \hbox (8.34595pt too wide) in paragraph at lines 18--18
  [][] [][]\T1/lmr/m/n/12 Types of degra-da-tion be-haviour in dam-aged com-pos-
 ite ma-te-ri-als ([]Wang 
  []
@@ -1258,13 +1261,13 @@ ite ma-te-ri-als ([]Wang
 
 ]
 Chapter 1.
-<composite plane.jpg, id=609, 2710.125pt x 1212.53pt>
+<composite plane.jpg, id=613, 2710.125pt x 1212.53pt>
 File: composite plane.jpg Graphic file (type jpg)
 <use composite plane.jpg>
-Package pdftex.def Info: composite plane.jpg  used on input line 192.
+Package pdftex.def Info: composite plane.jpg  used on input line 193.
 (pdftex.def)             Requested size: 426.79134pt x 190.93748pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
@@ -1272,14 +1275,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.199 
+l.200 
        [1
 
  <./composite plane.jpg>]
-<strain-softening.png, id=633, 275.0275pt x 208.78pt>
+<strain-softening.png, id=637, 275.0275pt x 208.78pt>
 File: strain-softening.png Graphic file (type png)
 <use strain-softening.png>
-Package pdftex.def Info: strain-softening.png  used on input line 203.
+Package pdftex.def Info: strain-softening.png  used on input line 204.
 (pdftex.def)             Requested size: 256.0774pt x 194.41185pt.
 
 
@@ -1294,24 +1297,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 
+l.211 
        [2 <./strain-softening.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 213--220
 
  []
 
@@ -1334,16 +1337,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4]
 Chapter 2.
-<1. Damage.png, id=672, 366.77025pt x 365.56575pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+<1. Damage.png, id=676, 366.77025pt x 365.56575pt>
 File: 1. Damage.png Graphic file (type png)
 <use 1. Damage.png>
-Package pdftex.def Info: 1. Damage.png  used on input line 233.
+Package pdftex.def Info: 1. Damage.png  used on input line 234.
 (pdftex.def)             Requested size: 213.39566pt x 212.69206pt.
 [5
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-43.
+44.
  (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1356,10 +1364,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6 <./1. Damage.png>]
-<Damage2.png, id=705, 449.88075pt x 287.27325pt>
+<Damage2.png, id=708, 449.88075pt x 287.27325pt>
 File: Damage2.png Graphic file (type png)
 <use Damage2.png>
-Package pdftex.def Info: Damage2.png  used on input line 270.
+Package pdftex.def Info: Damage2.png  used on input line 271.
 (pdftex.def)             Requested size: 341.43436pt x 218.0231pt.
 
 
@@ -1371,24 +1379,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./Damage2.png>]
-<3. Damage_cylinder.png, id=729, 471.56175pt x 292.09125pt>
+<3. Damage_cylinder.png, id=732, 471.56175pt x 292.09125pt>
 File: 3. Damage_cylinder.png Graphic file (type png)
 <use 3. Damage_cylinder.png>
-Package pdftex.def Info: 3. Damage_cylinder.png  used on input line 290.
+Package pdftex.def Info: 3. Damage_cylinder.png  used on input line 291.
 (pdftex.def)             Requested size: 341.43436pt x 211.49998pt.
 
-Overfull \hbox (0.22pt too wide) in paragraph at lines 298--299
+Overfull \hbox (0.22pt too wide) in paragraph at lines 299--300
 \T1/lmr/m/n/12 ness, the dam-age state can be char-ac-ter-ized by vari-a-tion i
 n elas-tic mod-u-lus ([]Lemaitre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 
  []
 
@@ -1401,7 +1409,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8 <./3. Damage_cylinder.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 307--309
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
@@ -1414,10 +1422,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-<4. Damage.png, id=770, 387.24675pt x 250.536pt>
+<4. Damage.png, id=773, 387.24675pt x 250.536pt>
 File: 4. Damage.png Graphic file (type png)
 <use 4. Damage.png>
-Package pdftex.def Info: 4. Damage.png  used on input line 335.
+Package pdftex.def Info: 4. Damage.png  used on input line 336.
 (pdftex.def)             Requested size: 298.75262pt x 193.29558pt.
 
 
@@ -1431,104 +1439,104 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [10 <./4. Damage.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 355.
+(hyperref)                removing `\begingroup' on input line 356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 355.
+(hyperref)                removing `\let' on input line 356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 355.
+(hyperref)                removing `\<let>-command' on input line 356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 355.
+(hyperref)                removing `\NAT@ctype' on input line 356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 355.
+(hyperref)                removing `\z@' on input line 356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 355.
+(hyperref)                removing `\let' on input line 356.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 355.
+(hyperref)                removing `\new@ifnextchar' on input line 356.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--361
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
 
  []
 
 
-Overfull \hbox (4.5168pt too wide) in paragraph at lines 361--361
+Overfull \hbox (4.5168pt too wide) in paragraph at lines 362--362
 |[]\T1/lmr/bx/n/14.4 Asymmetric ef-fec-tive stress ten-sor for anisotropic dam-
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 361.
+(hyperref)                removing `\begingroup' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 361.
+(hyperref)                removing `\let' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 361.
+(hyperref)                removing `\<let>-command' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 361.
+(hyperref)                removing `\NAT@ctype' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 361.
+(hyperref)                removing `\z@' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 361.
+(hyperref)                removing `\let' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 361.
+(hyperref)                removing `\new@ifnextchar' on input line 362.
 
 
-Overfull \hbox (11.28598pt too wide) in paragraph at lines 369--369
+Overfull \hbox (11.28598pt too wide) in paragraph at lines 370--370
 |[]\T1/lmr/bx/n/14.4 Symmetrized ef-fec-tive stress ten-sor for anisotropic dam
 -
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 369.
+(hyperref)                removing `\begingroup' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 369.
+(hyperref)                removing `\let' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 369.
+(hyperref)                removing `\<let>-command' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 369.
+(hyperref)                removing `\NAT@ctype' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 369.
+(hyperref)                removing `\z@' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 369.
+(hyperref)                removing `\let' on input line 370.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 369.
+(hyperref)                removing `\new@ifnextchar' on input line 370.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1539,7 +1547,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 395--399
+Underfull \hbox (badness 10000) in paragraph at lines 396--400
 
  []
 
@@ -1556,10 +1564,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-<6. Strain_eq.png, id=823, 481.8pt x 233.07076pt>
+<6. Strain_eq.png, id=826, 481.8pt x 233.07076pt>
 File: 6. Strain_eq.png Graphic file (type png)
 <use 6. Strain_eq.png>
-Package pdftex.def Info: 6. Strain_eq.png  used on input line 435.
+Package pdftex.def Info: 6. Strain_eq.png  used on input line 436.
 (pdftex.def)             Requested size: 341.43436pt x 165.17198pt.
 
 
@@ -1571,12 +1579,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--475
+Underfull \hbox (badness 10000) in paragraph at lines 474--476
 
  []
 
@@ -1589,32 +1597,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14 <./6. Strain_eq.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 477--479
+Underfull \hbox (badness 10000) in paragraph at lines 478--480
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--485
+Underfull \hbox (badness 10000) in paragraph at lines 482--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--489
+Underfull \hbox (badness 10000) in paragraph at lines 488--490
 
  []
 
-<7.Strain_energy_eq.png, id=853, 570.33075pt x 260.77425pt>
+<7.Strain_energy_eq.png, id=856, 570.33075pt x 260.77425pt>
 File: 7.Strain_energy_eq.png Graphic file (type png)
 <use 7.Strain_energy_eq.png>
-Package pdftex.def Info: 7.Strain_energy_eq.png  used on input line 496.
+Package pdftex.def Info: 7.Strain_energy_eq.png  used on input line 497.
 (pdftex.def)             Requested size: 341.43436pt x 156.11957pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--503
+Underfull \hbox (badness 10000) in paragraph at lines 502--504
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--509
+Underfull \hbox (badness 10000) in paragraph at lines 506--510
 
  []
 
@@ -1627,22 +1635,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15 <./7.Strain_energy_eq.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 511--513
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--517
+Underfull \hbox (badness 10000) in paragraph at lines 516--518
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--521
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--528
+Underfull \hbox (badness 10000) in paragraph at lines 525--529
 
  []
 
@@ -1655,7 +1663,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 558--559
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
@@ -1672,14 +1680,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 Chapter 3.
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
 
  []
 
-<9.Usermat_input.png, id=901, 747.9945pt x 581.17125pt>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 603.
+See the caption package documentation for explanation.
+
+<9.Usermat_input.png, id=904, 747.9945pt x 581.17125pt>
 File: 9.Usermat_input.png Graphic file (type png)
 <use 9.Usermat_input.png>
-Package pdftex.def Info: 9.Usermat_input.png  used on input line 612.
+Package pdftex.def Info: 9.Usermat_input.png  used on input line 613.
 (pdftex.def)             Requested size: 298.75262pt x 232.1274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1700,12 +1713,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [21 <./9.Usermat_input.png>]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-27.
+28.
 
 (C:\Users\aruns\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
  []
 
@@ -1718,37 +1731,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 640--651
+Underfull \hbox (badness 10000) in paragraph at lines 641--652
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--651
+Underfull \hbox (badness 10000) in paragraph at lines 641--652
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 640--651
+Underfull \hbox (badness 10000) in paragraph at lines 641--652
 
  []
 
-<12.Tb.png, id=928, 209.583pt x 175.857pt>
+<12.Tb.png, id=931, 209.583pt x 175.857pt>
 File: 12.Tb.png Graphic file (type png)
 <use 12.Tb.png>
-Package pdftex.def Info: 12.Tb.png  used on input line 664.
+Package pdftex.def Info: 12.Tb.png  used on input line 665.
 (pdftex.def)             Requested size: 128.0387pt x 107.4363pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--669
+Underfull \hbox (badness 10000) in paragraph at lines 653--670
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--669
+Underfull \hbox (badness 10000) in paragraph at lines 653--670
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--669
+Underfull \hbox (badness 10000) in paragraph at lines 653--670
 
  []
 
@@ -1761,10 +1774,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23 <./12.Tb.png>]
-<13.Timehist.png, id=936, 895.54575pt x 422.7795pt>
+<13.Timehist.png, id=939, 895.54575pt x 422.7795pt>
 File: 13.Timehist.png Graphic file (type png)
 <use 13.Timehist.png>
-Package pdftex.def Info: 13.Timehist.png  used on input line 676.
+Package pdftex.def Info: 13.Timehist.png  used on input line 677.
 (pdftex.def)             Requested size: 341.43436pt x 161.18686pt.
 
 
@@ -1777,10 +1790,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [24 <./13.Timehist.png>]
 Chapter 4.
-<5. FRP failure.png, id=949, 635.37375pt x 303.534pt>
+<5. FRP failure.png, id=952, 635.37375pt x 303.534pt>
 File: 5. FRP failure.png Graphic file (type png)
 <use 5. FRP failure.png>
-Package pdftex.def Info: 5. FRP failure.png  used on input line 700.
+Package pdftex.def Info: 5. FRP failure.png  used on input line 701.
 (pdftex.def)             Requested size: 341.43436pt x 163.11855pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1790,7 +1803,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 716.
+LaTeX Font Warning: Command \large invalid in math mode on input line 717.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1801,43 +1814,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [26 <./5. FRP failure.png>]
-LaTeX Font Info:    Calculating math sizes for size <> on input line 725.
+LaTeX Font Info:    Calculating math sizes for size <> on input line 726.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <> on input line 725.
+(Font)              <> on input line 726.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <0.7> on input line 725.
+(Font)              <0.7> on input line 726.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <0.5> on input line 725.
+(Font)              <0.5> on input line 726.
 
-Underfull \hbox (badness 10000) in paragraph at lines 725--729
+Underfull \hbox (badness 10000) in paragraph at lines 726--730
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 730.
+LaTeX Font Warning: Command \large invalid in math mode on input line 731.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--744
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 745--747
+Underfull \hbox (badness 10000) in paragraph at lines 743--745
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 748.
+Underfull \hbox (badness 10000) in paragraph at lines 746--748
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 759--763
+LaTeX Font Warning: Command \large invalid in math mode on input line 749.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--764
 
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 776.
+(Font)              <17.28> on input line 777.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 776.
+(Font)              <10.95> on input line 777.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1847,33 +1860,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 794--799
+Underfull \hbox (badness 10000) in paragraph at lines 795--800
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--799
+Underfull \hbox (badness 10000) in paragraph at lines 795--800
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 800.
+LaTeX Font Warning: Command \large invalid in math mode on input line 801.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 808--813
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 808--813
+Underfull \hbox (badness 10000) in paragraph at lines 809--814
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 814.
+Underfull \hbox (badness 10000) in paragraph at lines 809--814
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--826
+LaTeX Font Warning: Command \large invalid in math mode on input line 815.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--827
 
  []
 
@@ -1886,24 +1899,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [28]
-<8.Types_of_damage_evolution.png, id=996, 468.5505pt x 287.8755pt>
+<8.Types_of_damage_evolution.png, id=999, 468.5505pt x 287.8755pt>
 File: 8.Types_of_damage_evolution.png Graphic file (type png)
 <use 8.Types_of_damage_evolution.png>
 Package pdftex.def Info: 8.Types_of_damage_evolution.png  used on input line 83
-3.
+4.
 (pdftex.def)             Requested size: 298.75262pt x 183.55882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--844
+Underfull \hbox (badness 10000) in paragraph at lines 842--845
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 841--844
+Underfull \hbox (badness 10000) in paragraph at lines 842--845
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 845.
+LaTeX Font Warning: Command \large invalid in math mode on input line 846.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1914,37 +1927,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [29 <./8.Types_of_damage_evolution.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 847--850
+Underfull \hbox (badness 10000) in paragraph at lines 848--851
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 851.
+LaTeX Font Warning: Command \large invalid in math mode on input line 852.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 852--854
-
- []
-
-
-LaTeX Font Warning: Command \large invalid in math mode on input line 855.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 856--859
+Underfull \hbox (badness 10000) in paragraph at lines 853--855
 
  []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 860.
+LaTeX Font Warning: Command \large invalid in math mode on input line 856.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 864.
+Underfull \hbox (badness 10000) in paragraph at lines 857--860
+
+ []
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 868.
+LaTeX Font Warning: Command \large invalid in math mode on input line 861.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 873--875
+LaTeX Font Warning: Command \large invalid in math mode on input line 865.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 869.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 874--876
 
  []
 
@@ -1958,13 +1971,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [30]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 895.
+LaTeX Font Warning: Command \large invalid in math mode on input line 896.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 899.
+LaTeX Font Warning: Command \large invalid in math mode on input line 900.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 909--912
+Underfull \hbox (badness 10000) in paragraph at lines 910--913
 
  []
 
@@ -1977,27 +1990,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 927--936
+Underfull \hbox (badness 10000) in paragraph at lines 928--937
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--936
+Underfull \hbox (badness 10000) in paragraph at lines 928--937
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--936
+Underfull \hbox (badness 10000) in paragraph at lines 928--937
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 927--936
+Underfull \hbox (badness 10000) in paragraph at lines 928--937
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--941
+Underfull \hbox (badness 10000) in paragraph at lines 939--942
 
  []
 
@@ -2028,9 +2041,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 985--986
+Underfull \hbox (badness 10000) in paragraph at lines 986--987
 
  []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1021.
+See the caption package documentation for explanation.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2044,34 +2062,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 5.
-<14.Linear_SvsE.png, id=1091, 1240.635pt x 906.38625pt>
+<14.Linear_SvsE.png, id=1099, 1240.635pt x 906.38625pt>
 File: 14.Linear_SvsE.png Graphic file (type png)
 <use 14.Linear_SvsE.png>
-Package pdftex.def Info: 14.Linear_SvsE.png  used on input line 1029.
+Package pdftex.def Info: 14.Linear_SvsE.png  used on input line 1032.
 (pdftex.def)             Requested size: 312.97864pt x 227.61945pt.
 [37 <./14.Linear_SvsE.png (PNG copy)>]
-<Mesh and BCs.png, id=1099, 398.99063pt x 259.7203pt>
+<Mesh and BCs.png, id=1107, 398.99063pt x 259.7203pt>
 File: Mesh and BCs.png Graphic file (type png)
 <use Mesh and BCs.png>
-Package pdftex.def Info: Mesh and BCs.png  used on input line 1079.
+Package pdftex.def Info: Mesh and BCs.png  used on input line 1082.
 (pdftex.def)             Requested size: 227.62184pt x 142.26404pt.
-<15.Ansys_SX.png, id=1100, 786.68906pt x 484.81125pt>
+<15.Ansys_SX.png, id=1108, 786.68906pt x 484.81125pt>
 File: 15.Ansys_SX.png Graphic file (type png)
 <use 15.Ansys_SX.png>
-Package pdftex.def Info: 15.Ansys_SX.png  used on input line 1090.
+Package pdftex.def Info: 15.Ansys_SX.png  used on input line 1093.
 (pdftex.def)             Requested size: 227.61781pt x 142.26352pt.
 
-Overfull \hbox (56.90388pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (56.90388pt too wide) in paragraph at lines 1093--1094
 [][] 
  []
 
-<18.User_SX.png, id=1101, 786.68906pt x 484.81125pt>
+<18.User_SX.png, id=1109, 786.68906pt x 484.81125pt>
 File: 18.User_SX.png Graphic file (type png)
 <use 18.User_SX.png>
-Package pdftex.def Info: 18.User_SX.png  used on input line 1096.
+Package pdftex.def Info: 18.User_SX.png  used on input line 1099.
 (pdftex.def)             Requested size: 227.61781pt x 142.26352pt.
 
-Overfull \hbox (56.90388pt too wide) in paragraph at lines 1096--1097
+Overfull \hbox (56.90388pt too wide) in paragraph at lines 1099--1100
 [][] 
  []
 
@@ -2084,43 +2102,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [38 <./Mesh and BCs.png>]
-<16.Ansys_SY.png, id=1106, 788.19469pt x 486.31688pt>
+<16.Ansys_SY.png, id=1114, 788.19469pt x 486.31688pt>
 File: 16.Ansys_SY.png Graphic file (type png)
 <use 16.Ansys_SY.png>
-Package pdftex.def Info: 16.Ansys_SY.png  used on input line 1105.
+Package pdftex.def Info: 16.Ansys_SY.png  used on input line 1108.
 (pdftex.def)             Requested size: 227.62048pt x 142.2601pt.
 
-Overfull \hbox (56.90656pt too wide) in paragraph at lines 1105--1106
+Overfull \hbox (56.90656pt too wide) in paragraph at lines 1108--1109
 [][] 
  []
 
-<19.User_SY.png, id=1107, 794.2172pt x 486.31688pt>
+<19.User_SY.png, id=1115, 794.2172pt x 486.31688pt>
 File: 19.User_SY.png Graphic file (type png)
 <use 19.User_SY.png>
-Package pdftex.def Info: 19.User_SY.png  used on input line 1111.
+Package pdftex.def Info: 19.User_SY.png  used on input line 1114.
 (pdftex.def)             Requested size: 227.6146pt x 142.2601pt.
 
-Overfull \hbox (56.90067pt too wide) in paragraph at lines 1111--1112
+Overfull \hbox (56.90067pt too wide) in paragraph at lines 1114--1115
 [][] 
  []
 
-<17.Ansys_SZ.png, id=1108, 786.68906pt x 484.81125pt>
+<17.Ansys_SZ.png, id=1116, 786.68906pt x 484.81125pt>
 File: 17.Ansys_SZ.png Graphic file (type png)
 <use 17.Ansys_SZ.png>
-Package pdftex.def Info: 17.Ansys_SZ.png  used on input line 1119.
+Package pdftex.def Info: 17.Ansys_SZ.png  used on input line 1122.
 (pdftex.def)             Requested size: 227.61781pt x 142.26352pt.
 
-Overfull \hbox (56.90388pt too wide) in paragraph at lines 1119--1120
+Overfull \hbox (56.90388pt too wide) in paragraph at lines 1122--1123
 [][] 
  []
 
-<20.User_SZ.png, id=1109, 785.18344pt x 484.81125pt>
+<20.User_SZ.png, id=1117, 785.18344pt x 484.81125pt>
 File: 20.User_SZ.png Graphic file (type png)
 <use 20.User_SZ.png>
-Package pdftex.def Info: 20.User_SZ.png  used on input line 1125.
+Package pdftex.def Info: 20.User_SZ.png  used on input line 1128.
 (pdftex.def)             Requested size: 227.6135pt x 142.26352pt.
 
-Overfull \hbox (56.89957pt too wide) in paragraph at lines 1125--1126
+Overfull \hbox (56.89957pt too wide) in paragraph at lines 1128--1129
 [][] 
  []
 
@@ -2134,31 +2152,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [39 <./15.Ansys_SX.png> <./18.User_SX.png> <./16.Ansys_SY.png> <./19.User_SY.pn
 g> <./17.Ansys_SZ.png> <./20.User_SZ.png>]
-<21.StressvsStrain_Ansys.png, id=1122, 1240.635pt x 902.37125pt>
+<21.StressvsStrain_Ansys.png, id=1130, 1240.635pt x 902.37125pt>
 File: 21.StressvsStrain_Ansys.png Graphic file (type png)
 <use 21.StressvsStrain_Ansys.png>
-Package pdftex.def Info: 21.StressvsStrain_Ansys.png  used on input line 1150.
+Package pdftex.def Info: 21.StressvsStrain_Ansys.png  used on input line 1153.
 (pdftex.def)             Requested size: 236.1585pt x 180.66382pt.
 
-Overfull \hbox (65.44456pt too wide) in paragraph at lines 1150--1151
+Overfull \hbox (65.44456pt too wide) in paragraph at lines 1153--1154
 [][] 
  []
 
-<21.StressvsStrain_Octave.png, id=1123, 1240.635pt x 902.37125pt>
+<21.StressvsStrain_Octave.png, id=1131, 1240.635pt x 902.37125pt>
 File: 21.StressvsStrain_Octave.png Graphic file (type png)
 <use 21.StressvsStrain_Octave.png>
-Package pdftex.def Info: 21.StressvsStrain_Octave.png  used on input line 1156.
+Package pdftex.def Info: 21.StressvsStrain_Octave.png  used on input line 1159.
 
 (pdftex.def)             Requested size: 236.1585pt x 180.66382pt.
 
-Overfull \hbox (65.44456pt too wide) in paragraph at lines 1156--1157
+Overfull \hbox (65.44456pt too wide) in paragraph at lines 1159--1160
 [][] 
  []
 
-<21.d1,d2,d3.png, id=1124, 1240.635pt x 902.37125pt>
+<21.d1,d2,d3.png, id=1132, 1240.635pt x 902.37125pt>
 File: 21.d1,d2,d3.png Graphic file (type png)
 <use 21.d1,d2,d3.png>
-Package pdftex.def Info: 21.d1,d2,d3.png  used on input line 1166.
+Package pdftex.def Info: 21.d1,d2,d3.png  used on input line 1169.
 (pdftex.def)             Requested size: 256.07343pt x 179.2456pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2170,10 +2188,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [40 <./21.StressvsStrain_Ansys.png (PNG copy)> <./21.StressvsStrain_Octave.png 
 (PNG copy)>]
-<22.Convergence_error.png, id=1138, 1240.635pt x 902.37125pt>
+<22.Convergence_error.png, id=1146, 1240.635pt x 902.37125pt>
 File: 22.Convergence_error.png Graphic file (type png)
 <use 22.Convergence_error.png>
-Package pdftex.def Info: 22.Convergence_error.png  used on input line 1181.
+Package pdftex.def Info: 22.Convergence_error.png  used on input line 1184.
 (pdftex.def)             Requested size: 298.75262pt x 217.2895pt.
 
 
@@ -2185,31 +2203,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41 <./21.d1,d2,d3.png (PNG copy)>]
-<22.StressvsStrain_Ansys.png, id=1149, 1240.635pt x 902.37125pt>
+<22.StressvsStrain_Ansys.png, id=1157, 1240.635pt x 902.37125pt>
 File: 22.StressvsStrain_Ansys.png Graphic file (type png)
 <use 22.StressvsStrain_Ansys.png>
-Package pdftex.def Info: 22.StressvsStrain_Ansys.png  used on input line 1194.
+Package pdftex.def Info: 22.StressvsStrain_Ansys.png  used on input line 1197.
 (pdftex.def)             Requested size: 236.1585pt x 171.769pt.
 
-Overfull \hbox (65.44456pt too wide) in paragraph at lines 1194--1195
+Overfull \hbox (65.44456pt too wide) in paragraph at lines 1197--1198
 [][] 
  []
 
-<22.StressvsStrain_Octave.png, id=1150, 1240.635pt x 902.37125pt>
+<22.StressvsStrain_Octave.png, id=1158, 1240.635pt x 902.37125pt>
 File: 22.StressvsStrain_Octave.png Graphic file (type png)
 <use 22.StressvsStrain_Octave.png>
-Package pdftex.def Info: 22.StressvsStrain_Octave.png  used on input line 1200.
+Package pdftex.def Info: 22.StressvsStrain_Octave.png  used on input line 1203.
 
 (pdftex.def)             Requested size: 236.1585pt x 171.769pt.
 
-Overfull \hbox (65.44456pt too wide) in paragraph at lines 1200--1201
+Overfull \hbox (65.44456pt too wide) in paragraph at lines 1203--1204
 [][] 
  []
 
-<22.d1,d2,d3.png, id=1151, 1240.635pt x 902.37125pt>
+<22.d1,d2,d3.png, id=1159, 1240.635pt x 902.37125pt>
 File: 22.d1,d2,d3.png Graphic file (type png)
 <use 22.d1,d2,d3.png>
-Package pdftex.def Info: 22.d1,d2,d3.png  used on input line 1210.
+Package pdftex.def Info: 22.d1,d2,d3.png  used on input line 1213.
 (pdftex.def)             Requested size: 256.07343pt x 179.2456pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2221,10 +2239,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [42 <./22.Convergence_error.png (PNG copy)> <./22.StressvsStrain_Ansys.png (PNG
  copy)> <./22.StressvsStrain_Octave.png (PNG copy)>]
-<22.V_damage.png, id=1159, 1240.635pt x 906.38625pt>
+<22.V_damage.png, id=1167, 1240.635pt x 906.38625pt>
 File: 22.V_damage.png Graphic file (type png)
 <use 22.V_damage.png>
-Package pdftex.def Info: 22.V_damage.png  used on input line 1219.
+Package pdftex.def Info: 22.V_damage.png  used on input line 1222.
 (pdftex.def)             Requested size: 341.43124pt x 241.83702pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2239,43 +2257,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [43 <./22.d1,d2,d3.png (PNG copy)> <./22.V_damage.png (PNG copy)>]
-<22.e11vse22e33_ATS.png, id=1169, 1240.635pt x 902.37125pt>
+<22.e11vse22e33_ATS.png, id=1177, 1240.635pt x 902.37125pt>
 File: 22.e11vse22e33_ATS.png Graphic file (type png)
 <use 22.e11vse22e33_ATS.png>
-Package pdftex.def Info: 22.e11vse22e33_ATS.png  used on input line 1240.
+Package pdftex.def Info: 22.e11vse22e33_ATS.png  used on input line 1243.
 (pdftex.def)             Requested size: 236.1585pt x 171.769pt.
 
-Overfull \hbox (65.44456pt too wide) in paragraph at lines 1240--1241
+Overfull \hbox (65.44456pt too wide) in paragraph at lines 1243--1244
 [][] 
  []
 
-<22.e11vse22e33_NT.png, id=1170, 1240.635pt x 902.37125pt>
+<22.e11vse22e33_NT.png, id=1178, 1240.635pt x 902.37125pt>
 File: 22.e11vse22e33_NT.png Graphic file (type png)
 <use 22.e11vse22e33_NT.png>
-Package pdftex.def Info: 22.e11vse22e33_NT.png  used on input line 1246.
+Package pdftex.def Info: 22.e11vse22e33_NT.png  used on input line 1249.
 (pdftex.def)             Requested size: 236.1585pt x 171.769pt.
 
-Overfull \hbox (65.44456pt too wide) in paragraph at lines 1246--1247
+Overfull \hbox (65.44456pt too wide) in paragraph at lines 1249--1250
 [][] 
  []
 
-<23.S11vsE11.png, id=1172, 1240.635pt x 902.37125pt>
+<23.S11vsE11.png, id=1180, 1240.635pt x 902.37125pt>
 File: 23.S11vsE11.png Graphic file (type png)
 <use 23.S11vsE11.png>
-Package pdftex.def Info: 23.S11vsE11.png  used on input line 1260.
+Package pdftex.def Info: 23.S11vsE11.png  used on input line 1263.
 (pdftex.def)             Requested size: 227.62082pt x 165.55916pt.
 
-Overfull \hbox (56.90689pt too wide) in paragraph at lines 1260--1261
+Overfull \hbox (56.90689pt too wide) in paragraph at lines 1263--1264
 [][] 
  []
 
-<23.d1.png, id=1173, 1240.635pt x 902.37125pt>
+<23.d1.png, id=1181, 1240.635pt x 902.37125pt>
 File: 23.d1.png Graphic file (type png)
 <use 23.d1.png>
-Package pdftex.def Info: 23.d1.png  used on input line 1267.
+Package pdftex.def Info: 23.d1.png  used on input line 1270.
 (pdftex.def)             Requested size: 227.62082pt x 165.55916pt.
 
-Overfull \hbox (56.90689pt too wide) in paragraph at lines 1267--1268
+Overfull \hbox (56.90689pt too wide) in paragraph at lines 1270--1271
 [][] 
  []
 
@@ -2288,28 +2306,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [44 <./22.e11vse22e33_ATS.png (PNG copy)> <./22.e11vse22e33_NT.png (PNG copy)>]
-<23.S22vsE22.png, id=1181, 1240.635pt x 902.37125pt>
+<23.S22vsE22.png, id=1189, 1240.635pt x 902.37125pt>
 File: 23.S22vsE22.png Graphic file (type png)
 <use 23.S22vsE22.png>
-Package pdftex.def Info: 23.S22vsE22.png  used on input line 1275.
+Package pdftex.def Info: 23.S22vsE22.png  used on input line 1278.
 (pdftex.def)             Requested size: 227.62082pt x 165.55916pt.
 
-Overfull \hbox (56.90689pt too wide) in paragraph at lines 1275--1276
+Overfull \hbox (56.90689pt too wide) in paragraph at lines 1278--1279
 [][] 
  []
 
-<23.d2.png, id=1182, 1240.635pt x 902.37125pt>
+<23.d2.png, id=1190, 1240.635pt x 902.37125pt>
 File: 23.d2.png Graphic file (type png)
 <use 23.d2.png>
-Package pdftex.def Info: 23.d2.png  used on input line 1282.
+Package pdftex.def Info: 23.d2.png  used on input line 1285.
 (pdftex.def)             Requested size: 227.62082pt x 165.55916pt.
 
-Overfull \hbox (56.90689pt too wide) in paragraph at lines 1282--1283
+Overfull \hbox (56.90689pt too wide) in paragraph at lines 1285--1286
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1296
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1299
 
  []
 
@@ -2323,62 +2341,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [45 <./23.S11vsE11.png (PNG copy)> <./23.d1.png (PNG copy)> <./23.S22vsE22.png 
 (PNG copy)> <./23.d2.png (PNG copy)>]
-<24.S11vsE11.png, id=1191, 1240.635pt x 902.37125pt>
+<24.S11vsE11.png, id=1199, 1240.635pt x 902.37125pt>
 File: 24.S11vsE11.png Graphic file (type png)
 <use 24.S11vsE11.png>
-Package pdftex.def Info: 24.S11vsE11.png  used on input line 1300.
+Package pdftex.def Info: 24.S11vsE11.png  used on input line 1303.
 (pdftex.def)             Requested size: 241.83766pt x 184.93222pt.
 
-Overfull \hbox (71.12373pt too wide) in paragraph at lines 1300--1301
+Overfull \hbox (71.12373pt too wide) in paragraph at lines 1303--1304
 [][] 
  []
 
-<24.d1.png, id=1192, 1240.635pt x 902.37125pt>
+<24.d1.png, id=1200, 1240.635pt x 902.37125pt>
 File: 24.d1.png Graphic file (type png)
 <use 24.d1.png>
-Package pdftex.def Info: 24.d1.png  used on input line 1307.
+Package pdftex.def Info: 24.d1.png  used on input line 1310.
 (pdftex.def)             Requested size: 241.83766pt x 184.93222pt.
 
-Overfull \hbox (71.12373pt too wide) in paragraph at lines 1307--1308
+Overfull \hbox (71.12373pt too wide) in paragraph at lines 1310--1311
 [][] 
  []
 
-<24.S22vsE22.png, id=1193, 1240.635pt x 902.37125pt>
+<24.S22vsE22.png, id=1201, 1240.635pt x 902.37125pt>
 File: 24.S22vsE22.png Graphic file (type png)
 <use 24.S22vsE22.png>
-Package pdftex.def Info: 24.S22vsE22.png  used on input line 1316.
+Package pdftex.def Info: 24.S22vsE22.png  used on input line 1319.
 (pdftex.def)             Requested size: 241.83766pt x 184.93222pt.
 
-Overfull \hbox (71.12373pt too wide) in paragraph at lines 1316--1317
+Overfull \hbox (71.12373pt too wide) in paragraph at lines 1319--1320
 [][] 
  []
 
-<24.d2.png, id=1194, 1240.635pt x 902.37125pt>
+<24.d2.png, id=1202, 1240.635pt x 902.37125pt>
 File: 24.d2.png Graphic file (type png)
 <use 24.d2.png>
-Package pdftex.def Info: 24.d2.png  used on input line 1323.
+Package pdftex.def Info: 24.d2.png  used on input line 1326.
 (pdftex.def)             Requested size: 241.83766pt x 184.93222pt.
 
-Overfull \hbox (71.12373pt too wide) in paragraph at lines 1323--1324
+Overfull \hbox (71.12373pt too wide) in paragraph at lines 1326--1327
  [][] 
  []
 
-<24.S33vsE33.png, id=1195, 1240.635pt x 902.37125pt>
+<24.S33vsE33.png, id=1203, 1240.635pt x 902.37125pt>
 File: 24.S33vsE33.png Graphic file (type png)
 <use 24.S33vsE33.png>
-Package pdftex.def Info: 24.S33vsE33.png  used on input line 1331.
+Package pdftex.def Info: 24.S33vsE33.png  used on input line 1334.
 (pdftex.def)             Requested size: 241.83766pt x 184.93222pt.
 
-Overfull \hbox (71.12373pt too wide) in paragraph at lines 1331--1332
+Overfull \hbox (71.12373pt too wide) in paragraph at lines 1334--1335
 [][] 
  []
 
 File: 24.d2.png Graphic file (type png)
 <use 24.d2.png>
-Package pdftex.def Info: 24.d2.png  used on input line 1337.
+Package pdftex.def Info: 24.d2.png  used on input line 1340.
 (pdftex.def)             Requested size: 241.83766pt x 184.93222pt.
 
-Overfull \hbox (71.12373pt too wide) in paragraph at lines 1337--1338
+Overfull \hbox (71.12373pt too wide) in paragraph at lines 1340--1341
 [][] 
  []
 
@@ -2392,7 +2410,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [46 <./24.S11vsE11.png (PNG copy)> <./24.d1.png (PNG copy)> <./24.S22vsE22.png 
 (PNG copy)> <./24.d2.png (PNG copy)>]
-Overfull \hbox (28.4542pt too wide) in paragraph at lines 1357--1395
+Overfull \hbox (28.4542pt too wide) in paragraph at lines 1360--1398
  [] 
  []
 
@@ -2414,10 +2432,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48]
-<25.Geometry.jpg, id=1221, 502.87875pt x 541.27219pt>
+<25.Geometry.jpg, id=1229, 502.87875pt x 541.27219pt>
 File: 25.Geometry.jpg Graphic file (type jpg)
 <use 25.Geometry.jpg>
-Package pdftex.def Info: 25.Geometry.jpg  used on input line 1407.
+Package pdftex.def Info: 25.Geometry.jpg  used on input line 1410.
 (pdftex.def)             Requested size: 256.0774pt x 275.62395pt.
 
 
@@ -2431,59 +2449,54 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [49
 
  <./25.Geometry.jpg>]
-<25.1mm2.png, id=1231, 406.51875pt x 598.48593pt>
+<25.1mm2.png, id=1239, 406.51875pt x 598.48593pt>
 File: 25.1mm2.png Graphic file (type png)
 <use 25.1mm2.png>
-Package pdftex.def Info: 25.1mm2.png  used on input line 1418.
-(pdftex.def)             Requested size: 137.1305pt x 201.8844pt.
+Package pdftex.def Info: 25.1mm2.png  used on input line 1421.
+(pdftex.def)             Requested size: 135.977pt x 200.1858pt.
 
-Overfull \hbox (21.89502pt too wide) in paragraph at lines 1418--1419
+Overfull \hbox (20.74153pt too wide) in paragraph at lines 1421--1422
 [][] 
  []
 
-<25.0.5mm2.png, id=1232, 398.23781pt x 599.23875pt>
+<25.0.5mm2.png, id=1240, 398.23781pt x 599.23875pt>
 File: 25.0.5mm2.png Graphic file (type png)
 <use 25.0.5mm2.png>
-Package pdftex.def Info: 25.0.5mm2.png  used on input line 1424.
+Package pdftex.def Info: 25.0.5mm2.png  used on input line 1427.
 (pdftex.def)             Requested size: 133.67357pt x 201.14168pt.
 
-Overfull \hbox (18.4381pt too wide) in paragraph at lines 1424--1425
+Overfull \hbox (18.4381pt too wide) in paragraph at lines 1427--1428
 [][] 
  []
 
-<25.0.25mm2.png, id=1233, 392.96812pt x 596.98032pt>
+<25.0.25mm2.png, id=1241, 392.96812pt x 596.98032pt>
 File: 25.0.25mm2.png Graphic file (type png)
 <use 25.0.25mm2.png>
-Package pdftex.def Info: 25.0.25mm2.png  used on input line 1430.
+Package pdftex.def Info: 25.0.25mm2.png  used on input line 1433.
 (pdftex.def)             Requested size: 131.36836pt x 199.57289pt.
 
-Overfull \hbox (16.13289pt too wide) in paragraph at lines 1430--1431
+Overfull \hbox (16.13289pt too wide) in paragraph at lines 1433--1434
 [][] 
  []
 
-<25.FvsD.png, id=1234, 1240.635pt x 902.37125pt>
+<25.FvsD.png, id=1242, 1240.635pt x 902.37125pt>
 File: 25.FvsD.png Graphic file (type png)
 <use 25.FvsD.png>
-Package pdftex.def Info: 25.FvsD.png  used on input line 1440.
+Package pdftex.def Info: 25.FvsD.png  used on input line 1443.
 (pdftex.def)             Requested size: 241.83766pt x 199.16943pt.
 
-Overfull \hbox (49.78287pt too wide) in paragraph at lines 1440--1441
+Overfull \hbox (49.78287pt too wide) in paragraph at lines 1443--1444
 [][] 
  []
 
-<25.FvsD2.png, id=1235, 1240.635pt x 902.37125pt>
+<25.FvsD2.png, id=1243, 1240.635pt x 902.37125pt>
 File: 25.FvsD2.png Graphic file (type png)
 <use 25.FvsD2.png>
-Package pdftex.def Info: 25.FvsD2.png  used on input line 1446.
+Package pdftex.def Info: 25.FvsD2.png  used on input line 1449.
 (pdftex.def)             Requested size: 241.83766pt x 199.16943pt.
 
-Overfull \hbox (49.78287pt too wide) in paragraph at lines 1446--1447
+Overfull \hbox (49.78287pt too wide) in paragraph at lines 1449--1450
 [][] 
- []
-
-
-Overfull \hbox (5.21951pt too wide) in paragraph at lines 1439--1450
-[]$[]$   $[]$ 
  []
 
 
@@ -2496,63 +2509,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [50 <./25.1mm2.png> <./25.0.5mm2.png> <./25.0.25mm2.png> <./25.FvsD.png (PNG co
 py)> <./25.FvsD2.png (PNG copy)>]
-<25.d1-1-r.png, id=1241, 502.12593pt x 528.47438pt>
+<25.d1-1-r.png, id=1249, 502.12593pt x 528.47438pt>
 File: 25.d1-1-r.png Graphic file (type png)
 <use 25.d1-1-r.png>
-Package pdftex.def Info: 25.d1-1-r.png  used on input line 1459.
+Package pdftex.def Info: 25.d1-1-r.png  used on input line 1462.
 (pdftex.def)             Requested size: 194.64075pt x 204.85428pt.
 
-Overfull \hbox (23.92682pt too wide) in paragraph at lines 1459--1460
+Overfull \hbox (23.92682pt too wide) in paragraph at lines 1462--1463
 [][] 
  []
 
-<25.d1-1-nr.png, id=1242, 525.46312pt x 556.32843pt>
+<25.d1-1-nr.png, id=1250, 525.46312pt x 556.32843pt>
 File: 25.d1-1-nr.png Graphic file (type png)
 <use 25.d1-1-nr.png>
-Package pdftex.def Info: 25.d1-1-nr.png  used on input line 1466.
+Package pdftex.def Info: 25.d1-1-nr.png  used on input line 1469.
 (pdftex.def)             Requested size: 193.49625pt x 204.86208pt.
 
-Overfull \hbox (22.78232pt too wide) in paragraph at lines 1466--1467
+Overfull \hbox (22.78232pt too wide) in paragraph at lines 1469--1470
 [][] 
  []
 
-<25.d1-0.5-r.png, id=1243, 523.9575pt x 556.32843pt>
+<25.d1-0.5-r.png, id=1251, 523.9575pt x 556.32843pt>
 File: 25.d1-0.5-r.png Graphic file (type png)
 <use 25.d1-0.5-r.png>
-Package pdftex.def Info: 25.d1-0.5-r.png  used on input line 1474.
+Package pdftex.def Info: 25.d1-0.5-r.png  used on input line 1477.
 (pdftex.def)             Requested size: 192.94182pt x 204.86208pt.
 
-Overfull \hbox (22.22789pt too wide) in paragraph at lines 1474--1475
+Overfull \hbox (22.22789pt too wide) in paragraph at lines 1477--1478
 [][] 
  []
 
-<25.d1-0.5-nr.png, id=1244, 539.76656pt x 554.07pt>
+<25.d1-0.5-nr.png, id=1252, 539.76656pt x 554.07pt>
 File: 25.d1-0.5-nr.png Graphic file (type png)
 <use 25.d1-0.5-nr.png>
-Package pdftex.def Info: 25.d1-0.5-nr.png  used on input line 1480.
+Package pdftex.def Info: 25.d1-0.5-nr.png  used on input line 1483.
 (pdftex.def)             Requested size: 199.57048pt x 204.85896pt.
 
-Overfull \hbox (28.85655pt too wide) in paragraph at lines 1480--1481
+Overfull \hbox (28.85655pt too wide) in paragraph at lines 1483--1484
 [][] 
  []
 
-<25.d1-0.25-r.png, id=1245, 521.69907pt x 554.07pt>
+<25.d1-0.25-r.png, id=1253, 521.69907pt x 554.07pt>
 File: 25.d1-0.25-r.png Graphic file (type png)
 <use 25.d1-0.25-r.png>
-Package pdftex.def Info: 25.d1-0.25-r.png  used on input line 1488.
+Package pdftex.def Info: 25.d1-0.25-r.png  used on input line 1491.
 (pdftex.def)             Requested size: 192.8903pt x 204.85896pt.
 
-Overfull \hbox (22.17638pt too wide) in paragraph at lines 1488--1489
+Overfull \hbox (22.17638pt too wide) in paragraph at lines 1491--1492
 [][] 
  []
 
-<25.d1-0.25-nr.png, id=1246, 522.45187pt x 556.32843pt>
+<25.d1-0.25-nr.png, id=1254, 522.45187pt x 556.32843pt>
 File: 25.d1-0.25-nr.png Graphic file (type png)
 <use 25.d1-0.25-nr.png>
-Package pdftex.def Info: 25.d1-0.25-nr.png  used on input line 1494.
+Package pdftex.def Info: 25.d1-0.25-nr.png  used on input line 1497.
 (pdftex.def)             Requested size: 192.38739pt x 204.86208pt.
 
-Overfull \hbox (21.67346pt too wide) in paragraph at lines 1494--1495
+Overfull \hbox (21.67346pt too wide) in paragraph at lines 1497--1498
 [][] 
  []
 
@@ -2566,30 +2579,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [51 <./25.d1-1-r.png> <./25.d1-1-nr.png> <./25.d1-0.5-r.png> <./25.d1-0.5-nr.pn
 g>]
-<25.d2-1.png, id=1254, 525.46312pt x 554.82281pt>
+<25.d2-1.png, id=1262, 525.46312pt x 554.82281pt>
 File: 25.d2-1.png Graphic file (type png)
 <use 25.d2-1.png>
-Package pdftex.def Info: 25.d2-1.png  used on input line 1509.
+Package pdftex.def Info: 25.d2-1.png  used on input line 1512.
 (pdftex.def)             Requested size: 194.01741pt x 204.85793pt.
 
-Overfull \hbox (23.30348pt too wide) in paragraph at lines 1509--1510
+Overfull \hbox (23.30348pt too wide) in paragraph at lines 1512--1513
  [][] 
  []
 
-<25.d2-0.5.png, id=1255, 523.20468pt x 554.82281pt>
+<25.d2-0.5.png, id=1263, 523.20468pt x 554.82281pt>
 File: 25.d2-0.5.png Graphic file (type png)
 <use 25.d2-0.5.png>
-Package pdftex.def Info: 25.d2-0.5.png  used on input line 1516.
+Package pdftex.def Info: 25.d2-0.5.png  used on input line 1519.
 (pdftex.def)             Requested size: 193.18352pt x 204.85793pt.
 
-Overfull \hbox (22.46959pt too wide) in paragraph at lines 1516--1517
+Overfull \hbox (22.46959pt too wide) in paragraph at lines 1519--1520
  [][] 
  []
 
-<25.d2-0.25.png, id=1256, 536.0025pt x 556.32843pt>
+<25.d2-0.25.png, id=1264, 536.0025pt x 556.32843pt>
 File: 25.d2-0.25.png Graphic file (type png)
 <use 25.d2-0.25.png>
-Package pdftex.def Info: 25.d2-0.25.png  used on input line 1525.
+Package pdftex.def Info: 25.d2-0.25.png  used on input line 1528.
 (pdftex.def)             Requested size: 197.37726pt x 204.86208pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2601,10 +2614,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [52 <./25.d1-0.25-r.png> <./25.d1-0.25-nr.png> <./25.d2-1.png> <./25.d2-0.5.png
 >]
-<25.Strength.png, id=1264, 1240.635pt x 902.37125pt>
+<25.Strength.png, id=1272, 1240.635pt x 902.37125pt>
 File: 25.Strength.png Graphic file (type png)
 <use 25.Strength.png>
-Package pdftex.def Info: 25.Strength.png  used on input line 1537.
+Package pdftex.def Info: 25.Strength.png  used on input line 1540.
 (pdftex.def)             Requested size: 298.75262pt x 217.2895pt.
 
 Underfull \vbox (badness 2512) has occurred while \output is active []
@@ -2619,18 +2632,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [53 <./25.d2-0.25.png> <./25.Strength.png (PNG copy)>]
-<26.Geometry.jpg, id=1273, 740.0147pt x 436.63126pt>
+<26.Geometry.jpg, id=1281, 740.0147pt x 436.63126pt>
 File: 26.Geometry.jpg Graphic file (type jpg)
 <use 26.Geometry.jpg>
-Package pdftex.def Info: 26.Geometry.jpg  used on input line 1549.
+Package pdftex.def Info: 26.Geometry.jpg  used on input line 1552.
 (pdftex.def)             Requested size: 341.43436pt x 201.45909pt.
-<26.h=1mm.png, id=1279, 744.53156pt x 357.58594pt>
+<26.h=1mm.png, id=1287, 744.53156pt x 357.58594pt>
 File: 26.h=1mm.png Graphic file (type png)
 <use 26.h=1mm.png>
-Package pdftex.def Info: 26.h=1mm.png  used on input line 1561.
+Package pdftex.def Info: 26.h=1mm.png  used on input line 1564.
 (pdftex.def)             Requested size: 284.53813pt x 122.34694pt.
 
-Overfull \hbox (113.8242pt too wide) in paragraph at lines 1561--1562
+Overfull \hbox (113.8242pt too wide) in paragraph at lines 1564--1565
  [] 
  []
 
@@ -2643,30 +2656,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [54 <./26.Geometry.jpg>]
-<26.h=0.5mm.png, id=1284, 746.79pt x 359.09157pt>
+<26.h=0.5mm.png, id=1292, 746.79pt x 359.09157pt>
 File: 26.h=0.5mm.png Graphic file (type png)
 <use 26.h=0.5mm.png>
-Package pdftex.def Info: 26.h=0.5mm.png  used on input line 1572.
+Package pdftex.def Info: 26.h=0.5mm.png  used on input line 1575.
 (pdftex.def)             Requested size: 284.52382pt x 122.34703pt.
 
-Overfull \hbox (113.80989pt too wide) in paragraph at lines 1572--1573
+Overfull \hbox (113.80989pt too wide) in paragraph at lines 1575--1576
  [] 
  []
 
-<26.h=0.25mm.png, id=1285, 748.29562pt x 356.0803pt>
+<26.h=0.25mm.png, id=1293, 748.29562pt x 356.0803pt>
 File: 26.h=0.25mm.png Graphic file (type png)
 <use 26.h=0.25mm.png>
-Package pdftex.def Info: 26.h=0.25mm.png  used on input line 1584.
+Package pdftex.def Info: 26.h=0.25mm.png  used on input line 1587.
 (pdftex.def)             Requested size: 284.52657pt x 122.34253pt.
 
-Overfull \hbox (113.81264pt too wide) in paragraph at lines 1584--1585
+Overfull \hbox (113.81264pt too wide) in paragraph at lines 1587--1588
  [] 
  []
 
-<26.FvsD.png, id=1286, 1240.635pt x 902.37125pt>
+<26.FvsD.png, id=1294, 1240.635pt x 902.37125pt>
 File: 26.FvsD.png Graphic file (type png)
 <use 26.FvsD.png>
-Package pdftex.def Info: 26.FvsD.png  used on input line 1597.
+Package pdftex.def Info: 26.FvsD.png  used on input line 1600.
 (pdftex.def)             Requested size: 320.09349pt x 232.80724pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2677,63 +2690,63 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [55 <./26.h=1mm.png> <./26.h=0.5mm.png> <./26.h=0.25mm.png>]
-<26.d1-1.png, id=1295, 784.43062pt x 466.74374pt>
+<26.d1-1.png, id=1303, 784.43062pt x 466.74374pt>
 File: 26.d1-1.png Graphic file (type png)
 <use 26.d1-1.png>
-Package pdftex.def Info: 26.d1-1.png  used on input line 1607.
+Package pdftex.def Info: 26.d1-1.png  used on input line 1610.
 (pdftex.def)             Requested size: 234.73253pt x 139.6681pt.
 
-Overfull \hbox (64.0186pt too wide) in paragraph at lines 1607--1608
+Overfull \hbox (64.0186pt too wide) in paragraph at lines 1610--1611
 [][] 
  []
 
-<26.d2-1.png, id=1296, 786.68906pt x 477.28313pt>
+<26.d2-1.png, id=1304, 786.68906pt x 477.28313pt>
 File: 26.d2-1.png Graphic file (type png)
 <use 26.d2-1.png>
-Package pdftex.def Info: 26.d2-1.png  used on input line 1614.
+Package pdftex.def Info: 26.d2-1.png  used on input line 1617.
 (pdftex.def)             Requested size: 236.15257pt x 143.27342pt.
 
-Overfull \hbox (65.43864pt too wide) in paragraph at lines 1614--1615
+Overfull \hbox (65.43864pt too wide) in paragraph at lines 1617--1618
 [][] 
  []
 
-<26.d1-0.5.png, id=1297, 784.43062pt x 459.21562pt>
+<26.d1-0.5.png, id=1305, 784.43062pt x 459.21562pt>
 File: 26.d1-0.5.png Graphic file (type png)
 <use 26.d1-0.5.png>
-Package pdftex.def Info: 26.d1-0.5.png  used on input line 1622.
+Package pdftex.def Info: 26.d1-0.5.png  used on input line 1625.
 (pdftex.def)             Requested size: 233.30817pt x 136.58154pt.
 
-Overfull \hbox (62.59424pt too wide) in paragraph at lines 1622--1623
+Overfull \hbox (62.59424pt too wide) in paragraph at lines 1625--1626
 [][] 
  []
 
-<26.d2-0.5.png, id=1298, 787.44188pt x 450.9347pt>
+<26.d2-0.5.png, id=1306, 787.44188pt x 450.9347pt>
 File: 26.d2-0.5.png Graphic file (type png)
 <use 26.d2-0.5.png>
-Package pdftex.def Info: 26.d2-0.5.png  used on input line 1628.
+Package pdftex.def Info: 26.d2-0.5.png  used on input line 1631.
 (pdftex.def)             Requested size: 233.30263pt x 133.60255pt.
 
-Overfull \hbox (62.5887pt too wide) in paragraph at lines 1628--1629
+Overfull \hbox (62.5887pt too wide) in paragraph at lines 1631--1632
 [][] 
  []
 
-<26.d1-0.25.png, id=1299, 810.02625pt x 485.56406pt>
+<26.d1-0.25.png, id=1307, 810.02625pt x 485.56406pt>
 File: 26.d1-0.25.png Graphic file (type png)
 <use 26.d1-0.25.png>
-Package pdftex.def Info: 26.d1-0.25.png  used on input line 1636.
+Package pdftex.def Info: 26.d1-0.25.png  used on input line 1639.
 (pdftex.def)             Requested size: 233.30714pt x 139.85419pt.
 
-Overfull \hbox (62.59322pt too wide) in paragraph at lines 1636--1637
+Overfull \hbox (62.59322pt too wide) in paragraph at lines 1639--1640
 [][] 
  []
 
-<26.d2-0.25.png, id=1300, 810.02625pt x 477.28313pt>
+<26.d2-0.25.png, id=1308, 810.02625pt x 477.28313pt>
 File: 26.d2-0.25.png Graphic file (type png)
 <use 26.d2-0.25.png>
-Package pdftex.def Info: 26.d2-0.25.png  used on input line 1642.
+Package pdftex.def Info: 26.d2-0.25.png  used on input line 1645.
 (pdftex.def)             Requested size: 233.30714pt x 137.46909pt.
 
-Overfull \hbox (62.59322pt too wide) in paragraph at lines 1642--1643
+Overfull \hbox (62.59322pt too wide) in paragraph at lines 1645--1646
 [][] 
  []
 
@@ -2747,39 +2760,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [56 <./26.FvsD.png (PNG copy)> <./26.d1-1.png> <./26.d2-1.png> <./26.d1-0.5.png
 > <./26.d2-0.5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1650--1651
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1654
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1650--1651
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1654
 
  []
 
-<26.d1_tran_1.png, id=1307, 773.13844pt x 443.40656pt>
+<26.d1_tran_1.png, id=1315, 773.13844pt x 443.40656pt>
 File: 26.d1_tran_1.png Graphic file (type png)
 <use 26.d1_tran_1.png>
-Package pdftex.def Info: 26.d1_tran_1.png  used on input line 1654.
+Package pdftex.def Info: 26.d1_tran_1.png  used on input line 1657.
 (pdftex.def)             Requested size: 236.15489pt x 135.43839pt.
 
-Overfull \hbox (65.44096pt too wide) in paragraph at lines 1654--1655
+Overfull \hbox (65.44096pt too wide) in paragraph at lines 1657--1658
 [][] 
  []
 
-<26.d2_tran_1.png, id=1308, 774.64406pt x 440.39531pt>
+<26.d2_tran_1.png, id=1316, 774.64406pt x 440.39531pt>
 File: 26.d2_tran_1.png Graphic file (type png)
 <use 26.d2_tran_1.png>
-Package pdftex.def Info: 26.d2_tran_1.png  used on input line 1660.
+Package pdftex.def Info: 26.d2_tran_1.png  used on input line 1663.
 (pdftex.def)             Requested size: 236.1538pt x 134.25653pt.
 
-Overfull \hbox (65.43987pt too wide) in paragraph at lines 1660--1661
+Overfull \hbox (65.43987pt too wide) in paragraph at lines 1663--1664
 [][] 
  []
 
-<26.Strength.png, id=1309, 1240.635pt x 902.37125pt>
+<26.Strength.png, id=1317, 1240.635pt x 902.37125pt>
 File: 26.Strength.png Graphic file (type png)
 <use 26.Strength.png>
-Package pdftex.def Info: 26.Strength.png  used on input line 1670.
+Package pdftex.def Info: 26.Strength.png  used on input line 1673.
 (pdftex.def)             Requested size: 298.75262pt x 217.2895pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2791,10 +2804,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [57 <./26.d1-0.25.png> <./26.d2-0.25.png> <./26.d1_tran_1.png> <./26.d2_tran_1.
 png>]
-<26.FvsD_alphas.png, id=1316, 1240.635pt x 906.38625pt>
+<26.FvsD_alphas.png, id=1324, 1240.635pt x 906.38625pt>
 File: 26.FvsD_alphas.png Graphic file (type png)
 <use 26.FvsD_alphas.png>
-Package pdftex.def Info: 26.FvsD_alphas.png  used on input line 1680.
+Package pdftex.def Info: 26.FvsD_alphas.png  used on input line 1683.
 (pdftex.def)             Requested size: 311.55585pt x 227.60562pt.
 
 
@@ -2806,27 +2819,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [58 <./26.Strength.png (PNG copy)> <./26.FvsD_alphas.png (PNG copy)>]
-<26.Stress_Comp.png, id=1325, 1240.635pt x 902.37125pt>
+<26.Stress_Comp.png, id=1333, 1240.635pt x 902.37125pt>
 File: 26.Stress_Comp.png Graphic file (type png)
 <use 26.Stress_Comp.png>
-Package pdftex.def Info: 26.Stress_Comp.png  used on input line 1695.
+Package pdftex.def Info: 26.Stress_Comp.png  used on input line 1698.
 (pdftex.def)             Requested size: 320.09349pt x 232.80724pt.
 File: 26.d2-1.png Graphic file (type png)
 <use 26.d2-1.png>
-Package pdftex.def Info: 26.d2-1.png  used on input line 1705.
+Package pdftex.def Info: 26.d2-1.png  used on input line 1708.
 (pdftex.def)             Requested size: 236.15257pt x 143.27342pt.
 
-Overfull \hbox (65.43864pt too wide) in paragraph at lines 1705--1707
+Overfull \hbox (65.43864pt too wide) in paragraph at lines 1708--1710
  [][] 
  []
 
-<26.d2_a_0.1.png, id=1327, 755.07094pt x 437.38406pt>
+<26.d2_a_0.1.png, id=1335, 755.07094pt x 437.38406pt>
 File: 26.d2_a_0.1.png Graphic file (type png)
 <use 26.d2_a_0.1.png>
-Package pdftex.def Info: 26.d2_a_0.1.png  used on input line 1713.
+Package pdftex.def Info: 26.d2_a_0.1.png  used on input line 1716.
 (pdftex.def)             Requested size: 236.15495pt x 136.79562pt.
 
-Overfull \hbox (65.44102pt too wide) in paragraph at lines 1713--1714
+Overfull \hbox (65.44102pt too wide) in paragraph at lines 1716--1717
 [][] 
  []
 
@@ -2839,50 +2852,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [59 <./26.Stress_Comp.png (PNG copy)>]
-<26.d2_a_0.2.png, id=1332, 764.8575pt x 440.39531pt>
+<26.d2_a_0.2.png, id=1340, 764.8575pt x 440.39531pt>
 File: 26.d2_a_0.2.png Graphic file (type png)
 <use 26.d2_a_0.2.png>
-Package pdftex.def Info: 26.d2_a_0.2.png  used on input line 1722.
+Package pdftex.def Info: 26.d2_a_0.2.png  used on input line 1725.
 (pdftex.def)             Requested size: 236.15804pt x 135.97682pt.
 
-Overfull \hbox (65.4441pt too wide) in paragraph at lines 1722--1723
+Overfull \hbox (65.4441pt too wide) in paragraph at lines 1725--1726
 [][] 
  []
 
-<26.d2_a_0.3.png, id=1333, 768.62157pt x 441.90094pt>
+<26.d2_a_0.3.png, id=1341, 768.62157pt x 441.90094pt>
 File: 26.d2_a_0.3.png Graphic file (type png)
 <use 26.d2_a_0.3.png>
-Package pdftex.def Info: 26.d2_a_0.3.png  used on input line 1729.
+Package pdftex.def Info: 26.d2_a_0.3.png  used on input line 1732.
 (pdftex.def)             Requested size: 236.15915pt x 135.77415pt.
 
-Overfull \hbox (65.44522pt too wide) in paragraph at lines 1729--1730
+Overfull \hbox (65.44522pt too wide) in paragraph at lines 1732--1733
 [][] 
  []
 
-<26.d2_a_0.5.png, id=1334, 805.50937pt x 481.04718pt>
+<26.d2_a_0.5.png, id=1342, 805.50937pt x 481.04718pt>
 File: 26.d2_a_0.5.png Graphic file (type png)
 <use 26.d2_a_0.5.png>
-Package pdftex.def Info: 26.d2_a_0.5.png  used on input line 1738.
+Package pdftex.def Info: 26.d2_a_0.5.png  used on input line 1741.
 (pdftex.def)             Requested size: 236.14827pt x 141.02686pt.
 
-Overfull \hbox (65.43434pt too wide) in paragraph at lines 1738--1739
+Overfull \hbox (65.43434pt too wide) in paragraph at lines 1741--1742
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1746--1747
+Underfull \hbox (badness 10000) in paragraph at lines 1749--1750
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1746--1747
+Underfull \hbox (badness 10000) in paragraph at lines 1749--1750
 
  []
 
-<26.Stress_Comp2.png, id=1335, 1240.635pt x 902.37125pt>
+<26.Stress_Comp2.png, id=1343, 1240.635pt x 902.37125pt>
 File: 26.Stress_Comp2.png Graphic file (type png)
 <use 26.Stress_Comp2.png>
-Package pdftex.def Info: 26.Stress_Comp2.png  used on input line 1750.
+Package pdftex.def Info: 26.Stress_Comp2.png  used on input line 1753.
 (pdftex.def)             Requested size: 320.09349pt x 232.80724pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2894,23 +2907,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [60 <./26.d2_a_0.1.png> <./26.d2_a_0.2.png> <./26.d2_a_0.3.png> <./26.d2_a_0.5.
 png>]
-<26.d1_a_0.png, id=1342, 773.13844pt x 443.40656pt>
+<26.d1_a_0.png, id=1350, 773.13844pt x 443.40656pt>
 File: 26.d1_a_0.png Graphic file (type png)
 <use 26.d1_a_0.png>
-Package pdftex.def Info: 26.d1_a_0.png  used on input line 1759.
+Package pdftex.def Info: 26.d1_a_0.png  used on input line 1762.
 (pdftex.def)             Requested size: 236.15489pt x 135.43839pt.
 
-Overfull \hbox (65.44096pt too wide) in paragraph at lines 1759--1760
+Overfull \hbox (65.44096pt too wide) in paragraph at lines 1762--1763
 [][] 
  []
 
-<26.d1_a_0.5.png, id=1343, 776.9025pt x 440.39531pt>
+<26.d1_a_0.5.png, id=1351, 776.9025pt x 440.39531pt>
 File: 26.d1_a_0.5.png Graphic file (type png)
 <use 26.d1_a_0.5.png>
-Package pdftex.def Info: 26.d1_a_0.5.png  used on input line 1766.
+Package pdftex.def Info: 26.d1_a_0.5.png  used on input line 1769.
 (pdftex.def)             Requested size: 236.15472pt x 133.86678pt.
 
-Overfull \hbox (65.4408pt too wide) in paragraph at lines 1766--1767
+Overfull \hbox (65.4408pt too wide) in paragraph at lines 1769--1770
 [][] 
  []
 
@@ -2923,29 +2936,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61 <./26.Stress_Comp2.png (PNG copy)> <./26.d1_a_0.png> <./26.d1_a_0.5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1777--1778
+Underfull \hbox (badness 10000) in paragraph at lines 1780--1781
 
  []
 
-<27.Geometry.jpg, id=1350, 932.73468pt x 484.81125pt>
+<27.Geometry.jpg, id=1358, 932.73468pt x 484.81125pt>
 File: 27.Geometry.jpg Graphic file (type jpg)
 <use 27.Geometry.jpg>
-Package pdftex.def Info: 27.Geometry.jpg  used on input line 1782.
+Package pdftex.def Info: 27.Geometry.jpg  used on input line 1785.
 (pdftex.def)             Requested size: 426.79134pt x 221.83226pt.
-<27.Mesh.png, id=1355, 694.09312pt x 578.91281pt>
+<27.Mesh.png, id=1363, 694.09312pt x 578.91281pt>
 File: 27.Mesh.png Graphic file (type png)
 <use 27.Mesh.png>
-Package pdftex.def Info: 27.Mesh.png  used on input line 1799.
+Package pdftex.def Info: 27.Mesh.png  used on input line 1802.
 (pdftex.def)             Requested size: 256.07965pt x 213.58487pt.
 
-Overfull \hbox (42.68399pt too wide) in paragraph at lines 1799--1801
+Overfull \hbox (42.68399pt too wide) in paragraph at lines 1802--1804
  [][] 
  []
 
-<27.Mesh2.png, id=1356, 90.3375pt x 603.75563pt>
+<27.Mesh2.png, id=1364, 90.3375pt x 603.75563pt>
 File: 27.Mesh2.png Graphic file (type png)
 <use 27.Mesh2.png>
-Package pdftex.def Info: 27.Mesh2.png  used on input line 1806.
+Package pdftex.def Info: 27.Mesh2.png  used on input line 1809.
 (pdftex.def)             Requested size: 36.18672pt x 241.84804pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2967,33 +2980,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [63 <./27.Mesh.png> <./27.Mesh2.png>]
-<27.FvsD1.png, id=1366, 1240.635pt x 902.37125pt>
+<27.FvsD1.png, id=1374, 1240.635pt x 902.37125pt>
 File: 27.FvsD1.png Graphic file (type png)
 <use 27.FvsD1.png>
-Package pdftex.def Info: 27.FvsD1.png  used on input line 1867.
+Package pdftex.def Info: 27.FvsD1.png  used on input line 1870.
 (pdftex.def)             Requested size: 341.43436pt x 248.33875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1873--1874
+Underfull \hbox (badness 10000) in paragraph at lines 1876--1877
 
  []
 
-<27.d1-lt-e.png, id=1370, 644.4075pt x 554.82281pt>
+<27.d1-lt-e.png, id=1378, 644.4075pt x 554.82281pt>
 File: 27.d1-lt-e.png Graphic file (type png)
 <use 27.d1-lt-e.png>
-Package pdftex.def Info: 27.d1-lt-e.png  used on input line 1882.
+Package pdftex.def Info: 27.d1-lt-e.png  used on input line 1885.
 (pdftex.def)             Requested size: 233.31395pt x 256.07664pt.
 
-Overfull \hbox (62.60002pt too wide) in paragraph at lines 1882--1883
+Overfull \hbox (62.60002pt too wide) in paragraph at lines 1885--1886
  [] 
  []
 
-<27.d1-lt-n.png, id=1371, 648.92438pt x 554.82281pt>
+<27.d1-lt-n.png, id=1379, 648.92438pt x 554.82281pt>
 File: 27.d1-lt-n.png Graphic file (type png)
 <use 27.d1-lt-n.png>
-Package pdftex.def Info: 27.d1-lt-n.png  used on input line 1889.
+Package pdftex.def Info: 27.d1-lt-n.png  used on input line 1892.
 (pdftex.def)             Requested size: 233.30563pt x 256.07664pt.
 
-Overfull \hbox (62.5917pt too wide) in paragraph at lines 1889--1890
+Overfull \hbox (62.5917pt too wide) in paragraph at lines 1892--1893
 [][] 
  []
 
@@ -3008,43 +3021,43 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [64
 
  <./27.FvsD1.png (PNG copy)>]
-<27.d2-lt-e.png, id=1378, 653.44125pt x 554.82281pt>
+<27.d2-lt-e.png, id=1386, 653.44125pt x 554.82281pt>
 File: 27.d2-lt-e.png Graphic file (type png)
 <use 27.d2-lt-e.png>
-Package pdftex.def Info: 27.d2-lt-e.png  used on input line 1898.
+Package pdftex.def Info: 27.d2-lt-e.png  used on input line 1901.
 (pdftex.def)             Requested size: 233.30435pt x 256.07664pt.
 
-Overfull \hbox (62.59042pt too wide) in paragraph at lines 1898--1899
+Overfull \hbox (62.59042pt too wide) in paragraph at lines 1901--1902
 [][] 
  []
 
-<27.d2-lt-n.png, id=1379, 642.90187pt x 554.82281pt>
+<27.d2-lt-n.png, id=1387, 642.90187pt x 554.82281pt>
 File: 27.d2-lt-n.png Graphic file (type png)
 <use 27.d2-lt-n.png>
-Package pdftex.def Info: 27.d2-lt-n.png  used on input line 1904.
+Package pdftex.def Info: 27.d2-lt-n.png  used on input line 1907.
 (pdftex.def)             Requested size: 233.30836pt x 256.07664pt.
 
-Overfull \hbox (62.59444pt too wide) in paragraph at lines 1904--1905
+Overfull \hbox (62.59444pt too wide) in paragraph at lines 1907--1908
 [][] 
  []
 
-<27.d3-lt-e.png, id=1380, 630.85687pt x 554.82281pt>
+<27.d3-lt-e.png, id=1388, 630.85687pt x 554.82281pt>
 File: 27.d3-lt-e.png Graphic file (type png)
 <use 27.d3-lt-e.png>
-Package pdftex.def Info: 27.d3-lt-e.png  used on input line 1912.
+Package pdftex.def Info: 27.d3-lt-e.png  used on input line 1915.
 (pdftex.def)             Requested size: 233.3075pt x 256.07664pt.
 
-Overfull \hbox (62.59357pt too wide) in paragraph at lines 1912--1913
+Overfull \hbox (62.59357pt too wide) in paragraph at lines 1915--1916
 [][] 
  []
 
-<27.d3-lt-n.png, id=1381, 639.89063pt x 554.82281pt>
+<27.d3-lt-n.png, id=1389, 639.89063pt x 554.82281pt>
 File: 27.d3-lt-n.png Graphic file (type png)
 <use 27.d3-lt-n.png>
-Package pdftex.def Info: 27.d3-lt-n.png  used on input line 1918.
+Package pdftex.def Info: 27.d3-lt-n.png  used on input line 1921.
 (pdftex.def)             Requested size: 233.30914pt x 256.07664pt.
 
-Overfull \hbox (62.59521pt too wide) in paragraph at lines 1918--1919
+Overfull \hbox (62.59521pt too wide) in paragraph at lines 1921--1922
 [][] 
  []
 
@@ -3069,12 +3082,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [66 <./27.d3-lt-e.png> <./27.d3-lt-n.png>]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1932--1933
+Underfull \hbox (badness 10000) in paragraph at lines 1935--1936
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1934--1935
+Underfull \hbox (badness 10000) in paragraph at lines 1937--1938
 
  []
 
@@ -3174,27 +3187,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [71] [72
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1975--1976
+Underfull \hbox (badness 10000) in paragraph at lines 1978--1979
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1994--1995
+Underfull \hbox (badness 10000) in paragraph at lines 1997--1998
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2012--2020
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2023
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2012--2020
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2023
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2012--2020
+Underfull \hbox (badness 10000) in paragraph at lines 2015--2023
 
  []
 
@@ -3530,16 +3543,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Masterthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 79051F1FB746AA87B036110F5BF64363;13421.
+(rerunfilecheck)             Checksum: 4F41302BA0ABD828342BA2C6AB5C9E72;13436.
  ) 
 Here is how much of TeX's memory you used:
- 30144 strings out of 479321
- 540468 string characters out of 2856583
- 1190434 words of memory out of 3000000
- 45863 multiletter control sequences out of 15000+600000
+ 30149 strings out of 479321
+ 540552 string characters out of 2856583
+ 1190574 words of memory out of 3000000
+ 45865 multiletter control sequences out of 15000+600000
  525497 words of font info for 113 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 87i,13n,100p,1989b,2087s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1142 hyphenation exceptions out of 8191
+ 87i,13n,100p,1991b,2087s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{
 C:/Users/aruns/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
 sers/aruns/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/U
@@ -3565,9 +3578,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/aruns/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/aruns/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/aruns/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Masterthesis.pdf (110 pages, 4596952 bytes).
+Output written on Masterthesis.pdf (110 pages, 4599652 bytes).
 PDF statistics:
- 2559 PDF objects out of 2984 (max. 8388607)
- 1069 named destinations out of 1200 (max. 500000)
+ 2571 PDF objects out of 2984 (max. 8388607)
+ 1071 named destinations out of 1200 (max. 500000)
  988 words of extra memory for PDF output out of 10000 (max. 10000000)
 

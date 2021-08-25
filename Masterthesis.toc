@@ -4,13 +4,13 @@
 \contentsline {chapter}{\textbf {List of symbols}}{XVII}{chapter*.4}%
 \contentsline {chapter}{\textbf {List of abbreviations}}{XIX}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Background and motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Scope and Outline}{3}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Continuum damage mechanics}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Continuum Damage Mechanics}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Damage}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Representative Volume Element(RVE)}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Concept of continuum damage mechanics (CDM)}{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Modelling by Effective area reduction}{7}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.3}Concept of Continuum Damage Mechanics (CDM)}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Modelling by effective area reduction}{7}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Modelling by variation of elastic modulus}{8}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Mechanical representation of the damage state}{9}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Scalar damage variable}{9}{subsection.2.4.1}%
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.5.2}Asymmetric effective stress tensor for anisotropic damage \citep {murakami2012continuum}}{11}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Symmetrized effective stress tensor for anisotropic damage \citep {murakami2012continuum}}{12}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Damage effect tensors}{12}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Hypothesis of strain Equivalence}{13}{section.2.7}%
+\contentsline {section}{\numberline {2.7}Hypothesis of strain equivalence}{13}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Hypothesis of strain energy equivalence}{14}{section.2.8}%
 \contentsline {section}{\numberline {2.9}Elastic constitutive equation and elastic modulus tensor of orthotropic material}{16}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Working environment}{19}{chapter.3}%
@@ -46,7 +46,7 @@
 \contentsline {section}{\numberline {4.5}Numerical implementation of the damage model in ANSYS}{32}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Strain based damage model}{33}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Stress based damage model}{34}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Schematic of UMAT implementation}{35}{section.4.6}%
+\contentsline {section}{\numberline {4.6}Schematic of USERMAT implementation}{35}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Results and Discussion}{37}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Modelling linear elastic behaviour of orthotropic materials}{37}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Damage behaviour at integration point level}{40}{section.5.2}%
