@@ -1353,11 +1353,11 @@ Since the material properties are the same in transverse $2$ and $3$ direction a
 \item Compact tension (CT) specimen (2D - Plane stress)
 \item Plate with hole (3D)
 \end{itemize}
-Each example is chosen to demonstrate specific features of the damage model. These features include, at first, the capability of the model to represent damage initiation and propagation and secondly, the calculation of multiple damage variables, i.e., the ability to show anisotropic damage development in the composite material when a load is applied, both in 2D and 3D setting. Furthermore, mesh convergence studies are performed to show that the regularization scheme employed gives better results than the model with no regularization. For all the finite element simulations of the above models, linear quadrilateral elements are used (both 2D and 3D) with full Gauss integration. The line search option has been enabled during all the simulations to get good convergence behaviour. The material used for the finite element simulations is T700/2510 carbon fiber/epoxy fabric. The material has fibers in parallel in the longitudinal direction and also fibers woven in the cross-section that provide additional strength in transverse directions. The material has a high modulus and strength in the longitudinal direction compared to the transverse direction. The material properties are obtained from \citep{jiang2018evaluations} and a summary of the material properties are given in the Table (\ref{tab:Material parameters(Representative structural examples)}). \\
+Each example is chosen to demonstrate specific features of the damage model. These features include, at first, the capability of the model to represent damage initiation and propagation and secondly, the calculation of multiple damage variables, i.e., the ability to show anisotropic damage development in the composite material when a load is applied (both 2D and 3D). Furthermore, mesh convergence studies are performed to show that the regularization scheme employed gives better results than the model with no regularization. For all the finite element simulations of the above models, linear quadrilateral elements are used (both 2D and 3D) with full Gauss integration. The line search option has been enabled during all the simulations to get good convergence behaviour. The material used for the finite element simulations is T700/2510 carbon fiber/epoxy fabric. The material has fibers in parallel in the longitudinal direction and also fibers woven in the cross-section that provide additional strength in transverse directions. The material has a high modulus and strength in the longitudinal direction compared to the transverse direction. The material properties are obtained from \citep{jiang2018evaluations} and a summary of them are given in the Table (\ref{tab:Material parameters(Representative structural examples)}). \\
 \begin{table}[!htbp]
   \begin{center}
-    
-\resizebox{16cm}{6.5cm}{ 
+
+\resizebox{16cm}{6.3cm}{ 
      \begin{tabular}{l l l} 
      \hline
      \\
@@ -1401,19 +1401,17 @@ Each example is chosen to demonstrate specific features of the damage model. The
   \end{center}
 \end{table}
 \FloatBarrier
-\clearpage
 \subsection{Notched tensile specimen}
-\indent\indent\indent  The first example demonstrates the model's capability to represent damage initiation and propagation. A notched tensile specimen is widely used for analysis of stress concentration, fatigue etc., Because of the symmetry, only one-quarter of the specimen is modelled in the finite element analysis and the geometry and boundary conditions are shown in the Figure (\ref{fig:NT Specimen}). The meshes consist of plane-stress elements (PLANE 182) with bilinear interpolations for displacements, and 2*2 Gauss integration has been utilized. Three different finite element meshes have been used in the fracture zone with the elements of h = 1 mm, 0.5 mm, 0.25 mm and a total of 500, 840, 1460 elements respectively for the convergence studies (Figure \ref{fig:Considered meshes}).  At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed by applying a displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The maximum stress criterion (Section \ref{Maximum stress criteria}) has been used to predict the damage initiation.
-
+\indent\indent\indent  The first example demonstrates the model's capability to represent damage initiation and propagation. A notched tensile specimen is widely used for analysis of stress concentration, fatigue etc., Because of the symmetry, only one-quarter of the specimen is modelled in the finite element analysis and the geometry and boundary conditions (BCs) are shown in the Figure (\ref{fig:NT Specimen}). The meshes consist of plane-stress elements (PLANE 182) with bilinear interpolations for displacements, and 2*2 Gauss integration has been utilized. Three different finite element meshes have been used in the fracture zone with the elements of h = 1 mm, 0.5 mm, 0.25 mm and a total of 500, 840, 1460 elements respectively for the convergence studies (Figure \ref{fig:Considered meshes}).  At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed by applying a displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The maximum stress criterion (Section \ref{Maximum stress criteria}) has been used to predict the damage initiation.
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{{25.Geometry.jpg}}
+\includegraphics[width=0.7\textwidth]{{25.Geometry.jpg}}
  \caption{Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied.}
  \label{fig:NT Specimen}
  \end{center}
 \end{figure}
 \FloatBarrier
-\indent\indent\indent   The force-displacement response for the three different meshes with and without the regularization (Section(\ref{Mesh Regularisation})) schemes have been plotted in Figure (\ref{fig:with regularization})  and (\ref{fig:without regularization}) respectively. The global force-displacement response is characterized by a large linear regime followed by a gradual drop of the load (because of the softening) or a sudden drop in case of no regularization. From Figure (\ref{fig:Convergence study}), it is clearly evident that the model with regularization gives a more stable force-displacement response compared to the model without regularization, where the maximum load capacity is very low, and the load drops significantly with the decrease in mesh size (i.e., increase in the number of elements). The regularization scheme employed cannot fully alleviate the mesh dependency problem because the damage evolution is still dependent on the element volume ($V$) discussed in the Figure. (\ref{fig:Influence of element volume}). But it improves the solution significantly compared to the material model without regularization. 
+\indent\indent\indent   The global force-displacement response for the three different meshes with and without the regularization (See section(\ref{Mesh Regularisation})) schemes have been plotted in Figure (\ref{fig:with regularization})  and (\ref{fig:without regularization}) respectively. The force-displacement response is characterized by a large linear regime followed by a gradual drop of the load (because of the softening) or a sudden drop in the case of no regularization. From Figure (\ref{fig:Convergence study}), it is evident that the model with regularization gives a more stable force-displacement response compared to the model without regularization, where the maximum load capacity is very low, and the load drops significantly with the decrease in mesh size (i.e., increase in the number of elements). The regularization scheme employed cannot fully alleviate the mesh dependency problem because the damage evolution is still dependent on the element volume ($V$) discussed in the Figure. (\ref{fig:Influence of element volume}). But it improves the solution significantly compared to the material model without regularization. 
 
 \begin{figure}[htbp!]
      \captionsetup[subfigure]{justification=centering}
@@ -1455,7 +1453,7 @@ Each example is chosen to demonstrate specific features of the damage model. The
 \end{figure}
 \FloatBarrier
  
-\indent\indent\indent The damage distributions at the end of the process have been plotted for the three different meshes in the Figure (\ref{fig:Convergence study for model with and without regularization}). For numerical reasons the maximum damage is limited to a threshold value of $d_{max}$ = 0.999. The improvement in the global response by using regularization schemes has been illustrated by the damage distributions at the end of the loading process. A relatively large portion of the fracture zone takes part in the damage process instead of very few elements (one or two elements) in the case of no regularization. Damage initiates at the tip of the blunt notch and propagates perpendicular to the loading direction. The width of the damage zone is approximately the same in the three discretizations in the case of regularized models, but the number of elements that reach a critical damage value (red) increases with the increase in the number of elements along the fracture zone.
+\indent\indent\indent  For numerical reasons the maximum damage is limited to a threshold value of $d_{max}$ = 0.999. The improvement in the global response by using regularization schemes has been illustrated by the damage distributions at the end of the loading process. The damage distributions at the end of the process have been plotted for the three different meshes in the Figure (\ref{fig:Convergence study for model with and without regularization}). A relatively large portion of the fracture zone takes part in the damage process instead of very few elements (one or two elements) in the case of no regularization. In the case of regularized models, damage initiates at the tip of the blunt notch and propagates perpendicular to the loading direction. The width of the damage zone is approximately the same in the three discretizations, but the number of elements that reach a critical damage value (red) increases with the increase in the number of elements along the fracture zone.\\
 
 \begin{figure}[htbp!]
      \begin{subfigure}{0.4\textwidth}
@@ -1472,6 +1470,7 @@ Each example is chosen to demonstrate specific features of the damage model. The
      \end{subfigure}
 \end{figure}
 \FloatBarrier
+\vspace*{1cm}
 \begin{figure}[htbp!]\ContinuedFloat 
      \begin{subfigure}{0.4\textwidth}
          \includegraphics[width=8cm,height=7.2cm,keepaspectratio]{25.d1-0.5-r.png}
@@ -1503,7 +1502,7 @@ Each example is chosen to demonstrate specific features of the damage model. The
 \end{figure}
 \FloatBarrier
 Now the transverse direction is kept parallel to the loading direction, and the behaviour of the damage model, i.e., initiation and propagation of damage $d_{2}$, is analysed by applying a tensile load in the transverse direction. The damage ($d_{2}$) at the end of the loading process is shown in the Figure (\ref{fig:Damage contour plots d2})
-\\
+\\\\
 \begin{figure}[htbp!]
  \centering
      \captionsetup[subfigure]{justification=centering}
@@ -1533,7 +1532,7 @@ Now the transverse direction is kept parallel to the loading direction, and the 
     \label{fig:Damage contour plots d2}
 \end{figure}
 \FloatBarrier
-The damage pattern looks similar to the distribution of damage ($d_{1}$) when loaded in the longitudinal direction. The force-displacement response of both longitudinal and transverse loading for a single mesh type (h = 0.5mm) is compared in the Figure (\ref{fig:Strength}). As expected, the maximum load capacity is high in the longitudinal direction compared to the transverse direction.
+The damage pattern looks similar to the distribution of damage ($d_{1}$) at the end of loading. The force-displacement response of both longitudinal and transverse loading for a single mesh type (h = 0.5mm) is compared in the Figure (\ref{fig:Strength}). As expected, the maximum load capacity is high in the longitudinal direction because of the high tensile strength compared to transverse direction.\\
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -1543,9 +1542,10 @@ The damage pattern looks similar to the distribution of damage ($d_{1}$) when lo
  \end{center}
 \end{figure}
 \FloatBarrier 
- 
+
+\clearpage 
 \subsection{Compact Tension (CT) Specimen}\label{CT specimen}
-\indent\indent\indent   This second example demonstrates the model's ability to compute multiple damage variables simultaneously, i.e., show the anisotropic damage development when a load is applied. In the plane stress (2D) setting, two damage variables ($d_{1}$ and $d_{2}$), one in each principal direction, are employed to represent the anisotropic damage development. The Compact Tension test is a standard test for plane fracture of materials and the measurement of fatigue crack growths. Because of the symmetry, only one half of the specimen is modelled, and the geometry and appropriate boundary conditions \citep{peerlings1999enhanced} are given in Figure (\ref{fig:CT Specimen}). The mesh consists of plane stress (PLANE 182) elements with bilinear interpolations for displacements, and 2*2 Gauss integration has been utilized. Just like the notched tensile specimen, three different finite element meshes have been used in the fracture zone with the elements of size h = 1 mm, 0.5 mm and 0.25 mm and a total of 509, 1409, 4811 elements, respectively for the convergence studies (Figure \ref{fig:Considered meshes 2}).  A node is created at the centre of the pinhole, and the innermost nodes of the pinhole contour are connected to this node by rigid coupling option in ANSYS. A displacement controlled load ($U_{x}$) is applied at the central node, and the global force-displacement response can be obtained from this central node.  At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed.
+\indent\indent\indent   This second example demonstrates the model's ability to compute multiple damage variables simultaneously, i.e., show the anisotropic damage development when a load is applied. In the plane stress (2D) setting, two damage variables ($d_{1}$ and $d_{2}$), one in each principal direction, are employed to represent the anisotropic damage development. The compact tension test is a standard test for plane fracture of materials and the measurement of fatigue crack growths. Because of the symmetry, only one half of the specimen is modelled, and the geometry and appropriate boundary conditions \citep{peerlings1999enhanced} are given in Figure (\ref{fig:CT Specimen}). The mesh consists of plane stress (PLANE 182) elements with bilinear interpolations for displacements, and 2*2 Gauss integration has been utilized. Just like the notched tensile specimen, three different finite element meshes have been used in the fracture zone with the elements of size h = 1 mm, 0.5 mm and 0.25 mm and a total of 509, 1409, 4811 elements, respectively for the convergence studies (Figure \ref{fig:Considered meshes 2}).  A node is created at the centre of the pinhole, and the innermost nodes of the pinhole contour are connected to this node by rigid coupling option in ANSYS. A displacement controlled load ($U_{x}$) is applied at the central node, and the global force-displacement response can be obtained from this central node.  At first, the longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed.
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -1777,12 +1777,12 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
 
 \clearpage
 \subsection{Plate with hole (3D)}
-\indent\indent\indent   This third example demonstrates the model's ability to show the anisotropic damage development for three dimensional (3D) problems. In 3D, three damage variables ($d_{1}$, $d_{2}$ and $d_{3}$) are employed to represent the anisotropic damage development, i.e., one damage variable for each principal material direction. Because of symmetry, only one-eighth of the specimen has been modelled. The geometry and the appropriate boundary conditions are given in Figure (\ref{fig:plate with hole}). Eight node solid elements (SOLID 185) with trilinear interpolations of the displacements and full integration has been used to perform the FE modelling. The thickness has been divided into four elements, and a fine mesh has been used in the region closer to the fracture zone shown in the Figure (\ref{fig:plate with hole mesh}).\\
+\indent\indent\indent   This third example demonstrates the model's ability to show the anisotropic damage development for three dimensional (3D) problems. In 3D, three damage variables ($d_{1}$, $d_{2}$ and $d_{3}$) are employed to represent the anisotropic damage development, i.e., one damage variable for each principal material direction. Because of symmetry, only one-eighth of the specimen has been modelled. The geometry and the appropriate boundary conditions are given in Figure (\ref{fig:plate with hole}). Eight node solid elements (SOLID 185) with trilinear interpolations of the displacements and full integration has been used to perform the FE modelling. The thickness has been divided into four elements, and a fine mesh has been used in the region closer to the fracture zone shown in the Figure (\ref{fig:plate with hole mesh}).
  
 
 \begin{figure}[htbp!]
 \begin{center}
-\includegraphics[width=1\textwidth]{{27.Geometry.jpg}}
+\includegraphics[width=15.5cm,height=9cm]{{27.Geometry.jpg}}
  \caption{Specimen geometry and boundary conditions. Dimensions are given in mm. Displacement controlled loading $U_{x}$ is applied}
  \label{fig:plate with hole}
  \end{center}
@@ -1790,7 +1790,7 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
 \FloatBarrier 
 
 
-\indent\indent\indent The longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analysed by applying displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The strength in transverse directions (2 and 3) are large enough for the damage variables $d_{2}$ and $d_{3}$ not to initiate when a longitudinal tensile load is applied. So to demonstrate the model's capability to show anisotropic damage development the transverse strength has been reduced  (For both tension and compression). The material properties considered for 3D damage model \citep{jiang2018evaluations} are given in the Table. (\ref{tab:Material parameters (3D Damage model)}). The maximum stress criterion (See Section(\ref{Maximum stress criteria})) has been used to predict the damage initiation in the three principal material directions. 
+\indent\indent\indent The longitudinal direction is kept parallel to the loading direction, and the behaviour of the model is analyzed by applying displacement controlled load ($U_{x}$) in the longitudinal direction (X-direction). The strength in transverse directions (2 and 3) are large enough so that damage variables $d_{2}$ and $d_{3}$ does not initiate when a longitudinal tensile load is applied. So to demonstrate the model's capability to show anisotropic damage development the strength in transverse directions (2 and 3) has been reduced (For both tension and compression). The material properties considered for 3D damage model \citep{jiang2018evaluations} are given in the Table. (\ref{tab:Material parameters (3D Damage model)}). The maximum stress criterion (See Section(\ref{Maximum stress criteria})) has been used to predict the damage initiation in the three principal material directions. 
 
 
 
@@ -1813,11 +1813,11 @@ The maximum value of $\alpha$ is chosen to be 0.5 to avoid the damage developmen
         \label{fig:plate with hole mesh} 
 \end{figure}
 \FloatBarrier 
-
+\vspace*{0.3cm}
 
 \begin{table}[!htbp]
   \begin{center}
-     \resizebox{15cm}{6.5cm}{
+     \resizebox{15.5cm}{6cm}{
      \begin{tabular}{l l l} 
      \hline
      \\
