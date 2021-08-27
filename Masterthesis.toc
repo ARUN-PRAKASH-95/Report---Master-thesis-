@@ -14,55 +14,54 @@
 \contentsline {subsection}{\numberline {2.3.2}Modelling by variation of elastic modulus}{8}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Mechanical representation of the damage state}{9}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Scalar damage variable}{9}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Vector damage variable}{10}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.2}Vector damage variable}{9}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Damage tensor of second order}{10}{subsection.2.4.3}%
 \contentsline {section}{\numberline {2.5}Effective Stress Tensors}{11}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Effective stress tensor for isotropic damage \citep {lemaitre1978aspect}}{11}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Asymmetric effective stress tensor for anisotropic damage \citep {murakami2012continuum}}{11}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Symmetrized effective stress tensor for anisotropic damage \citep {murakami2012continuum}}{12}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Damage effect tensors}{12}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Hypothesis of strain equivalence}{13}{section.2.7}%
+\contentsline {section}{\numberline {2.6}Damage effect tensors}{11}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Hypothesis of strain equivalence}{12}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Hypothesis of strain energy equivalence}{14}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Elastic constitutive equation and elastic modulus tensor of orthotropic material}{16}{section.2.9}%
-\contentsline {chapter}{\numberline {3}Working environment}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Software tools required}{19}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Programming the USERMAT}{20}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Compiling the USERMAT}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Creating the FE model}{22}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Testing the USERMAT}{23}{section.3.5}%
-\contentsline {section}{\numberline {3.6}PostProcessing}{24}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Progressive failure analysis of orthotropic composite materials }{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Fibre-reinforced Composites}{25}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Longitudinal failure}{25}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Transverse failure}{26}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Failure criteria}{26}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}3D Hashin's quadratic strain criteria}{26}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Maximum stress criteria}{27}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Modified Hashin's failure criterion}{28}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Types of damage evolution}{29}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Isotropic damage}{29}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Anisotropic damage}{30}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Localisation and Mesh Regularisation}{31}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Numerical implementation of the damage model in ANSYS}{32}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Strain based damage model}{33}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Stress based damage model}{34}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Schematic of USERMAT implementation}{35}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Results and Discussion}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modelling linear elastic behaviour of orthotropic materials}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Damage behaviour at integration point level}{40}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Uniaxial tension}{40}{subsection.5.2.1}%
-\contentsline {subsubsection}{Drawbacks of strain based failure criteria}{41}{subsubsection*.28}%
-\contentsline {subsubsection}{Stress-based damage models and mesh regularization}{42}{subsubsection*.30}%
-\contentsline {subsubsection}{Discussion of tangent stiffness}{44}{subsubsection*.34}%
-\contentsline {subsection}{\numberline {5.2.2}Biaxial tension}{45}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Triaxial tension}{46}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Representative structural examples}{47}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Notched tensile specimen}{48}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Compact Tension (CT) Specimen}{54}{subsection.5.3.2}%
-\contentsline {subsubsection}{Effect of shear in damage development}{58}{subsubsection*.61}%
-\contentsline {subsection}{\numberline {5.3.3}Plate with hole (3D)}{62}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {6}Summary and Conclusion}{67}{chapter.6}%
-\contentsline {chapter}{Bibliography}{69}{chapter*.76}%
+\contentsline {section}{\numberline {2.9}Elastic constitutive equation and elastic modulus tensor of orthotropic material}{15}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Working environment}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Software tools required}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Programming the USERMAT}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Compiling the USERMAT}{19}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Creating the FE model}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Testing the USERMAT}{20}{section.3.5}%
+\contentsline {section}{\numberline {3.6}PostProcessing}{21}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Progressive failure analysis of orthotropic composite materials }{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Fibre-reinforced Composites}{23}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Longitudinal failure}{23}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Transverse failure}{24}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Failure criteria}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}3D Hashin's quadratic strain criteria}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Maximum stress criteria}{25}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Modified Hashin's failure criterion}{26}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Types of damage evolution}{27}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Isotropic damage}{27}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Anisotropic damage}{28}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Localisation and Mesh Regularisation}{29}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Numerical implementation of the damage model in ANSYS}{30}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Strain based damage model}{31}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Stress based damage model}{32}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Schematic of USERMAT implementation}{33}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Results and Discussion}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Modelling linear elastic behaviour of orthotropic materials}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Damage behaviour at integration point level}{38}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Uniaxial tension}{38}{subsection.5.2.1}%
+\contentsline {subsubsection}{Drawbacks of strain based failure criteria}{39}{subsubsection*.28}%
+\contentsline {subsubsection}{Stress-based damage models and mesh regularization}{40}{subsubsection*.30}%
+\contentsline {subsubsection}{Discussion of tangent stiffness}{41}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {5.2.2}Biaxial tension}{43}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Triaxial tension}{44}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Representative structural examples}{45}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Notched tensile specimen}{46}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Compact Tension (CT) Specimen}{52}{subsection.5.3.2}%
+\contentsline {subsubsection}{Effect of shear in damage development}{56}{subsubsection*.61}%
+\contentsline {subsection}{\numberline {5.3.3}Plate with hole (3D)}{60}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Summary and Conclusion}{65}{chapter.6}%
+\contentsline {chapter}{Bibliography}{67}{chapter*.76}%
 \contentsline {chapter}{\textbf {Appendix}}{XX}{chapter*.77}%
 \contentsline {section}{\numberline {A}Stiffness matrix of the damaged material}{XX}{section.6.1}%
 \contentsline {section}{\numberline {B}APDL Script}{XXI}{section.6.2}%

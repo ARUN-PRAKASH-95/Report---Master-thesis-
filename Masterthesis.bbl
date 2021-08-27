@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -31,13 +31,6 @@ JP~Cordebois and F~Sidoroff.
 \newblock Damage induced elastic anisotropy.
 \newblock In \emph{Mechanical Behavior of Anisotropic Solids/Comportment
   M{\'e}chanique des Solides Anisotropes}, pages 761--774. Springer, 1982.
-
-\bibitem[efunda()]{ortho}
-efunda.
-\newblock {Elastic stiffness matrix of an orthotropic material }.
-\newblock
-  \url{https://www.efunda.com/formulae/solid_mechanics/mat_mechanics/hooke_orthotropic.cfm}.
-\newblock [Online; accessed 5-June-2021].
 
 \bibitem[El-Sisi et~al.(2015)El-Sisi, El-Emam, Salim, and
   Sallam]{el2015efficient}
