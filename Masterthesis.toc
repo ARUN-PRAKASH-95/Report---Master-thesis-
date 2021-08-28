@@ -58,11 +58,12 @@
 \contentsline {section}{\numberline {5.3}Representative structural examples}{45}{section.5.3}%
 \contentsline {subsection}{\numberline {5.3.1}Notched tensile specimen}{46}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {5.3.2}Compact Tension (CT) Specimen}{52}{subsection.5.3.2}%
-\contentsline {subsubsection}{Effect of shear in damage development}{56}{subsubsection*.61}%
-\contentsline {subsection}{\numberline {5.3.3}Plate with hole (3D)}{60}{subsection.5.3.3}%
+\contentsline {subsubsection}{Effect of shear in damage development}{55}{subsubsection*.60}%
+\contentsline {subsection}{\numberline {5.3.3}Plate with hole (3D)}{59}{subsection.5.3.3}%
 \contentsline {chapter}{\numberline {6}Summary and Conclusion}{65}{chapter.6}%
-\contentsline {chapter}{Bibliography}{67}{chapter*.76}%
-\contentsline {chapter}{\textbf {Appendix}}{XX}{chapter*.77}%
+\contentsline {chapter}{Bibliography}{67}{chapter*.75}%
+\contentsline {chapter}{\textbf {Appendix}}{XX}{chapter*.76}%
 \contentsline {section}{\numberline {A}Stiffness matrix of the damaged material}{XX}{section.6.1}%
-\contentsline {section}{\numberline {B}APDL Script}{XXI}{section.6.2}%
-\contentsline {section}{\numberline {C}Source code for USERMAT}{XXIII}{section.6.3}%
+\contentsline {section}{\numberline {B}Second term of the tangent stiffness}{XXI}{section.6.2}%
+\contentsline {section}{\numberline {C}APDL Script}{XXII}{section.6.3}%
+\contentsline {section}{\numberline {D}Source code for USERMAT}{XXV}{section.6.4}%
