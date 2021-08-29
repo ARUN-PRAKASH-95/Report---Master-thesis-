@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,13 +12,6 @@ B.Kiefer.
   testing the implemented material models.
 \newblock [coded by: B. Kiefer 15 Nov 2011, analytical solution added: S.
   Prueger 10 Dec 2018].
-
-\bibitem[Brainkart()]{ubt}
-Brainkart.
-\newblock {Uni, Bi and Triaxial tension}.
-\newblock
-  \url{https://www.brainkart.com/article/Triaxial-Stress,-Biaxial-Stress,-and-Uniaxial-Stress_5991/#:~:text=A%20two%2Ddimensional%20state%20of,called%20a%20uniaxial%20stress%20state.}
-\newblock [Online; accessed 20-August-2021].
 
 \bibitem[Cervera and Chiumenti(2006)]{cervera2006smeared}
 Miguel Cervera and Michele Chiumenti.
@@ -185,11 +178,5 @@ Yuequan Wang, Mingbo Tong, and Shuhua Zhu.
 \newblock In \emph{50th AIAA/ASME/ASCE/AHS/ASC Structures, Structural Dynamics,
   and Materials Conference 17th AIAA/ASME/AHS Adaptive Structures Conference
   11th AIAA No}, page 2629, 2009.
-
-\bibitem[Wikipedia()]{frp}
-Wikipedia.
-\newblock {Fibre-reinforced composite}.
-\newblock \url{https://en.wikipedia.org/wiki/Fiber-reinforced_composite}.
-\newblock [Online; accessed 10-June-2021].
 
 \end{thebibliography}

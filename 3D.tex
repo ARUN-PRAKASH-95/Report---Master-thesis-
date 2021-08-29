@@ -31,7 +31,7 @@ basicstyle=\footnotesize,        % the size of the fonts that are used for the c
 \begin{lstlisting}
 
   
-       subroutine usermat(
+        subroutine usermat(
      &                   matId, elemId,kDomIntPt, kLayer, kSectPt,
      &                   ldstep,isubst,keycut,
      &                   nDirect,nShear,ncomp,nStatev,nProp,
@@ -104,8 +104,7 @@ c
       return
 	end
 	
-	
-**************    Subroutine for 3d elements (Linear elastic isotropic model)   ********************
+
       subroutine usermat3d(
      &                   matId, elemId,kDomIntPt, kLayer, kSectPt,
      &                   ldstep,isubst,keycut,
@@ -189,15 +188,15 @@ c
      &                    var6, var7, var8
 	
 
-      V    = ustatev(1)
-      d1   = ustatev(2)
-      d2   = ustatev(3)
-      d3   = ustatev(4)
-      F_f  = ustatev(5)
-      F_m  = ustatev(6)
-      F_z  = ustatev(7) 
+    V    = ustatev(1)
+    d1   = ustatev(2)
+    d2   = ustatev(3)
+    d3   = ustatev(4)
+    F_f  = ustatev(5)
+    F_m  = ustatev(6)
+    F_z  = ustatev(7) 
       
-c *** get Young's modulus and Poisson's ratio, initial yield stress and others
+c *** Receive material properties
 	young_x  = prop(1)
 	young_y  = prop(2)
 	young_z  = prop(3)
@@ -209,22 +208,22 @@ c *** get Young's modulus and Poisson's ratio, initial yield stress and others
 	g_xz     = prop(9)
       
       
-      sig_11_f_t = 910.1e6
-      sig_11_f_c = -710.2e6
-      sig_22_f_t =  150e6 
-      sig_22_f_c = -200e6
-      sig_33_f_t = 150e6
-      sig_33_f_c = -200e6
-      sig_12_f   = 131e6
-      sig_13_f   = 131e6
-      sig_23_f   = 131e6
-      G_c_1_t      = 12.5e4
-      G_c_1_c      = 25e4
-      G_c_2_t      = 9.5e4
-      G_c_2_c      = 25.4e4
-      G_c_3_t      = 9.5e4
-      G_c_3_c      = 25.4e4
-      L_c        = V**(1.0/3.0)
+    sig_11_f_t = 910.1e6
+    sig_11_f_c = -710.2e6
+    sig_22_f_t =  150e6 
+    sig_22_f_c = -200e6
+    sig_33_f_t = 150e6
+    sig_33_f_c = -200e6
+    sig_12_f   = 131e6
+    sig_13_f   = 131e6
+    sig_23_f   = 131e6
+    G_c_1_t    = 12.5e4
+    G_c_1_c    = 25e4
+    G_c_2_t    = 9.5e4
+    G_c_2_c    = 25.4e4
+    G_c_3_t    = 9.5e4
+    G_c_3_c    = 25.4e4
+    L_c        = V**(1.0/3.0)
     
    
       
@@ -241,8 +240,8 @@ c *** get Young's modulus and Poisson's ratio, initial yield stress and others
 	
 	delta = (ONE - (xy_yx) - (yz_zy) - (zx_xz) - (xyz)) / E_xyz
 
-      tsstif(1) = g_xz
-      tsstif(2) = g_yz      
+    tsstif(1) = g_xz
+    tsstif(2) = g_yz      
 
 	
 
@@ -253,18 +252,18 @@ c *** get Young's modulus and Poisson's ratio, initial yield stress and others
 	dsdeEl(1,1) = (ONE -yz_zy) / (young_y*young_z*delta)
 	dsdeEl(1,2) = (pr_yx + pr_zx*pr_yz) / (young_y*young_z*delta)
 	dsdeEl(1,3) = (pr_zx + pr_yx*pr_zy)/(young_y*young_z*delta)
-      dsdeEl(1,4) = 0
+    dsdeEl(1,4) = 0
 	dsdeEl(1,5) = 0
 	dsdeEl(1,6) = 0
 	dsdeEl(2,1) = (pr_yx + pr_zx*pr_yz) /(young_y*young_z*delta)
-      dsdeEl(2,2) = (ONE -zx_xz)/(young_x*young_z*delta)
+    dsdeEl(2,2) = (ONE -zx_xz)/(young_x*young_z*delta)
 	dsdeEl(2,3) = (pr_zy + pr_zx*pr_xy) /(young_x*young_z*delta) 
-      dsdeEl(2,4) = 0
+    dsdeEl(2,4) = 0
 	dsdeEl(2,5) = 0
 	dsdeEl(2,6) = 0
 	dsdeEl(3,1) = (pr_zx + pr_yx*pr_zy) /(young_y*young_z*delta) 
-      dsdeEl(3,2) = (pr_zy + pr_zx*pr_xy) / (young_x*young_z*delta)
-      dsdeEl(3,3) = (ONE -xy_yx)/(young_x*young_y*delta)
+    dsdeEl(3,2) = (pr_zy + pr_zx*pr_xy) / (young_x*young_z*delta)
+    dsdeEl(3,3) = (ONE -xy_yx)/(young_x*young_y*delta)
 	dsdeEl(3,4) = 0
 	dsdeEl(3,5) = 0
 	dsdeEl(3,6) = 0
@@ -289,15 +288,15 @@ c *** get Young's modulus and Poisson's ratio, initial yield stress and others
 
   
       
-      eps_11_f_t = sig_11_f_t / ((ONE -yz_zy) / (young_y*young_z*delta))
-      eps_11_f_c = sig_11_f_c / ((ONE -yz_zy) / (young_y*young_z*delta))
-      eps_22_f_t = sig_22_f_t / ((ONE -zx_xz) / (young_x*young_z*delta))
-      eps_22_f_c = sig_22_f_c / ((ONE -zx_xz) / (young_x*young_z*delta))
-      eps_33_f_t = sig_33_f_t / ((ONE -xy_yx) / (young_x*young_y*delta))
-      eps_33_f_c = sig_33_f_c / ((ONE -xy_yx) / (young_x*young_y*delta))
-      eps_12_f   = sig_12_f / g_xy
-      eps_13_f   = sig_13_f / g_xz 
-      eps_23_f   = sig_23_f / g_yz
+    eps_11_f_t = sig_11_f_t / ((ONE -yz_zy) / (young_y*young_z*delta))
+    eps_11_f_c = sig_11_f_c / ((ONE -yz_zy) / (young_y*young_z*delta))
+    eps_22_f_t = sig_22_f_t / ((ONE -zx_xz) / (young_x*young_z*delta))
+    eps_22_f_c = sig_22_f_c / ((ONE -zx_xz) / (young_x*young_z*delta))
+    eps_33_f_t = sig_33_f_t / ((ONE -xy_yx) / (young_x*young_y*delta))
+    eps_33_f_c = sig_33_f_c / ((ONE -xy_yx) / (young_x*young_y*delta))
+    eps_12_f   = sig_12_f / g_xy
+    eps_13_f   = sig_13_f / g_xz 
+    eps_23_f   = sig_23_f / g_yz
 
 c *** Calculate current strain
       do i=1,ncomp
@@ -316,7 +315,7 @@ c**** Compute effective stress
 
 
       
-c****Damage initiation criteria
+c****Failure criteria
  
       if (sigma_eff(1) >= 0) then                    
           F_f_new = sigma_eff(1)/sig_11_f_t          
@@ -339,7 +338,7 @@ c****Damage initiation criteria
       endif
             
       
-c******    To make sure damage initiation criteria is greater than or equal to previous step   *******   
+c******    To make sure failure indices are greater than or equal to previous step   *******   
       
       if (F_f_new >= F_f) then          
           F_f = F_f_new          
@@ -365,7 +364,7 @@ c******    To make sure damage initiation criteria is greater than or equal to p
       call vzero(C_T_1_a, 6) 
       call vzero(C_T_2_a, 6)
       call vzero(C_T_3_a, 6) 
-      if ((F_f <= 1) .AND. (F_m <= 1) .AND. (F_z <= 1)) then
+      if ((F_f < 1) .AND. (F_m < 1) .AND. (F_z < 1)) then
  
 c********    Update stress
         do i=1,ncomp
@@ -376,7 +375,7 @@ c********    Update stress
       
       else
           
-c*********  Terms in damage evolution equations   ***********
+c*********  Softening parameter  ***********
         if (sigma_eff(1) >= 0) then
           k1 =   (-sig_11_f_t*eps_11_f_t*L_c)/G_c_1_t
         else 
@@ -402,7 +401,7 @@ c*********  Terms in damage evolution equations   ***********
         d3_max = 0.999
         
 c*********   Damage evolution equations    *********** 	  
-        if (F_f > 1) then
+        if (F_f >= 1) then
       
           d1_new = d1_max*(ONE  - (exp(k1*(F_f - ONE)))/F_f)
           
@@ -415,7 +414,7 @@ c*********   Damage evolution equations    ***********
         endif        
 
       
-        if (F_m > 1) then
+        if (F_m >= 1) then
       
           d2_new =  d2_max*(ONE  - (exp(k2*(F_m- ONE)))/F_m)
           
@@ -428,7 +427,7 @@ c*********   Damage evolution equations    ***********
         endif
       
       
-        if (F_z > 1) then
+        if (F_z >= 1) then
       
           d3_new = d3_max*(ONE  - (exp(k3*(F_z - ONE)))/F_z)
           
@@ -685,7 +684,7 @@ c *** Update stress i
       
 
       
-      if ((F_f <= 1) .AND. (F_m <= 1) .AND. (F_z <= 1)) then
+      if ((F_f < 1) .AND. (F_m < 1) .AND. (F_z < 1)) then
           
           do i=1,ncomp
               do j=1,ncomp
@@ -707,7 +706,6 @@ c *** Update stress i
       
       return
       end
-
 	
 \end{lstlisting}
 

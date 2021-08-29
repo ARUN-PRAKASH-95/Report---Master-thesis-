@@ -14,50 +14,48 @@ Repeated entry---line 127 of file reference.bib
  :                             ,
 I'm skipping whatever remains of this entry
 Warning--empty year in codes
-Warning--empty year in ubt
 Warning--empty journal in geers1998experimental
 Warning--empty journal in hashin1983analysis
 Warning--empty journal in peerlings1999enhanced
-Warning--empty year in frp
-You've used 29 entries,
+You've used 27 entries,
             2773 wiz_defined-function locations,
-            765 strings with 9965 characters,
-and the built_in function-call counts, 11785 in all, are:
-= -- 1054
-> -- 550
-< -- 25
-+ -- 194
-- -- 165
-* -- 854
-:= -- 1810
-add.period$ -- 93
-call.type$ -- 29
-change.case$ -- 138
-chr.to.int$ -- 29
-cite$ -- 64
-duplicate$ -- 583
-empty$ -- 1069
-format.name$ -- 204
-if$ -- 2475
+            755 strings with 9576 characters,
+and the built_in function-call counts, 11181 in all, are:
+= -- 1000
+> -- 530
+< -- 23
++ -- 186
+- -- 159
+* -- 828
+:= -- 1718
+add.period$ -- 85
+call.type$ -- 27
+change.case$ -- 130
+chr.to.int$ -- 27
+cite$ -- 58
+duplicate$ -- 553
+empty$ -- 1005
+format.name$ -- 196
+if$ -- 2345
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 28
-newline$ -- 158
-num.names$ -- 116
-pop$ -- 322
+newline$ -- 146
+num.names$ -- 108
+pop$ -- 290
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 107
 quote$ -- 0
-skip$ -- 422
+skip$ -- 404
 stack$ -- 0
-substring$ -- 437
-swap$ -- 47
+substring$ -- 433
+swap$ -- 45
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 299
-warning$ -- 6
-while$ -- 116
+type$ -- 277
+warning$ -- 4
+while$ -- 110
 width$ -- 0
-write$ -- 378
+write$ -- 352
 (There were 2 error messages)
